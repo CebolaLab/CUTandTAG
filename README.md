@@ -9,15 +9,11 @@ The pipeline covers the following general steps:
 - Cut Matrix Generation
 - Motif Footprinting Steps
 
-The programs required have been installed and are available in the CebolaLab CUTandTAG anaconda environment. If you are running the pipeline from the Imperial College HPC, you can copy the anaconda working environment from the Cebola Lab using the following command:
-
-`cp /rdsgpfs/general/project/cebolalab_liver_regulomes/live/CUTandTAG/CUTandTAG.shared/anaconda-env/CUTandTAG /rdsgpfs/general/user/"$(whoami)"/home/anaconda3/envs/`
-
-The environment is also downloadable from this github and should be moved to your own `anaconda/envs/` folder.
+The programs required have been installed and are available in the CebolaLab CUTandTAG anaconda environment. The conda environment can be downloaded [here](https://github.com/CebolaLab/CUTandTAG/tree/master/anaconda-env). If you are using anaconda, you can copy this into your own anaconda environments. On the Imperial College HPC for example, this is located at `/rdsgpfs/general/user/"$(whoami)"/home/anaconda3/envs/'. Even without installing conda, the pipeline can be run by directing the necessary scripts to the `bin` of the downloaded CUTandTAG environment. This will be described in the following steps.
 
 ### Alignment
 
-Two alignments will be run to align the human DNA and carry-over E.coli DNA which will be used later for sample calibration. The [recommended steps](https://www.protocols.io/view/bench-top-cut-amp-tag-bcuhiwt6?step=69)) are to skip adapter trimming and instead run the alignment with the below parameters, which should result in accurate read alignment:
+Two alignments will be run to align the human DNA and carry-over E.coli DNA which will be used later for sample calibration. The [recommended steps](https://www.protocols.io/view/bench-top-cut-amp-tag-bcuhiwt6?step=69) are to skip adapter trimming and instead run the alignment with the below parameters, which should result in accurate read alignment:
 
 1. Align reads to the reference **human** genome (hg19)
 2. Align reads to the reference **E.coli** genome (strain K12, substrain MG1655)
