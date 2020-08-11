@@ -20,26 +20,19 @@ Two alignments will be run to align the human DNA and carry-over E.coli DNA whic
 
 **Human genome:** The UCSC hg19 ***masked*** reference genome was downloaded ([here](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/bigZips/)) and [indexed using bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#indexing-a-reference-genome). 
 
-** E.coli genome: ** The E.coli reference genome for the strain K-12 strain, MG1655 substrain was obtained from UCSC ([here](https://www.ncbi.nlm.nih.gov/nuccore/U00096.3?report=fasta)) and was also [indexed](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#indexing-a-reference-genome) using bowtie2. For those with access to the Imperial College HPC and the Cebola Lab project space, the reference genomes and index files are available at this path:
+**E.coli genome:** The E.coli reference genome for the strain K-12 strain, MG1655 substrain was obtained from UCSC ([here](https://www.ncbi.nlm.nih.gov/nuccore/U00096.3?report=fasta)) and was also [indexed](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#indexing-a-reference-genome) using bowtie2. 
+
+For those with access to the Imperial College HPC and the Cebola Lab project space, the reference genomes and index files are available at this path:
 
 `/rds/general/user/"$whoamI"/projects/cebolalab_liver_regulomes/live/reference-genomes/` 
 
-The alignments are carried out using the below arguments. An example script is available [here].
+The alignments are carried out using bowtie2 with the below arguments. An example script is available [here](https://github.com/CebolaLab/CUTandTAG/blob/master/alignment.sh).
 
 ##### Align human reads:
-
-Paired-end CUT&Tag reads are aligned to hg19 using bowtie2 and the following arguments:
 
 `--end-to-end --very-sensitive --no-unal --no-mixed --no-discordant --phred33 -l 10 -X 700`
 
 ##### Align E.coli reads:
 
-E. coli carry-over fragments are algined to the NCBI Ecoli genome (Escherichia coli str. K12 substr. MG1655 U00096.3) using:
-
 `--end-to-end --very-sensitive --no-overlap --no-dovetail --no-mixed --no-discordant  --phred33 -I 10 -X 700`
 
-Bowtie2 is included in the conda environment download. 
-
-If you do not have bowtie2 installed, it can be called from the pre-installed programs:
-
-`~/anaconda3/envs/CUTandTAG/bin/bowtie2`
