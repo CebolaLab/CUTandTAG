@@ -1,0 +1,55 @@
+{
+  "build": "h553295d_15",
+  "build_number": 15,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "binutils_linux-64 2.33.1 h9595d00_15",
+    "gcc_linux-64 7.3.0 h553295d_15",
+    "gfortran_impl_linux-64 7.3.0.*"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/gfortran_linux-64-7.3.0-h553295d_15",
+  "features": "",
+  "files": [
+    "etc/conda/activate.d/activate-gfortran_linux-64.sh",
+    "etc/conda/deactivate.d/deactivate-gfortran_linux-64.sh"
+  ],
+  "fn": "gfortran_linux-64-7.3.0-h553295d_15.conda",
+  "legacy_bz2_md5": "9da10d196a928c75260cd103dda59ba0",
+  "legacy_bz2_size": 25104,
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/gfortran_linux-64-7.3.0-h553295d_15",
+    "type": 1
+  },
+  "md5": "f669abe9a3730773b9125c9ad2b99ac8",
+  "name": "gfortran_linux-64",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/gfortran_linux-64-7.3.0-h553295d_15.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "etc/conda/activate.d/activate-gfortran_linux-64.sh",
+        "path_type": "hardlink",
+        "sha256": "74598b2ae3988d63b7f7735465287f3a733e11aa3fffac4ff57b0a1665a308fc",
+        "sha256_in_prefix": "74598b2ae3988d63b7f7735465287f3a733e11aa3fffac4ff57b0a1665a308fc",
+        "size_in_bytes": 5286
+      },
+      {
+        "_path": "etc/conda/deactivate.d/deactivate-gfortran_linux-64.sh",
+        "path_type": "hardlink",
+        "sha256": "e3f63f0eaa05f222ff0e74c8d1bf9d714fc979c47204e86e74a66820b4c8eaa5",
+        "sha256_in_prefix": "e3f63f0eaa05f222ff0e74c8d1bf9d714fc979c47204e86e74a66820b4c8eaa5",
+        "size_in_bytes": 5268
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "dee34c0fd391a1020708134b254e785f6564c2dd8b6f534718067693561938e8",
+  "size": 27188,
+  "subdir": "linux-64",
+  "timestamp": 1576707756158,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/gfortran_linux-64-7.3.0-h553295d_15.conda",
+  "version": "7.3.0"
+}

@@ -1,0 +1,2 @@
+#!/bin/sh
+/home/hm1412/anaconda3/envs/CUTandTAG/bin/x86_64-conda_cos6-linux-gnu-gfortran.bin -specs=/home/hm1412/anaconda3/envs/CUTandTAG/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/specs "$@"

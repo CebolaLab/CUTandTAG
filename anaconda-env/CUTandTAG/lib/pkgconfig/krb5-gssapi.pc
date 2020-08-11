@@ -1,0 +1,10 @@
+prefix=/home/hm1412/anaconda3/envs/CUTandTAG
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+vendor=MIT
+
+Name: krb5-gssapi
+Description: Kerberos implementation of the GSSAPI
+Version: 1.17.1
+Requires: mit-krb5-gssapi

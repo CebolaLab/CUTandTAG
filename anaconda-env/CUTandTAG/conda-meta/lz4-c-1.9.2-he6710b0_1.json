@@ -1,0 +1,168 @@
+{
+  "build": "he6710b0_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/lz4-c-1.9.2-he6710b0_1",
+  "features": "",
+  "files": [
+    "bin/lz4",
+    "bin/lz4c",
+    "bin/lz4cat",
+    "bin/unlz4",
+    "include/lz4.h",
+    "include/lz4frame.h",
+    "include/lz4frame_static.h",
+    "include/lz4hc.h",
+    "lib/liblz4.a",
+    "lib/liblz4.so",
+    "lib/liblz4.so.1",
+    "lib/liblz4.so.1.9.2",
+    "lib/pkgconfig/liblz4.pc",
+    "share/man/man1/lz4.1",
+    "share/man/man1/lz4c.1",
+    "share/man/man1/lz4cat.1",
+    "share/man/man1/unlz4.1"
+  ],
+  "fn": "lz4-c-1.9.2-he6710b0_1.conda",
+  "legacy_bz2_md5": "eee2fbfb70da6448f48e54549c8f5d5a",
+  "legacy_bz2_size": 258589,
+  "license": "BSD-2-Clause",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/lz4-c-1.9.2-he6710b0_1",
+    "type": 1
+  },
+  "md5": "415fed981d2c58e82c2aa9aea7443a6c",
+  "name": "lz4-c",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/lz4-c-1.9.2-he6710b0_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/lz4",
+        "path_type": "hardlink",
+        "sha256": "a407bd983868fe8ab94476a86695eb530676a9cfc163b710c857eb0b963794fe",
+        "sha256_in_prefix": "a407bd983868fe8ab94476a86695eb530676a9cfc163b710c857eb0b963794fe",
+        "size_in_bytes": 315192
+      },
+      {
+        "_path": "bin/lz4c",
+        "path_type": "softlink",
+        "sha256": "a407bd983868fe8ab94476a86695eb530676a9cfc163b710c857eb0b963794fe",
+        "size_in_bytes": 315192
+      },
+      {
+        "_path": "bin/lz4cat",
+        "path_type": "softlink",
+        "sha256": "a407bd983868fe8ab94476a86695eb530676a9cfc163b710c857eb0b963794fe",
+        "size_in_bytes": 315192
+      },
+      {
+        "_path": "bin/unlz4",
+        "path_type": "softlink",
+        "sha256": "a407bd983868fe8ab94476a86695eb530676a9cfc163b710c857eb0b963794fe",
+        "size_in_bytes": 315192
+      },
+      {
+        "_path": "include/lz4.h",
+        "path_type": "hardlink",
+        "sha256": "13dee89947a6e2adc051072861a0da1a938ee26d0fdf177777f8aba2a46fd435",
+        "sha256_in_prefix": "13dee89947a6e2adc051072861a0da1a938ee26d0fdf177777f8aba2a46fd435",
+        "size_in_bytes": 39943
+      },
+      {
+        "_path": "include/lz4frame.h",
+        "path_type": "hardlink",
+        "sha256": "85ec247097470f227ef27d6291a49fe475d0d779d67679b72dfd8d38a102a395",
+        "sha256_in_prefix": "85ec247097470f227ef27d6291a49fe475d0d779d67679b72dfd8d38a102a395",
+        "size_in_bytes": 28657
+      },
+      {
+        "_path": "include/lz4frame_static.h",
+        "path_type": "hardlink",
+        "sha256": "1662c6453229a8d65bfa349b9cd3c01d1fee440ada16a8e99a7083d6cb08a4c0",
+        "sha256_in_prefix": "1662c6453229a8d65bfa349b9cd3c01d1fee440ada16a8e99a7083d6cb08a4c0",
+        "size_in_bytes": 2044
+      },
+      {
+        "_path": "include/lz4hc.h",
+        "path_type": "hardlink",
+        "sha256": "12d5d9424059d5b6d7570e7a3cb54ed6e8b4b5ed5bb51977bb150c68c056f228",
+        "sha256_in_prefix": "12d5d9424059d5b6d7570e7a3cb54ed6e8b4b5ed5bb51977bb150c68c056f228",
+        "size_in_bytes": 21357
+      },
+      {
+        "_path": "lib/liblz4.a",
+        "path_type": "hardlink",
+        "sha256": "8a86baa3c629c655094ec43ba6d48308d767b34e92bacbe0ea958535e1620864",
+        "sha256_in_prefix": "8a86baa3c629c655094ec43ba6d48308d767b34e92bacbe0ea958535e1620864",
+        "size_in_bytes": 269304
+      },
+      {
+        "_path": "lib/liblz4.so",
+        "path_type": "softlink",
+        "sha256": "5b08098c22f550f4bf93e42e0ead7f8c9cc0d3259ef11914589407a8629c9296",
+        "size_in_bytes": 223824
+      },
+      {
+        "_path": "lib/liblz4.so.1",
+        "path_type": "softlink",
+        "sha256": "5b08098c22f550f4bf93e42e0ead7f8c9cc0d3259ef11914589407a8629c9296",
+        "size_in_bytes": 223824
+      },
+      {
+        "_path": "lib/liblz4.so.1.9.2",
+        "path_type": "hardlink",
+        "sha256": "5b08098c22f550f4bf93e42e0ead7f8c9cc0d3259ef11914589407a8629c9296",
+        "sha256_in_prefix": "5b08098c22f550f4bf93e42e0ead7f8c9cc0d3259ef11914589407a8629c9296",
+        "size_in_bytes": 223824
+      },
+      {
+        "_path": "lib/pkgconfig/liblz4.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "c4572b2d433a212013a136bff1070132d281bcd331dd6ad03039a252cd6a25e4",
+        "sha256_in_prefix": "4f377475fcb0b7e552e1deb4630c7f6c0ec3bfe00069a6e094e9a353c2996f00",
+        "size_in_bytes": 517
+      },
+      {
+        "_path": "share/man/man1/lz4.1",
+        "path_type": "hardlink",
+        "sha256": "22796ed3ff4fa56da7fee26a4e5f8407bb758f99183a3283cfd1a93c68373017",
+        "sha256_in_prefix": "22796ed3ff4fa56da7fee26a4e5f8407bb758f99183a3283cfd1a93c68373017",
+        "size_in_bytes": 9077
+      },
+      {
+        "_path": "share/man/man1/lz4c.1",
+        "path_type": "softlink",
+        "sha256": "22796ed3ff4fa56da7fee26a4e5f8407bb758f99183a3283cfd1a93c68373017",
+        "size_in_bytes": 9077
+      },
+      {
+        "_path": "share/man/man1/lz4cat.1",
+        "path_type": "softlink",
+        "sha256": "22796ed3ff4fa56da7fee26a4e5f8407bb758f99183a3283cfd1a93c68373017",
+        "size_in_bytes": 9077
+      },
+      {
+        "_path": "share/man/man1/unlz4.1",
+        "path_type": "softlink",
+        "sha256": "22796ed3ff4fa56da7fee26a4e5f8407bb758f99183a3283cfd1a93c68373017",
+        "size_in_bytes": 9077
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "7bc13c80c2eff3d0124b727b127af7b7e007df87302d24b07d9d6966b4e10015",
+  "size": 194509,
+  "subdir": "linux-64",
+  "timestamp": 1595960707865,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/lz4-c-1.9.2-he6710b0_1.conda",
+  "version": "1.9.2"
+}

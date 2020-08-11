@@ -1,0 +1,947 @@
+{
+  "build": "h8948797_3",
+  "build_number": 3,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "fontconfig >=2.13.0,<3.0a0",
+    "freetype >=2.9.1,<3.0a0",
+    "glib >=2.56.1,<3.0a0",
+    "icu >=58.2,<59.0a0",
+    "libgcc-ng >=7.2.0",
+    "libpng >=1.6.34,<1.7.0a0",
+    "libstdcxx-ng >=7.2.0",
+    "libxcb >=1.13,<2.0a0",
+    "pixman >=0.34.0,<1.0a0",
+    "xz >=5.2.4,<6.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/cairo-1.14.12-h8948797_3",
+  "features": "",
+  "files": [
+    "bin/cairo-trace",
+    "include/cairo/cairo-deprecated.h",
+    "include/cairo/cairo-features.h",
+    "include/cairo/cairo-ft.h",
+    "include/cairo/cairo-gobject.h",
+    "include/cairo/cairo-pdf.h",
+    "include/cairo/cairo-ps.h",
+    "include/cairo/cairo-script-interpreter.h",
+    "include/cairo/cairo-script.h",
+    "include/cairo/cairo-svg.h",
+    "include/cairo/cairo-version.h",
+    "include/cairo/cairo-xlib-xrender.h",
+    "include/cairo/cairo-xlib.h",
+    "include/cairo/cairo.h",
+    "lib/cairo/libcairo-trace.a",
+    "lib/cairo/libcairo-trace.la",
+    "lib/cairo/libcairo-trace.so",
+    "lib/cairo/libcairo-trace.so.0",
+    "lib/cairo/libcairo-trace.so.0.0.0",
+    "lib/libcairo-gobject.a",
+    "lib/libcairo-gobject.la",
+    "lib/libcairo-gobject.so",
+    "lib/libcairo-gobject.so.2",
+    "lib/libcairo-gobject.so.2.11400.12",
+    "lib/libcairo-script-interpreter.a",
+    "lib/libcairo-script-interpreter.la",
+    "lib/libcairo-script-interpreter.so",
+    "lib/libcairo-script-interpreter.so.2",
+    "lib/libcairo-script-interpreter.so.2.11400.12",
+    "lib/libcairo.a",
+    "lib/libcairo.la",
+    "lib/libcairo.so",
+    "lib/libcairo.so.2",
+    "lib/libcairo.so.2.11400.12",
+    "lib/pkgconfig/cairo-fc.pc",
+    "lib/pkgconfig/cairo-ft.pc",
+    "lib/pkgconfig/cairo-gobject.pc",
+    "lib/pkgconfig/cairo-pdf.pc",
+    "lib/pkgconfig/cairo-png.pc",
+    "lib/pkgconfig/cairo-ps.pc",
+    "lib/pkgconfig/cairo-script.pc",
+    "lib/pkgconfig/cairo-svg.pc",
+    "lib/pkgconfig/cairo-xlib-xrender.pc",
+    "lib/pkgconfig/cairo-xlib.pc",
+    "lib/pkgconfig/cairo.pc",
+    "share/gtk-doc/html/cairo/bindings-errors.html",
+    "share/gtk-doc/html/cairo/bindings-fonts.html",
+    "share/gtk-doc/html/cairo/bindings-memory.html",
+    "share/gtk-doc/html/cairo/bindings-overloading.html",
+    "share/gtk-doc/html/cairo/bindings-path.html",
+    "share/gtk-doc/html/cairo/bindings-patterns.html",
+    "share/gtk-doc/html/cairo/bindings-return-values.html",
+    "share/gtk-doc/html/cairo/bindings-streams.html",
+    "share/gtk-doc/html/cairo/bindings-surfaces.html",
+    "share/gtk-doc/html/cairo/cairo-Error-handling.html",
+    "share/gtk-doc/html/cairo/cairo-FreeType-Fonts.html",
+    "share/gtk-doc/html/cairo/cairo-Image-Surfaces.html",
+    "share/gtk-doc/html/cairo/cairo-PDF-Surfaces.html",
+    "share/gtk-doc/html/cairo/cairo-PNG-Support.html",
+    "share/gtk-doc/html/cairo/cairo-Paths.html",
+    "share/gtk-doc/html/cairo/cairo-PostScript-Surfaces.html",
+    "share/gtk-doc/html/cairo/cairo-Quartz-(CGFont)-Fonts.html",
+    "share/gtk-doc/html/cairo/cairo-Quartz-Surfaces.html",
+    "share/gtk-doc/html/cairo/cairo-Raster-Sources.html",
+    "share/gtk-doc/html/cairo/cairo-Recording-Surfaces.html",
+    "share/gtk-doc/html/cairo/cairo-Regions.html",
+    "share/gtk-doc/html/cairo/cairo-SVG-Surfaces.html",
+    "share/gtk-doc/html/cairo/cairo-Script-Surfaces.html",
+    "share/gtk-doc/html/cairo/cairo-Transformations.html",
+    "share/gtk-doc/html/cairo/cairo-Types.html",
+    "share/gtk-doc/html/cairo/cairo-User-Fonts.html",
+    "share/gtk-doc/html/cairo/cairo-Version-Information.html",
+    "share/gtk-doc/html/cairo/cairo-Win32-Fonts.html",
+    "share/gtk-doc/html/cairo/cairo-Win32-Surfaces.html",
+    "share/gtk-doc/html/cairo/cairo-XCB-Surfaces.html",
+    "share/gtk-doc/html/cairo/cairo-XLib-Surfaces.html",
+    "share/gtk-doc/html/cairo/cairo-XLib-XRender-Backend.html",
+    "share/gtk-doc/html/cairo/cairo-cairo-device-t.html",
+    "share/gtk-doc/html/cairo/cairo-cairo-font-face-t.html",
+    "share/gtk-doc/html/cairo/cairo-cairo-font-options-t.html",
+    "share/gtk-doc/html/cairo/cairo-cairo-matrix-t.html",
+    "share/gtk-doc/html/cairo/cairo-cairo-pattern-t.html",
+    "share/gtk-doc/html/cairo/cairo-cairo-scaled-font-t.html",
+    "share/gtk-doc/html/cairo/cairo-cairo-surface-t.html",
+    "share/gtk-doc/html/cairo/cairo-cairo-t.html",
+    "share/gtk-doc/html/cairo/cairo-drawing.html",
+    "share/gtk-doc/html/cairo/cairo-fonts.html",
+    "share/gtk-doc/html/cairo/cairo-support.html",
+    "share/gtk-doc/html/cairo/cairo-surfaces.html",
+    "share/gtk-doc/html/cairo/cairo-text.html",
+    "share/gtk-doc/html/cairo/cairo.devhelp2",
+    "share/gtk-doc/html/cairo/home.png",
+    "share/gtk-doc/html/cairo/index-1.10.html",
+    "share/gtk-doc/html/cairo/index-1.12.html",
+    "share/gtk-doc/html/cairo/index-1.14.html",
+    "share/gtk-doc/html/cairo/index-1.2.html",
+    "share/gtk-doc/html/cairo/index-1.4.html",
+    "share/gtk-doc/html/cairo/index-1.6.html",
+    "share/gtk-doc/html/cairo/index-1.8.html",
+    "share/gtk-doc/html/cairo/index-all.html",
+    "share/gtk-doc/html/cairo/index.html",
+    "share/gtk-doc/html/cairo/language-bindings.html",
+    "share/gtk-doc/html/cairo/left-insensitive.png",
+    "share/gtk-doc/html/cairo/left.png",
+    "share/gtk-doc/html/cairo/right-insensitive.png",
+    "share/gtk-doc/html/cairo/right.png",
+    "share/gtk-doc/html/cairo/style.css",
+    "share/gtk-doc/html/cairo/up-insensitive.png",
+    "share/gtk-doc/html/cairo/up.png"
+  ],
+  "fn": "cairo-1.14.12-h8948797_3.conda",
+  "legacy_bz2_md5": "04de85ff90455bc862f551e939dd6fb4",
+  "legacy_bz2_size": 1362804,
+  "license": "LGPL 2.1 or MPL 1.1",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/cairo-1.14.12-h8948797_3",
+    "type": 1
+  },
+  "md5": "3436994526c285053941c46049cd943c",
+  "name": "cairo",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/cairo-1.14.12-h8948797_3.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/cairo-trace",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "34c662778969ddd0dbcbe8b669f16d06e29a378084b8bcd786e2d6505601d842",
+        "sha256_in_prefix": "832ef492483d7a4f0cb852f18ee8372fa1b9d97ce310f798c9c38f5a95800cb3",
+        "size_in_bytes": 3029
+      },
+      {
+        "_path": "include/cairo/cairo-deprecated.h",
+        "path_type": "hardlink",
+        "sha256": "873654913917ec9623c0d6f4a940f8ea638c0954cd2c01471df570046bea2bbf",
+        "sha256_in_prefix": "873654913917ec9623c0d6f4a940f8ea638c0954cd2c01471df570046bea2bbf",
+        "size_in_bytes": 8698
+      },
+      {
+        "_path": "include/cairo/cairo-features.h",
+        "path_type": "hardlink",
+        "sha256": "295ae39b9d744282c972812712dcc714aa0ba0c932e8ee8d87ac23f972b4fb07",
+        "sha256_in_prefix": "295ae39b9d744282c972812712dcc714aa0ba0c932e8ee8d87ac23f972b4fb07",
+        "size_in_bytes": 1468
+      },
+      {
+        "_path": "include/cairo/cairo-ft.h",
+        "path_type": "hardlink",
+        "sha256": "489f74a852339fc04eb11e26ddd22536e0147967ea67b301f6636e21bb7c15fa",
+        "sha256_in_prefix": "489f74a852339fc04eb11e26ddd22536e0147967ea67b301f6636e21bb7c15fa",
+        "size_in_bytes": 3721
+      },
+      {
+        "_path": "include/cairo/cairo-gobject.h",
+        "path_type": "hardlink",
+        "sha256": "f8043a9f13867abaca4664a1263a38a19075f6387ca4ef3d7403db3764385d2c",
+        "sha256_in_prefix": "f8043a9f13867abaca4664a1263a38a19075f6387ca4ef3d7403db3764385d2c",
+        "size_in_bytes": 6452
+      },
+      {
+        "_path": "include/cairo/cairo-pdf.h",
+        "path_type": "hardlink",
+        "sha256": "a9014a15c4405a8a98353730eb0b5efbfe2c78baf8f768e825284c7ee2895c7d",
+        "sha256_in_prefix": "a9014a15c4405a8a98353730eb0b5efbfe2c78baf8f768e825284c7ee2895c7d",
+        "size_in_bytes": 3136
+      },
+      {
+        "_path": "include/cairo/cairo-ps.h",
+        "path_type": "hardlink",
+        "sha256": "2ca71c761c807eb16fb97099ef0f8c6b877c61f49e3f568075eb762837b2f610",
+        "sha256_in_prefix": "2ca71c761c807eb16fb97099ef0f8c6b877c61f49e3f568075eb762837b2f610",
+        "size_in_bytes": 3632
+      },
+      {
+        "_path": "include/cairo/cairo-script-interpreter.h",
+        "path_type": "hardlink",
+        "sha256": "611668b45019a603304188280cb52a3ba1c8deb8c9802bc400c2da49ce3a5d06",
+        "sha256_in_prefix": "611668b45019a603304188280cb52a3ba1c8deb8c9802bc400c2da49ce3a5d06",
+        "size_in_bytes": 4059
+      },
+      {
+        "_path": "include/cairo/cairo-script.h",
+        "path_type": "hardlink",
+        "sha256": "03d8abe5e374e9b8b51598f1e1db29cc1f42cc5a52722338acaffe0218d9b6f2",
+        "sha256_in_prefix": "03d8abe5e374e9b8b51598f1e1db29cc1f42cc5a52722338acaffe0218d9b6f2",
+        "size_in_bytes": 3072
+      },
+      {
+        "_path": "include/cairo/cairo-svg.h",
+        "path_type": "hardlink",
+        "sha256": "1ccb0c5855340d07cf0e6ffbf12300b1dc51ee7168efecb663d8c88e2c7096d4",
+        "sha256_in_prefix": "1ccb0c5855340d07cf0e6ffbf12300b1dc51ee7168efecb663d8c88e2c7096d4",
+        "size_in_bytes": 2823
+      },
+      {
+        "_path": "include/cairo/cairo-version.h",
+        "path_type": "hardlink",
+        "sha256": "cb364f3bce2e62f3707bfc9c21f62c8d1ea04627221f7e0166f095ceb3be7944",
+        "sha256_in_prefix": "cb364f3bce2e62f3707bfc9c21f62c8d1ea04627221f7e0166f095ceb3be7944",
+        "size_in_bytes": 149
+      },
+      {
+        "_path": "include/cairo/cairo-xlib-xrender.h",
+        "path_type": "hardlink",
+        "sha256": "db5bf4c3c9db852bac533df54979e6b7cc7527324f348582cb669d940c834f93",
+        "sha256_in_prefix": "db5bf4c3c9db852bac533df54979e6b7cc7527324f348582cb669d940c834f93",
+        "size_in_bytes": 2436
+      },
+      {
+        "_path": "include/cairo/cairo-xlib.h",
+        "path_type": "hardlink",
+        "sha256": "c2dc8111eb4325a439d91192c66827e1e9c9ada4974d453f242dcd30abad6a05",
+        "sha256_in_prefix": "c2dc8111eb4325a439d91192c66827e1e9c9ada4974d453f242dcd30abad6a05",
+        "size_in_bytes": 3577
+      },
+      {
+        "_path": "include/cairo/cairo.h",
+        "path_type": "hardlink",
+        "sha256": "8194e0de7f0f66b892c8ba9fa21a6ba8998e4778630022d8b7de6f81bbd457e6",
+        "sha256_in_prefix": "8194e0de7f0f66b892c8ba9fa21a6ba8998e4778630022d8b7de6f81bbd457e6",
+        "size_in_bytes": 109757
+      },
+      {
+        "_path": "lib/cairo/libcairo-trace.a",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/tmp/build/80754af9/cairo_1527255267328/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "534c7b12982094673bff0419c6774755d08585646dcc22846babeff453a6f0bc",
+        "sha256_in_prefix": "c8ba500fccdcecbc38249ac2187db632df325edd8fe625372bc48fa8894ef5ed",
+        "size_in_bytes": 203368
+      },
+      {
+        "_path": "lib/cairo/libcairo-trace.la",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "72a3a64e38933489f5c5568e718aa73d27302222f17948d300798cf4c66ae06c",
+        "sha256_in_prefix": "8cc603e85e05be08e4171be7bbb9b4815ce6e42799243bbe92599d0f01653ce7",
+        "size_in_bytes": 1077
+      },
+      {
+        "_path": "lib/cairo/libcairo-trace.so",
+        "path_type": "softlink",
+        "sha256": "95e35b59c44a25f397939b010faf059f8fe6d9e7549ca791193497ce4effacd7",
+        "size_in_bytes": 124864
+      },
+      {
+        "_path": "lib/cairo/libcairo-trace.so.0",
+        "path_type": "softlink",
+        "sha256": "95e35b59c44a25f397939b010faf059f8fe6d9e7549ca791193497ce4effacd7",
+        "size_in_bytes": 124864
+      },
+      {
+        "_path": "lib/cairo/libcairo-trace.so.0.0.0",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/tmp/build/80754af9/cairo_1527255267328/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "95e35b59c44a25f397939b010faf059f8fe6d9e7549ca791193497ce4effacd7",
+        "sha256_in_prefix": "4e91dc49c8907c013f02ccc397459952ab2d94419304b9196a715694ef4bc800",
+        "size_in_bytes": 124864
+      },
+      {
+        "_path": "lib/libcairo-gobject.a",
+        "path_type": "hardlink",
+        "sha256": "dd0e007ed40d1633bad0b753ab04fcdf4cd8223b0d9512136d803a170516f61a",
+        "sha256_in_prefix": "dd0e007ed40d1633bad0b753ab04fcdf4cd8223b0d9512136d803a170516f61a",
+        "size_in_bytes": 44258
+      },
+      {
+        "_path": "lib/libcairo-gobject.la",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "fafb3247d408f9ea31397d43602a0b5f40832a4d5a085eb99c89ad284ae0a153",
+        "sha256_in_prefix": "eab9f390288c519b5e0a2662641b593dbaaac2d6dcd7a45efc3ed64175b1e42d",
+        "size_in_bytes": 1761
+      },
+      {
+        "_path": "lib/libcairo-gobject.so",
+        "path_type": "softlink",
+        "sha256": "927fffbe75ea6e0ae676ee72b6623c7a9fc0251d88004733d1544d2380d6c381",
+        "size_in_bytes": 41888
+      },
+      {
+        "_path": "lib/libcairo-gobject.so.2",
+        "path_type": "softlink",
+        "sha256": "927fffbe75ea6e0ae676ee72b6623c7a9fc0251d88004733d1544d2380d6c381",
+        "size_in_bytes": 41888
+      },
+      {
+        "_path": "lib/libcairo-gobject.so.2.11400.12",
+        "path_type": "hardlink",
+        "sha256": "927fffbe75ea6e0ae676ee72b6623c7a9fc0251d88004733d1544d2380d6c381",
+        "sha256_in_prefix": "927fffbe75ea6e0ae676ee72b6623c7a9fc0251d88004733d1544d2380d6c381",
+        "size_in_bytes": 41888
+      },
+      {
+        "_path": "lib/libcairo-script-interpreter.a",
+        "path_type": "hardlink",
+        "sha256": "84b9602fd787dbaa1c68cb22958b95ae1a504cbd2bfce3c01d307e84becf1d85",
+        "sha256_in_prefix": "84b9602fd787dbaa1c68cb22958b95ae1a504cbd2bfce3c01d307e84becf1d85",
+        "size_in_bytes": 220244
+      },
+      {
+        "_path": "lib/libcairo-script-interpreter.la",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "5ff35c9331d5e6fa8796cfea48bf555698e1bad09404011e9921a10d0c0ad56a",
+        "sha256_in_prefix": "2cbc7e0d9c353c3d8d5619da82a18b9643926c649b9a5ed37ee62e9e144d08b5",
+        "size_in_bytes": 1636
+      },
+      {
+        "_path": "lib/libcairo-script-interpreter.so",
+        "path_type": "softlink",
+        "sha256": "090cd09d43d5c3d87c303e91892942ad015130423a22405b1d2d79d38d416d71",
+        "size_in_bytes": 167576
+      },
+      {
+        "_path": "lib/libcairo-script-interpreter.so.2",
+        "path_type": "softlink",
+        "sha256": "090cd09d43d5c3d87c303e91892942ad015130423a22405b1d2d79d38d416d71",
+        "size_in_bytes": 167576
+      },
+      {
+        "_path": "lib/libcairo-script-interpreter.so.2.11400.12",
+        "path_type": "hardlink",
+        "sha256": "090cd09d43d5c3d87c303e91892942ad015130423a22405b1d2d79d38d416d71",
+        "sha256_in_prefix": "090cd09d43d5c3d87c303e91892942ad015130423a22405b1d2d79d38d416d71",
+        "size_in_bytes": 167576
+      },
+      {
+        "_path": "lib/libcairo.a",
+        "path_type": "hardlink",
+        "sha256": "9305a370e087ac857dbaa417db05ebcf91662f051d220a33e6f48e633001a0ba",
+        "sha256_in_prefix": "9305a370e087ac857dbaa417db05ebcf91662f051d220a33e6f48e633001a0ba",
+        "size_in_bytes": 1869814
+      },
+      {
+        "_path": "lib/libcairo.la",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "6d6153d42bcadc779a8aaff06025dad1210fe64c66f51789c372b14d0478c24b",
+        "sha256_in_prefix": "432e2d40ed041ab90f67cc651fc17340f2bfa5b879b91518ba1604eae3e93de6",
+        "size_in_bytes": 1454
+      },
+      {
+        "_path": "lib/libcairo.so",
+        "path_type": "softlink",
+        "sha256": "ff98fda509957b3d20216e7bc33345e76918ea8e9ed558875079f79823aa3c50",
+        "size_in_bytes": 1169480
+      },
+      {
+        "_path": "lib/libcairo.so.2",
+        "path_type": "softlink",
+        "sha256": "ff98fda509957b3d20216e7bc33345e76918ea8e9ed558875079f79823aa3c50",
+        "size_in_bytes": 1169480
+      },
+      {
+        "_path": "lib/libcairo.so.2.11400.12",
+        "path_type": "hardlink",
+        "sha256": "ff98fda509957b3d20216e7bc33345e76918ea8e9ed558875079f79823aa3c50",
+        "sha256_in_prefix": "ff98fda509957b3d20216e7bc33345e76918ea8e9ed558875079f79823aa3c50",
+        "size_in_bytes": 1169480
+      },
+      {
+        "_path": "lib/pkgconfig/cairo-fc.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "43ae79788d8ea4ed0624171a2ba570a3b7c3552ff7f8e413a06dbdf61e4302e6",
+        "sha256_in_prefix": "5c17425f921e332a3620896093a2a6b985230591e4ad2ca55ff39d43e7451e47",
+        "size_in_bytes": 291
+      },
+      {
+        "_path": "lib/pkgconfig/cairo-ft.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "30cd54c37393aae80b80621e8ec0d2a5f387922adde0c20d0ed75ab2342783f6",
+        "sha256_in_prefix": "7f842b645c988270bd12998c86a07e20b9c50e26aab44abcd19cbff88b19e8e1",
+        "size_in_bytes": 288
+      },
+      {
+        "_path": "lib/pkgconfig/cairo-gobject.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "d2b662d81c04667abbc6b58f1201f8c722476dab4db422bbe44fdbe9133f1d41",
+        "sha256_in_prefix": "a932a822394d0cadf569c766d8fbecde1133fd57842731e7811d9994fbdc7f99",
+        "size_in_bytes": 325
+      },
+      {
+        "_path": "lib/pkgconfig/cairo-pdf.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "aad7a833a7ebbe53771c84d834f39a141b733c15bbcf7e16598fad7ee848d4e5",
+        "sha256_in_prefix": "798dbf1fdb5411e74ade3bf15f2e3351bdd086a8f9dae2ca861a0315e1124967",
+        "size_in_bytes": 271
+      },
+      {
+        "_path": "lib/pkgconfig/cairo-png.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "5b1c17cd430ed8ea9abb253ed492b59bb9a1c6fb90badb7f3b94bfd55cbe464d",
+        "sha256_in_prefix": "557e0388be4ff3acdb6b5e65c13b6960354123f74e78fd33e524faf776384525",
+        "size_in_bytes": 268
+      },
+      {
+        "_path": "lib/pkgconfig/cairo-ps.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "3088d8fe34eba09126dcc854c2f3f893f5427d01c21a59c4c1a844656525eb83",
+        "sha256_in_prefix": "d660a009d3130e30059e057bfc37a845b485b8f7708fc53b8dd2c912a2f47577",
+        "size_in_bytes": 277
+      },
+      {
+        "_path": "lib/pkgconfig/cairo-script.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "d8571b838d6cc0f667c741465e4ee61dd3a9d63bf67371b4e01f3ac33f9cf43e",
+        "sha256_in_prefix": "0598ca15fa0a17fdec88db0bdb13449803325f292d537a723710d98889b26cb4",
+        "size_in_bytes": 274
+      },
+      {
+        "_path": "lib/pkgconfig/cairo-svg.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "46d02c385cd782c6749e6821a99078b0b906fc8f2b2589b09b48fe56abc52e48",
+        "sha256_in_prefix": "1a4994d1facf8b3b2d3c677697797a40d50902a1f52c179f7a570fdb25fd3c02",
+        "size_in_bytes": 268
+      },
+      {
+        "_path": "lib/pkgconfig/cairo-xlib-xrender.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "96a9c6d6785ea5725380f3f0353b39b4b14ca5d1737c3e6b5f662a2f2c3ac31b",
+        "sha256_in_prefix": "a64e491163783ab49c054d5c0ba7bcb934a495f7a195a22da273773a628d32e8",
+        "size_in_bytes": 300
+      },
+      {
+        "_path": "lib/pkgconfig/cairo-xlib.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "6fb18a2576341ab1a221debf0ed20b70deb8c5645c990c8e49232e455bca4a13",
+        "sha256_in_prefix": "4f6f63953ac0fe8bd4af82fab8c7e8b9b89c3f824160b81f9dc3f1545158e744",
+        "size_in_bytes": 285
+      },
+      {
+        "_path": "lib/pkgconfig/cairo.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "1f65cdd20da897136c8d085f6c01062ee856211d9d35c1ec3c2af0c7ce979270",
+        "sha256_in_prefix": "f1ab0cf5038706f142e1e458c4caeab6713a74a8e989e3ef248f7e996873128c",
+        "size_in_bytes": 443
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/bindings-errors.html",
+        "path_type": "hardlink",
+        "sha256": "7141a8d3c57e51074edde7ef56bda15ce028155d91a44562079c12aeb3f3707f",
+        "sha256_in_prefix": "7141a8d3c57e51074edde7ef56bda15ce028155d91a44562079c12aeb3f3707f",
+        "size_in_bytes": 5633
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/bindings-fonts.html",
+        "path_type": "hardlink",
+        "sha256": "24416dd4c340c9018ee961469a12088f927a93873dc1bfadd726085f88591d59",
+        "sha256_in_prefix": "24416dd4c340c9018ee961469a12088f927a93873dc1bfadd726085f88591d59",
+        "size_in_bytes": 2714
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/bindings-memory.html",
+        "path_type": "hardlink",
+        "sha256": "103583f0e559f5dc452b34ea2e0d213097e0ad7db09415a7b9886d6c0d8273ca",
+        "sha256_in_prefix": "103583f0e559f5dc452b34ea2e0d213097e0ad7db09415a7b9886d6c0d8273ca",
+        "size_in_bytes": 6033
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/bindings-overloading.html",
+        "path_type": "hardlink",
+        "sha256": "e0be0d3a18472205012c2924846aad697812e642fb20908cc0a034d9963aafa8",
+        "sha256_in_prefix": "e0be0d3a18472205012c2924846aad697812e642fb20908cc0a034d9963aafa8",
+        "size_in_bytes": 5442
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/bindings-path.html",
+        "path_type": "hardlink",
+        "sha256": "35ee295e0ef47e3dcb0828e45c558218c0bd7d3d274679bca50ebd3d342695ba",
+        "sha256_in_prefix": "35ee295e0ef47e3dcb0828e45c558218c0bd7d3d274679bca50ebd3d342695ba",
+        "size_in_bytes": 5312
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/bindings-patterns.html",
+        "path_type": "hardlink",
+        "sha256": "e90438b92351c3b78d63885cb823062c0f9977906b5d90e5ce57b23e205622db",
+        "sha256_in_prefix": "e90438b92351c3b78d63885cb823062c0f9977906b5d90e5ce57b23e205622db",
+        "size_in_bytes": 7894
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/bindings-return-values.html",
+        "path_type": "hardlink",
+        "sha256": "4a521ebb05cb2cb635ab281aae64a9410c583c851630504c92b04dadae1d9b17",
+        "sha256_in_prefix": "4a521ebb05cb2cb635ab281aae64a9410c583c851630504c92b04dadae1d9b17",
+        "size_in_bytes": 4634
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/bindings-streams.html",
+        "path_type": "hardlink",
+        "sha256": "7497f997e322583cd121959207fd022d815f1b8c9d39049e83137e3b177d5ded",
+        "sha256_in_prefix": "7497f997e322583cd121959207fd022d815f1b8c9d39049e83137e3b177d5ded",
+        "size_in_bytes": 4691
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/bindings-surfaces.html",
+        "path_type": "hardlink",
+        "sha256": "5413658dc3e70fc3b14af586713b696486fe0070155a550ae200eee54f63e1dc",
+        "sha256_in_prefix": "5413658dc3e70fc3b14af586713b696486fe0070155a550ae200eee54f63e1dc",
+        "size_in_bytes": 5091
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-Error-handling.html",
+        "path_type": "hardlink",
+        "sha256": "f71b9b1d39afba76d032dbee449d26d0cd7ec9f3f7339985626c8a1aae517d78",
+        "sha256_in_prefix": "f71b9b1d39afba76d032dbee449d26d0cd7ec9f3f7339985626c8a1aae517d78",
+        "size_in_bytes": 22914
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-FreeType-Fonts.html",
+        "path_type": "hardlink",
+        "sha256": "f74d161a253eef39598cce5dc590e8ac41c350f8b4eff71614c5d1c7000e245d",
+        "sha256_in_prefix": "f74d161a253eef39598cce5dc590e8ac41c350f8b4eff71614c5d1c7000e245d",
+        "size_in_bytes": 32661
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-Image-Surfaces.html",
+        "path_type": "hardlink",
+        "sha256": "f725dc16b7222c87b81c61604e96fe7b33349a2b9bbc593079ac35bc8a15a2b7",
+        "sha256_in_prefix": "f725dc16b7222c87b81c61604e96fe7b33349a2b9bbc593079ac35bc8a15a2b7",
+        "size_in_bytes": 28286
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-PDF-Surfaces.html",
+        "path_type": "hardlink",
+        "sha256": "d175bad9cca73d288e8731a4678823591c5de6250fc8ae920f875b5dc0091e4e",
+        "sha256_in_prefix": "d175bad9cca73d288e8731a4678823591c5de6250fc8ae920f875b5dc0091e4e",
+        "size_in_bytes": 23881
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-PNG-Support.html",
+        "path_type": "hardlink",
+        "sha256": "3da194d1ca2fceaec2ad854376484826f12389e7db4fad745c62f5a3f70ea763",
+        "sha256_in_prefix": "3da194d1ca2fceaec2ad854376484826f12389e7db4fad745c62f5a3f70ea763",
+        "size_in_bytes": 22418
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-Paths.html",
+        "path_type": "hardlink",
+        "sha256": "124dd4ba3cdb7b88063cd385dce1671260ee79209e1087fe62fbbae6b18be3a2",
+        "sha256_in_prefix": "124dd4ba3cdb7b88063cd385dce1671260ee79209e1087fe62fbbae6b18be3a2",
+        "size_in_bytes": 75633
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-PostScript-Surfaces.html",
+        "path_type": "hardlink",
+        "sha256": "022230af29660aaf3991617d7b8ba9ee5c3772f60e12a17ac3d0a8cdc3b3f8e7",
+        "sha256_in_prefix": "022230af29660aaf3991617d7b8ba9ee5c3772f60e12a17ac3d0a8cdc3b3f8e7",
+        "size_in_bytes": 38163
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-Quartz-(CGFont)-Fonts.html",
+        "path_type": "hardlink",
+        "sha256": "10f19676487d4c9522fadfd0e4060deb72749e7bb5c01a2f32df7f5357f00a2c",
+        "sha256_in_prefix": "10f19676487d4c9522fadfd0e4060deb72749e7bb5c01a2f32df7f5357f00a2c",
+        "size_in_bytes": 9146
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-Quartz-Surfaces.html",
+        "path_type": "hardlink",
+        "sha256": "460d10211a7722d423b49c61b90dfaf2fd97de4791f6c322be70d1bc59cc4c46",
+        "sha256_in_prefix": "460d10211a7722d423b49c61b90dfaf2fd97de4791f6c322be70d1bc59cc4c46",
+        "size_in_bytes": 11665
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-Raster-Sources.html",
+        "path_type": "hardlink",
+        "sha256": "70017bdd5e39ea738a8f467091e6e403f46948563f5510c4453da7b294a484f2",
+        "sha256_in_prefix": "70017bdd5e39ea738a8f467091e6e403f46948563f5510c4453da7b294a484f2",
+        "size_in_bytes": 42870
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-Recording-Surfaces.html",
+        "path_type": "hardlink",
+        "sha256": "c68e975c920fbd1f12c4e7e441562a3c3726d7f92036edf91940be102089d193",
+        "sha256_in_prefix": "c68e975c920fbd1f12c4e7e441562a3c3726d7f92036edf91940be102089d193",
+        "size_in_bytes": 13764
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-Regions.html",
+        "path_type": "hardlink",
+        "sha256": "954530825641b8706f10902809a2f306eff4d0367dad471424e483f16fc13c76",
+        "sha256_in_prefix": "954530825641b8706f10902809a2f306eff4d0367dad471424e483f16fc13c76",
+        "size_in_bytes": 61906
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-SVG-Surfaces.html",
+        "path_type": "hardlink",
+        "sha256": "939d2da631e8567dfce9f5a3971371101bbe6388cd2fb27ace04b08c26ed964a",
+        "sha256_in_prefix": "939d2da631e8567dfce9f5a3971371101bbe6388cd2fb27ace04b08c26ed964a",
+        "size_in_bytes": 20606
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-Script-Surfaces.html",
+        "path_type": "hardlink",
+        "sha256": "38440c80ee322d9100df9d380145f75a6c26f02ba1032d6a341ec0f0b62db442",
+        "sha256_in_prefix": "38440c80ee322d9100df9d380145f75a6c26f02ba1032d6a341ec0f0b62db442",
+        "size_in_bytes": 23921
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-Transformations.html",
+        "path_type": "hardlink",
+        "sha256": "9e74ce3fa17f87db68b7ec334dcbab5d82633bf46a0ec2cf78873eb5a5dc91b8",
+        "sha256_in_prefix": "9e74ce3fa17f87db68b7ec334dcbab5d82633bf46a0ec2cf78873eb5a5dc91b8",
+        "size_in_bytes": 24086
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-Types.html",
+        "path_type": "hardlink",
+        "sha256": "e0e547246654c4a5f8d36c9e07893cec0faf0de1bea67f940193978f3b0f732a",
+        "sha256_in_prefix": "e0e547246654c4a5f8d36c9e07893cec0faf0de1bea67f940193978f3b0f732a",
+        "size_in_bytes": 9161
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-User-Fonts.html",
+        "path_type": "hardlink",
+        "sha256": "096177b61d19690e70cb8a712739170afd503e1e259ca8f33dffd1588e40e6d7",
+        "sha256_in_prefix": "096177b61d19690e70cb8a712739170afd503e1e259ca8f33dffd1588e40e6d7",
+        "size_in_bytes": 51684
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-Version-Information.html",
+        "path_type": "hardlink",
+        "sha256": "deb1af9be2143ecf3e694efa83e1e34809e3e581d15c13810ee71f71a6c80d2d",
+        "sha256_in_prefix": "deb1af9be2143ecf3e694efa83e1e34809e3e581d15c13810ee71f71a6c80d2d",
+        "size_in_bytes": 16858
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-Win32-Fonts.html",
+        "path_type": "hardlink",
+        "sha256": "35749a6ec547d777e431230ce3ddd2dd57ac0c4cacf16db0eddacb2dbe776c90",
+        "sha256_in_prefix": "35749a6ec547d777e431230ce3ddd2dd57ac0c4cacf16db0eddacb2dbe776c90",
+        "size_in_bytes": 25649
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-Win32-Surfaces.html",
+        "path_type": "hardlink",
+        "sha256": "dced5b927bbec431b6e11f232f28e6c89cbf2355b4730ed38d62972717cf4168",
+        "sha256_in_prefix": "dced5b927bbec431b6e11f232f28e6c89cbf2355b4730ed38d62972717cf4168",
+        "size_in_bytes": 19399
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-XCB-Surfaces.html",
+        "path_type": "hardlink",
+        "sha256": "f884e353d79e11fd002ad7de34aed3b113f23910b1f5b2482a4596680622432c",
+        "sha256_in_prefix": "f884e353d79e11fd002ad7de34aed3b113f23910b1f5b2482a4596680622432c",
+        "size_in_bytes": 32567
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-XLib-Surfaces.html",
+        "path_type": "hardlink",
+        "sha256": "eea47a8c02b40944627a306f9cd8796e19247d7b8d91755357581ea4bcc008d3",
+        "sha256_in_prefix": "eea47a8c02b40944627a306f9cd8796e19247d7b8d91755357581ea4bcc008d3",
+        "size_in_bytes": 33046
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-XLib-XRender-Backend.html",
+        "path_type": "hardlink",
+        "sha256": "a99afeabefbff5594b1499bff49979c4c7088f3308ebaf312f763ceea6b650d5",
+        "sha256_in_prefix": "a99afeabefbff5594b1499bff49979c4c7088f3308ebaf312f763ceea6b650d5",
+        "size_in_bytes": 10432
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-cairo-device-t.html",
+        "path_type": "hardlink",
+        "sha256": "5a23e232b946c4137cf6818f44e91eb2c736965b493f103f1908695d9e6e6989",
+        "sha256_in_prefix": "5a23e232b946c4137cf6818f44e91eb2c736965b493f103f1908695d9e6e6989",
+        "size_in_bytes": 43354
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-cairo-font-face-t.html",
+        "path_type": "hardlink",
+        "sha256": "c4eca14185ff0f18bf50561035266ede5935f33dd5a32e23537eaf77956d299d",
+        "sha256_in_prefix": "c4eca14185ff0f18bf50561035266ede5935f33dd5a32e23537eaf77956d299d",
+        "size_in_bytes": 27669
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-cairo-font-options-t.html",
+        "path_type": "hardlink",
+        "sha256": "d479deac460625a6cf27c6a96e4e76d7c80397a1e13c78a7e85244e5c6a593ca",
+        "sha256_in_prefix": "d479deac460625a6cf27c6a96e4e76d7c80397a1e13c78a7e85244e5c6a593ca",
+        "size_in_bytes": 46146
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-cairo-matrix-t.html",
+        "path_type": "hardlink",
+        "sha256": "5ab2a8a65d84c2977925749784171d31839757e17761421a9b4ed535345507d0",
+        "sha256_in_prefix": "5ab2a8a65d84c2977925749784171d31839757e17761421a9b4ed535345507d0",
+        "size_in_bytes": 36673
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-cairo-pattern-t.html",
+        "path_type": "hardlink",
+        "sha256": "5633e3571c3fcf4b94bebea7e7bbe4904a3f6871c6090697ffcbf8a19d8574fb",
+        "sha256_in_prefix": "5633e3571c3fcf4b94bebea7e7bbe4904a3f6871c6090697ffcbf8a19d8574fb",
+        "size_in_bytes": 152513
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-cairo-scaled-font-t.html",
+        "path_type": "hardlink",
+        "sha256": "aa76ff377a70e3cdc4289ee9380b583ab7726223b9b84d622388b8661b0caaa2",
+        "sha256_in_prefix": "aa76ff377a70e3cdc4289ee9380b583ab7726223b9b84d622388b8661b0caaa2",
+        "size_in_bytes": 69156
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-cairo-surface-t.html",
+        "path_type": "hardlink",
+        "sha256": "03b0a2d58592b0f62fa154d0e7afdee69d115248519258527fd184b0a7107307",
+        "sha256_in_prefix": "03b0a2d58592b0f62fa154d0e7afdee69d115248519258527fd184b0a7107307",
+        "size_in_bytes": 112356
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-cairo-t.html",
+        "path_type": "hardlink",
+        "sha256": "f34c74deaa3160cd1af398523e7b180d9e6883fac033ac15633a825338c6325b",
+        "sha256_in_prefix": "f34c74deaa3160cd1af398523e7b180d9e6883fac033ac15633a825338c6325b",
+        "size_in_bytes": 179170
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-drawing.html",
+        "path_type": "hardlink",
+        "sha256": "a1fe3037fd7715bd80ab029e6d21b1746a29df4f42a84e1adb425391fdb83999",
+        "sha256_in_prefix": "a1fe3037fd7715bd80ab029e6d21b1746a29df4f42a84e1adb425391fdb83999",
+        "size_in_bytes": 2769
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-fonts.html",
+        "path_type": "hardlink",
+        "sha256": "fd6b5e8c2dd4bc006900d1b8202cd371bee976456147a5984d9babeaad4a6c41",
+        "sha256_in_prefix": "fd6b5e8c2dd4bc006900d1b8202cd371bee976456147a5984d9babeaad4a6c41",
+        "size_in_bytes": 2908
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-support.html",
+        "path_type": "hardlink",
+        "sha256": "b77aa8ea9fb6e6a4bf7fcc17e7ccf4be680f94e69a7b05997fae12d44ba7d17b",
+        "sha256_in_prefix": "b77aa8ea9fb6e6a4bf7fcc17e7ccf4be680f94e69a7b05997fae12d44ba7d17b",
+        "size_in_bytes": 2337
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-surfaces.html",
+        "path_type": "hardlink",
+        "sha256": "ad0a06119b9619a8d8615bc9cadee7390b3287e6209f91d60abcb685a2f433fd",
+        "sha256_in_prefix": "ad0a06119b9619a8d8615bc9cadee7390b3287e6209f91d60abcb685a2f433fd",
+        "size_in_bytes": 4082
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo-text.html",
+        "path_type": "hardlink",
+        "sha256": "1eba7f559c0be5b3886a4ac225a45effcf0e6ccd6e9e6dab698fc3dbc52d0e20",
+        "sha256_in_prefix": "1eba7f559c0be5b3886a4ac225a45effcf0e6ccd6e9e6dab698fc3dbc52d0e20",
+        "size_in_bytes": 80197
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/cairo.devhelp2",
+        "path_type": "hardlink",
+        "sha256": "4b9ba86caf1868e1587d0e471576e22631c4b43a0909b877ce07ce8a12765ad0",
+        "sha256_in_prefix": "4b9ba86caf1868e1587d0e471576e22631c4b43a0909b877ce07ce8a12765ad0",
+        "size_in_bytes": 98908
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/home.png",
+        "path_type": "hardlink",
+        "sha256": "79f7b91ccc7c77e730211c6728288587d1d3bae8deac2bda23a03a0125143db0",
+        "sha256_in_prefix": "79f7b91ccc7c77e730211c6728288587d1d3bae8deac2bda23a03a0125143db0",
+        "size_in_bytes": 169
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/index-1.10.html",
+        "path_type": "hardlink",
+        "sha256": "54ef78f06477481d0dca395ba3e36f5f72a9a7431535ccfed41ca8074446b4f8",
+        "sha256_in_prefix": "54ef78f06477481d0dca395ba3e36f5f72a9a7431535ccfed41ca8074446b4f8",
+        "size_in_bytes": 11726
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/index-1.12.html",
+        "path_type": "hardlink",
+        "sha256": "37c821bacbd70baa742b20b554035a944191bdd29feaa330caac121e8359adf3",
+        "sha256_in_prefix": "37c821bacbd70baa742b20b554035a944191bdd29feaa330caac121e8359adf3",
+        "size_in_bytes": 14935
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/index-1.14.html",
+        "path_type": "hardlink",
+        "sha256": "071e85d275c608b9f84b81fce74627e279b382b2e7add429a061e26142c97255",
+        "sha256_in_prefix": "071e85d275c608b9f84b81fce74627e279b382b2e7add429a061e26142c97255",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/index-1.2.html",
+        "path_type": "hardlink",
+        "sha256": "46efc51b3249af4f5f3b4f76d99e6026ab119204045e945b7a92c8191155afd7",
+        "sha256_in_prefix": "46efc51b3249af4f5f3b4f76d99e6026ab119204045e945b7a92c8191155afd7",
+        "size_in_bytes": 12050
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/index-1.4.html",
+        "path_type": "hardlink",
+        "sha256": "b1d265a5c59fbfd54f0db8d3e5179555c70ada8936073a73edea49eb4cbcffca",
+        "sha256_in_prefix": "b1d265a5c59fbfd54f0db8d3e5179555c70ada8936073a73edea49eb4cbcffca",
+        "size_in_bytes": 7543
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/index-1.6.html",
+        "path_type": "hardlink",
+        "sha256": "40f43caa3273387eeaf9e778803147ef8098193960ea186faaa9ffcc97025ef2",
+        "sha256_in_prefix": "40f43caa3273387eeaf9e778803147ef8098193960ea186faaa9ffcc97025ef2",
+        "size_in_bytes": 6386
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/index-1.8.html",
+        "path_type": "hardlink",
+        "sha256": "d953e5d487e367a6a9fc73c9708ee27d308f7e2eef441ffc2e2381ef879345ce",
+        "sha256_in_prefix": "d953e5d487e367a6a9fc73c9708ee27d308f7e2eef441ffc2e2381ef879345ce",
+        "size_in_bytes": 8497
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/index-all.html",
+        "path_type": "hardlink",
+        "sha256": "61e0995462032689cd39797f2c2e53e3f3a341876ed9914cd2da28623b46dacd",
+        "sha256_in_prefix": "61e0995462032689cd39797f2c2e53e3f3a341876ed9914cd2da28623b46dacd",
+        "size_in_bytes": 91665
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/index.html",
+        "path_type": "hardlink",
+        "sha256": "9e01edfabbb4a3346073350ba86430bc88d07964687cb8309cb6cd54913814d8",
+        "sha256_in_prefix": "9e01edfabbb4a3346073350ba86430bc88d07964687cb8309cb6cd54913814d8",
+        "size_in_bytes": 8674
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/language-bindings.html",
+        "path_type": "hardlink",
+        "sha256": "f51149ccf75c2ed2d51f392702425e4bfa1fbd0178e86304484110bfa0225381",
+        "sha256_in_prefix": "f51149ccf75c2ed2d51f392702425e4bfa1fbd0178e86304484110bfa0225381",
+        "size_in_bytes": 4084
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/left-insensitive.png",
+        "path_type": "hardlink",
+        "sha256": "6d9ffaf03f2d412f014427bc31782cef24b044a5c384547be75f827b8f70e63b",
+        "sha256_in_prefix": "6d9ffaf03f2d412f014427bc31782cef24b044a5c384547be75f827b8f70e63b",
+        "size_in_bytes": 333
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/left.png",
+        "path_type": "hardlink",
+        "sha256": "c86474e1357feed6cc6d66700f27f1fa07c570f2c02c06603f5e5c59b80a1be4",
+        "sha256_in_prefix": "c86474e1357feed6cc6d66700f27f1fa07c570f2c02c06603f5e5c59b80a1be4",
+        "size_in_bytes": 193
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/right-insensitive.png",
+        "path_type": "hardlink",
+        "sha256": "f0ed55183905874af9168ca2ca72e0e067b025e0c702c63d94502b2251b9cc1a",
+        "sha256_in_prefix": "f0ed55183905874af9168ca2ca72e0e067b025e0c702c63d94502b2251b9cc1a",
+        "size_in_bytes": 233
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/right.png",
+        "path_type": "hardlink",
+        "sha256": "50b14a77744f74b5d33baf45d544d4c6b4f3bb76b0763fa795defe109979e936",
+        "sha256_in_prefix": "50b14a77744f74b5d33baf45d544d4c6b4f3bb76b0763fa795defe109979e936",
+        "size_in_bytes": 185
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/style.css",
+        "path_type": "hardlink",
+        "sha256": "852c77f7f01fe8d2828a4878390416a8e7c7359f8edefaf881b05cd516a88007",
+        "sha256_in_prefix": "852c77f7f01fe8d2828a4878390416a8e7c7359f8edefaf881b05cd516a88007",
+        "size_in_bytes": 8812
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/up-insensitive.png",
+        "path_type": "hardlink",
+        "sha256": "c9bfd6e1c2951f6822fe12e4121a8436099ad21f58fea282ff00e7d794980512",
+        "sha256_in_prefix": "c9bfd6e1c2951f6822fe12e4121a8436099ad21f58fea282ff00e7d794980512",
+        "size_in_bytes": 288
+      },
+      {
+        "_path": "share/gtk-doc/html/cairo/up.png",
+        "path_type": "hardlink",
+        "sha256": "0bdf8d6935b33b7160552f7996fcfc6c7526088415bbb7a20ca5215c6ef13926",
+        "sha256_in_prefix": "0bdf8d6935b33b7160552f7996fcfc6c7526088415bbb7a20ca5215c6ef13926",
+        "size_in_bytes": 187
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "9214543a472bbe744aad2666c3f669b5ebab222db9e1b8349ae542324556a0de",
+  "size": 927248,
+  "subdir": "linux-64",
+  "timestamp": 1527255730563,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/cairo-1.14.12-h8948797_3.conda",
+  "version": "1.14.12"
+}

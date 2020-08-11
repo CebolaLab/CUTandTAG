@@ -1,0 +1,505 @@
+{
+  "build": "py27r36h516909a_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "numpy >=1.6",
+    "python >=2.7,<2.8.0a0",
+    "r-base >=3.6,<3.7.0a0"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/macs2-2.1.4-py27r36h516909a_0",
+  "features": "",
+  "files": [
+    "bin/macs2",
+    "lib/python2.7/site-packages/MACS2-2.1.4.dist-info/INSTALLER",
+    "lib/python2.7/site-packages/MACS2-2.1.4.dist-info/LICENSE",
+    "lib/python2.7/site-packages/MACS2-2.1.4.dist-info/METADATA",
+    "lib/python2.7/site-packages/MACS2-2.1.4.dist-info/RECORD",
+    "lib/python2.7/site-packages/MACS2-2.1.4.dist-info/WHEEL",
+    "lib/python2.7/site-packages/MACS2-2.1.4.dist-info/top_level.txt",
+    "lib/python2.7/site-packages/MACS2/Constants.py",
+    "lib/python2.7/site-packages/MACS2/Constants.pyc",
+    "lib/python2.7/site-packages/MACS2/IO/BedGraph.so",
+    "lib/python2.7/site-packages/MACS2/IO/BedGraphIO.so",
+    "lib/python2.7/site-packages/MACS2/IO/CallPeakUnit.so",
+    "lib/python2.7/site-packages/MACS2/IO/FixWidthTrack.so",
+    "lib/python2.7/site-packages/MACS2/IO/PairedEndTrack.so",
+    "lib/python2.7/site-packages/MACS2/IO/Parser.so",
+    "lib/python2.7/site-packages/MACS2/IO/PeakIO.so",
+    "lib/python2.7/site-packages/MACS2/IO/ScoreTrack.so",
+    "lib/python2.7/site-packages/MACS2/IO/__init__.py",
+    "lib/python2.7/site-packages/MACS2/IO/__init__.pyc",
+    "lib/python2.7/site-packages/MACS2/OptValidator.py",
+    "lib/python2.7/site-packages/MACS2/OptValidator.pyc",
+    "lib/python2.7/site-packages/MACS2/OutputWriter.py",
+    "lib/python2.7/site-packages/MACS2/OutputWriter.pyc",
+    "lib/python2.7/site-packages/MACS2/PeakDetect.so",
+    "lib/python2.7/site-packages/MACS2/PeakModel.so",
+    "lib/python2.7/site-packages/MACS2/Pileup.so",
+    "lib/python2.7/site-packages/MACS2/Prob.so",
+    "lib/python2.7/site-packages/MACS2/Signal.so",
+    "lib/python2.7/site-packages/MACS2/Statistics.so",
+    "lib/python2.7/site-packages/MACS2/__init__.py",
+    "lib/python2.7/site-packages/MACS2/__init__.pyc",
+    "lib/python2.7/site-packages/MACS2/bdgbroadcall_cmd.py",
+    "lib/python2.7/site-packages/MACS2/bdgbroadcall_cmd.pyc",
+    "lib/python2.7/site-packages/MACS2/bdgcmp_cmd.py",
+    "lib/python2.7/site-packages/MACS2/bdgcmp_cmd.pyc",
+    "lib/python2.7/site-packages/MACS2/bdgdiff_cmd.py",
+    "lib/python2.7/site-packages/MACS2/bdgdiff_cmd.pyc",
+    "lib/python2.7/site-packages/MACS2/bdgopt_cmd.py",
+    "lib/python2.7/site-packages/MACS2/bdgopt_cmd.pyc",
+    "lib/python2.7/site-packages/MACS2/bdgpeakcall_cmd.py",
+    "lib/python2.7/site-packages/MACS2/bdgpeakcall_cmd.pyc",
+    "lib/python2.7/site-packages/MACS2/callpeak_cmd.py",
+    "lib/python2.7/site-packages/MACS2/callpeak_cmd.pyc",
+    "lib/python2.7/site-packages/MACS2/cmbreps_cmd.py",
+    "lib/python2.7/site-packages/MACS2/cmbreps_cmd.pyc",
+    "lib/python2.7/site-packages/MACS2/diffpeak_cmd.py",
+    "lib/python2.7/site-packages/MACS2/diffpeak_cmd.pyc",
+    "lib/python2.7/site-packages/MACS2/filterdup_cmd.py",
+    "lib/python2.7/site-packages/MACS2/filterdup_cmd.pyc",
+    "lib/python2.7/site-packages/MACS2/hashtable.so",
+    "lib/python2.7/site-packages/MACS2/pileup_cmd.py",
+    "lib/python2.7/site-packages/MACS2/pileup_cmd.pyc",
+    "lib/python2.7/site-packages/MACS2/predictd_cmd.py",
+    "lib/python2.7/site-packages/MACS2/predictd_cmd.pyc",
+    "lib/python2.7/site-packages/MACS2/randsample_cmd.py",
+    "lib/python2.7/site-packages/MACS2/randsample_cmd.pyc",
+    "lib/python2.7/site-packages/MACS2/refinepeak_cmd.py",
+    "lib/python2.7/site-packages/MACS2/refinepeak_cmd.pyc"
+  ],
+  "fn": "macs2-2.1.4-py27r36h516909a_0.tar.bz2",
+  "license": "BSD",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/macs2-2.1.4-py27r36h516909a_0",
+    "type": 1
+  },
+  "md5": "8d354b3727148598f0e572fd9f830ecb",
+  "name": "macs2",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/macs2-2.1.4-py27r36h516909a_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/macs2",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "c0c654da708c2d9609f5427f718f67bcf18bbd23f54d59728398ec939b876dfb",
+        "sha256_in_prefix": "d071ebf84eff0652e17e21b2aefd29290c52521efe5b15bfd536f99aabe87688",
+        "size_in_bytes": 67541
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2-2.1.4.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2-2.1.4.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "f50c92e696e646405f82d4b3d006f8f66a6a15c78182ad6d633b5842284a8e35",
+        "sha256_in_prefix": "f50c92e696e646405f82d4b3d006f8f66a6a15c78182ad6d633b5842284a8e35",
+        "size_in_bytes": 1563
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2-2.1.4.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "3cac9fa635dbe4c037f9ce555f023220d136c4dd09c640350e955f349939df89",
+        "sha256_in_prefix": "3cac9fa635dbe4c037f9ce555f023220d136c4dd09c640350e955f349939df89",
+        "size_in_bytes": 21826
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2-2.1.4.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "b3cde1312778da481e43e0569ecf4e322fd1cc8c26cbda0f9c4311156456026e",
+        "sha256_in_prefix": "b3cde1312778da481e43e0569ecf4e322fd1cc8c26cbda0f9c4311156456026e",
+        "size_in_bytes": 3616
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2-2.1.4.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "eff0db875714a8bea5ee19024d4a7f13b4f772505402171ca3ff2da483df55d9",
+        "sha256_in_prefix": "eff0db875714a8bea5ee19024d4a7f13b4f772505402171ca3ff2da483df55d9",
+        "size_in_bytes": 105
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2-2.1.4.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "6cd8cc1100ab719869a762720c1120482a0c3d7347dfc838d737281abde05eb4",
+        "sha256_in_prefix": "6cd8cc1100ab719869a762720c1120482a0c3d7347dfc838d737281abde05eb4",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/Constants.py",
+        "path_type": "hardlink",
+        "sha256": "a99ebb8e87a6f1706df24d2e9197e94a5732147973d4bb0d89428c2fd6d70271",
+        "sha256_in_prefix": "a99ebb8e87a6f1706df24d2e9197e94a5732147973d4bb0d89428c2fd6d70271",
+        "size_in_bytes": 892
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/Constants.pyc",
+        "path_type": "hardlink",
+        "sha256": "1938a8a372adf6dd6fd2fe61c3ae463d7f38fc81080a4e5208ad29997bcc9e27",
+        "sha256_in_prefix": "1938a8a372adf6dd6fd2fe61c3ae463d7f38fc81080a4e5208ad29997bcc9e27",
+        "size_in_bytes": 996
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/IO/BedGraph.so",
+        "path_type": "hardlink",
+        "sha256": "37b0b3b6d2d9ec99c95eab440bdd1a3949e24499b83da6ca7b47275a81da7c7e",
+        "sha256_in_prefix": "37b0b3b6d2d9ec99c95eab440bdd1a3949e24499b83da6ca7b47275a81da7c7e",
+        "size_in_bytes": 421496
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/IO/BedGraphIO.so",
+        "path_type": "hardlink",
+        "sha256": "4e1fbdf387ff120dbb6a859c955306724bc55f6bd3a6843f3bad801f89829c17",
+        "sha256_in_prefix": "4e1fbdf387ff120dbb6a859c955306724bc55f6bd3a6843f3bad801f89829c17",
+        "size_in_bytes": 108016
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/IO/CallPeakUnit.so",
+        "path_type": "hardlink",
+        "sha256": "701967e2779a56927cfa8beaf679d1b7a5508c13ce73b7d5c3bcbe911ccb2bb3",
+        "sha256_in_prefix": "701967e2779a56927cfa8beaf679d1b7a5508c13ce73b7d5c3bcbe911ccb2bb3",
+        "size_in_bytes": 477944
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/IO/FixWidthTrack.so",
+        "path_type": "hardlink",
+        "sha256": "52ff2a94673bdfdeefcb267390e73aedd0eff76739ba98986317ef068cd4e421",
+        "sha256_in_prefix": "52ff2a94673bdfdeefcb267390e73aedd0eff76739ba98986317ef068cd4e421",
+        "size_in_bytes": 384152
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/IO/PairedEndTrack.so",
+        "path_type": "hardlink",
+        "sha256": "b966b93f019e9b51d5bb121e699338efc93d1d70c57d5c95f7c30233d88ecdfb",
+        "sha256_in_prefix": "b966b93f019e9b51d5bb121e699338efc93d1d70c57d5c95f7c30233d88ecdfb",
+        "size_in_bytes": 250528
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/IO/Parser.so",
+        "path_type": "hardlink",
+        "sha256": "2bbf17406ee88ff6a848aa44991a4cd6566f119d42afc756a185e93a8d08d7e5",
+        "sha256_in_prefix": "2bbf17406ee88ff6a848aa44991a4cd6566f119d42afc756a185e93a8d08d7e5",
+        "size_in_bytes": 437592
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/IO/PeakIO.so",
+        "path_type": "hardlink",
+        "sha256": "0e49f7455497429185c8cd193c337176689d704b6c1bfb4b6c694dfd8e96761d",
+        "sha256_in_prefix": "0e49f7455497429185c8cd193c337176689d704b6c1bfb4b6c694dfd8e96761d",
+        "size_in_bytes": 494552
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/IO/ScoreTrack.so",
+        "path_type": "hardlink",
+        "sha256": "1ea6c47fc5059602d3c61ed5293dd83f21ef20b7c083923c514306033b317d62",
+        "sha256_in_prefix": "1ea6c47fc5059602d3c61ed5293dd83f21ef20b7c083923c514306033b317d62",
+        "size_in_bytes": 627512
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/IO/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/IO/__init__.pyc",
+        "path_type": "hardlink",
+        "sha256": "5b2ea22d74a8fb23b29debb3f519d9626c78c8f8c5982453072aa7f7afc1f12f",
+        "sha256_in_prefix": "5b2ea22d74a8fb23b29debb3f519d9626c78c8f8c5982453072aa7f7afc1f12f",
+        "size_in_bytes": 135
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/OptValidator.py",
+        "path_type": "hardlink",
+        "sha256": "b175ce4d17c568deea5255c184e478b1f49edfdcb3b83766a1c02673e9e8280a",
+        "sha256_in_prefix": "b175ce4d17c568deea5255c184e478b1f49edfdcb3b83766a1c02673e9e8280a",
+        "size_in_bytes": 28427
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/OptValidator.pyc",
+        "path_type": "hardlink",
+        "sha256": "c4e68ac3523b27a6657225bfcfd8d6593253c904d18df9434bb5e41808c3a834",
+        "sha256_in_prefix": "c4e68ac3523b27a6657225bfcfd8d6593253c904d18df9434bb5e41808c3a834",
+        "size_in_bytes": 19361
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/OutputWriter.py",
+        "path_type": "hardlink",
+        "sha256": "5eeb954401f22d11f219be6394012565126a228e543ed475086202464993910b",
+        "sha256_in_prefix": "5eeb954401f22d11f219be6394012565126a228e543ed475086202464993910b",
+        "size_in_bytes": 10850
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/OutputWriter.pyc",
+        "path_type": "hardlink",
+        "sha256": "df104a0fa0ef15e37eb1992e10cdbfada829acbf4e5d800ae99e1db6aa4dfdcc",
+        "sha256_in_prefix": "df104a0fa0ef15e37eb1992e10cdbfada829acbf4e5d800ae99e1db6aa4dfdcc",
+        "size_in_bytes": 8447
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/PeakDetect.so",
+        "path_type": "hardlink",
+        "sha256": "7412c7d767b64907da4b6af3be8aab70f1630cfe2791f4c9a2915dd4cbc74f6d",
+        "sha256_in_prefix": "7412c7d767b64907da4b6af3be8aab70f1630cfe2791f4c9a2915dd4cbc74f6d",
+        "size_in_bytes": 154952
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/PeakModel.so",
+        "path_type": "hardlink",
+        "sha256": "714ad0584a28acb78c1b692b6536f398f4c2e23f5f351f1755e743ab66818aea",
+        "sha256_in_prefix": "714ad0584a28acb78c1b692b6536f398f4c2e23f5f351f1755e743ab66818aea",
+        "size_in_bytes": 251440
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/Pileup.so",
+        "path_type": "hardlink",
+        "sha256": "de8bc7e48e5487554028b1766c15d56db46635b10e09cc19d88d0861f02bed54",
+        "sha256_in_prefix": "de8bc7e48e5487554028b1766c15d56db46635b10e09cc19d88d0861f02bed54",
+        "size_in_bytes": 253568
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/Prob.so",
+        "path_type": "hardlink",
+        "sha256": "19e4482a6204db81d7c1276ae722bbcca7d165faca30e90e92aaf43677490846",
+        "sha256_in_prefix": "19e4482a6204db81d7c1276ae722bbcca7d165faca30e90e92aaf43677490846",
+        "size_in_bytes": 134232
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/Signal.so",
+        "path_type": "hardlink",
+        "sha256": "f4e27bb052b4d877e49a3568d3ecce6cdf49e7bf7d7d514c3d513e37f4ec56ac",
+        "sha256_in_prefix": "f4e27bb052b4d877e49a3568d3ecce6cdf49e7bf7d7d514c3d513e37f4ec56ac",
+        "size_in_bytes": 173848
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/Statistics.so",
+        "path_type": "hardlink",
+        "sha256": "07169183ed386c394fdb7ac53133421bedfc571fbc10db002e0380ec701a7c19",
+        "sha256_in_prefix": "07169183ed386c394fdb7ac53133421bedfc571fbc10db002e0380ec701a7c19",
+        "size_in_bytes": 113368
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "5e21548327e5d0c14af6e1c0407705af864480a43cba72ff3308816b2c2cf298",
+        "sha256_in_prefix": "5e21548327e5d0c14af6e1c0407705af864480a43cba72ff3308816b2c2cf298",
+        "size_in_bytes": 24
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/__init__.pyc",
+        "path_type": "hardlink",
+        "sha256": "8db883a02983db25297b4d627e544e69d6d8d1ed5b2452ee2eefd3597d50ae3c",
+        "sha256_in_prefix": "8db883a02983db25297b4d627e544e69d6d8d1ed5b2452ee2eefd3597d50ae3c",
+        "size_in_bytes": 172
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/bdgbroadcall_cmd.py",
+        "path_type": "hardlink",
+        "sha256": "0829fab213b8b0e61967899cc68685dd3c8c14d6356d60839c4045a2d209507f",
+        "sha256_in_prefix": "0829fab213b8b0e61967899cc68685dd3c8c14d6356d60839c4045a2d209507f",
+        "size_in_bytes": 2413
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/bdgbroadcall_cmd.pyc",
+        "path_type": "hardlink",
+        "sha256": "bcf1edfbd784aa7013d1b22480f93a4f586c7341272a084527b7368612f66de2",
+        "sha256_in_prefix": "bcf1edfbd784aa7013d1b22480f93a4f586c7341272a084527b7368612f66de2",
+        "size_in_bytes": 1904
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/bdgcmp_cmd.py",
+        "path_type": "hardlink",
+        "sha256": "eaf5a05617ef5755a7cce63bf7e4c2fe430bed860cb77109d947cbafc1b67379",
+        "sha256_in_prefix": "eaf5a05617ef5755a7cce63bf7e4c2fe430bed860cb77109d947cbafc1b67379",
+        "size_in_bytes": 3713
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/bdgcmp_cmd.pyc",
+        "path_type": "hardlink",
+        "sha256": "461aa612f41ddcc5904a077f24c3237bde4059019ce3c89509b80d0a8aa1bee7",
+        "sha256_in_prefix": "461aa612f41ddcc5904a077f24c3237bde4059019ce3c89509b80d0a8aa1bee7",
+        "size_in_bytes": 3080
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/bdgdiff_cmd.py",
+        "path_type": "hardlink",
+        "sha256": "8e53341aa3fa1d47c51a68f7752fafd1c5abc1f5d22c9af2b89e5862760fb89d",
+        "sha256_in_prefix": "8e53341aa3fa1d47c51a68f7752fafd1c5abc1f5d22c9af2b89e5862760fb89d",
+        "size_in_bytes": 4305
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/bdgdiff_cmd.pyc",
+        "path_type": "hardlink",
+        "sha256": "f2764c7776aeb31fdc4e76fc143c97e3959dc29c87d5be239128f899fb7451f0",
+        "sha256_in_prefix": "f2764c7776aeb31fdc4e76fc143c97e3959dc29c87d5be239128f899fb7451f0",
+        "size_in_bytes": 3320
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/bdgopt_cmd.py",
+        "path_type": "hardlink",
+        "sha256": "c56775b39dacd9ddb50730455bf65f145564ac61f80e5617c9dbb3ea608ee0ef",
+        "sha256_in_prefix": "c56775b39dacd9ddb50730455bf65f145564ac61f80e5617c9dbb3ea608ee0ef",
+        "size_in_bytes": 2457
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/bdgopt_cmd.pyc",
+        "path_type": "hardlink",
+        "sha256": "d1ac20b01ae190888cb0a8561a9c2f228a229f6fd68b5d5e785011b0f4cb7aad",
+        "sha256_in_prefix": "d1ac20b01ae190888cb0a8561a9c2f228a229f6fd68b5d5e785011b0f4cb7aad",
+        "size_in_bytes": 2669
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/bdgpeakcall_cmd.py",
+        "path_type": "hardlink",
+        "sha256": "bbc7ccf00b50cdee8e7ccdb8cce94b011173be3070919f550c143b2042ff73bb",
+        "sha256_in_prefix": "bbc7ccf00b50cdee8e7ccdb8cce94b011173be3070919f550c143b2042ff73bb",
+        "size_in_bytes": 2676
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/bdgpeakcall_cmd.pyc",
+        "path_type": "hardlink",
+        "sha256": "239135f42c28d7ae846da1c5377c32536b4aeed9c69b02f2a91917fe40710b4b",
+        "sha256_in_prefix": "239135f42c28d7ae846da1c5377c32536b4aeed9c69b02f2a91917fe40710b4b",
+        "size_in_bytes": 2310
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/callpeak_cmd.py",
+        "path_type": "hardlink",
+        "sha256": "6b6b313b41fb4cfe1f689cf8c55e77d0e43f3abac3268a0cb37b7329325e3e01",
+        "sha256_in_prefix": "6b6b313b41fb4cfe1f689cf8c55e77d0e43f3abac3268a0cb37b7329325e3e01",
+        "size_in_bytes": 19395
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/callpeak_cmd.pyc",
+        "path_type": "hardlink",
+        "sha256": "dbb5a3a6f4d94bea64bb7d776f932ea6aa6dac2f67f6ea298bf21fc0610916fb",
+        "sha256_in_prefix": "dbb5a3a6f4d94bea64bb7d776f932ea6aa6dac2f67f6ea298bf21fc0610916fb",
+        "size_in_bytes": 12110
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/cmbreps_cmd.py",
+        "path_type": "hardlink",
+        "sha256": "d03a909a83738e4930286fa8ed41798521f8b23d7e339a2f5f4ce0207ed5fce1",
+        "sha256_in_prefix": "d03a909a83738e4930286fa8ed41798521f8b23d7e339a2f5f4ce0207ed5fce1",
+        "size_in_bytes": 1945
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/cmbreps_cmd.pyc",
+        "path_type": "hardlink",
+        "sha256": "dfc2edc9fd7e2bb450e4c2c10c50d6adce062a3ab5045fc553b20e709464fbc0",
+        "sha256_in_prefix": "dfc2edc9fd7e2bb450e4c2c10c50d6adce062a3ab5045fc553b20e709464fbc0",
+        "size_in_bytes": 1989
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/diffpeak_cmd.py",
+        "path_type": "hardlink",
+        "sha256": "f06dda1cf28f32a866e81f9a38d90ead28cf4e76656268d5a2cb660fcacd22cb",
+        "sha256_in_prefix": "f06dda1cf28f32a866e81f9a38d90ead28cf4e76656268d5a2cb660fcacd22cb",
+        "size_in_bytes": 9715
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/diffpeak_cmd.pyc",
+        "path_type": "hardlink",
+        "sha256": "53593c2de9086cd6c275c52714c708615d8d8ec9ad06d62fcbadd7df7a8c1be5",
+        "sha256_in_prefix": "53593c2de9086cd6c275c52714c708615d8d8ec9ad06d62fcbadd7df7a8c1be5",
+        "size_in_bytes": 7519
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/filterdup_cmd.py",
+        "path_type": "hardlink",
+        "sha256": "134cc1a86c3e5c3034c1138bfc6596e6dc9e1b1d9ea1a406f4817df2b774f24f",
+        "sha256_in_prefix": "134cc1a86c3e5c3034c1138bfc6596e6dc9e1b1d9ea1a406f4817df2b774f24f",
+        "size_in_bytes": 4556
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/filterdup_cmd.pyc",
+        "path_type": "hardlink",
+        "sha256": "a474c41bd75d56f11d921ebb9a36fe03a9b2d1b14957c1d56711675ed272ca60",
+        "sha256_in_prefix": "a474c41bd75d56f11d921ebb9a36fe03a9b2d1b14957c1d56711675ed272ca60",
+        "size_in_bytes": 4141
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/hashtable.so",
+        "path_type": "hardlink",
+        "sha256": "98cb4075a8dfc71337f0c9beb5d9c8f06361b6e204e40136b9224890dd39128b",
+        "sha256_in_prefix": "98cb4075a8dfc71337f0c9beb5d9c8f06361b6e204e40136b9224890dd39128b",
+        "size_in_bytes": 129160
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/pileup_cmd.py",
+        "path_type": "hardlink",
+        "sha256": "048445fecf2b47ed4510d85b250b0fe8995d342bca7dfe5bd0071778c3993c4f",
+        "sha256_in_prefix": "048445fecf2b47ed4510d85b250b0fe8995d342bca7dfe5bd0071778c3993c4f",
+        "size_in_bytes": 3955
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/pileup_cmd.pyc",
+        "path_type": "hardlink",
+        "sha256": "8ebc8ff667e0817d47ef9d3d268ffe5d0ba60f7a0d169d7f0e5082006c6c9e8f",
+        "sha256_in_prefix": "8ebc8ff667e0817d47ef9d3d268ffe5d0ba60f7a0d169d7f0e5082006c6c9e8f",
+        "size_in_bytes": 3366
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/predictd_cmd.py",
+        "path_type": "hardlink",
+        "sha256": "6d07b705589d040c818d632c40ba3833896560846975984862b9abcaf24e77fc",
+        "sha256_in_prefix": "6d07b705589d040c818d632c40ba3833896560846975984862b9abcaf24e77fc",
+        "size_in_bytes": 3178
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/predictd_cmd.pyc",
+        "path_type": "hardlink",
+        "sha256": "bf8adde364e1ea34eb6e84907bdd4bb8d4a62af608ec41f6456f4e5f1bc6a273",
+        "sha256_in_prefix": "bf8adde364e1ea34eb6e84907bdd4bb8d4a62af608ec41f6456f4e5f1bc6a273",
+        "size_in_bytes": 2958
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/randsample_cmd.py",
+        "path_type": "hardlink",
+        "sha256": "e7180ed20887d94854da1c6bd50e298ef523bb3011a5166224711e2cdc841476",
+        "sha256_in_prefix": "e7180ed20887d94854da1c6bd50e298ef523bb3011a5166224711e2cdc841476",
+        "size_in_bytes": 3888
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/randsample_cmd.pyc",
+        "path_type": "hardlink",
+        "sha256": "61716ce1ae94ed7540137b9addc95bf1df8f2b41f9ce09fbbfb9bbc2b2f03eb0",
+        "sha256_in_prefix": "61716ce1ae94ed7540137b9addc95bf1df8f2b41f9ce09fbbfb9bbc2b2f03eb0",
+        "size_in_bytes": 3487
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/refinepeak_cmd.py",
+        "path_type": "hardlink",
+        "sha256": "a3ac36b08f281553a32671c45932d0ec14b9ef1838b341eef528b3d7e5e2a76d",
+        "sha256_in_prefix": "a3ac36b08f281553a32671c45932d0ec14b9ef1838b341eef528b3d7e5e2a76d",
+        "size_in_bytes": 6788
+      },
+      {
+        "_path": "lib/python2.7/site-packages/MACS2/refinepeak_cmd.pyc",
+        "path_type": "hardlink",
+        "sha256": "9a7b101361eb7df0197fdb03d8b9f503ff6037614a8ed9e65c85431d34b91898",
+        "sha256_in_prefix": "9a7b101361eb7df0197fdb03d8b9f503ff6037614a8ed9e65c85431d34b91898",
+        "size_in_bytes": 4416
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "macs2",
+  "sha256": "fae1e32b9c9e6c633eba36aab21f42c42de883c4ecc10d3f448b10df472d101f",
+  "size": 1523159,
+  "subdir": "linux-64",
+  "timestamp": 1569902600484,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/linux-64/macs2-2.1.4-py27r36h516909a_0.tar.bz2",
+  "version": "2.1.4"
+}

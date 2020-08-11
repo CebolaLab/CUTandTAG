@@ -1,0 +1,10 @@
+rhome=/home/hm1412/anaconda3/envs/CUTandTAG/lib/R
+rlibdir=${rhome}/lib
+rincludedir=/home/hm1412/anaconda3/envs/CUTandTAG/lib/R/include
+
+Name: libR
+Description: R as a library
+Version: 3.6.1
+Libs: -Wl,--export-dynamic -fopenmp  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L${rlibdir} -lR
+Cflags: -I${rincludedir} -I${rincludedir}
+Libs.private:

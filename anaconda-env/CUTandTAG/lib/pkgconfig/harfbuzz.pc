@@ -1,0 +1,13 @@
+prefix=/home/hm1412/anaconda3/envs/CUTandTAG
+exec_prefix=/home/hm1412/anaconda3/envs/CUTandTAG
+libdir=/home/hm1412/anaconda3/envs/CUTandTAG/lib
+includedir=/home/hm1412/anaconda3/envs/CUTandTAG/include
+
+Name: harfbuzz
+Description: HarfBuzz text shaping library
+Version: 2.4.0
+
+Libs: -L${libdir} -lharfbuzz
+Libs.private: -lm    
+Requires.private: glib-2.0 >= 2.19.1 graphite2 >= 1.2.0
+Cflags: -I${includedir}/harfbuzz

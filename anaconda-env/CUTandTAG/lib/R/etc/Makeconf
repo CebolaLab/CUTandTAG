@@ -1,0 +1,197 @@
+# etc/Makeconf.  Generated from Makeconf.in by configure.
+#
+# ${R_HOME}/etc/Makeconf
+#
+# R was configured using the following call
+# (not including env. vars and site configuration)
+# configure  '--prefix=/home/hm1412/anaconda3/envs/CUTandTAG' '--host=x86_64-conda_cos6-linux-gnu' '--build=x86_64-conda_cos6-linux-gnu' '--enable-shared' '--enable-R-shlib' '--enable-BLAS-shlib' '--disable-prebuilt-html' '--enable-memory-profiling' '--with-tk-config=/home/hm1412/anaconda3/envs/CUTandTAG/lib/tkConfig.sh' '--with-tcl-config=/home/hm1412/anaconda3/envs/CUTandTAG/lib/tclConfig.sh' '--with-x' '--with-pic' '--with-cairo' '--with-readline' '--with-recommended-packages=no' '--without-libintl-prefix' 'LIBnn=lib' 'build_alias=x86_64-conda_cos6-linux-gnu' 'host_alias=x86_64-conda_cos6-linux-gnu' 'PKG_CONFIG_PATH=/home/hm1412/anaconda3/envs/CUTandTAG/lib/pkgconfig' 'CC=x86_64-conda_cos6-linux-gnu-cc' 'CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -fdebug-prefix-map=/tmp/build/80754af9/r-base_1589917437985/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/home/hm1412/anaconda3/envs/CUTandTAG=/usr/local/src/conda-prefix' 'LDFLAGS=-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib' 'CPPFLAGS=-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -I/home/hm1412/anaconda3/envs/CUTandTAG/include -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib' 'CPP=/tmp/build/80754af9/r-base_1589917437985/_build_env/bin/x86_64-conda_cos6-linux-gnu-cpp' 'FC=x86_64-conda_cos6-linux-gnu-gfortran' 'CXX=x86_64-conda_cos6-linux-gnu-c++' 'CXXFLAGS=-fvisibility-inlines-hidden  -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -fdebug-prefix-map=/tmp/build/80754af9/r-base_1589917437985/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/home/hm1412/anaconda3/envs/CUTandTAG=/usr/local/src/conda-prefix' 'OBJC=x86_64-conda_cos6-linux-gnu-cc'
+
+## This fails if it contains spaces, or if it is quoted
+include $(R_SHARE_DIR)/make/vars.mk
+
+AR = x86_64-conda_cos6-linux-gnu-ar
+BLAS_LIBS = -L"$(R_HOME)/lib$(R_ARCH)" -lRblas
+C_VISIBILITY = -fvisibility=hidden
+CC = x86_64-conda_cos6-linux-gnu-cc
+CFLAGS = -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -fdebug-prefix-map=/tmp/build/80754af9/r-base_1589917437985/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/home/hm1412/anaconda3/envs/CUTandTAG=/usr/local/src/conda-prefix $(LTO)
+CPICFLAGS = -fpic
+CPPFLAGS = -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -I/home/hm1412/anaconda3/envs/CUTandTAG/include -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib
+CXX = x86_64-conda_cos6-linux-gnu-c++ -std=gnu++11
+CXXCPP = $(CXX) -E
+CXXFLAGS = -fvisibility-inlines-hidden  -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -fdebug-prefix-map=/tmp/build/80754af9/r-base_1589917437985/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/home/hm1412/anaconda3/envs/CUTandTAG=/usr/local/src/conda-prefix $(LTO)
+CXXPICFLAGS = -fpic
+CXX98 = x86_64-conda_cos6-linux-gnu-c++
+CXX98FLAGS = -fvisibility-inlines-hidden  -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -fdebug-prefix-map=/tmp/build/80754af9/r-base_1589917437985/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/home/hm1412/anaconda3/envs/CUTandTAG=/usr/local/src/conda-prefix $(LTO)
+CXX98PICFLAGS = -fpic
+CXX98STD = -std=gnu++98
+CXX11 = x86_64-conda_cos6-linux-gnu-c++
+CXX11FLAGS = -fvisibility-inlines-hidden  -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -fdebug-prefix-map=/tmp/build/80754af9/r-base_1589917437985/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/home/hm1412/anaconda3/envs/CUTandTAG=/usr/local/src/conda-prefix $(LTO)
+CXX11PICFLAGS = -fpic
+CXX11STD = -std=gnu++11
+CXX14 = x86_64-conda_cos6-linux-gnu-c++
+CXX14FLAGS = -fvisibility-inlines-hidden  -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -fdebug-prefix-map=/tmp/build/80754af9/r-base_1589917437985/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/home/hm1412/anaconda3/envs/CUTandTAG=/usr/local/src/conda-prefix $(LTO)
+CXX14PICFLAGS = -fpic
+CXX14STD = -std=gnu++14
+CXX17 = x86_64-conda_cos6-linux-gnu-c++
+CXX17FLAGS = -fvisibility-inlines-hidden  -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -fdebug-prefix-map=/tmp/build/80754af9/r-base_1589917437985/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/home/hm1412/anaconda3/envs/CUTandTAG=/usr/local/src/conda-prefix $(LTO)
+CXX17PICFLAGS = -fpic
+CXX17STD = -std=gnu++17
+CXX_VISIBILITY = -fvisibility=hidden
+DYLIB_EXT = .so
+DYLIB_LD = $(CC)
+DYLIB_LDFLAGS = -shared -fopenmp# $(CFLAGS) $(CPICFLAGS)
+DYLIB_LINK = $(DYLIB_LD) $(DYLIB_LDFLAGS) $(LDFLAGS)
+ECHO = echo
+ECHO_C = 
+ECHO_N = -n
+ECHO_T = 
+F_VISIBILITY = -fvisibility=hidden
+## FC is the compiler used for all Fortran as from R 3.6.0
+FC = x86_64-conda_cos6-linux-gnu-gfortran
+FCFLAGS = -fopenmp -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -fdebug-prefix-map=/tmp/build/80754af9/r-base_1589917437985/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/home/hm1412/anaconda3/envs/CUTandTAG=/usr/local/src/conda-prefix $(LTO)
+## additional libs needed when linking with $(FC), e.g. on some Oracle compilers
+FCLIBS_XTRA = 
+FFLAGS = -fopenmp -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -fdebug-prefix-map=/tmp/build/80754af9/r-base_1589917437985/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/home/hm1412/anaconda3/envs/CUTandTAG=/usr/local/src/conda-prefix $(LTO)
+FLIBS =  -lgfortran -lm -lgomp -lquadmath -lpthread
+FPICFLAGS = -fpic
+FOUNDATION_CPPFLAGS = 
+FOUNDATION_LIBS = 
+JAR = /rds/general/user/hm1412/home/anaconda3/bin/jar
+JAVA = /rds/general/user/hm1412/home/anaconda3/bin/java
+JAVAC = /rds/general/user/hm1412/home/anaconda3/bin/javac
+JAVAH = /rds/general/user/hm1412/home/anaconda3/bin/javah
+## JAVA_HOME might be used in the next three.  
+## They are for packages 'JavaGD' and 'rJava'
+JAVA_HOME = /rdsgpfs/general/user/hm1412/home/anaconda3/jre
+JAVA_CPPFLAGS = -I$(JAVA_HOME)/../include -I$(JAVA_HOME)/../include/linux
+JAVA_LIBS = -L$(JAVA_HOME)/lib/amd64/server -ljvm
+JAVA_LD_LIBRARY_PATH = $(JAVA_HOME)/lib/amd64/server
+LAPACK_LIBS = -L"$(R_HOME)/lib$(R_ARCH)" -lRlapack
+LDFLAGS = -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib
+## we only need this is if it is external, as otherwise link to R
+LIBINTL= 
+LIBM = -lm
+LIBR0 = -L"$(R_HOME)/lib$(R_ARCH)"
+LIBR1 = -lR
+LIBR = -L"$(R_HOME)/lib$(R_ARCH)" -lR
+LIBS =  -lpcre -llzma -lbz2 -lz -lrt -ldl -lm -licuuc -licui18n
+## needed by R CMD config
+LIBnn = lib
+LIBTOOL = $(SHELL) "$(R_HOME)/bin/libtool"
+LTO = 
+## needed to build applications linking to static libR
+MAIN_LD = $(CC)
+MAIN_LDFLAGS = -Wl,--export-dynamic -fopenmp
+RPATH_LDFLAGS = -Wl,-rpath,$(abs_top_builddir)/lib -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib
+MAIN_LINK = $(MAIN_LD) $(MAIN_LDFLAGS) $(LDFLAGS) $(RPATH_LDFLAGS)
+MKINSTALLDIRS = "$(R_HOME)/bin/mkinstalldirs"
+OBJC = x86_64-conda_cos6-linux-gnu-cc
+OBJCFLAGS = -g -O2 -fobjc-exceptions $(LTO)
+OBJC_LIBS =  
+OBJCXX = 
+R_ARCH = 
+RANLIB = x86_64-conda_cos6-linux-gnu-ranlib
+SAFE_FFLAGS = -fopenmp -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -fdebug-prefix-map=/tmp/build/80754af9/r-base_1589917437985/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/home/hm1412/anaconda3/envs/CUTandTAG=/usr/local/src/conda-prefix -msse2 -mfpmath=sse
+SED = /bin/sed
+SHELL = /bin/sh
+SHLIB_CFLAGS = 
+SHLIB_CXXFLAGS = 
+SHLIB_CXXLD = $(CXX)
+SHLIB_CXXLDFLAGS = -shared
+SHLIB_CXX98LD = $(CXX98) $(CXX98STD)
+SHLIB_CXX98LDFLAGS = -shared
+SHLIB_CXX11LD = $(CXX11) $(CXX11STD)
+SHLIB_CXX11LDFLAGS = -shared
+SHLIB_CXX14LD = $(CXX14) $(CXX14STD)
+SHLIB_CXX14LDFLAGS = -shared
+SHLIB_CXX17LD = $(CXX17) $(CXX17STD)
+SHLIB_CXX17LDFLAGS = -shared
+SHLIB_EXT = .so
+SHLIB_FFLAGS = 
+SHLIB_LD = $(CC)
+SHLIB_LDFLAGS = -shared# $(CFLAGS) $(CPICFLAGS)
+SHLIB_LIBADD = 
+## We want to ensure libR is picked up from $(R_HOME)/lib
+## before e.g. /usr/local/lib if a version is already installed.
+SHLIB_LINK = $(SHLIB_LD) $(SHLIB_LDFLAGS) $(LIBR0) $(LDFLAGS)
+SHLIB_OPENMP_CFLAGS = -fopenmp
+SHLIB_OPENMP_CXXFLAGS = -fopenmp
+SHLIB_OPENMP_FFLAGS = 
+STRIP_STATIC_LIB = x86_64-conda_cos6-linux-gnu-strip --strip-debug
+STRIP_SHARED_LIB = x86_64-conda_cos6-linux-gnu-strip --strip-unneeded
+TCLTK_CPPFLAGS = -I/home/hm1412/anaconda3/envs/CUTandTAG/include -I/home/hm1412/anaconda3/envs/CUTandTAG/include 
+TCLTK_LIBS = -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -ltcl8.6 -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -ltk8.6 -lX11
+YACC = yacc
+
+## Legacy settings:  no longer used by R as of 3.6.0
+## Setting FC often sets F77 (on Solaris make even if set)
+## so must follow FC in this file.
+F77 = x86_64-conda_cos6-linux-gnu-gfortran
+FCPICFLAGS = -fpic
+F77_VISIBILITY = -fvisibility=hidden
+SHLIB_FCLD = $(FC)
+SHLIB_FCLDFLAGS = -shared
+SHLIB_OPENMP_FCFLAGS = 
+
+
+## for linking to libR.a
+STATIC_LIBR = # -Wl,--whole-archive "$(R_HOME)/lib$(R_ARCH)/libR.a" -Wl,--no-whole-archive $(BLAS_LIBS) $(FLIBS)  $(LIBINTL) -lreadline  $(LIBS)
+
+## These are recorded as macros for legacy use in packages
+## set on AIX, formerly for old glibc (-D__NO_MATH_INLINES)
+R_XTRA_CFLAGS = 
+##  was formerly set on HP-UX
+R_XTRA_CPPFLAGS =  -I"$(R_INCLUDE_DIR)" -DNDEBUG
+## currently unset
+R_XTRA_CXXFLAGS = 
+## used for gfortran in R > 3.6.0
+R_XTRA_FFLAGS = -fno-optimize-sibling-calls
+
+## SHLIB_CFLAGS SHLIB_CXXFLAGS SHLIB_FFLAGS are apparently currently unused
+## SHLIB_CXXFLAGS is undocumented, there is no SHLIB_FCFLAGS
+ALL_CFLAGS =  $(PKG_CFLAGS) $(CPICFLAGS) $(SHLIB_CFLAGS) $(CFLAGS)
+ALL_CPPFLAGS =  -I"$(R_INCLUDE_DIR)" -DNDEBUG $(PKG_CPPFLAGS) $(CLINK_CPPFLAGS) $(CPPFLAGS)
+ALL_CXXFLAGS =  $(PKG_CXXFLAGS) $(CXXPICFLAGS) $(SHLIB_CXXFLAGS) $(CXXFLAGS)
+ALL_OBJCFLAGS = $(PKG_OBJCFLAGS) $(CPICFLAGS) $(SHLIB_CFLAGS) $(OBJCFLAGS)
+ALL_OBJCXXFLAGS = $(PKG_OBJCXXFLAGS) $(CXXPICFLAGS) $(SHLIB_CXXFLAGS) $(OBJCXXFLAGS)
+ALL_FFLAGS = -fno-optimize-sibling-calls $(PKG_FFLAGS) $(FPICFLAGS) $(SHLIB_FFLAGS) $(FFLAGS)
+## can be overridden by R CMD SHLIB
+P_FCFLAGS = $(PKG_FFLAGS)
+ALL_FCFLAGS = -fno-optimize-sibling-calls $(P_FCFLAGS) $(FPICFLAGS) $(SHLIB_FFLAGS) $(FCFLAGS)
+## LIBR here as a couple of packages use this without SHLIB_LINK
+ALL_LIBS = $(PKG_LIBS) $(SHLIB_LIBADD) $(LIBR)# $(LIBINTL)
+
+.SUFFIXES:
+.SUFFIXES: .c .cc .cpp .d .f .f90 .f95 .m .mm .M .o
+
+.c.o:
+	$(CC) $(ALL_CPPFLAGS) $(ALL_CFLAGS) -c $< -o $@
+.c.d:
+	@echo "making $@ from $<"
+	@$(CC) -MM $(ALL_CPPFLAGS) $< > $@
+.cc.o:
+	$(CXX) $(ALL_CPPFLAGS) $(ALL_CXXFLAGS) -c $< -o $@
+.cpp.o:
+	$(CXX) $(ALL_CPPFLAGS) $(ALL_CXXFLAGS) -c $< -o $@
+.cc.d:
+	@echo "making $@ from $<"
+	@$(CXX) -M $(ALL_CPPFLAGS) $< > $@
+.cpp.d:
+	@echo "making $@ from $<"
+	@$(CXX) -M $(ALL_CPPFLAGS) $< > $@
+.m.o:
+	$(OBJC) $(ALL_CPPFLAGS) $(ALL_OBJCFLAGS) -c $< -o $@
+.m.d:
+	@echo "making $@ from $<"
+	@x86_64-conda_cos6-linux-gnu-cc -MM $(ALL_CPPFLAGS) $< > $@
+.mm.o:
+	$(OBJCXX) $(ALL_CPPFLAGS) $(ALL_OBJCXXFLAGS) -c $< -o $@
+.M.o:
+	$(OBJCXX) $(ALL_CPPFLAGS) $(ALL_OBJCXXFLAGS) -c $< -o $@
+.f.o:
+	$(FC) $(ALL_FFLAGS) -c $< -o $@
+## @FCFLAGS_f9x@ are flags needed to recognise the extensions
+.f95.o:
+	$(FC) $(ALL_FCFLAGS) -c  $< -o $@
+.f90.o:
+	$(FC) $(ALL_FCFLAGS) -c  $< -o $@

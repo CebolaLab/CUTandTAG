@@ -1,0 +1,11 @@
+Package: tcltk
+Version: 3.6.1
+Priority: base
+Title: Tcl/Tk Interface
+Author: R Core Team
+Maintainer: R Core Team <R-core@r-project.org>
+Description: Interface and language bindings to Tcl/Tk GUI elements.
+License: Part of R 3.6.1
+Imports: utils
+NeedsCompilation: yes
+Built: R 3.6.1; x86_64-conda_cos6-linux-gnu; 2020-05-19 19:48:39 UTC; unix

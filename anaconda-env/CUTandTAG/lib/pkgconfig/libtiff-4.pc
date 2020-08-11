@@ -1,0 +1,11 @@
+prefix=/home/hm1412/anaconda3/envs/CUTandTAG
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libtiff
+Description:  Tag Image File Format (TIFF) library.
+Version: 4.1.0
+Libs: -L${libdir} -ltiff
+Libs.private: -lzstd -llzma -ljpeg -lz -lm 
+Cflags: -I${includedir}

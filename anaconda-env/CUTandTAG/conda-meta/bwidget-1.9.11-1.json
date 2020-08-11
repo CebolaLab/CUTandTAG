@@ -1,0 +1,712 @@
+{
+  "build": "1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "tk"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/bwidget-1.9.11-1",
+  "features": "",
+  "files": [
+    "lib/tcl8.6/bwidget/CHANGES.txt",
+    "lib/tcl8.6/bwidget/LICENSE.txt",
+    "lib/tcl8.6/bwidget/README.txt",
+    "lib/tcl8.6/bwidget/arrow.tcl",
+    "lib/tcl8.6/bwidget/bitmap.tcl",
+    "lib/tcl8.6/bwidget/button.tcl",
+    "lib/tcl8.6/bwidget/buttonbox.tcl",
+    "lib/tcl8.6/bwidget/color.tcl",
+    "lib/tcl8.6/bwidget/combobox.tcl",
+    "lib/tcl8.6/bwidget/conda_build.sh",
+    "lib/tcl8.6/bwidget/dialog.tcl",
+    "lib/tcl8.6/bwidget/dragsite.tcl",
+    "lib/tcl8.6/bwidget/dropsite.tcl",
+    "lib/tcl8.6/bwidget/dynhelp.tcl",
+    "lib/tcl8.6/bwidget/entry.tcl",
+    "lib/tcl8.6/bwidget/font.tcl",
+    "lib/tcl8.6/bwidget/images/bold.gif",
+    "lib/tcl8.6/bwidget/images/copy.gif",
+    "lib/tcl8.6/bwidget/images/cut.gif",
+    "lib/tcl8.6/bwidget/images/dragfile.gif",
+    "lib/tcl8.6/bwidget/images/dragicon.gif",
+    "lib/tcl8.6/bwidget/images/error.gif",
+    "lib/tcl8.6/bwidget/images/file.gif",
+    "lib/tcl8.6/bwidget/images/folder.gif",
+    "lib/tcl8.6/bwidget/images/hourglass.gif",
+    "lib/tcl8.6/bwidget/images/info.gif",
+    "lib/tcl8.6/bwidget/images/italic.gif",
+    "lib/tcl8.6/bwidget/images/minus.xbm",
+    "lib/tcl8.6/bwidget/images/new.gif",
+    "lib/tcl8.6/bwidget/images/opcopy.xbm",
+    "lib/tcl8.6/bwidget/images/open.gif",
+    "lib/tcl8.6/bwidget/images/openfold.gif",
+    "lib/tcl8.6/bwidget/images/oplink.xbm",
+    "lib/tcl8.6/bwidget/images/opmove.xbm",
+    "lib/tcl8.6/bwidget/images/overstrike.gif",
+    "lib/tcl8.6/bwidget/images/palette.gif",
+    "lib/tcl8.6/bwidget/images/passwd.gif",
+    "lib/tcl8.6/bwidget/images/paste.gif",
+    "lib/tcl8.6/bwidget/images/plus.xbm",
+    "lib/tcl8.6/bwidget/images/print.gif",
+    "lib/tcl8.6/bwidget/images/question.gif",
+    "lib/tcl8.6/bwidget/images/redo.gif",
+    "lib/tcl8.6/bwidget/images/save.gif",
+    "lib/tcl8.6/bwidget/images/target.xbm",
+    "lib/tcl8.6/bwidget/images/underline.gif",
+    "lib/tcl8.6/bwidget/images/undo.gif",
+    "lib/tcl8.6/bwidget/images/warning.gif",
+    "lib/tcl8.6/bwidget/init.tcl",
+    "lib/tcl8.6/bwidget/label.tcl",
+    "lib/tcl8.6/bwidget/labelentry.tcl",
+    "lib/tcl8.6/bwidget/labelframe.tcl",
+    "lib/tcl8.6/bwidget/lang/da.rc",
+    "lib/tcl8.6/bwidget/lang/de.rc",
+    "lib/tcl8.6/bwidget/lang/en.rc",
+    "lib/tcl8.6/bwidget/lang/es.rc",
+    "lib/tcl8.6/bwidget/lang/fr.rc",
+    "lib/tcl8.6/bwidget/lang/hu.rc",
+    "lib/tcl8.6/bwidget/lang/nl.rc",
+    "lib/tcl8.6/bwidget/lang/no.rc",
+    "lib/tcl8.6/bwidget/lang/pl.rc",
+    "lib/tcl8.6/bwidget/listbox.tcl",
+    "lib/tcl8.6/bwidget/mainframe.tcl",
+    "lib/tcl8.6/bwidget/messagedlg.tcl",
+    "lib/tcl8.6/bwidget/notebook.tcl",
+    "lib/tcl8.6/bwidget/pagesmgr.tcl",
+    "lib/tcl8.6/bwidget/panedw.tcl",
+    "lib/tcl8.6/bwidget/panelframe.tcl",
+    "lib/tcl8.6/bwidget/passwddlg.tcl",
+    "lib/tcl8.6/bwidget/pkgIndex.tcl",
+    "lib/tcl8.6/bwidget/pkgIndex.tcl~",
+    "lib/tcl8.6/bwidget/progressbar.tcl",
+    "lib/tcl8.6/bwidget/progressdlg.tcl",
+    "lib/tcl8.6/bwidget/scrollframe.tcl",
+    "lib/tcl8.6/bwidget/scrollview.tcl",
+    "lib/tcl8.6/bwidget/scrollw.tcl",
+    "lib/tcl8.6/bwidget/separator.tcl",
+    "lib/tcl8.6/bwidget/spinbox.tcl",
+    "lib/tcl8.6/bwidget/statusbar.tcl",
+    "lib/tcl8.6/bwidget/titleframe.tcl",
+    "lib/tcl8.6/bwidget/tree.tcl",
+    "lib/tcl8.6/bwidget/utils.tcl",
+    "lib/tcl8.6/bwidget/widget.tcl",
+    "lib/tcl8.6/bwidget/wizard.tcl",
+    "lib/tcl8.6/bwidget/xpm2image.tcl"
+  ],
+  "fn": "bwidget-1.9.11-1.conda",
+  "legacy_bz2_md5": "b2558ad07e6960062429366daaaf53ca",
+  "legacy_bz2_size": 115322,
+  "license": "Tcl/Tk",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/bwidget-1.9.11-1",
+    "type": 1
+  },
+  "md5": "476c833c6e38d0b59cd4b7484686c600",
+  "name": "bwidget",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/bwidget-1.9.11-1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/tcl8.6/bwidget/CHANGES.txt",
+        "path_type": "hardlink",
+        "sha256": "61755d6820f94fe17c48ed4fcce6abb9b710dd65b0ab27ed26da317d25497842",
+        "sha256_in_prefix": "61755d6820f94fe17c48ed4fcce6abb9b710dd65b0ab27ed26da317d25497842",
+        "size_in_bytes": 8086
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "85a1ea733ced76b106d944fed020545a7e6b106a6c5dadaa84e1fddfaa50846d",
+        "sha256_in_prefix": "85a1ea733ced76b106d944fed020545a7e6b106a6c5dadaa84e1fddfaa50846d",
+        "size_in_bytes": 2223
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/README.txt",
+        "path_type": "hardlink",
+        "sha256": "05abd9f451f31cfea79edf789f6f24be01e0b40c5bb80b38ce5f86fde0b45eb0",
+        "sha256_in_prefix": "05abd9f451f31cfea79edf789f6f24be01e0b40c5bb80b38ce5f86fde0b45eb0",
+        "size_in_bytes": 4565
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/arrow.tcl",
+        "path_type": "hardlink",
+        "sha256": "4ebb44725355f539ca630ef1b093cddc670a8ad4b91df3e31d980b8e0104cbc1",
+        "sha256_in_prefix": "4ebb44725355f539ca630ef1b093cddc670a8ad4b91df3e31d980b8e0104cbc1",
+        "size_in_bytes": 21383
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/bitmap.tcl",
+        "path_type": "hardlink",
+        "sha256": "086e86032e73b61a7f22575f470f573ec8d201b476ac2819b718f99da6c586b3",
+        "sha256_in_prefix": "086e86032e73b61a7f22575f470f573ec8d201b476ac2819b718f99da6c586b3",
+        "size_in_bytes": 2663
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/button.tcl",
+        "path_type": "hardlink",
+        "sha256": "d05a54e3cdd1e1561f1c535c2895929f83f8017d8835ce777192ff8a7129f16a",
+        "sha256_in_prefix": "d05a54e3cdd1e1561f1c535c2895929f83f8017d8835ce777192ff8a7129f16a",
+        "size_in_bytes": 13620
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/buttonbox.tcl",
+        "path_type": "hardlink",
+        "sha256": "c2d9090beae80274c79ddbbe46c71cceb0ea9e5623e0524d6bb28978b4f8dc29",
+        "sha256_in_prefix": "c2d9090beae80274c79ddbbe46c71cceb0ea9e5623e0524d6bb28978b4f8dc29",
+        "size_in_bytes": 12566
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/color.tcl",
+        "path_type": "hardlink",
+        "sha256": "aa59928e4ea146d65cef53df7e32a04a1e81420ba3f03de5e5af0e7d3c4d3be6",
+        "sha256_in_prefix": "aa59928e4ea146d65cef53df7e32a04a1e81420ba3f03de5e5af0e7d3c4d3be6",
+        "size_in_bytes": 14690
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/combobox.tcl",
+        "path_type": "hardlink",
+        "sha256": "940dcc03072e983c0b288126924f59c5c5e695a173cf9abc5b818a80b70fefa6",
+        "sha256_in_prefix": "940dcc03072e983c0b288126924f59c5c5e695a173cf9abc5b818a80b70fefa6",
+        "size_in_bytes": 30389
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/conda_build.sh",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "5c1ca4cfa25dc4772ead67be804f15cf28770414ac04a9c422b8a657f45c8030",
+        "sha256_in_prefix": "e71f71f6f43021fd2d7a53477641d53d69f8fe1de303cd4036cbf7d90a6bc8e4",
+        "size_in_bytes": 4289
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/dialog.tcl",
+        "path_type": "hardlink",
+        "sha256": "b1dc507a27a5ad0e341e396423dea380145587e7f3eb38c920a8b291e08d7347",
+        "sha256_in_prefix": "b1dc507a27a5ad0e341e396423dea380145587e7f3eb38c920a8b291e08d7347",
+        "size_in_bytes": 11343
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/dragsite.tcl",
+        "path_type": "hardlink",
+        "sha256": "ea734757f9b5cb106bb55267a10f424db32b02fde3a09387f10a37ce8c243486",
+        "sha256_in_prefix": "ea734757f9b5cb106bb55267a10f424db32b02fde3a09387f10a37ce8c243486",
+        "size_in_bytes": 6531
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/dropsite.tcl",
+        "path_type": "hardlink",
+        "sha256": "def620bccd823ed09e511aa5e3098b9e047db11419e917b1e3c4a89b463cd6c8",
+        "sha256_in_prefix": "def620bccd823ed09e511aa5e3098b9e047db11419e917b1e3c4a89b463cd6c8",
+        "size_in_bytes": 15791
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/dynhelp.tcl",
+        "path_type": "hardlink",
+        "sha256": "ddd98cc1b8c6ec7edc8f6a66a991013063d74a5c3f10d474d4966793993d05b4",
+        "sha256_in_prefix": "ddd98cc1b8c6ec7edc8f6a66a991013063d74a5c3f10d474d4966793993d05b4",
+        "size_in_bytes": 24040
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/entry.tcl",
+        "path_type": "hardlink",
+        "sha256": "7a08184d8f1786e51491d7e56c9c9a28bc2bb94c06d1fe2c5e6f85ccb4850e77",
+        "sha256_in_prefix": "7a08184d8f1786e51491d7e56c9c9a28bc2bb94c06d1fe2c5e6f85ccb4850e77",
+        "size_in_bytes": 18276
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/font.tcl",
+        "path_type": "hardlink",
+        "sha256": "e1ef63eb5706db96fa9c20b3ba60af6d60671328672813fa541bcdf18859b2db",
+        "sha256_in_prefix": "e1ef63eb5706db96fa9c20b3ba60af6d60671328672813fa541bcdf18859b2db",
+        "size_in_bytes": 18845
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/bold.gif",
+        "path_type": "hardlink",
+        "sha256": "92143bdd4fb0398b2d44c4d089c2f9ca0657e0af777da6a1e5b3377abc9912f4",
+        "sha256_in_prefix": "92143bdd4fb0398b2d44c4d089c2f9ca0657e0af777da6a1e5b3377abc9912f4",
+        "size_in_bytes": 118
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/copy.gif",
+        "path_type": "hardlink",
+        "sha256": "bb24d66fade76cc905c70d5bc13f2e2eb8aaab8e032784ac2bed6b83452d72e8",
+        "sha256_in_prefix": "bb24d66fade76cc905c70d5bc13f2e2eb8aaab8e032784ac2bed6b83452d72e8",
+        "size_in_bytes": 145
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/cut.gif",
+        "path_type": "hardlink",
+        "sha256": "cf041de3dc90ec01f814177f65a294cc439a4db1e06df4d71b61690c5bf722c4",
+        "sha256_in_prefix": "cf041de3dc90ec01f814177f65a294cc439a4db1e06df4d71b61690c5bf722c4",
+        "size_in_bytes": 130
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/dragfile.gif",
+        "path_type": "hardlink",
+        "sha256": "9a80a12c9b911c95718a946cd4cd11644c122f022a6715a0f3f1efec9d8b274a",
+        "sha256_in_prefix": "9a80a12c9b911c95718a946cd4cd11644c122f022a6715a0f3f1efec9d8b274a",
+        "size_in_bytes": 949
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/dragicon.gif",
+        "path_type": "hardlink",
+        "sha256": "6ab19693641562a035936bfcb1eede48883999f64c34b56a38722f285e8de97d",
+        "sha256_in_prefix": "6ab19693641562a035936bfcb1eede48883999f64c34b56a38722f285e8de97d",
+        "size_in_bytes": 1012
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/error.gif",
+        "path_type": "hardlink",
+        "sha256": "635ba1471df47c09531060421ce255d0fce3a4fbeedabc5c758212626b8029c7",
+        "sha256_in_prefix": "635ba1471df47c09531060421ce255d0fce3a4fbeedabc5c758212626b8029c7",
+        "size_in_bytes": 259
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/file.gif",
+        "path_type": "hardlink",
+        "sha256": "1ea4d673b1941d6b4698d57c74b9c0f880d2216475896b3698b6a466bd889b39",
+        "sha256_in_prefix": "1ea4d673b1941d6b4698d57c74b9c0f880d2216475896b3698b6a466bd889b39",
+        "size_in_bytes": 860
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/folder.gif",
+        "path_type": "hardlink",
+        "sha256": "db8cd8351aac1cecfe41583e14ca3b3103926b89bb346f93c5c133284741cb25",
+        "sha256_in_prefix": "db8cd8351aac1cecfe41583e14ca3b3103926b89bb346f93c5c133284741cb25",
+        "size_in_bytes": 139
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/hourglass.gif",
+        "path_type": "hardlink",
+        "sha256": "e003617e3e8e6c7e4e801f024cba173c352c61700b492e96d2b3363cec91f65d",
+        "sha256_in_prefix": "e003617e3e8e6c7e4e801f024cba173c352c61700b492e96d2b3363cec91f65d",
+        "size_in_bytes": 211
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/info.gif",
+        "path_type": "hardlink",
+        "sha256": "f20acd4e26f1ce22909486747598f6390c958ad6443c5fcdf307949ae47a8926",
+        "sha256_in_prefix": "f20acd4e26f1ce22909486747598f6390c958ad6443c5fcdf307949ae47a8926",
+        "size_in_bytes": 256
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/italic.gif",
+        "path_type": "hardlink",
+        "sha256": "1e8d7ef46c336644ef47f7db6042ed7b2e655a8a520cf844aa1b70abdca1d82c",
+        "sha256_in_prefix": "1e8d7ef46c336644ef47f7db6042ed7b2e655a8a520cf844aa1b70abdca1d82c",
+        "size_in_bytes": 111
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/minus.xbm",
+        "path_type": "hardlink",
+        "sha256": "00525136c1bedd9dbfb79ffaefb8ffcd7db3950fb545a6e749db7f64588c91c1",
+        "sha256_in_prefix": "00525136c1bedd9dbfb79ffaefb8ffcd7db3950fb545a6e749db7f64588c91c1",
+        "size_in_bytes": 169
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/new.gif",
+        "path_type": "hardlink",
+        "sha256": "4f2e88b6fb8f7f9e403fddbb9073ead65d2e51aea9e30323a35a1223ac72a0ff",
+        "sha256_in_prefix": "4f2e88b6fb8f7f9e403fddbb9073ead65d2e51aea9e30323a35a1223ac72a0ff",
+        "size_in_bytes": 131
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/opcopy.xbm",
+        "path_type": "hardlink",
+        "sha256": "fbe68ca29dd93760d7840b538f674519822b4719574804f2b70c957e071f2f27",
+        "sha256_in_prefix": "fbe68ca29dd93760d7840b538f674519822b4719574804f2b70c957e071f2f27",
+        "size_in_bytes": 194
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/open.gif",
+        "path_type": "hardlink",
+        "sha256": "84fe16ccaa69a576757ebb1d4fb828d715aee0d757857a9803bbe0933d13b981",
+        "sha256_in_prefix": "84fe16ccaa69a576757ebb1d4fb828d715aee0d757857a9803bbe0933d13b981",
+        "size_in_bytes": 139
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/openfold.gif",
+        "path_type": "hardlink",
+        "sha256": "6e53335731c43a10bf1f7cd1af0907eabd6dfc96bf5203a27067635475456617",
+        "sha256_in_prefix": "6e53335731c43a10bf1f7cd1af0907eabd6dfc96bf5203a27067635475456617",
+        "size_in_bytes": 146
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/oplink.xbm",
+        "path_type": "hardlink",
+        "sha256": "3fbb4ea0ea92aa2a2182ec010f9d92c7cf7a9c08322ffef8cf73634f9bd8ea80",
+        "sha256_in_prefix": "3fbb4ea0ea92aa2a2182ec010f9d92c7cf7a9c08322ffef8cf73634f9bd8ea80",
+        "size_in_bytes": 194
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/opmove.xbm",
+        "path_type": "hardlink",
+        "sha256": "802952b22fbc2a169254cfccefe1b36902ec0e39c7b5ca8b445d02783b8f4bf9",
+        "sha256_in_prefix": "802952b22fbc2a169254cfccefe1b36902ec0e39c7b5ca8b445d02783b8f4bf9",
+        "size_in_bytes": 194
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/overstrike.gif",
+        "path_type": "hardlink",
+        "sha256": "8b031d512293777aa01c959cea8966fa1af4d5fc9f5fdbe9836246a181e38dbf",
+        "sha256_in_prefix": "8b031d512293777aa01c959cea8966fa1af4d5fc9f5fdbe9836246a181e38dbf",
+        "size_in_bytes": 119
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/palette.gif",
+        "path_type": "hardlink",
+        "sha256": "62888a09e4e8a7e42203b8f1fcf3a2fcd9c8c0a234427fe23e56c771f77d088c",
+        "sha256_in_prefix": "62888a09e4e8a7e42203b8f1fcf3a2fcd9c8c0a234427fe23e56c771f77d088c",
+        "size_in_bytes": 151
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/passwd.gif",
+        "path_type": "hardlink",
+        "sha256": "63c1c8679becfbc7561180ff62a2dc376ee7d9569c2d15333325aeecd9e798be",
+        "sha256_in_prefix": "63c1c8679becfbc7561180ff62a2dc376ee7d9569c2d15333325aeecd9e798be",
+        "size_in_bytes": 481
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/paste.gif",
+        "path_type": "hardlink",
+        "sha256": "db5e14f24477bb0587bb99fb0b46c3434c7a24944b8b8288142fda38a043ded4",
+        "sha256_in_prefix": "db5e14f24477bb0587bb99fb0b46c3434c7a24944b8b8288142fda38a043ded4",
+        "size_in_bytes": 159
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/plus.xbm",
+        "path_type": "hardlink",
+        "sha256": "1e5275371ca1a5b987b611cb1a1c3867a1862026ee2e256bc58fad70dcc0ab6e",
+        "sha256_in_prefix": "1e5275371ca1a5b987b611cb1a1c3867a1862026ee2e256bc58fad70dcc0ab6e",
+        "size_in_bytes": 166
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/print.gif",
+        "path_type": "hardlink",
+        "sha256": "1b6ef0258fb1d14a454777ded89b10ec37aa69d70535ef0828ccdb1b3d25e6d7",
+        "sha256_in_prefix": "1b6ef0258fb1d14a454777ded89b10ec37aa69d70535ef0828ccdb1b3d25e6d7",
+        "size_in_bytes": 140
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/question.gif",
+        "path_type": "hardlink",
+        "sha256": "817bb6515fc2ac4d89a9f6d338211099fcd588701d58cd5966b6a437e697d140",
+        "sha256_in_prefix": "817bb6515fc2ac4d89a9f6d338211099fcd588701d58cd5966b6a437e697d140",
+        "size_in_bytes": 265
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/redo.gif",
+        "path_type": "hardlink",
+        "sha256": "7c7a874f5fac6ffaf7ba5299486dfc9976fd9503c68bffc8146899648905deda",
+        "sha256_in_prefix": "7c7a874f5fac6ffaf7ba5299486dfc9976fd9503c68bffc8146899648905deda",
+        "size_in_bytes": 70
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/save.gif",
+        "path_type": "hardlink",
+        "sha256": "ff0df325486257b67de5c9e54bf1f1dc63370a6589a5070be64e9072616bc420",
+        "sha256_in_prefix": "ff0df325486257b67de5c9e54bf1f1dc63370a6589a5070be64e9072616bc420",
+        "size_in_bytes": 138
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/target.xbm",
+        "path_type": "hardlink",
+        "sha256": "078605de1291f197fc5351fb40c997a7d7c8fbb26cf5b4e929e4d5c83ebfca9e",
+        "sha256_in_prefix": "078605de1291f197fc5351fb40c997a7d7c8fbb26cf5b4e929e4d5c83ebfca9e",
+        "size_in_bytes": 539
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/underline.gif",
+        "path_type": "hardlink",
+        "sha256": "7b9abebb405a496d9413e2bf1c78147bcd9a963546ac5e1744adef8cb362ccd3",
+        "sha256_in_prefix": "7b9abebb405a496d9413e2bf1c78147bcd9a963546ac5e1744adef8cb362ccd3",
+        "size_in_bytes": 119
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/undo.gif",
+        "path_type": "hardlink",
+        "sha256": "fcdaaa71a22fc71dae185eee1a63bfc6dc7561d82b6015c8561c6539df2c2448",
+        "sha256_in_prefix": "fcdaaa71a22fc71dae185eee1a63bfc6dc7561d82b6015c8561c6539df2c2448",
+        "size_in_bytes": 115
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/images/warning.gif",
+        "path_type": "hardlink",
+        "sha256": "b6f8ab075ca453977b29043d2086c7752385d81d362d6ff5fa5f14d7f8137f7e",
+        "sha256_in_prefix": "b6f8ab075ca453977b29043d2086c7752385d81d362d6ff5fa5f14d7f8137f7e",
+        "size_in_bytes": 254
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/init.tcl",
+        "path_type": "hardlink",
+        "sha256": "d20433e6d73951ee09d9aec233b553929044d86a555ee79ae23eb4e86e02f81f",
+        "sha256_in_prefix": "d20433e6d73951ee09d9aec233b553929044d86a555ee79ae23eb4e86e02f81f",
+        "size_in_bytes": 1678
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/label.tcl",
+        "path_type": "hardlink",
+        "sha256": "ed0ced429fd5df6b166e9de2e5b523d4323e4e315bbfd73a7f1d4099e9283cee",
+        "sha256_in_prefix": "ed0ced429fd5df6b166e9de2e5b523d4323e4e315bbfd73a7f1d4099e9283cee",
+        "size_in_bytes": 10862
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/labelentry.tcl",
+        "path_type": "hardlink",
+        "sha256": "a0b4b0b6bcad0bbdd56f9f9893cbe91b11a2ab96b47b0192de2e1d27347515f9",
+        "sha256_in_prefix": "a0b4b0b6bcad0bbdd56f9f9893cbe91b11a2ab96b47b0192de2e1d27347515f9",
+        "size_in_bytes": 3767
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/labelframe.tcl",
+        "path_type": "hardlink",
+        "sha256": "04a7fbe8ecc765aa10abf0c7c9f46f1758f21b88c21762fc99542bce8bc60190",
+        "sha256_in_prefix": "04a7fbe8ecc765aa10abf0c7c9f46f1758f21b88c21762fc99542bce8bc60190",
+        "size_in_bytes": 5908
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/lang/da.rc",
+        "path_type": "hardlink",
+        "sha256": "63492a51fd461058f4e0bb414f39c41e1f3c3f7a83cb4e7184dd5241358305e6",
+        "sha256_in_prefix": "63492a51fd461058f4e0bb414f39c41e1f3c3f7a83cb4e7184dd5241358305e6",
+        "size_in_bytes": 1635
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/lang/de.rc",
+        "path_type": "hardlink",
+        "sha256": "07a2faad1c7e7139bfb7b587affadb722f095d1d33039e96600eb0f851682bb7",
+        "sha256_in_prefix": "07a2faad1c7e7139bfb7b587affadb722f095d1d33039e96600eb0f851682bb7",
+        "size_in_bytes": 1666
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/lang/en.rc",
+        "path_type": "hardlink",
+        "sha256": "780745ecff6c5c7a009d972cd11d2901ded574fb6b42888bfbf222b4b39deecc",
+        "sha256_in_prefix": "780745ecff6c5c7a009d972cd11d2901ded574fb6b42888bfbf222b4b39deecc",
+        "size_in_bytes": 1608
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/lang/es.rc",
+        "path_type": "hardlink",
+        "sha256": "4b07bb9a9cf31591fa88daa67f2cdfc1d4299e538ecd7bbde4bbd0ea3afba816",
+        "sha256_in_prefix": "4b07bb9a9cf31591fa88daa67f2cdfc1d4299e538ecd7bbde4bbd0ea3afba816",
+        "size_in_bytes": 1712
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/lang/fr.rc",
+        "path_type": "hardlink",
+        "sha256": "8c8aa9c4e923351cd0eddd173addabc22c859eca1bec86b5bffacdcf27c36652",
+        "sha256_in_prefix": "8c8aa9c4e923351cd0eddd173addabc22c859eca1bec86b5bffacdcf27c36652",
+        "size_in_bytes": 1681
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/lang/hu.rc",
+        "path_type": "hardlink",
+        "sha256": "9e6385865b370b0e139b652d57011d14d4fb3be5f89e73486a2f30278d606ab1",
+        "sha256_in_prefix": "9e6385865b370b0e139b652d57011d14d4fb3be5f89e73486a2f30278d606ab1",
+        "size_in_bytes": 1686
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/lang/nl.rc",
+        "path_type": "hardlink",
+        "sha256": "b976fd33d826b131405955f46535946bc11c397043a7b071b24bf550f0c8c598",
+        "sha256_in_prefix": "b976fd33d826b131405955f46535946bc11c397043a7b071b24bf550f0c8c598",
+        "size_in_bytes": 1655
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/lang/no.rc",
+        "path_type": "hardlink",
+        "sha256": "d4c6fd09ec21adfa5db55014a240813fc667e570efedae16df6ea762af4c4ce8",
+        "sha256_in_prefix": "d4c6fd09ec21adfa5db55014a240813fc667e570efedae16df6ea762af4c4ce8",
+        "size_in_bytes": 1632
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/lang/pl.rc",
+        "path_type": "hardlink",
+        "sha256": "15f2f4f5c4432bcbbd56bbeb5b45a6a93460a70871005fa241d11868e85f0640",
+        "sha256_in_prefix": "15f2f4f5c4432bcbbd56bbeb5b45a6a93460a70871005fa241d11868e85f0640",
+        "size_in_bytes": 1673
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/listbox.tcl",
+        "path_type": "hardlink",
+        "sha256": "b59735df3213641201f6088c90e7888ed6dd465e7c03feba3df59acfe55daeb8",
+        "sha256_in_prefix": "b59735df3213641201f6088c90e7888ed6dd465e7c03feba3df59acfe55daeb8",
+        "size_in_bytes": 57672
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/mainframe.tcl",
+        "path_type": "hardlink",
+        "sha256": "bc56c94c2296172e1a94ec640aaf21b340009dea727a24abd8eba63645e17153",
+        "sha256_in_prefix": "bc56c94c2296172e1a94ec640aaf21b340009dea727a24abd8eba63645e17153",
+        "size_in_bytes": 26886
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/messagedlg.tcl",
+        "path_type": "hardlink",
+        "sha256": "cfc30c628f5856aa9c49a34f13fd8c25c8953c6c0797ebcb4904b38f420c3e79",
+        "sha256_in_prefix": "cfc30c628f5856aa9c49a34f13fd8c25c8953c6c0797ebcb4904b38f420c3e79",
+        "size_in_bytes": 4546
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/notebook.tcl",
+        "path_type": "hardlink",
+        "sha256": "65952bf8264142767870377b64647165a96a2a77d7f2233dd064be7fb5438eb9",
+        "sha256_in_prefix": "65952bf8264142767870377b64647165a96a2a77d7f2233dd064be7fb5438eb9",
+        "size_in_bytes": 37064
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/pagesmgr.tcl",
+        "path_type": "hardlink",
+        "sha256": "f8d4b465b6fd271e767d9fb559ce69b831d691dab1823b3d5d45a3ba97dc463a",
+        "sha256_in_prefix": "f8d4b465b6fd271e767d9fb559ce69b831d691dab1823b3d5d45a3ba97dc463a",
+        "size_in_bytes": 9054
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/panedw.tcl",
+        "path_type": "hardlink",
+        "sha256": "747700e6187f520c4d76c75904dfadd1a9a9920f56977831ab04b24b02875577",
+        "sha256_in_prefix": "747700e6187f520c4d76c75904dfadd1a9a9920f56977831ab04b24b02875577",
+        "size_in_bytes": 13356
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/panelframe.tcl",
+        "path_type": "hardlink",
+        "sha256": "fa89f9e3622cc5cca8145b0de6a52d0e2613b132c9502303fc6396d21077ade7",
+        "sha256_in_prefix": "fa89f9e3622cc5cca8145b0de6a52d0e2613b132c9502303fc6396d21077ade7",
+        "size_in_bytes": 7846
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/passwddlg.tcl",
+        "path_type": "hardlink",
+        "sha256": "e04d5f5bff3d12687676e291b3fbf06eda5f685406c1bc2292ba6679cada261e",
+        "sha256_in_prefix": "e04d5f5bff3d12687676e291b3fbf06eda5f685406c1bc2292ba6679cada261e",
+        "size_in_bytes": 6383
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/pkgIndex.tcl",
+        "path_type": "hardlink",
+        "sha256": "c257a228753e1faa95b4964148e0b45a96edd8ba38d8ca673a1e9d8d44659d4b",
+        "sha256_in_prefix": "c257a228753e1faa95b4964148e0b45a96edd8ba38d8ca673a1e9d8d44659d4b",
+        "size_in_bytes": 3287
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/pkgIndex.tcl~",
+        "path_type": "hardlink",
+        "sha256": "d7328cee2d31713b9f0fd8dcb9f3c5ee2368f85569d8f8750e81910424a71a9d",
+        "sha256_in_prefix": "d7328cee2d31713b9f0fd8dcb9f3c5ee2368f85569d8f8750e81910424a71a9d",
+        "size_in_bytes": 3287
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/progressbar.tcl",
+        "path_type": "hardlink",
+        "sha256": "8ce384b7f2a3b75234fa81d9cbc018e39e1c23b84d7050d6e462aa01b0f6bcb5",
+        "sha256_in_prefix": "8ce384b7f2a3b75234fa81d9cbc018e39e1c23b84d7050d6e462aa01b0f6bcb5",
+        "size_in_bytes": 7280
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/progressdlg.tcl",
+        "path_type": "hardlink",
+        "sha256": "7792ed408ac5fd985078bb9fd4914162accee035cafd044d606f565123ac1b9d",
+        "sha256_in_prefix": "7792ed408ac5fd985078bb9fd4914162accee035cafd044d606f565123ac1b9d",
+        "size_in_bytes": 3184
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/scrollframe.tcl",
+        "path_type": "hardlink",
+        "sha256": "1123f984a503af8da25a354ca63a9ac5d11bc36d44354a6c97651759af24ff5d",
+        "sha256_in_prefix": "1123f984a503af8da25a354ca63a9ac5d11bc36d44354a6c97651759af24ff5d",
+        "size_in_bytes": 8961
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/scrollview.tcl",
+        "path_type": "hardlink",
+        "sha256": "cf8bcd8f4b762fe6f6ef0432381117ca0f58fa5a534fba4b8f8fc73f6c0f48f3",
+        "sha256_in_prefix": "cf8bcd8f4b762fe6f6ef0432381117ca0f58fa5a534fba4b8f8fc73f6c0f48f3",
+        "size_in_bytes": 9502
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/scrollw.tcl",
+        "path_type": "hardlink",
+        "sha256": "385b9cb105548e1026916c5910e3d44fe58fd8e071c6e46142bc812bcd0d6b71",
+        "sha256_in_prefix": "385b9cb105548e1026916c5910e3d44fe58fd8e071c6e46142bc812bcd0d6b71",
+        "size_in_bytes": 9782
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/separator.tcl",
+        "path_type": "hardlink",
+        "sha256": "9d618193ef7eb24d1e7e12483fa95d41f24eaa64a3d78e800829e3e4bda16ab4",
+        "sha256_in_prefix": "9d618193ef7eb24d1e7e12483fa95d41f24eaa64a3d78e800829e3e4bda16ab4",
+        "size_in_bytes": 2516
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/spinbox.tcl",
+        "path_type": "hardlink",
+        "sha256": "40056216483ee3cc6f71abca2755d929c41ec7c6549f8d29fb60715b11f0c1fc",
+        "sha256_in_prefix": "40056216483ee3cc6f71abca2755d929c41ec7c6549f8d29fb60715b11f0c1fc",
+        "size_in_bytes": 11727
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/statusbar.tcl",
+        "path_type": "hardlink",
+        "sha256": "ce0bf889513ef62d2974082b9cbcf0ef6cb284827b9906919f48a17e84929205",
+        "sha256_in_prefix": "ce0bf889513ef62d2974082b9cbcf0ef6cb284827b9906919f48a17e84929205",
+        "size_in_bytes": 13158
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/titleframe.tcl",
+        "path_type": "hardlink",
+        "sha256": "8c5eb069f4f91cc5d0dfdf2fa46d59aba302f915f32fe17bb913c073c9680e74",
+        "sha256_in_prefix": "8c5eb069f4f91cc5d0dfdf2fa46d59aba302f915f32fe17bb913c073c9680e74",
+        "size_in_bytes": 6064
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/tree.tcl",
+        "path_type": "hardlink",
+        "sha256": "f78c3b9b05374edfb1056f56ef17d370bcc2e645449a53d2a137e03af840b23d",
+        "sha256_in_prefix": "f78c3b9b05374edfb1056f56ef17d370bcc2e645449a53d2a137e03af840b23d",
+        "size_in_bytes": 72244
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/utils.tcl",
+        "path_type": "hardlink",
+        "sha256": "520bcc3a68917a6d9912bbfb990cdd12b0cb3d256c4ce82a5f146ca6ff6a0cd2",
+        "sha256_in_prefix": "520bcc3a68917a6d9912bbfb990cdd12b0cb3d256c4ce82a5f146ca6ff6a0cd2",
+        "size_in_bytes": 22442
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/widget.tcl",
+        "path_type": "hardlink",
+        "sha256": "4d6b6ff4f454dada5b62fa1103184dd67583d6a1677fa8ca09286cedbcc1493e",
+        "sha256_in_prefix": "4d6b6ff4f454dada5b62fa1103184dd67583d6a1677fa8ca09286cedbcc1493e",
+        "size_in_bytes": 56019
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/wizard.tcl",
+        "path_type": "hardlink",
+        "sha256": "8231ffce07daa6baaa644667673c689c75a89bb37510d8da90ab43386c07029a",
+        "sha256_in_prefix": "8231ffce07daa6baaa644667673c689c75a89bb37510d8da90ab43386c07029a",
+        "size_in_bytes": 31464
+      },
+      {
+        "_path": "lib/tcl8.6/bwidget/xpm2image.tcl",
+        "path_type": "hardlink",
+        "sha256": "52dd23fed613e141ebf35f8e447230133903553c61451a4732fbbb7fa556f09b",
+        "sha256_in_prefix": "52dd23fed613e141ebf35f8e447230133903553c61451a4732fbbb7fa556f09b",
+        "size_in_bytes": 5367
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "88f4af44f9918f33d13ac799a4ea8f84bddc1f7db3f99c9e396f5f6c1094ec65",
+  "size": 118460,
+  "subdir": "linux-64",
+  "timestamp": 1537997223350,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/bwidget-1.9.11-1.conda",
+  "version": "1.9.11"
+}

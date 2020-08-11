@@ -1,0 +1,6 @@
+CENTIPEDE-package       CENTIPEDE a probabilistic model for learning
+                        DNaseI footprints and predicting TF binding
+                        sites
+fitCentipede            CENTIPEDE core function
+imageCutSites           Plots and image with the cleavage pattern
+plotProfile             Plots a footprint estimated by Centipede

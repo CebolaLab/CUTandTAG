@@ -1,0 +1,21 @@
+Package: CENTIPEDE
+Type: Package
+Title: CENTIPEDE learns a DNaseI footprint of a transcription factor
+        and predicts its binding sites
+Version: 1.2
+Date: 2010-10-26
+Author: Jacob F Degner, Roger Pique-Regi
+Maintainer: Roger Pique-Regi <rpique@uchicago.edu>
+Description: Centipede fits a bayesian hierarchical mixture model to
+    learn TF-specific distribution of experimental data on a particular 
+    cell-type for a set of candidate binding sites described by a motif. 
+    More documentation is under preparation and will be make available
+    soon at http://centipede.uchicago.edu
+License: GPL
+LazyLoad: yes
+Repository: R-Forge
+Repository/R-Forge/Project: centipede
+Repository/R-Forge/Revision: 11
+Packaged: 2012-04-03 11:51:08 UTC; rforge
+Depends: R (>= 2.10)
+Built: R 3.6.1; ; 2020-08-07 11:23:59 UTC; unix

@@ -1,0 +1,9 @@
+prefix=/home/hm1412/anaconda3/envs/CUTandTAG
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: Pango FC
+Description: Fontconfig support for Pango
+Version: 1.45.3
+Requires: pangoft2
+Cflags: -I${includedir}/pango-1.0

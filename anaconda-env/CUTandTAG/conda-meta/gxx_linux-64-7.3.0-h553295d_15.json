@@ -1,0 +1,55 @@
+{
+  "build": "h553295d_15",
+  "build_number": 15,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "binutils_linux-64 2.33.1 h9595d00_15",
+    "gcc_linux-64 7.3.0 h553295d_15",
+    "gxx_impl_linux-64 7.3.0.*"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/gxx_linux-64-7.3.0-h553295d_15",
+  "features": "",
+  "files": [
+    "etc/conda/activate.d/activate-gxx_linux-64.sh",
+    "etc/conda/deactivate.d/deactivate-gxx_linux-64.sh"
+  ],
+  "fn": "gxx_linux-64-7.3.0-h553295d_15.conda",
+  "legacy_bz2_md5": "5a58d977860308194de55b9cce044abf",
+  "legacy_bz2_size": 25100,
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/gxx_linux-64-7.3.0-h553295d_15",
+    "type": 1
+  },
+  "md5": "4dde80b0f7aa6e16d289a9cb768f014e",
+  "name": "gxx_linux-64",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/gxx_linux-64-7.3.0-h553295d_15.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "etc/conda/activate.d/activate-gxx_linux-64.sh",
+        "path_type": "hardlink",
+        "sha256": "917de42c192dc839ec8cf95bf361ec756a85b4276eec7e66c985560f73d41585",
+        "sha256_in_prefix": "917de42c192dc839ec8cf95bf361ec756a85b4276eec7e66c985560f73d41585",
+        "size_in_bytes": 4931
+      },
+      {
+        "_path": "etc/conda/deactivate.d/deactivate-gxx_linux-64.sh",
+        "path_type": "hardlink",
+        "sha256": "cbdfe3636afe1daa2ff60ca38b8c92efa2e8b87f4ab54d9122181a9bbb913d4a",
+        "sha256_in_prefix": "cbdfe3636afe1daa2ff60ca38b8c92efa2e8b87f4ab54d9122181a9bbb913d4a",
+        "size_in_bytes": 4933
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "f0025a588bbf648693cfcff34acee291d76f31052363ab729e10aa12e9cf2625",
+  "size": 26982,
+  "subdir": "linux-64",
+  "timestamp": 1576707760857,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/gxx_linux-64-7.3.0-h553295d_15.conda",
+  "version": "7.3.0"
+}

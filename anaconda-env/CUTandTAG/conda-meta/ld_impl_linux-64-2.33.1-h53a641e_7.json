@@ -1,0 +1,43 @@
+{
+  "build": "h53a641e_7",
+  "build_number": 7,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/ld_impl_linux-64-2.33.1-h53a641e_7",
+  "features": "",
+  "files": [
+    "bin/x86_64-conda_cos6-linux-gnu-ld"
+  ],
+  "fn": "ld_impl_linux-64-2.33.1-h53a641e_7.conda",
+  "legacy_bz2_md5": "85a01d2f8a5faa97fa2dfcc7ad7852e6",
+  "legacy_bz2_size": 660486,
+  "license": "GPL 3",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/ld_impl_linux-64-2.33.1-h53a641e_7",
+    "type": 1
+  },
+  "md5": "ae7fa9dd2ad15b81ab2ba25fe264bcb0",
+  "name": "ld_impl_linux-64",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/ld_impl_linux-64-2.33.1-h53a641e_7.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/x86_64-conda_cos6-linux-gnu-ld",
+        "path_type": "hardlink",
+        "sha256": "f042a2c5f00974cb480d397820a773eed0e632edd10b8bc74439337ae270a577",
+        "sha256_in_prefix": "f042a2c5f00974cb480d397820a773eed0e632edd10b8bc74439337ae270a577",
+        "size_in_bytes": 2709960
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "a0c2beae9a4a2b66416dc2964db41cda61fa21dd630db756c183b4bea4e117ad",
+  "size": 581274,
+  "subdir": "linux-64",
+  "timestamp": 1576704246287,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/ld_impl_linux-64-2.33.1-h53a641e_7.conda",
+  "version": "2.33.1"
+}

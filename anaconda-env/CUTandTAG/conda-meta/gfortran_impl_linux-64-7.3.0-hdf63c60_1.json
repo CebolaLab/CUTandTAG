@@ -1,0 +1,176 @@
+{
+  "build": "hdf63c60_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "gcc_impl_linux-64 7.3.0 habb00fd_1",
+    "libgcc-ng >=7.3.0",
+    "libgfortran-ng >=7.3.0,<8.0a0"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/gfortran_impl_linux-64-7.3.0-hdf63c60_1",
+  "features": "",
+  "files": [
+    "bin/x86_64-conda_cos6-linux-gnu-f95",
+    "bin/x86_64-conda_cos6-linux-gnu-gfortran",
+    "bin/x86_64-conda_cos6-linux-gnu-gfortran.bin",
+    "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/ieee_arithmetic.mod",
+    "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/ieee_exceptions.mod",
+    "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/ieee_features.mod",
+    "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/omp_lib.f90",
+    "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/omp_lib.h",
+    "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/omp_lib.mod",
+    "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/omp_lib_kinds.mod",
+    "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/openacc.f90",
+    "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/openacc.mod",
+    "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/openacc_kinds.mod",
+    "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/openacc_lib.h",
+    "libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/f951",
+    "share/licenses/gcc-fortran/RUNTIME.LIBRARY.EXCEPTION",
+    "x86_64-conda_cos6-linux-gnu/sysroot/lib/libgfortran.spec"
+  ],
+  "fn": "gfortran_impl_linux-64-7.3.0-hdf63c60_1.conda",
+  "legacy_bz2_md5": "a1e5cfe50c73da69b31c49c6bdc82b9a",
+  "legacy_bz2_size": 9390781,
+  "license": "GPL",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/gfortran_impl_linux-64-7.3.0-hdf63c60_1",
+    "type": 1
+  },
+  "md5": "09331930b68efb3b64e841fe4e797911",
+  "name": "gfortran_impl_linux-64",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/gfortran_impl_linux-64-7.3.0-hdf63c60_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/x86_64-conda_cos6-linux-gnu-f95",
+        "path_type": "softlink",
+        "sha256": "11529a40b787a88fcd99ab038b52a57fe338eba7e0ad110a0ea099abd8641c52",
+        "size_in_bytes": 188
+      },
+      {
+        "_path": "bin/x86_64-conda_cos6-linux-gnu-gfortran",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "11529a40b787a88fcd99ab038b52a57fe338eba7e0ad110a0ea099abd8641c52",
+        "sha256_in_prefix": "9266e69f35c47da6bbb6661a3144cf3f095dd22336c95c6eed5ccc7e7a0d9fa8",
+        "size_in_bytes": 188
+      },
+      {
+        "_path": "bin/x86_64-conda_cos6-linux-gnu-gfortran.bin",
+        "path_type": "hardlink",
+        "sha256": "9e08074af472c34cb14e430f10b36539d0371c30776243eb71c82ef6d07ebfb5",
+        "sha256_in_prefix": "9e08074af472c34cb14e430f10b36539d0371c30776243eb71c82ef6d07ebfb5",
+        "size_in_bytes": 904240
+      },
+      {
+        "_path": "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/ieee_arithmetic.mod",
+        "path_type": "hardlink",
+        "sha256": "c2415c74c8758bc382c1b6aed9c665e5f43c67fc89acda49f3ec2d23a0a22eac",
+        "sha256_in_prefix": "c2415c74c8758bc382c1b6aed9c665e5f43c67fc89acda49f3ec2d23a0a22eac",
+        "size_in_bytes": 9746
+      },
+      {
+        "_path": "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/ieee_exceptions.mod",
+        "path_type": "hardlink",
+        "sha256": "c1c20d37dca2b1d5e39eb5e5a1a962bd2923dc7863f34928c38acc29df98a20f",
+        "sha256_in_prefix": "c1c20d37dca2b1d5e39eb5e5a1a962bd2923dc7863f34928c38acc29df98a20f",
+        "size_in_bytes": 2252
+      },
+      {
+        "_path": "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/ieee_features.mod",
+        "path_type": "hardlink",
+        "sha256": "1cf213965632529067ff695eb3a064f02fc425b5d957744416415143621603aa",
+        "sha256_in_prefix": "1cf213965632529067ff695eb3a064f02fc425b5d957744416415143621603aa",
+        "size_in_bytes": 1294
+      },
+      {
+        "_path": "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/omp_lib.f90",
+        "path_type": "hardlink",
+        "sha256": "cea5a6ab8d226ff099a3424929bc76c169e31276efeb2610424e8103ab70b35c",
+        "sha256_in_prefix": "cea5a6ab8d226ff099a3424929bc76c169e31276efeb2610424e8103ab70b35c",
+        "size_in_bytes": 15411
+      },
+      {
+        "_path": "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/omp_lib.h",
+        "path_type": "hardlink",
+        "sha256": "88deddf00c403b235db79a50d0cedcae0a25d18a8bae8f2a739a133825036c4e",
+        "sha256_in_prefix": "88deddf00c403b235db79a50d0cedcae0a25d18a8bae8f2a739a133825036c4e",
+        "size_in_bytes": 5335
+      },
+      {
+        "_path": "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/omp_lib.mod",
+        "path_type": "hardlink",
+        "sha256": "5c3b3b8e21310004766a1bb3d4755d594ffbea1260d493c5226f894a365941f7",
+        "sha256_in_prefix": "5c3b3b8e21310004766a1bb3d4755d594ffbea1260d493c5226f894a365941f7",
+        "size_in_bytes": 2979
+      },
+      {
+        "_path": "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/omp_lib_kinds.mod",
+        "path_type": "hardlink",
+        "sha256": "6da3c575c04494da39533630b0f40f7e3ffa99d34b511dfc9b90b5f6976521a9",
+        "sha256_in_prefix": "6da3c575c04494da39533630b0f40f7e3ffa99d34b511dfc9b90b5f6976521a9",
+        "size_in_bytes": 608
+      },
+      {
+        "_path": "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/openacc.f90",
+        "path_type": "hardlink",
+        "sha256": "9811db74532823969d42d9acce551e3e4fb058e96ef3c6b49dc5a5893650fd51",
+        "sha256_in_prefix": "9811db74532823969d42d9acce551e3e4fb058e96ef3c6b49dc5a5893650fd51",
+        "size_in_bytes": 28053
+      },
+      {
+        "_path": "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/openacc.mod",
+        "path_type": "hardlink",
+        "sha256": "480a754d46366953f3db518ed022404aba1052bd95912c0010ac6cdf95f71874",
+        "sha256_in_prefix": "480a754d46366953f3db518ed022404aba1052bd95912c0010ac6cdf95f71874",
+        "size_in_bytes": 3510
+      },
+      {
+        "_path": "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/openacc_kinds.mod",
+        "path_type": "hardlink",
+        "sha256": "520cacc77971b08d0d1c57d0a6915fccdabfebfd470309176c711098a20fe25c",
+        "sha256_in_prefix": "520cacc77971b08d0d1c57d0a6915fccdabfebfd470309176c711098a20fe25c",
+        "size_in_bytes": 523
+      },
+      {
+        "_path": "lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/finclude/openacc_lib.h",
+        "path_type": "hardlink",
+        "sha256": "cc8741aa124f08dceffbf0af1bd1f22b3deb6f2e0e2a538f28ca69a2474cdb0a",
+        "sha256_in_prefix": "cc8741aa124f08dceffbf0af1bd1f22b3deb6f2e0e2a538f28ca69a2474cdb0a",
+        "size_in_bytes": 12388
+      },
+      {
+        "_path": "libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/f951",
+        "path_type": "hardlink",
+        "sha256": "c03ddd4ba9f9fe6afe813bab6833ccd179ae9b7f76f64c57831216c7557d846c",
+        "sha256_in_prefix": "c03ddd4ba9f9fe6afe813bab6833ccd179ae9b7f76f64c57831216c7557d846c",
+        "size_in_bytes": 25913800
+      },
+      {
+        "_path": "share/licenses/gcc-fortran/RUNTIME.LIBRARY.EXCEPTION",
+        "path_type": "hardlink",
+        "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+        "sha256_in_prefix": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+        "size_in_bytes": 3324
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/lib/libgfortran.spec",
+        "path_type": "hardlink",
+        "sha256": "03f410e434a7f6e683eaba5b04ab02cdad936f293c1182fa7fbf96a0350965e6",
+        "sha256_in_prefix": "03f410e434a7f6e683eaba5b04ab02cdad936f293c1182fa7fbf96a0350965e6",
+        "size_in_bytes": 269
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "dc6e2eaac15f43adf74f74a2ebfe4bb850db2c551402adec2fa522b4e956c767",
+  "size": 8220284,
+  "subdir": "linux-64",
+  "timestamp": 1534866846414,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/gfortran_impl_linux-64-7.3.0-hdf63c60_1.conda",
+  "version": "7.3.0"
+}
