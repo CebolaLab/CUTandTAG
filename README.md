@@ -18,9 +18,9 @@ Two alignments will be run to align the human DNA and carry-over E.coli DNA whic
 1. Align reads to the reference **human** genome (hg19)
 2. Align reads to the reference **E.coli** genome (strain K12, substrain MG1655)
 
-**Human genome:** The UCSC hg19 ***masked*** reference genome was ([downloaded](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/bigZips/)) and [indexed using bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#indexing-a-reference-genome). 
+**Human genome:** The UCSC hg19 ***masked*** reference genome was [downloaded](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/bigZips/) and [indexed using bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#indexing-a-reference-genome). 
 
-**E.coli genome:** The E.coli reference genome for the strain K-12 strain, MG1655 substrain was ([downloaded](https://www.ncbi.nlm.nih.gov/nuccore/U00096.3?report=fasta)) from UCSC and was also [indexed](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#indexing-a-reference-genome) using bowtie2. 
+**E.coli genome:** The E.coli reference genome for the strain K-12 strain, MG1655 substrain was [downloaded](https://www.ncbi.nlm.nih.gov/nuccore/U00096.3?report=fasta) from UCSC and was also [indexed](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#indexing-a-reference-genome) using bowtie2. 
 
 For those with access to the Imperial College HPC and the Cebola Lab project space, the reference genomes and index files are available at this path:
 
@@ -36,3 +36,12 @@ The alignments are carried out using bowtie2 with the below arguments. An exampl
 
 `--end-to-end --very-sensitive --no-overlap --no-dovetail --no-mixed --no-discordant  --phred33 -I 10 -X 700`
 
+### Peak Calling
+
+Peak calling will be carried out using both macs2 and SEACR. First, aligned fragments are extracted from the aligned bam file and are output in bed format using `bedtools bamtobed`. For calibration using the E.coli reads, the bed files require the length of the fragment (as described in the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh)). Assuming the output file is in the format `"$base"_aligned_reads.bam` (where "$base" is your sample identifier), the following code may be used:
+
+`bedtools bamtobed -bedpe -i "$base"_aligned_reads.bam | awk -v OFS='\t' '{len = $3 - $2; print $0, len }' > "$base"_aligned_reads.bed`
+
+As described in the original CUT&Tag paper ([Kaya-Okur et al. 2019](https://www.nature.com/articles/s41467-019-09982-5#data-availability)), macs2 will be used with the following parameters:
+
+`macs2 callpeak -t input_BED -f BEDPE -p 1e-5 --keep-dup all -n output_prefix` 
