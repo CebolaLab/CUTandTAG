@@ -83,16 +83,14 @@ Seven arguments are required to run the calibration script (here converted to ba
 
 The normalised bedGraphs can now be visualised, for example on the UCSC browser:
 
-![bedGraphUCSC](UCSC-bedgraph.png)
-
 ## Peak Calling
 
-Peak calling will be carried out using both macs2 and SEACR. 
+Peak calling will be carried out using both macs2 and SEACR. First, for macs2:
 
-The E.coli alignment file should also be converted to bed format (no need to sort, since the information used will be the number of reads i.e. the number of lines in the bed file):
+The `"$base"-sorted.bed` file is currently in the bedtools BEDPE format, which is not compatible with macs2. To convert to the macs2 BEDPE format, run the following:
 
-`bedtools bamtobed -bedpe -i "$base"-E.coli.bam > "$base"-E.coli.bed` 
+`cut -f 1,2,6 "$base"-sorted.bed | sort -k1,1n -k2,2n -k3,3n > "$base"-sorted-macs.bed` 
  
 As described in the original CUT&Tag paper ([Kaya-Okur et al. 2019](https://www.nature.com/articles/s41467-019-09982-5#data-availability)), macs2 will be used with the following parameters:
 
-`macs2 callpeak -t input_BED -f BEDPE -p 1e-5 --keep-dup all -n output_prefix` 
+`macs2 callpeak -t "$base"-sorted-macs.bed -f BEDPE -p 1e-5 --keep-dup all -n output_prefix` 
