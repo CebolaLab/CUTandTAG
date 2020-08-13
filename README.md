@@ -86,6 +86,8 @@ The normalised bedGraphs can now be visualised, for example on the UCSC browser:
 ![bedGraphUCSC](https://github.com/CebolaLab/CUTandTAG/blob/master/UCSC-bedgraph.PNG?raw=TRUE)
 ![bedGraphUCSC](UCSC-bedgraph.PNG?raw=TRUE)
 ![bedGraphUCSC](UCSC-bedgraph.PNG)
+<img src="UCSC-bedgraph.PNG" />
+<img src="UCSC-bedgraph.png" />
 
 #### Convert to bigWig
 
