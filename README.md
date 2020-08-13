@@ -17,28 +17,33 @@ All required programs required have been installed and are available in the Cebo
 Two alignments will be run to align the human DNA and carry-over E.coli DNA later to calibrate the samples. The alignment parameters are run according to CUT&Tag authors (see the [pipeline](https://www.protocols.io/view/cut-amp-tag-home-bd26i8he?step=50)). The authors recommend to skip adapter trimming and to run the alignments using bowtie2 with the below parameters, which should result in accurate read alignment. Two alignments are carried out:
 
 1. Align reads to the reference **human** masked genome (hg19) (download [here](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/bigZips/))
-2. Align reads to the reference **E.coli** genome (strain K12, substrain MG1655) (downloaded [here](https://www.ncbi.nlm\
-.nih.gov/nuccore/U00096.3?report=fasta)).
+2. Align reads to the reference **E.coli** genome (strain K12, substrain MG1655) (downloaded [here](https://www.ncbi.nlm.nih.gov/nuccore/U00096.3?report=fasta)).
 
 Both reference genomes should be [indexed](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#indexing-a-reference-genome) using bowtie2. For those with access to the Imperial College HPC and the Cebola Lab project space, the reference genomes and index files are available at this path:
 
-`/rds/general/user/"$whoamI"/projects/cebolalab_liver_regulomes/live/reference-genomes/` 
+`/rds/general/user/"$(whoami)"/projects/cebolalab_liver_regulomes/live/reference-genomes/` 
 
 The alignments are carried out using bowtie2 with the below arguments. An example script is available [here](https://github.com/CebolaLab/CUTandTAG/blob/master/alignment.sh).
 
-##### Align human reads:
+##### Parameters to align human reads:
 
 `--end-to-end --very-sensitive --no-unal --no-mixed --no-discordant --phred33 -l 10 -X 700`
 
-##### Align E.coli reads:
+##### Parameters to align E.coli reads:
 
 `--end-to-end --very-sensitive --no-overlap --no-dovetail --no-mixed --no-discordant  --phred33 -I 10 -X 700`
 
 ## Visualisation
 
-A bedGraph file will be generated to visualise the data. In order to compare multiple samples, the samples will be calibrated using the carry-over E.coli DNA (the experiment 'spike-in'). In theory, the ratio of primary DNA to E.coli DNA is expected to be the same for each sample. As such, the calibration involves the division of the mapped count divided by the total number of reads aligned to the E.coli genome. The proportion of total DNA reads aligned to the E.coli genome is reported in the "$(base)".Ecoli.bowtie2 output file. 
+A bedGraph file will be generated to visualise the data. In order to compare multiple samples, the samples will be calibrated using the carry-over E.coli DNA (the experiment 'spike-in'). In theory, the ratio of primary DNA to E.coli DNA is expected to be the same for each sample. As such, the calibration involves the division of the mapped count divided by the total number of reads aligned to the E.coli genome. The proportion of total DNA reads aligned to the E.coli genome is reported in the `"$(base)".Ecoli.bowtie2` output file. The general steps cover:
 
-##### Sort bam file
+1. Sort aligned bam file by read name (queryname)
+2. Convert bam to bed
+3. Normalise samples using E.coli carry-over DNA
+4. Visualise output bedGraph files
+
+
+#### Sort bam file
 
 The output bam files must be sorted by **queryname** in order to generate the BEDPE format in the next step. `"$base"` again refers to the your filename/sample ID: 
 
@@ -75,6 +80,10 @@ Seven arguments are required to run the calibration script (here converted to ba
 - **genome_chr_lens_file**
 - **min_len** minumum fragment length, `min=$(cut -f 11 SRR8383480_aligned_reads.bed | sort | uniq | head -1)`
 - **max_len** maximum fragment length, `max=$(cut -f 11 SRR8383480_aligned_reads.bed | sort | uniq | tail -1)'
+
+The normalised bedGraphs can now be visualised, for example on the UCSC browser:
+
+![bedGraphUCSC](UCSC-bedgraph.png)
 
 ## Peak Calling
 
