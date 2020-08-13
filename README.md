@@ -59,7 +59,7 @@ The E.coli alignment file should also be converted to bed format (no need to sor
 
 #### Calibration
 
-If you are working with multiple samples, e.g. a sample and a control, they should be calibrated to be comparable. The calibration is carried out using the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh)). The calibration effectively scales the mapped counts according to the total number of E.coli reads. The ratio of primary genome to E.coli genome is expected to be the same for all samples. The script is included in this repository (see above).
+If you are working with multiple samples, e.g. a sample and a control, they should be standardized in order to be comparable. The calibration is carried out using the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh)). The calibration effectively scales the mapped counts according to the total number of E.coli reads. The ratio of primary genome to E.coli genome is expected to be the same for all samples. The script is included in this repository (see above).
 
 **Step 1:** Filter fragments to be within a minimum and maximum length
 
@@ -83,11 +83,14 @@ Seven arguments are required to run the calibration script (here converted to ba
 
 The normalised bedGraphs can now be visualised, for example on the UCSC browser:
 
-![bedGraphUCSC](https://github.com/CebolaLab/CUTandTAG/blob/master/UCSC-bedgraph.PNG?raw=TRUE)
 ![bedGraphUCSC](UCSC-bedgraph.PNG?raw=TRUE)
-![bedGraphUCSC](UCSC-bedgraph.PNG)
-<img src="UCSC-bedgraph.PNG" />
-<img src="UCSC-bedgraph.png" />
+
+You can also generate a heatplot to visualise the distribution of your chromatin mark / transcription factor relative to transcription start sites. This will use deeptools (included in the CUTandTAG conda bin). Gene coordinates for the reference genome hg19 were downloaded from UCSC as Gencode V34lift37 (Basic table and bed format). They are saved in this repository as `hg19-gene-coordinates.bed`.
+
+`computeMatrix scale-regions -S "$base".bigWig -R hg19-gene-coordinates.bed --beforeRegionStartLength 3000 --regionBodyLength 5000 --afterRegionStartLength 3000 --missingDataAsZero --skipZeros -o matrix.mat.gz`
+
+`plotHeatmap -m matrix.mat.gz  -out ExampleHeatmap1.png ` 
+
 
 #### Convert to bigWig
 
