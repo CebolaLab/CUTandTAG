@@ -41,7 +41,7 @@ A bedGraph file will be generated to visualise the data. In order to compare mul
 2. Convert bam to bed
 3. Normalise samples using E.coli carry-over DNA
 4. Visualise output bedGraph files
-
+5. Convert bedGraph to bigWig
 
 #### Sort bam file
 
@@ -83,9 +83,19 @@ Seven arguments are required to run the calibration script (here converted to ba
 
 The normalised bedGraphs can now be visualised, for example on the UCSC browser:
 
+![bedGraphUCSC](UCSC-bedgraph.png?raw=true)
+
+#### Convert to bigWig
+
+To convert the bedGraph file to bigWig format, use the following command:
+
+`source bedGraphToBigWig "$base".bedgraph hg19.chrom.sizes "$base".bigWig`
+
+The bedGraphToBigWig binary, as downloaded from UCSC tools, is available in this repository.
+
 ## Peak Calling
 
-Peak calling will be carried out using both macs2 and SEACR. First, for macs2:
+Peak calling will be carried out using both [macs2](https://github.com/macs3-project/MACS) and SEACR. First, for macs2:
 
 The `"$base"-sorted.bed` file is currently in the bedtools BEDPE format, which is not compatible with macs2. To convert to the macs2 BEDPE format, run the following:
 
@@ -94,3 +104,6 @@ The `"$base"-sorted.bed` file is currently in the bedtools BEDPE format, which i
 As described in the original CUT&Tag paper ([Kaya-Okur et al. 2019](https://www.nature.com/articles/s41467-019-09982-5#data-availability)), macs2 will be used with the following parameters:
 
 `macs2 callpeak -t "$base"-sorted-macs.bed -f BEDPE -p 1e-5 --keep-dup all -n output_prefix` 
+
+
+
