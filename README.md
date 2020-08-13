@@ -14,16 +14,13 @@ All required programs required have been installed and are available in the Cebo
 
 ## Alignment
 
-Two alignments will be run to align the human DNA and carry-over E.coli DNA which will be used later for sample calibration. The alignment parameters are run according to CUT&Tag authors (see the [pipeline](https://www.protocols.io/view/cut-amp-tag-home-bd26i8he?step=50)). The authors recommend to skip adapter trimming and to run the alignments using bowtie2 with the below parameters, which should result in accurate read alignment. Two alignments are carried out:
+Two alignments will be run to align the human DNA and carry-over E.coli DNA later to calibrate the samples. The alignment parameters are run according to CUT&Tag authors (see the [pipeline](https://www.protocols.io/view/cut-amp-tag-home-bd26i8he?step=50)). The authors recommend to skip adapter trimming and to run the alignments using bowtie2 with the below parameters, which should result in accurate read alignment. Two alignments are carried out:
 
-1. Align reads to the reference **human** genome (hg19)
-2. Align reads to the reference **E.coli** genome (strain K12, substrain MG1655)
+1. Align reads to the reference **human** masked genome (hg19) (download [here](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/bigZips/))
+2. Align reads to the reference **E.coli** genome (strain K12, substrain MG1655) (downloaded [here](https://www.ncbi.nlm\
+.nih.gov/nuccore/U00096.3?report=fasta)).
 
-**Human genome:** The UCSC hg19 ***masked*** reference genome was [downloaded](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/bigZips/) and [indexed using bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#indexing-a-reference-genome). 
-
-**E.coli genome:** The E.coli reference genome for the strain K-12 strain, MG1655 substrain was [downloaded](https://www.ncbi.nlm.nih.gov/nuccore/U00096.3?report=fasta) from UCSC and was also [indexed](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#indexing-a-reference-genome) using bowtie2. 
-
-For those with access to the Imperial College HPC and the Cebola Lab project space, the reference genomes and index files are available at this path:
+Both reference genomes should be [indexed](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#indexing-a-reference-genome) using bowtie2. For those with access to the Imperial College HPC and the Cebola Lab project space, the reference genomes and index files are available at this path:
 
 `/rds/general/user/"$whoamI"/projects/cebolalab_liver_regulomes/live/reference-genomes/` 
 
