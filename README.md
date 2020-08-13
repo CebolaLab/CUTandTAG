@@ -83,7 +83,7 @@ Seven arguments are required to run the calibration script (here converted to ba
 
 The normalised bedGraphs can now be visualised, for example on the UCSC browser:
 
-![bedGraphUCSC](UCSC-bedgraph.png?raw=true)
+![bedGraphUCSC](https://github.com/CebolaLab/CUTandTAG/blob/master/UCSC-bedgraph.png?raw=TRUE)
 
 #### Convert to bigWig
 
