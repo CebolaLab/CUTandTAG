@@ -5,7 +5,7 @@
 #                            | (__| |_| |  _ <| |___
 #                             \___|\___/|_| \_\_____|
 #
-# Copyright (C) 1998 - 2012, Daniel Stenberg, <daniel@haxx.se>, et al.
+# Copyright (C) 1998 - 2020, Daniel Stenberg, <daniel@haxx.se>, et al.
 #
 # This software is licensed as described in the file COPYING, which
 # you should have received as part of this distribution. The terms
@@ -28,12 +28,12 @@ exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 supported_protocols="DICT FILE FTP FTPS GOPHER HTTP HTTPS IMAP IMAPS POP3 POP3S RTSP SCP SFTP SMB SMBS SMTP SMTPS TELNET TFTP"
-supported_features="SSL IPv6 UnixSockets libz AsynchDNS GSS-API SPNEGO Kerberos NTLM NTLM_WB TLS-SRP HTTPS-proxy"
+supported_features="SSL IPv6 UnixSockets libz AsynchDNS GSS-API SPNEGO Kerberos NTLM NTLM_WB TLS-SRP HTTP2 HTTPS-proxy"
 
 Name: libcurl
 URL: https://curl.haxx.se/
 Description: Library to transfer files with ftp, http, etc.
-Version: 7.69.1
-Libs: -L${libdir} -lcurl
-Libs.private: -lssh2 -lssh2 -lssl -lcrypto -lssl -lcrypto -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,--enable-new-dtags -Wl,-rpath -Wl,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,--disable-new-dtags -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lz -lrt
+Version: 7.71.1
+Libs: -L${libdir} -lcurl 
+Libs.private: -lnghttp2 -lssh2 -lssh2 -lssl -lcrypto -lssl -lcrypto -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,--enable-new-dtags -Wl,-rpath -Wl,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,--disable-new-dtags -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lz -lrt
 Cflags: -I${includedir} 

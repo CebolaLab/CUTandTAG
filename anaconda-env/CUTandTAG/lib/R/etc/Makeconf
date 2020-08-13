@@ -56,13 +56,13 @@ FLIBS =  -lgfortran -lm -lgomp -lquadmath -lpthread
 FPICFLAGS = -fpic
 FOUNDATION_CPPFLAGS = 
 FOUNDATION_LIBS = 
-JAR = /rds/general/user/hm1412/home/anaconda3/bin/jar
-JAVA = /rds/general/user/hm1412/home/anaconda3/bin/java
-JAVAC = /rds/general/user/hm1412/home/anaconda3/bin/javac
-JAVAH = /rds/general/user/hm1412/home/anaconda3/bin/javah
+JAR = /home/hm1412/anaconda3/envs/CUTandTAG/bin/jar
+JAVA = /home/hm1412/anaconda3/envs/CUTandTAG/bin/java
+JAVAC = /home/hm1412/anaconda3/envs/CUTandTAG/bin/javac
+JAVAH = /home/hm1412/anaconda3/envs/CUTandTAG/bin/javah
 ## JAVA_HOME might be used in the next three.  
 ## They are for packages 'JavaGD' and 'rJava'
-JAVA_HOME = /rdsgpfs/general/user/hm1412/home/anaconda3/jre
+JAVA_HOME = /rdsgpfs/general/user/hm1412/home/anaconda3/envs/CUTandTAG/jre
 JAVA_CPPFLAGS = -I$(JAVA_HOME)/../include -I$(JAVA_HOME)/../include/linux
 JAVA_LIBS = -L$(JAVA_HOME)/lib/amd64/server -ljvm
 JAVA_LD_LIBRARY_PATH = $(JAVA_HOME)/lib/amd64/server

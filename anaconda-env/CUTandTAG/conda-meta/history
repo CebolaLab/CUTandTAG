@@ -88,3 +88,176 @@
 +bioconda::pysam-0.15.3-py27hda2845c_1
 +defaults::ca-certificates-2020.6.24-0
 # update specs: [u'pysam']
+==> 2020-08-10 15:51:50 <==
+# cmd: /rds/general/user/hm1412/home/anaconda3/bin/conda install -n CUTandTAG -c bioconda java-jdk
+# conda version: 4.8.3
+-bioconda::libdeflate-1.0-h14c3975_1
+-bioconda::macs2-2.1.4-py27r36h516909a_0
+-bioconda::pysam-0.15.3-py27hda2845c_1
+-defaults::_libgcc_mutex-0.1-main
+-defaults::_r-mutex-1.0.0-anacondar_1
+-defaults::binutils_impl_linux-64-2.33.1-he6710b0_7
+-defaults::binutils_linux-64-2.33.1-h9595d00_15
+-defaults::blas-1.0-mkl
+-defaults::bwidget-1.9.11-1
+-defaults::bzip2-1.0.8-h7b6447c_0
+-defaults::ca-certificates-2020.6.24-0
+-defaults::cairo-1.14.12-h8948797_3
+-defaults::certifi-2019.11.28-py27_0
+-defaults::curl-7.69.1-hbc83047_0
+-defaults::fontconfig-2.13.0-h9420a91_0
+-defaults::freetype-2.10.2-h5ab3b9f_0
+-defaults::fribidi-1.0.9-h7b6447c_0
+-defaults::gcc_impl_linux-64-7.3.0-habb00fd_1
+-defaults::gcc_linux-64-7.3.0-h553295d_15
+-defaults::gfortran_impl_linux-64-7.3.0-hdf63c60_1
+-defaults::gfortran_linux-64-7.3.0-h553295d_15
+-defaults::glib-2.65.0-h3eb4bd4_0
+-defaults::graphite2-1.3.14-h23475e2_0
+-defaults::gsl-2.4-h14c3975_4
+-defaults::gxx_impl_linux-64-7.3.0-hdf63c60_1
+-defaults::gxx_linux-64-7.3.0-h553295d_15
+-defaults::harfbuzz-2.4.0-hca77d97_1
+-defaults::icu-58.2-he6710b0_3
+-defaults::intel-openmp-2020.1-217
+-defaults::jpeg-9b-h024ee3a_2
+-defaults::krb5-1.17.1-h173b8e3_0
+-defaults::ld_impl_linux-64-2.33.1-h53a641e_7
+-defaults::libcurl-7.69.1-h20c2e04_0
+-defaults::libedit-3.1.20191231-h14c3975_1
+-defaults::libffi-3.3-he6710b0_2
+-defaults::libgcc-ng-9.1.0-hdf63c60_0
+-defaults::libgfortran-ng-7.3.0-hdf63c60_0
+-defaults::libpng-1.6.37-hbc83047_0
+-defaults::libssh2-1.9.0-h1ba5d50_1
+-defaults::libstdcxx-ng-9.1.0-hdf63c60_0
+-defaults::libtiff-4.1.0-h2733197_1
+-defaults::libuuid-1.0.3-h1bed415_2
+-defaults::libxcb-1.14-h7b6447c_0
+-defaults::libxml2-2.9.10-he19cac6_1
+-defaults::lz4-c-1.9.2-he6710b0_1
+-defaults::make-4.2.1-h1bed415_1
+-defaults::mkl-2020.1-217
+-defaults::mkl-service-2.3.0-py27he904b0f_0
+-defaults::mkl_fft-1.0.15-py27ha843d7b_0
+-defaults::mkl_random-1.1.0-py27hd6b4f25_0
+-defaults::ncurses-6.2-he6710b0_1
+-defaults::numpy-1.16.6-py27hbc911f0_0
+-defaults::numpy-base-1.16.6-py27hde5b4d6_0
+-defaults::openssl-1.1.1g-h7b6447c_0
+-defaults::pango-1.45.3-hd140c19_0
+-defaults::pcre-8.44-he6710b0_0
+-defaults::pip-19.3.1-py27_0
+-defaults::pixman-0.40.0-h7b6447c_0
+-defaults::python-2.7.18-h15b4118_1
+-defaults::r-base-3.6.1-haffb61f_2
+-defaults::readline-8.0-h7b6447c_0
+-defaults::setuptools-44.0.0-py27_0
+-defaults::six-1.15.0-py_0
+-defaults::sqlite-3.32.3-h62c20be_0
+-defaults::tk-8.6.10-hbc83047_0
+-defaults::tktable-2.10-h14c3975_0
+-defaults::wheel-0.33.6-py27_0
+-defaults::xz-5.2.5-h7b6447c_0
+-defaults::zlib-1.2.11-h7b6447c_3
+-defaults::zstd-1.4.5-h9ceee32_0
++bioconda/linux-64::java-jdk-7.0.91-1
++bioconda/linux-64::libdeflate-1.0-h14c3975_1
++bioconda/linux-64::macs2-2.1.4-py27r36h516909a_0
++bioconda/linux-64::pysam-0.15.3-py27hda2845c_1
++defaults/linux-64::_libgcc_mutex-0.1-main
++defaults/linux-64::_r-mutex-1.0.0-anacondar_1
++defaults/linux-64::binutils_impl_linux-64-2.33.1-he6710b0_7
++defaults/linux-64::binutils_linux-64-2.33.1-h9595d00_15
++defaults/linux-64::blas-1.0-mkl
++defaults/linux-64::bwidget-1.9.11-1
++defaults/linux-64::bzip2-1.0.8-h7b6447c_0
++defaults/linux-64::ca-certificates-2020.6.24-0
++defaults/linux-64::cairo-1.14.12-h8948797_3
++defaults/linux-64::certifi-2019.11.28-py27_0
++defaults/linux-64::curl-7.69.1-hbc83047_0
++defaults/linux-64::fontconfig-2.13.0-h9420a91_0
++defaults/linux-64::freetype-2.10.2-h5ab3b9f_0
++defaults/linux-64::fribidi-1.0.9-h7b6447c_0
++defaults/linux-64::gcc_impl_linux-64-7.3.0-habb00fd_1
++defaults/linux-64::gcc_linux-64-7.3.0-h553295d_15
++defaults/linux-64::gfortran_impl_linux-64-7.3.0-hdf63c60_1
++defaults/linux-64::gfortran_linux-64-7.3.0-h553295d_15
++defaults/linux-64::glib-2.65.0-h3eb4bd4_0
++defaults/linux-64::graphite2-1.3.14-h23475e2_0
++defaults/linux-64::gsl-2.4-h14c3975_4
++defaults/linux-64::gxx_impl_linux-64-7.3.0-hdf63c60_1
++defaults/linux-64::gxx_linux-64-7.3.0-h553295d_15
++defaults/linux-64::harfbuzz-2.4.0-hca77d97_1
++defaults/linux-64::icu-58.2-he6710b0_3
++defaults/linux-64::intel-openmp-2020.1-217
++defaults/linux-64::jpeg-9b-h024ee3a_2
++defaults/linux-64::krb5-1.17.1-h173b8e3_0
++defaults/linux-64::ld_impl_linux-64-2.33.1-h53a641e_7
++defaults/linux-64::libcurl-7.69.1-h20c2e04_0
++defaults/linux-64::libedit-3.1.20191231-h14c3975_1
++defaults/linux-64::libffi-3.3-he6710b0_2
++defaults/linux-64::libgcc-ng-9.1.0-hdf63c60_0
++defaults/linux-64::libgfortran-ng-7.3.0-hdf63c60_0
++defaults/linux-64::libpng-1.6.37-hbc83047_0
++defaults/linux-64::libssh2-1.9.0-h1ba5d50_1
++defaults/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
++defaults/linux-64::libtiff-4.1.0-h2733197_1
++defaults/linux-64::libuuid-1.0.3-h1bed415_2
++defaults/linux-64::libxcb-1.14-h7b6447c_0
++defaults/linux-64::libxml2-2.9.10-he19cac6_1
++defaults/linux-64::lz4-c-1.9.2-he6710b0_1
++defaults/linux-64::make-4.2.1-h1bed415_1
++defaults/linux-64::mkl-2020.1-217
++defaults/linux-64::mkl-service-2.3.0-py27he904b0f_0
++defaults/linux-64::mkl_fft-1.0.15-py27ha843d7b_0
++defaults/linux-64::mkl_random-1.1.0-py27hd6b4f25_0
++defaults/linux-64::ncurses-6.2-he6710b0_1
++defaults/linux-64::numpy-1.16.6-py27hbc911f0_0
++defaults/linux-64::numpy-base-1.16.6-py27hde5b4d6_0
++defaults/linux-64::openssl-1.1.1g-h7b6447c_0
++defaults/linux-64::pango-1.45.3-hd140c19_0
++defaults/linux-64::pcre-8.44-he6710b0_0
++defaults/linux-64::pip-19.3.1-py27_0
++defaults/linux-64::pixman-0.40.0-h7b6447c_0
++defaults/linux-64::python-2.7.18-h15b4118_1
++defaults/linux-64::r-base-3.6.1-haffb61f_2
++defaults/linux-64::readline-8.0-h7b6447c_0
++defaults/linux-64::setuptools-44.0.0-py27_0
++defaults/linux-64::sqlite-3.32.3-h62c20be_0
++defaults/linux-64::tk-8.6.10-hbc83047_0
++defaults/linux-64::tktable-2.10-h14c3975_0
++defaults/linux-64::wheel-0.33.6-py27_0
++defaults/linux-64::xz-5.2.5-h7b6447c_0
++defaults/linux-64::zlib-1.2.11-h7b6447c_3
++defaults/linux-64::zstd-1.4.5-h9ceee32_0
++defaults/noarch::six-1.15.0-py_0
+# update specs: [u'java-jdk']
+==> 2020-08-11 15:19:08 <==
+# cmd: /rds/general/user/hm1412/home/anaconda3/bin/conda install -n CUTandTAG -c bioconda bowtie2
+# conda version: 4.8.3
++bioconda/linux-64::bowtie2-2.3.5.1-py27he513fc3_0
++defaults/linux-64::perl-5.26.2-h14c3975_0
++defaults/linux-64::tbb-2020.0-hfd86e86_0
+# update specs: [u'bowtie2']
+==> 2020-08-11 15:55:30 <==
+# cmd: /home/hm1412/anaconda3/bin/conda install -n CUTandTAG -c bioconda samtools
+# conda version: 4.8.3
++bioconda/linux-64::samtools-1.7-1
++defaults/linux-64::libgcc-7.2.0-h69d50b8_2
+# update specs: [u'samtools']
+==> 2020-08-11 16:08:12 <==
+# cmd: /home/hm1412/anaconda3/bin/conda update --all
+# conda version: 4.8.3
+-bioconda/linux-64::libdeflate-1.0-h14c3975_1
+-bioconda/linux-64::pysam-0.15.3-py27hda2845c_1
+-defaults/linux-64::curl-7.69.1-hbc83047_0
+-defaults/linux-64::libcurl-7.69.1-h20c2e04_0
++bioconda/linux-64::pysam-0.16.0.1-py27ha863e18_1
++conda-forge/linux-64::curl-7.71.1-he644dc0_4
++conda-forge/linux-64::libcurl-7.71.1-hcdd3856_4
++conda-forge/linux-64::libdeflate-1.6-h516909a_0
++conda-forge/linux-64::libev-4.33-h516909a_0
++conda-forge/linux-64::libnghttp2-1.41.0-hab1572f_1
++conda-forge/linux-64::python_abi-2.7-1_cp27mu
++defaults/linux-64::c-ares-1.15.0-h7b6447c_1001

@@ -1,0 +1,3427 @@
+{
+  "build": "1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/bioconda/linux-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/java-jdk-7.0.91-1",
+  "features": "",
+  "files": [
+    "bin/appletviewer",
+    "bin/apt",
+    "bin/extcheck",
+    "bin/idlj",
+    "bin/jar",
+    "bin/jarsigner",
+    "bin/java",
+    "bin/java-rmi.cgi",
+    "bin/javac",
+    "bin/javadoc",
+    "bin/javah",
+    "bin/javap",
+    "bin/jcmd",
+    "bin/jconsole",
+    "bin/jdb",
+    "bin/jhat",
+    "bin/jinfo",
+    "bin/jmap",
+    "bin/jps",
+    "bin/jrunscript",
+    "bin/jsadebugd",
+    "bin/jstack",
+    "bin/jstat",
+    "bin/jstatd",
+    "bin/keytool",
+    "bin/native2ascii",
+    "bin/orbd",
+    "bin/pack200",
+    "bin/policytool",
+    "bin/rmic",
+    "bin/rmid",
+    "bin/rmiregistry",
+    "bin/schemagen",
+    "bin/serialver",
+    "bin/servertool",
+    "bin/tnameserv",
+    "bin/unpack200",
+    "bin/wsgen",
+    "bin/wsimport",
+    "bin/xjc",
+    "build.sh",
+    "include/classfile_constants.h",
+    "include/jawt.h",
+    "include/jdwpTransport.h",
+    "include/jni.h",
+    "include/jvmti.h",
+    "include/jvmticmlr.h",
+    "include/linux/jawt_md.h",
+    "include/linux/jni_md.h",
+    "jre/ASSEMBLY_EXCEPTION",
+    "jre/LICENSE",
+    "jre/THIRD_PARTY_README",
+    "jre/bin/java",
+    "jre/bin/keytool",
+    "jre/bin/orbd",
+    "jre/bin/pack200",
+    "jre/bin/policytool",
+    "jre/bin/rmid",
+    "jre/bin/rmiregistry",
+    "jre/bin/servertool",
+    "jre/bin/tnameserv",
+    "jre/bin/unpack200",
+    "jre/lib/amd64/headless/libmawt.so",
+    "jre/lib/amd64/jli/libjli.so",
+    "jre/lib/amd64/jvm.cfg",
+    "jre/lib/amd64/libattach.so",
+    "jre/lib/amd64/libawt.so",
+    "jre/lib/amd64/libdt_socket.so",
+    "jre/lib/amd64/libfontmanager.so",
+    "jre/lib/amd64/libfreetype.so.6",
+    "jre/lib/amd64/libhprof.so",
+    "jre/lib/amd64/libinstrument.so",
+    "jre/lib/amd64/libj2gss.so",
+    "jre/lib/amd64/libj2pcsc.so",
+    "jre/lib/amd64/libj2pkcs11.so",
+    "jre/lib/amd64/libjaas_unix.so",
+    "jre/lib/amd64/libjava.so",
+    "jre/lib/amd64/libjava_crw_demo.so",
+    "jre/lib/amd64/libjawt.so",
+    "jre/lib/amd64/libjdwp.so",
+    "jre/lib/amd64/libjpeg.so",
+    "jre/lib/amd64/libjsdt.so",
+    "jre/lib/amd64/libjsig.so",
+    "jre/lib/amd64/libjsound.so",
+    "jre/lib/amd64/libjsoundalsa.so",
+    "jre/lib/amd64/liblcms.so",
+    "jre/lib/amd64/libmanagement.so",
+    "jre/lib/amd64/libmlib_image.so",
+    "jre/lib/amd64/libnet.so",
+    "jre/lib/amd64/libnio.so",
+    "jre/lib/amd64/libnpt.so",
+    "jre/lib/amd64/libsaproc.so",
+    "jre/lib/amd64/libsctp.so",
+    "jre/lib/amd64/libsplashscreen.so",
+    "jre/lib/amd64/libsunec.so",
+    "jre/lib/amd64/libunpack.so",
+    "jre/lib/amd64/libverify.so",
+    "jre/lib/amd64/libzip.so",
+    "jre/lib/amd64/server/Xusage.txt",
+    "jre/lib/amd64/server/libjsig.so",
+    "jre/lib/amd64/server/libjvm.so",
+    "jre/lib/amd64/xawt/libmawt.so",
+    "jre/lib/calendars.properties",
+    "jre/lib/charsets.jar",
+    "jre/lib/classlist",
+    "jre/lib/cmm/CIEXYZ.pf",
+    "jre/lib/cmm/GRAY.pf",
+    "jre/lib/cmm/LINEAR_RGB.pf",
+    "jre/lib/cmm/PYCC.pf",
+    "jre/lib/cmm/sRGB.pf",
+    "jre/lib/content-types.properties",
+    "jre/lib/currency.data",
+    "jre/lib/ext/dnsns.jar",
+    "jre/lib/ext/localedata.jar",
+    "jre/lib/ext/meta-index",
+    "jre/lib/ext/sunec.jar",
+    "jre/lib/ext/sunjce_provider.jar",
+    "jre/lib/ext/sunpkcs11.jar",
+    "jre/lib/ext/zipfs.jar",
+    "jre/lib/flavormap.properties",
+    "jre/lib/fontconfig.Fedora.bfc",
+    "jre/lib/fontconfig.Fedora.properties.src",
+    "jre/lib/fontconfig.SuSE.bfc",
+    "jre/lib/fontconfig.SuSE.properties.src",
+    "jre/lib/fontconfig.Ubuntu.bfc",
+    "jre/lib/fontconfig.Ubuntu.properties.src",
+    "jre/lib/fontconfig.bfc",
+    "jre/lib/fontconfig.properties.src",
+    "jre/lib/images/cursors/cursors.properties",
+    "jre/lib/images/cursors/invalid32x32.gif",
+    "jre/lib/images/cursors/motif_CopyDrop32x32.gif",
+    "jre/lib/images/cursors/motif_CopyNoDrop32x32.gif",
+    "jre/lib/images/cursors/motif_LinkDrop32x32.gif",
+    "jre/lib/images/cursors/motif_LinkNoDrop32x32.gif",
+    "jre/lib/images/cursors/motif_MoveDrop32x32.gif",
+    "jre/lib/images/cursors/motif_MoveNoDrop32x32.gif",
+    "jre/lib/jce.jar",
+    "jre/lib/jexec",
+    "jre/lib/jsse.jar",
+    "jre/lib/jvm.hprof.txt",
+    "jre/lib/logging.properties",
+    "jre/lib/management-agent.jar",
+    "jre/lib/management/jmxremote.access",
+    "jre/lib/management/jmxremote.password.template",
+    "jre/lib/management/management.properties",
+    "jre/lib/management/snmp.acl.template",
+    "jre/lib/meta-index",
+    "jre/lib/net.properties",
+    "jre/lib/psfont.properties.ja",
+    "jre/lib/psfontj2d.properties",
+    "jre/lib/resources.jar",
+    "jre/lib/rt.jar",
+    "jre/lib/security/US_export_policy.jar",
+    "jre/lib/security/cacerts",
+    "jre/lib/security/java.policy",
+    "jre/lib/security/java.security",
+    "jre/lib/security/local_policy.jar",
+    "jre/lib/sound.properties",
+    "jre/lib/zi/Africa/Abidjan",
+    "jre/lib/zi/Africa/Accra",
+    "jre/lib/zi/Africa/Algiers",
+    "jre/lib/zi/Africa/Bissau",
+    "jre/lib/zi/Africa/Cairo",
+    "jre/lib/zi/Africa/Casablanca",
+    "jre/lib/zi/Africa/Ceuta",
+    "jre/lib/zi/Africa/El_Aaiun",
+    "jre/lib/zi/Africa/Johannesburg",
+    "jre/lib/zi/Africa/Khartoum",
+    "jre/lib/zi/Africa/Lagos",
+    "jre/lib/zi/Africa/Maputo",
+    "jre/lib/zi/Africa/Monrovia",
+    "jre/lib/zi/Africa/Nairobi",
+    "jre/lib/zi/Africa/Ndjamena",
+    "jre/lib/zi/Africa/Tripoli",
+    "jre/lib/zi/Africa/Tunis",
+    "jre/lib/zi/Africa/Windhoek",
+    "jre/lib/zi/America/Adak",
+    "jre/lib/zi/America/Anchorage",
+    "jre/lib/zi/America/Araguaina",
+    "jre/lib/zi/America/Argentina/Buenos_Aires",
+    "jre/lib/zi/America/Argentina/Catamarca",
+    "jre/lib/zi/America/Argentina/Cordoba",
+    "jre/lib/zi/America/Argentina/Jujuy",
+    "jre/lib/zi/America/Argentina/La_Rioja",
+    "jre/lib/zi/America/Argentina/Mendoza",
+    "jre/lib/zi/America/Argentina/Rio_Gallegos",
+    "jre/lib/zi/America/Argentina/Salta",
+    "jre/lib/zi/America/Argentina/San_Juan",
+    "jre/lib/zi/America/Argentina/San_Luis",
+    "jre/lib/zi/America/Argentina/Tucuman",
+    "jre/lib/zi/America/Argentina/Ushuaia",
+    "jre/lib/zi/America/Asuncion",
+    "jre/lib/zi/America/Atikokan",
+    "jre/lib/zi/America/Bahia",
+    "jre/lib/zi/America/Bahia_Banderas",
+    "jre/lib/zi/America/Barbados",
+    "jre/lib/zi/America/Belem",
+    "jre/lib/zi/America/Belize",
+    "jre/lib/zi/America/Blanc-Sablon",
+    "jre/lib/zi/America/Boa_Vista",
+    "jre/lib/zi/America/Bogota",
+    "jre/lib/zi/America/Boise",
+    "jre/lib/zi/America/Cambridge_Bay",
+    "jre/lib/zi/America/Campo_Grande",
+    "jre/lib/zi/America/Cancun",
+    "jre/lib/zi/America/Caracas",
+    "jre/lib/zi/America/Cayenne",
+    "jre/lib/zi/America/Chicago",
+    "jre/lib/zi/America/Chihuahua",
+    "jre/lib/zi/America/Costa_Rica",
+    "jre/lib/zi/America/Creston",
+    "jre/lib/zi/America/Cuiaba",
+    "jre/lib/zi/America/Curacao",
+    "jre/lib/zi/America/Danmarkshavn",
+    "jre/lib/zi/America/Dawson",
+    "jre/lib/zi/America/Dawson_Creek",
+    "jre/lib/zi/America/Denver",
+    "jre/lib/zi/America/Detroit",
+    "jre/lib/zi/America/Edmonton",
+    "jre/lib/zi/America/Eirunepe",
+    "jre/lib/zi/America/El_Salvador",
+    "jre/lib/zi/America/Fortaleza",
+    "jre/lib/zi/America/Glace_Bay",
+    "jre/lib/zi/America/Godthab",
+    "jre/lib/zi/America/Goose_Bay",
+    "jre/lib/zi/America/Grand_Turk",
+    "jre/lib/zi/America/Guatemala",
+    "jre/lib/zi/America/Guayaquil",
+    "jre/lib/zi/America/Guyana",
+    "jre/lib/zi/America/Halifax",
+    "jre/lib/zi/America/Havana",
+    "jre/lib/zi/America/Hermosillo",
+    "jre/lib/zi/America/Indiana/Indianapolis",
+    "jre/lib/zi/America/Indiana/Knox",
+    "jre/lib/zi/America/Indiana/Marengo",
+    "jre/lib/zi/America/Indiana/Petersburg",
+    "jre/lib/zi/America/Indiana/Tell_City",
+    "jre/lib/zi/America/Indiana/Vevay",
+    "jre/lib/zi/America/Indiana/Vincennes",
+    "jre/lib/zi/America/Indiana/Winamac",
+    "jre/lib/zi/America/Inuvik",
+    "jre/lib/zi/America/Iqaluit",
+    "jre/lib/zi/America/Jamaica",
+    "jre/lib/zi/America/Juneau",
+    "jre/lib/zi/America/Kentucky/Louisville",
+    "jre/lib/zi/America/Kentucky/Monticello",
+    "jre/lib/zi/America/La_Paz",
+    "jre/lib/zi/America/Lima",
+    "jre/lib/zi/America/Los_Angeles",
+    "jre/lib/zi/America/Maceio",
+    "jre/lib/zi/America/Managua",
+    "jre/lib/zi/America/Manaus",
+    "jre/lib/zi/America/Martinique",
+    "jre/lib/zi/America/Matamoros",
+    "jre/lib/zi/America/Mazatlan",
+    "jre/lib/zi/America/Menominee",
+    "jre/lib/zi/America/Merida",
+    "jre/lib/zi/America/Metlakatla",
+    "jre/lib/zi/America/Mexico_City",
+    "jre/lib/zi/America/Miquelon",
+    "jre/lib/zi/America/Moncton",
+    "jre/lib/zi/America/Monterrey",
+    "jre/lib/zi/America/Montevideo",
+    "jre/lib/zi/America/Nassau",
+    "jre/lib/zi/America/New_York",
+    "jre/lib/zi/America/Nipigon",
+    "jre/lib/zi/America/Nome",
+    "jre/lib/zi/America/Noronha",
+    "jre/lib/zi/America/North_Dakota/Beulah",
+    "jre/lib/zi/America/North_Dakota/Center",
+    "jre/lib/zi/America/North_Dakota/New_Salem",
+    "jre/lib/zi/America/Ojinaga",
+    "jre/lib/zi/America/Panama",
+    "jre/lib/zi/America/Pangnirtung",
+    "jre/lib/zi/America/Paramaribo",
+    "jre/lib/zi/America/Phoenix",
+    "jre/lib/zi/America/Port-au-Prince",
+    "jre/lib/zi/America/Port_of_Spain",
+    "jre/lib/zi/America/Porto_Velho",
+    "jre/lib/zi/America/Puerto_Rico",
+    "jre/lib/zi/America/Rainy_River",
+    "jre/lib/zi/America/Rankin_Inlet",
+    "jre/lib/zi/America/Recife",
+    "jre/lib/zi/America/Regina",
+    "jre/lib/zi/America/Resolute",
+    "jre/lib/zi/America/Rio_Branco",
+    "jre/lib/zi/America/Santa_Isabel",
+    "jre/lib/zi/America/Santarem",
+    "jre/lib/zi/America/Santiago",
+    "jre/lib/zi/America/Santo_Domingo",
+    "jre/lib/zi/America/Sao_Paulo",
+    "jre/lib/zi/America/Scoresbysund",
+    "jre/lib/zi/America/Sitka",
+    "jre/lib/zi/America/St_Johns",
+    "jre/lib/zi/America/Swift_Current",
+    "jre/lib/zi/America/Tegucigalpa",
+    "jre/lib/zi/America/Thule",
+    "jre/lib/zi/America/Thunder_Bay",
+    "jre/lib/zi/America/Tijuana",
+    "jre/lib/zi/America/Toronto",
+    "jre/lib/zi/America/Vancouver",
+    "jre/lib/zi/America/Whitehorse",
+    "jre/lib/zi/America/Winnipeg",
+    "jre/lib/zi/America/Yakutat",
+    "jre/lib/zi/America/Yellowknife",
+    "jre/lib/zi/Antarctica/Casey",
+    "jre/lib/zi/Antarctica/Davis",
+    "jre/lib/zi/Antarctica/DumontDUrville",
+    "jre/lib/zi/Antarctica/Macquarie",
+    "jre/lib/zi/Antarctica/Mawson",
+    "jre/lib/zi/Antarctica/Palmer",
+    "jre/lib/zi/Antarctica/Rothera",
+    "jre/lib/zi/Antarctica/Syowa",
+    "jre/lib/zi/Antarctica/Troll",
+    "jre/lib/zi/Antarctica/Vostok",
+    "jre/lib/zi/Asia/Almaty",
+    "jre/lib/zi/Asia/Amman",
+    "jre/lib/zi/Asia/Anadyr",
+    "jre/lib/zi/Asia/Aqtau",
+    "jre/lib/zi/Asia/Aqtobe",
+    "jre/lib/zi/Asia/Ashgabat",
+    "jre/lib/zi/Asia/Baghdad",
+    "jre/lib/zi/Asia/Baku",
+    "jre/lib/zi/Asia/Bangkok",
+    "jre/lib/zi/Asia/Beirut",
+    "jre/lib/zi/Asia/Bishkek",
+    "jre/lib/zi/Asia/Brunei",
+    "jre/lib/zi/Asia/Chita",
+    "jre/lib/zi/Asia/Choibalsan",
+    "jre/lib/zi/Asia/Colombo",
+    "jre/lib/zi/Asia/Damascus",
+    "jre/lib/zi/Asia/Dhaka",
+    "jre/lib/zi/Asia/Dili",
+    "jre/lib/zi/Asia/Dubai",
+    "jre/lib/zi/Asia/Dushanbe",
+    "jre/lib/zi/Asia/Gaza",
+    "jre/lib/zi/Asia/Hebron",
+    "jre/lib/zi/Asia/Ho_Chi_Minh",
+    "jre/lib/zi/Asia/Hong_Kong",
+    "jre/lib/zi/Asia/Hovd",
+    "jre/lib/zi/Asia/Irkutsk",
+    "jre/lib/zi/Asia/Jakarta",
+    "jre/lib/zi/Asia/Jayapura",
+    "jre/lib/zi/Asia/Jerusalem",
+    "jre/lib/zi/Asia/Kabul",
+    "jre/lib/zi/Asia/Kamchatka",
+    "jre/lib/zi/Asia/Karachi",
+    "jre/lib/zi/Asia/Kathmandu",
+    "jre/lib/zi/Asia/Khandyga",
+    "jre/lib/zi/Asia/Kolkata",
+    "jre/lib/zi/Asia/Krasnoyarsk",
+    "jre/lib/zi/Asia/Kuala_Lumpur",
+    "jre/lib/zi/Asia/Kuching",
+    "jre/lib/zi/Asia/Macau",
+    "jre/lib/zi/Asia/Magadan",
+    "jre/lib/zi/Asia/Makassar",
+    "jre/lib/zi/Asia/Manila",
+    "jre/lib/zi/Asia/Nicosia",
+    "jre/lib/zi/Asia/Novokuznetsk",
+    "jre/lib/zi/Asia/Novosibirsk",
+    "jre/lib/zi/Asia/Omsk",
+    "jre/lib/zi/Asia/Oral",
+    "jre/lib/zi/Asia/Pontianak",
+    "jre/lib/zi/Asia/Pyongyang",
+    "jre/lib/zi/Asia/Qatar",
+    "jre/lib/zi/Asia/Qyzylorda",
+    "jre/lib/zi/Asia/Rangoon",
+    "jre/lib/zi/Asia/Riyadh",
+    "jre/lib/zi/Asia/Riyadh87",
+    "jre/lib/zi/Asia/Riyadh88",
+    "jre/lib/zi/Asia/Riyadh89",
+    "jre/lib/zi/Asia/Sakhalin",
+    "jre/lib/zi/Asia/Samarkand",
+    "jre/lib/zi/Asia/Seoul",
+    "jre/lib/zi/Asia/Shanghai",
+    "jre/lib/zi/Asia/Singapore",
+    "jre/lib/zi/Asia/Srednekolymsk",
+    "jre/lib/zi/Asia/Taipei",
+    "jre/lib/zi/Asia/Tashkent",
+    "jre/lib/zi/Asia/Tbilisi",
+    "jre/lib/zi/Asia/Tehran",
+    "jre/lib/zi/Asia/Thimphu",
+    "jre/lib/zi/Asia/Tokyo",
+    "jre/lib/zi/Asia/Ulaanbaatar",
+    "jre/lib/zi/Asia/Urumqi",
+    "jre/lib/zi/Asia/Ust-Nera",
+    "jre/lib/zi/Asia/Vladivostok",
+    "jre/lib/zi/Asia/Yakutsk",
+    "jre/lib/zi/Asia/Yekaterinburg",
+    "jre/lib/zi/Asia/Yerevan",
+    "jre/lib/zi/Atlantic/Azores",
+    "jre/lib/zi/Atlantic/Bermuda",
+    "jre/lib/zi/Atlantic/Canary",
+    "jre/lib/zi/Atlantic/Cape_Verde",
+    "jre/lib/zi/Atlantic/Faroe",
+    "jre/lib/zi/Atlantic/Madeira",
+    "jre/lib/zi/Atlantic/Reykjavik",
+    "jre/lib/zi/Atlantic/South_Georgia",
+    "jre/lib/zi/Atlantic/Stanley",
+    "jre/lib/zi/Australia/Adelaide",
+    "jre/lib/zi/Australia/Brisbane",
+    "jre/lib/zi/Australia/Broken_Hill",
+    "jre/lib/zi/Australia/Currie",
+    "jre/lib/zi/Australia/Darwin",
+    "jre/lib/zi/Australia/Eucla",
+    "jre/lib/zi/Australia/Hobart",
+    "jre/lib/zi/Australia/Lindeman",
+    "jre/lib/zi/Australia/Lord_Howe",
+    "jre/lib/zi/Australia/Melbourne",
+    "jre/lib/zi/Australia/Perth",
+    "jre/lib/zi/Australia/Sydney",
+    "jre/lib/zi/CET",
+    "jre/lib/zi/CST6CDT",
+    "jre/lib/zi/EET",
+    "jre/lib/zi/EST",
+    "jre/lib/zi/EST5EDT",
+    "jre/lib/zi/Etc/GMT",
+    "jre/lib/zi/Etc/GMT+1",
+    "jre/lib/zi/Etc/GMT+10",
+    "jre/lib/zi/Etc/GMT+11",
+    "jre/lib/zi/Etc/GMT+12",
+    "jre/lib/zi/Etc/GMT+2",
+    "jre/lib/zi/Etc/GMT+3",
+    "jre/lib/zi/Etc/GMT+4",
+    "jre/lib/zi/Etc/GMT+5",
+    "jre/lib/zi/Etc/GMT+6",
+    "jre/lib/zi/Etc/GMT+7",
+    "jre/lib/zi/Etc/GMT+8",
+    "jre/lib/zi/Etc/GMT+9",
+    "jre/lib/zi/Etc/GMT-1",
+    "jre/lib/zi/Etc/GMT-10",
+    "jre/lib/zi/Etc/GMT-11",
+    "jre/lib/zi/Etc/GMT-12",
+    "jre/lib/zi/Etc/GMT-13",
+    "jre/lib/zi/Etc/GMT-14",
+    "jre/lib/zi/Etc/GMT-2",
+    "jre/lib/zi/Etc/GMT-3",
+    "jre/lib/zi/Etc/GMT-4",
+    "jre/lib/zi/Etc/GMT-5",
+    "jre/lib/zi/Etc/GMT-6",
+    "jre/lib/zi/Etc/GMT-7",
+    "jre/lib/zi/Etc/GMT-8",
+    "jre/lib/zi/Etc/GMT-9",
+    "jre/lib/zi/Etc/UCT",
+    "jre/lib/zi/Etc/UTC",
+    "jre/lib/zi/Europe/Amsterdam",
+    "jre/lib/zi/Europe/Andorra",
+    "jre/lib/zi/Europe/Athens",
+    "jre/lib/zi/Europe/Belgrade",
+    "jre/lib/zi/Europe/Berlin",
+    "jre/lib/zi/Europe/Brussels",
+    "jre/lib/zi/Europe/Bucharest",
+    "jre/lib/zi/Europe/Budapest",
+    "jre/lib/zi/Europe/Chisinau",
+    "jre/lib/zi/Europe/Copenhagen",
+    "jre/lib/zi/Europe/Dublin",
+    "jre/lib/zi/Europe/Gibraltar",
+    "jre/lib/zi/Europe/Helsinki",
+    "jre/lib/zi/Europe/Istanbul",
+    "jre/lib/zi/Europe/Kaliningrad",
+    "jre/lib/zi/Europe/Kiev",
+    "jre/lib/zi/Europe/Lisbon",
+    "jre/lib/zi/Europe/London",
+    "jre/lib/zi/Europe/Luxembourg",
+    "jre/lib/zi/Europe/Madrid",
+    "jre/lib/zi/Europe/Malta",
+    "jre/lib/zi/Europe/Minsk",
+    "jre/lib/zi/Europe/Monaco",
+    "jre/lib/zi/Europe/Moscow",
+    "jre/lib/zi/Europe/Oslo",
+    "jre/lib/zi/Europe/Paris",
+    "jre/lib/zi/Europe/Prague",
+    "jre/lib/zi/Europe/Riga",
+    "jre/lib/zi/Europe/Rome",
+    "jre/lib/zi/Europe/Samara",
+    "jre/lib/zi/Europe/Simferopol",
+    "jre/lib/zi/Europe/Sofia",
+    "jre/lib/zi/Europe/Stockholm",
+    "jre/lib/zi/Europe/Tallinn",
+    "jre/lib/zi/Europe/Tirane",
+    "jre/lib/zi/Europe/Uzhgorod",
+    "jre/lib/zi/Europe/Vienna",
+    "jre/lib/zi/Europe/Vilnius",
+    "jre/lib/zi/Europe/Volgograd",
+    "jre/lib/zi/Europe/Warsaw",
+    "jre/lib/zi/Europe/Zaporozhye",
+    "jre/lib/zi/Europe/Zurich",
+    "jre/lib/zi/GMT",
+    "jre/lib/zi/HST",
+    "jre/lib/zi/Indian/Chagos",
+    "jre/lib/zi/Indian/Christmas",
+    "jre/lib/zi/Indian/Cocos",
+    "jre/lib/zi/Indian/Kerguelen",
+    "jre/lib/zi/Indian/Mahe",
+    "jre/lib/zi/Indian/Maldives",
+    "jre/lib/zi/Indian/Mauritius",
+    "jre/lib/zi/Indian/Reunion",
+    "jre/lib/zi/MET",
+    "jre/lib/zi/MST",
+    "jre/lib/zi/MST7MDT",
+    "jre/lib/zi/PST8PDT",
+    "jre/lib/zi/Pacific/Apia",
+    "jre/lib/zi/Pacific/Auckland",
+    "jre/lib/zi/Pacific/Bougainville",
+    "jre/lib/zi/Pacific/Chatham",
+    "jre/lib/zi/Pacific/Chuuk",
+    "jre/lib/zi/Pacific/Easter",
+    "jre/lib/zi/Pacific/Efate",
+    "jre/lib/zi/Pacific/Enderbury",
+    "jre/lib/zi/Pacific/Fakaofo",
+    "jre/lib/zi/Pacific/Fiji",
+    "jre/lib/zi/Pacific/Funafuti",
+    "jre/lib/zi/Pacific/Galapagos",
+    "jre/lib/zi/Pacific/Gambier",
+    "jre/lib/zi/Pacific/Guadalcanal",
+    "jre/lib/zi/Pacific/Guam",
+    "jre/lib/zi/Pacific/Honolulu",
+    "jre/lib/zi/Pacific/Kiritimati",
+    "jre/lib/zi/Pacific/Kosrae",
+    "jre/lib/zi/Pacific/Kwajalein",
+    "jre/lib/zi/Pacific/Majuro",
+    "jre/lib/zi/Pacific/Marquesas",
+    "jre/lib/zi/Pacific/Nauru",
+    "jre/lib/zi/Pacific/Niue",
+    "jre/lib/zi/Pacific/Norfolk",
+    "jre/lib/zi/Pacific/Noumea",
+    "jre/lib/zi/Pacific/Pago_Pago",
+    "jre/lib/zi/Pacific/Palau",
+    "jre/lib/zi/Pacific/Pitcairn",
+    "jre/lib/zi/Pacific/Pohnpei",
+    "jre/lib/zi/Pacific/Port_Moresby",
+    "jre/lib/zi/Pacific/Rarotonga",
+    "jre/lib/zi/Pacific/Tahiti",
+    "jre/lib/zi/Pacific/Tarawa",
+    "jre/lib/zi/Pacific/Tongatapu",
+    "jre/lib/zi/Pacific/Wake",
+    "jre/lib/zi/Pacific/Wallis",
+    "jre/lib/zi/SystemV/AST4",
+    "jre/lib/zi/SystemV/AST4ADT",
+    "jre/lib/zi/SystemV/CST6",
+    "jre/lib/zi/SystemV/CST6CDT",
+    "jre/lib/zi/SystemV/EST5",
+    "jre/lib/zi/SystemV/EST5EDT",
+    "jre/lib/zi/SystemV/HST10",
+    "jre/lib/zi/SystemV/MST7",
+    "jre/lib/zi/SystemV/MST7MDT",
+    "jre/lib/zi/SystemV/PST8",
+    "jre/lib/zi/SystemV/PST8PDT",
+    "jre/lib/zi/SystemV/YST9",
+    "jre/lib/zi/SystemV/YST9YDT",
+    "jre/lib/zi/WET",
+    "jre/lib/zi/ZoneInfoMappings",
+    "lib/amd64/jli/libjli.so",
+    "lib/ct.sym",
+    "lib/dt.jar",
+    "lib/ir.idl",
+    "lib/jconsole.jar",
+    "lib/jexec",
+    "lib/orb.idl",
+    "lib/sa-jdi.jar",
+    "lib/tools.jar",
+    "man/ja/man1/appletviewer.1",
+    "man/ja/man1/apt.1",
+    "man/ja/man1/extcheck.1",
+    "man/ja/man1/idlj.1",
+    "man/ja/man1/jar.1",
+    "man/ja/man1/jarsigner.1",
+    "man/ja/man1/java.1",
+    "man/ja/man1/javac.1",
+    "man/ja/man1/javadoc.1",
+    "man/ja/man1/javah.1",
+    "man/ja/man1/javap.1",
+    "man/ja/man1/jcmd.1",
+    "man/ja/man1/jconsole.1",
+    "man/ja/man1/jdb.1",
+    "man/ja/man1/jhat.1",
+    "man/ja/man1/jinfo.1",
+    "man/ja/man1/jmap.1",
+    "man/ja/man1/jps.1",
+    "man/ja/man1/jrunscript.1",
+    "man/ja/man1/jsadebugd.1",
+    "man/ja/man1/jstack.1",
+    "man/ja/man1/jstat.1",
+    "man/ja/man1/jstatd.1",
+    "man/ja/man1/keytool.1",
+    "man/ja/man1/native2ascii.1",
+    "man/ja/man1/orbd.1",
+    "man/ja/man1/pack200.1",
+    "man/ja/man1/policytool.1",
+    "man/ja/man1/rmic.1",
+    "man/ja/man1/rmid.1",
+    "man/ja/man1/rmiregistry.1",
+    "man/ja/man1/schemagen.1",
+    "man/ja/man1/serialver.1",
+    "man/ja/man1/servertool.1",
+    "man/ja/man1/tnameserv.1",
+    "man/ja/man1/unpack200.1",
+    "man/ja/man1/wsgen.1",
+    "man/ja/man1/wsimport.1",
+    "man/ja/man1/xjc.1",
+    "man/ja_JP.UTF-8/man1/appletviewer.1",
+    "man/ja_JP.UTF-8/man1/apt.1",
+    "man/ja_JP.UTF-8/man1/extcheck.1",
+    "man/ja_JP.UTF-8/man1/idlj.1",
+    "man/ja_JP.UTF-8/man1/jar.1",
+    "man/ja_JP.UTF-8/man1/jarsigner.1",
+    "man/ja_JP.UTF-8/man1/java.1",
+    "man/ja_JP.UTF-8/man1/javac.1",
+    "man/ja_JP.UTF-8/man1/javadoc.1",
+    "man/ja_JP.UTF-8/man1/javah.1",
+    "man/ja_JP.UTF-8/man1/javap.1",
+    "man/ja_JP.UTF-8/man1/jcmd.1",
+    "man/ja_JP.UTF-8/man1/jconsole.1",
+    "man/ja_JP.UTF-8/man1/jdb.1",
+    "man/ja_JP.UTF-8/man1/jhat.1",
+    "man/ja_JP.UTF-8/man1/jinfo.1",
+    "man/ja_JP.UTF-8/man1/jmap.1",
+    "man/ja_JP.UTF-8/man1/jps.1",
+    "man/ja_JP.UTF-8/man1/jrunscript.1",
+    "man/ja_JP.UTF-8/man1/jsadebugd.1",
+    "man/ja_JP.UTF-8/man1/jstack.1",
+    "man/ja_JP.UTF-8/man1/jstat.1",
+    "man/ja_JP.UTF-8/man1/jstatd.1",
+    "man/ja_JP.UTF-8/man1/keytool.1",
+    "man/ja_JP.UTF-8/man1/native2ascii.1",
+    "man/ja_JP.UTF-8/man1/orbd.1",
+    "man/ja_JP.UTF-8/man1/pack200.1",
+    "man/ja_JP.UTF-8/man1/policytool.1",
+    "man/ja_JP.UTF-8/man1/rmic.1",
+    "man/ja_JP.UTF-8/man1/rmid.1",
+    "man/ja_JP.UTF-8/man1/rmiregistry.1",
+    "man/ja_JP.UTF-8/man1/schemagen.1",
+    "man/ja_JP.UTF-8/man1/serialver.1",
+    "man/ja_JP.UTF-8/man1/servertool.1",
+    "man/ja_JP.UTF-8/man1/tnameserv.1",
+    "man/ja_JP.UTF-8/man1/unpack200.1",
+    "man/ja_JP.UTF-8/man1/wsgen.1",
+    "man/ja_JP.UTF-8/man1/wsimport.1",
+    "man/ja_JP.UTF-8/man1/xjc.1",
+    "man/man1/appletviewer.1",
+    "man/man1/apt.1",
+    "man/man1/extcheck.1",
+    "man/man1/idlj.1",
+    "man/man1/jar.1",
+    "man/man1/jarsigner.1",
+    "man/man1/java.1",
+    "man/man1/javac.1",
+    "man/man1/javadoc.1",
+    "man/man1/javah.1",
+    "man/man1/javap.1",
+    "man/man1/jcmd.1",
+    "man/man1/jconsole.1",
+    "man/man1/jdb.1",
+    "man/man1/jhat.1",
+    "man/man1/jinfo.1",
+    "man/man1/jmap.1",
+    "man/man1/jps.1",
+    "man/man1/jrunscript.1",
+    "man/man1/jsadebugd.1",
+    "man/man1/jstack.1",
+    "man/man1/jstat.1",
+    "man/man1/jstatd.1",
+    "man/man1/keytool.1",
+    "man/man1/native2ascii.1",
+    "man/man1/orbd.1",
+    "man/man1/pack200.1",
+    "man/man1/policytool.1",
+    "man/man1/rmic.1",
+    "man/man1/rmid.1",
+    "man/man1/rmiregistry.1",
+    "man/man1/schemagen.1",
+    "man/man1/serialver.1",
+    "man/man1/servertool.1",
+    "man/man1/tnameserv.1",
+    "man/man1/unpack200.1",
+    "man/man1/wsgen.1",
+    "man/man1/wsimport.1",
+    "man/man1/xjc.1",
+    "meta.yaml"
+  ],
+  "fn": "java-jdk-7.0.91-1.tar.bz2",
+  "license": "GPL",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/java-jdk-7.0.91-1",
+    "type": 1
+  },
+  "md5": "2584f92bfab41f56ff777142d593b96f",
+  "name": "java-jdk",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/java-jdk-7.0.91-1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/appletviewer",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/apt",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/extcheck",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/idlj",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/jarsigner",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/java",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/java-rmi.cgi",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/javac",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/javadoc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/javah",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/javap",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/jcmd",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/jconsole",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/jdb",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/jhat",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/jinfo",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/jmap",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/jps",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/jrunscript",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/jsadebugd",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/jstack",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/jstat",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/jstatd",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/keytool",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/native2ascii",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/orbd",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/pack200",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/policytool",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/rmic",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/rmid",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/rmiregistry",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/schemagen",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/serialver",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/servertool",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/tnameserv",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/unpack200",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/wsgen",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/wsimport",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "bin/xjc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "build.sh",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/classfile_constants.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/jawt.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/jdwpTransport.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/jni.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/jvmti.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/jvmticmlr.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/linux/jawt_md.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "include/linux/jni_md.h",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/ASSEMBLY_EXCEPTION",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/LICENSE",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/THIRD_PARTY_README",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/bin/java",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/bin/keytool",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/bin/orbd",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/bin/pack200",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/bin/policytool",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/bin/rmid",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/bin/rmiregistry",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/bin/servertool",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/bin/tnameserv",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/bin/unpack200",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/headless/libmawt.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/jli/libjli.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/jvm.cfg",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libattach.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libawt.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libdt_socket.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libfontmanager.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libfreetype.so.6",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libhprof.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libinstrument.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libj2gss.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libj2pcsc.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libj2pkcs11.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libjaas_unix.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libjava.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libjava_crw_demo.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libjawt.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libjdwp.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libjpeg.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libjsdt.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libjsig.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libjsound.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libjsoundalsa.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/liblcms.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libmanagement.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libmlib_image.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libnet.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libnio.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libnpt.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libsaproc.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libsctp.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libsplashscreen.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libsunec.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libunpack.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libverify.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/libzip.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/server/Xusage.txt",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/server/libjsig.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/server/libjvm.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/amd64/xawt/libmawt.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/calendars.properties",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/charsets.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/classlist",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/cmm/CIEXYZ.pf",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/cmm/GRAY.pf",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/cmm/LINEAR_RGB.pf",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/cmm/PYCC.pf",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/cmm/sRGB.pf",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/content-types.properties",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/currency.data",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/ext/dnsns.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/ext/localedata.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/ext/meta-index",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/ext/sunec.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/ext/sunjce_provider.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/ext/sunpkcs11.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/ext/zipfs.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/flavormap.properties",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/fontconfig.Fedora.bfc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/fontconfig.Fedora.properties.src",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/fontconfig.SuSE.bfc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/fontconfig.SuSE.properties.src",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/fontconfig.Ubuntu.bfc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/fontconfig.Ubuntu.properties.src",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/fontconfig.bfc",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/fontconfig.properties.src",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/images/cursors/cursors.properties",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/images/cursors/invalid32x32.gif",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/images/cursors/motif_CopyDrop32x32.gif",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/images/cursors/motif_CopyNoDrop32x32.gif",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/images/cursors/motif_LinkDrop32x32.gif",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/images/cursors/motif_LinkNoDrop32x32.gif",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/images/cursors/motif_MoveDrop32x32.gif",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/images/cursors/motif_MoveNoDrop32x32.gif",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/jce.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/jexec",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/jsse.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/jvm.hprof.txt",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/logging.properties",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/management-agent.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/management/jmxremote.access",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/management/jmxremote.password.template",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/management/management.properties",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/management/snmp.acl.template",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/meta-index",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/net.properties",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/psfont.properties.ja",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/psfontj2d.properties",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/resources.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/rt.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/security/US_export_policy.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/security/cacerts",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/security/java.policy",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/security/java.security",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/security/local_policy.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/sound.properties",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Abidjan",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Accra",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Algiers",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Bissau",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Cairo",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Casablanca",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Ceuta",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/El_Aaiun",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Johannesburg",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Khartoum",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Lagos",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Maputo",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Monrovia",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Nairobi",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Ndjamena",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Tripoli",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Tunis",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Africa/Windhoek",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Adak",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Anchorage",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Araguaina",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Argentina/Buenos_Aires",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Argentina/Catamarca",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Argentina/Cordoba",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Argentina/Jujuy",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Argentina/La_Rioja",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Argentina/Mendoza",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Argentina/Rio_Gallegos",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Argentina/Salta",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Argentina/San_Juan",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Argentina/San_Luis",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Argentina/Tucuman",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Argentina/Ushuaia",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Asuncion",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Atikokan",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Bahia",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Bahia_Banderas",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Barbados",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Belem",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Belize",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Blanc-Sablon",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Boa_Vista",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Bogota",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Boise",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Cambridge_Bay",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Campo_Grande",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Cancun",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Caracas",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Cayenne",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Chicago",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Chihuahua",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Costa_Rica",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Creston",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Cuiaba",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Curacao",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Danmarkshavn",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Dawson",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Dawson_Creek",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Denver",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Detroit",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Edmonton",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Eirunepe",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/El_Salvador",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Fortaleza",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Glace_Bay",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Godthab",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Goose_Bay",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Grand_Turk",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Guatemala",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Guayaquil",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Guyana",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Halifax",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Havana",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Hermosillo",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Indiana/Indianapolis",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Indiana/Knox",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Indiana/Marengo",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Indiana/Petersburg",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Indiana/Tell_City",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Indiana/Vevay",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Indiana/Vincennes",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Indiana/Winamac",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Inuvik",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Iqaluit",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Jamaica",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Juneau",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Kentucky/Louisville",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Kentucky/Monticello",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/La_Paz",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Lima",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Los_Angeles",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Maceio",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Managua",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Manaus",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Martinique",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Matamoros",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Mazatlan",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Menominee",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Merida",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Metlakatla",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Mexico_City",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Miquelon",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Moncton",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Monterrey",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Montevideo",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Nassau",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/New_York",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Nipigon",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Nome",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Noronha",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/North_Dakota/Beulah",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/North_Dakota/Center",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/North_Dakota/New_Salem",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Ojinaga",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Panama",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Pangnirtung",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Paramaribo",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Phoenix",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Port-au-Prince",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Port_of_Spain",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Porto_Velho",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Puerto_Rico",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Rainy_River",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Rankin_Inlet",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Recife",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Regina",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Resolute",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Rio_Branco",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Santa_Isabel",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Santarem",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Santiago",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Santo_Domingo",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Sao_Paulo",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Scoresbysund",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Sitka",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/St_Johns",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Swift_Current",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Tegucigalpa",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Thule",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Thunder_Bay",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Tijuana",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Toronto",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Vancouver",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Whitehorse",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Winnipeg",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Yakutat",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/America/Yellowknife",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Antarctica/Casey",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Antarctica/Davis",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Antarctica/DumontDUrville",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Antarctica/Macquarie",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Antarctica/Mawson",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Antarctica/Palmer",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Antarctica/Rothera",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Antarctica/Syowa",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Antarctica/Troll",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Antarctica/Vostok",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Almaty",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Amman",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Anadyr",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Aqtau",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Aqtobe",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Ashgabat",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Baghdad",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Baku",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Bangkok",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Beirut",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Bishkek",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Brunei",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Chita",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Choibalsan",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Colombo",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Damascus",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Dhaka",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Dili",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Dubai",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Dushanbe",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Gaza",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Hebron",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Ho_Chi_Minh",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Hong_Kong",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Hovd",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Irkutsk",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Jakarta",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Jayapura",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Jerusalem",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Kabul",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Kamchatka",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Karachi",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Kathmandu",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Khandyga",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Kolkata",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Krasnoyarsk",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Kuala_Lumpur",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Kuching",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Macau",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Magadan",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Makassar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Manila",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Nicosia",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Novokuznetsk",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Novosibirsk",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Omsk",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Oral",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Pontianak",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Pyongyang",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Qatar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Qyzylorda",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Rangoon",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Riyadh",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Riyadh87",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Riyadh88",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Riyadh89",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Sakhalin",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Samarkand",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Seoul",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Shanghai",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Singapore",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Srednekolymsk",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Taipei",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Tashkent",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Tbilisi",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Tehran",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Thimphu",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Tokyo",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Ulaanbaatar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Urumqi",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Ust-Nera",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Vladivostok",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Yakutsk",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Yekaterinburg",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Asia/Yerevan",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Atlantic/Azores",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Atlantic/Bermuda",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Atlantic/Canary",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Atlantic/Cape_Verde",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Atlantic/Faroe",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Atlantic/Madeira",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Atlantic/Reykjavik",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Atlantic/South_Georgia",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Atlantic/Stanley",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Australia/Adelaide",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Australia/Brisbane",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Australia/Broken_Hill",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Australia/Currie",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Australia/Darwin",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Australia/Eucla",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Australia/Hobart",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Australia/Lindeman",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Australia/Lord_Howe",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Australia/Melbourne",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Australia/Perth",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Australia/Sydney",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/CET",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/CST6CDT",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/EET",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/EST",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/EST5EDT",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT+1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT+10",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT+11",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT+12",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT+2",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT+3",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT+4",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT+5",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT+6",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT+7",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT+8",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT+9",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT-1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT-10",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT-11",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT-12",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT-13",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT-14",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT-2",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT-3",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT-4",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT-5",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT-6",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT-7",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT-8",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/GMT-9",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/UCT",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Etc/UTC",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Amsterdam",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Andorra",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Athens",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Belgrade",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Berlin",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Brussels",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Bucharest",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Budapest",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Chisinau",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Copenhagen",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Dublin",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Gibraltar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Helsinki",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Istanbul",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Kaliningrad",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Kiev",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Lisbon",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/London",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Luxembourg",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Madrid",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Malta",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Minsk",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Monaco",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Moscow",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Oslo",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Paris",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Prague",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Riga",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Rome",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Samara",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Simferopol",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Sofia",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Stockholm",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Tallinn",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Tirane",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Uzhgorod",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Vienna",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Vilnius",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Volgograd",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Warsaw",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Zaporozhye",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Europe/Zurich",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/GMT",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/HST",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Indian/Chagos",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Indian/Christmas",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Indian/Cocos",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Indian/Kerguelen",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Indian/Mahe",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Indian/Maldives",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Indian/Mauritius",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Indian/Reunion",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/MET",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/MST",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/MST7MDT",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/PST8PDT",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Apia",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Auckland",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Bougainville",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Chatham",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Chuuk",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Easter",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Efate",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Enderbury",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Fakaofo",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Fiji",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Funafuti",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Galapagos",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Gambier",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Guadalcanal",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Guam",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Honolulu",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Kiritimati",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Kosrae",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Kwajalein",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Majuro",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Marquesas",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Nauru",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Niue",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Norfolk",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Noumea",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Pago_Pago",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Palau",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Pitcairn",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Pohnpei",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Port_Moresby",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Rarotonga",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Tahiti",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Tarawa",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Tongatapu",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Wake",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/Pacific/Wallis",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/SystemV/AST4",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/SystemV/AST4ADT",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/SystemV/CST6",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/SystemV/CST6CDT",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/SystemV/EST5",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/SystemV/EST5EDT",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/SystemV/HST10",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/SystemV/MST7",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/SystemV/MST7MDT",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/SystemV/PST8",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/SystemV/PST8PDT",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/SystemV/YST9",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/SystemV/YST9YDT",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/WET",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "jre/lib/zi/ZoneInfoMappings",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/amd64/jli/libjli.so",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/ct.sym",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/dt.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/ir.idl",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/jconsole.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/jexec",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/orb.idl",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/sa-jdi.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "lib/tools.jar",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/appletviewer.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/apt.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/extcheck.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/idlj.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/jar.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/jarsigner.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/java.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/javac.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/javadoc.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/javah.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/javap.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/jcmd.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/jconsole.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/jdb.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/jhat.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/jinfo.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/jmap.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/jps.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/jrunscript.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/jsadebugd.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/jstack.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/jstat.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/jstatd.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/keytool.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/native2ascii.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/orbd.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/pack200.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/policytool.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/rmic.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/rmid.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/rmiregistry.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/schemagen.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/serialver.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/servertool.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/tnameserv.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/unpack200.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/wsgen.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/wsimport.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja/man1/xjc.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/appletviewer.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/apt.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/extcheck.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/idlj.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/jar.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/jarsigner.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/java.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/javac.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/javadoc.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/javah.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/javap.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/jcmd.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/jconsole.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/jdb.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/jhat.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/jinfo.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/jmap.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/jps.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/jrunscript.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/jsadebugd.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/jstack.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/jstat.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/jstatd.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/keytool.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/native2ascii.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/orbd.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/pack200.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/policytool.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/rmic.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/rmid.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/rmiregistry.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/schemagen.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/serialver.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/servertool.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/tnameserv.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/unpack200.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/wsgen.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/wsimport.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/ja_JP.UTF-8/man1/xjc.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/appletviewer.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/apt.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/extcheck.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/idlj.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/jar.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/jarsigner.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/java.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/javac.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/javadoc.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/javah.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/javap.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/jcmd.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/jconsole.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/jdb.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/jhat.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/jinfo.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/jmap.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/jps.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/jrunscript.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/jsadebugd.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/jstack.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/jstat.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/jstatd.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/keytool.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/native2ascii.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/orbd.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/pack200.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/policytool.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/rmic.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/rmid.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/rmiregistry.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/schemagen.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/serialver.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/servertool.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/tnameserv.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/unpack200.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/wsgen.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/wsimport.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "man/man1/xjc.1",
+        "path_type": "hardlink"
+      },
+      {
+        "_path": "meta.yaml",
+        "path_type": "hardlink"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "java-jdk",
+  "sha256": "10655462b2573c02c377a0619aff651a14a60b7d7a21103b894ae43f204a45d0",
+  "size": 37431477,
+  "subdir": "linux-64",
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/linux-64/java-jdk-7.0.91-1.tar.bz2",
+  "version": "7.0.91"
+}

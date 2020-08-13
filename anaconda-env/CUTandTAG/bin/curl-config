@@ -6,7 +6,7 @@
 #                            | (__| |_| |  _ <| |___
 #                             \___|\___/|_| \_\_____|
 #
-# Copyright (C) 2001 - 2018, Daniel Stenberg, <daniel@haxx.se>, et al.
+# Copyright (C) 2001 - 2020, Daniel Stenberg, <daniel@haxx.se>, et al.
 #
 # This software is licensed as described in the file COPYING, which
 # you should have received as part of this distribution. The terms
@@ -76,7 +76,7 @@ while test $# -gt 0; do
         ;;
 
     --cc)
-        echo "/tmp/build/80754af9/curl_split_recipe_1584460717882/_build_env/bin/x86_64-conda_cos6-linux-gnu-cc"
+        echo "/home/conda/feedstock_root/build_artifacts/curl_split_recipe_1596004597054/_build_env/bin/x86_64-conda-linux-gnu-cc"
         ;;
 
     --prefix)
@@ -84,7 +84,7 @@ while test $# -gt 0; do
         ;;
 
     --feature|--features)
-        for feature in SSL IPv6 UnixSockets libz AsynchDNS GSS-API SPNEGO Kerberos NTLM NTLM_WB TLS-SRP HTTPS-proxy ""; do
+        for feature in SSL IPv6 UnixSockets libz AsynchDNS GSS-API SPNEGO Kerberos NTLM NTLM_WB TLS-SRP HTTP2 HTTPS-proxy ""; do
             test -n "$feature" && echo "$feature"
         done
         ;;
@@ -96,7 +96,7 @@ while test $# -gt 0; do
         ;;
 
     --version)
-        echo libcurl 7.69.1
+        echo libcurl 7.71.1
         exit 0
         ;;
 
@@ -108,11 +108,11 @@ while test $# -gt 0; do
         # dash as that's used for things like version 1.2.3-CVS
         cpatch=`echo $checkfor | cut -d. -f3 | cut -d- -f1`
 
-        vmajor=`echo 7.69.1 | cut -d. -f1`
-        vminor=`echo 7.69.1 | cut -d. -f2`
+        vmajor=`echo 7.71.1 | cut -d. -f1`
+        vminor=`echo 7.71.1 | cut -d. -f2`
         # when extracting the patch part we strip off everything after a
         # dash as that's used for things like version 1.2.3-CVS
-        vpatch=`echo 7.69.1 | cut -d. -f3 | cut -d- -f1`
+        vpatch=`echo 7.71.1 | cut -d. -f3 | cut -d- -f1`
 
         if test "$vmajor" -gt "$cmajor"; then
             exit 0;
@@ -128,12 +128,12 @@ while test $# -gt 0; do
             fi
         fi
 
-        echo "requested version $checkfor is newer than existing 7.69.1"
+        echo "requested version $checkfor is newer than existing 7.71.1"
         exit 1
         ;;
 
     --vernum)
-        echo 074501
+        echo 074701
         exit 0
         ;;
 
@@ -160,8 +160,8 @@ while test $# -gt 0; do
         else
            CURLLIBDIR=""
         fi
-        if test "Xno" = "Xyes"; then
-          echo ${CURLLIBDIR}-lcurl -lssh2 -lssh2 -lssl -lcrypto -lssl -lcrypto -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,--enable-new-dtags -Wl,-rpath -Wl,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,--disable-new-dtags -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lz -lrt
+        if test "Xyes" = "Xno" -o "Xno" = "Xyes"; then
+          echo ${CURLLIBDIR}-lcurl -lnghttp2 -lssh2 -lssh2 -lssl -lcrypto -lssl -lcrypto -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,--enable-new-dtags -Wl,-rpath -Wl,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,--disable-new-dtags -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lz -lrt
         else
           echo ${CURLLIBDIR}-lcurl
         fi
@@ -172,7 +172,7 @@ while test $# -gt 0; do
 
     --static-libs)
         if test "Xyes" != "Xno" ; then
-          echo ${exec_prefix}/lib/libcurl.a -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -lssh2 -lssh2 -lssl -lcrypto -lssl -lcrypto -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,--enable-new-dtags -Wl,-rpath -Wl,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,--disable-new-dtags -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lz -lrt
+          echo ${exec_prefix}/lib/libcurl.a -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -lnghttp2 -lssh2 -lssh2 -lssl -lcrypto -lssl -lcrypto -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,--enable-new-dtags -Wl,-rpath -Wl,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,--disable-new-dtags -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lz -lrt
         else
           echo "curl was built with static libraries disabled" >&2
           exit 1
@@ -180,7 +180,7 @@ while test $# -gt 0; do
         ;;
 
     --configure)
-        echo " '--prefix=/home/hm1412/anaconda3/envs/CUTandTAG' '--host=x86_64-conda_cos6-linux-gnu' '--disable-ldap' '--with-ca-bundle=/home/hm1412/anaconda3/envs/CUTandTAG/ssl/cacert.pem' '--with-ssl=/home/hm1412/anaconda3/envs/CUTandTAG' '--with-zlib=/home/hm1412/anaconda3/envs/CUTandTAG' '--with-gssapi=/home/hm1412/anaconda3/envs/CUTandTAG' '--with-libssh2=/home/hm1412/anaconda3/envs/CUTandTAG' 'host_alias=x86_64-conda_cos6-linux-gnu' 'CC=/tmp/build/80754af9/curl_split_recipe_1584460717882/_build_env/bin/x86_64-conda_cos6-linux-gnu-cc' 'CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -fdebug-prefix-map=/tmp/build/80754af9/curl_split_recipe_1584460717882/work=/usr/local/src/conda/curl_split_recipe-7.69.1 -fdebug-prefix-map=/home/hm1412/anaconda3/envs/CUTandTAG=/usr/local/src/conda-prefix' 'LDFLAGS=-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib' 'CPPFLAGS=-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include' 'CPP=/tmp/build/80754af9/curl_split_recipe_1584460717882/_build_env/bin/x86_64-conda_cos6-linux-gnu-cpp'"
+        echo " '--prefix=/home/hm1412/anaconda3/envs/CUTandTAG' '--host=x86_64-conda-linux-gnu' '--disable-ldap' '--with-ca-bundle=/home/hm1412/anaconda3/envs/CUTandTAG/ssl/cacert.pem' '--with-ssl=/home/hm1412/anaconda3/envs/CUTandTAG' '--with-zlib=/home/hm1412/anaconda3/envs/CUTandTAG' '--with-gssapi=/home/hm1412/anaconda3/envs/CUTandTAG' '--with-libssh2=/home/hm1412/anaconda3/envs/CUTandTAG' '--with-nghttp2=/home/hm1412/anaconda3/envs/CUTandTAG' 'host_alias=x86_64-conda-linux-gnu' 'CC=/home/conda/feedstock_root/build_artifacts/curl_split_recipe_1596004597054/_build_env/bin/x86_64-conda-linux-gnu-cc' 'CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include -fdebug-prefix-map=/home/conda/feedstock_root/build_artifacts/curl_split_recipe_1596004597054/work=/usr/local/src/conda/curl_split_recipe-7.71.1 -fdebug-prefix-map=/home/hm1412/anaconda3/envs/CUTandTAG=/usr/local/src/conda-prefix' 'LDFLAGS=-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib -L/home/hm1412/anaconda3/envs/CUTandTAG/lib -Wl,-rpath-link,/home/hm1412/anaconda3/envs/CUTandTAG/lib' 'CPPFLAGS=-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/hm1412/anaconda3/envs/CUTandTAG/include' 'CPP=/home/conda/feedstock_root/build_artifacts/curl_split_recipe_1596004597054/_build_env/bin/x86_64-conda-linux-gnu-cpp'"
         ;;
 
     *)

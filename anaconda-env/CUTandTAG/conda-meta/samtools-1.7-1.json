@@ -1,0 +1,228 @@
+{
+  "build": "1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/bioconda/linux-64",
+  "constrains": [],
+  "depends": [
+    "bzip2 1.0*",
+    "curl",
+    "libgcc",
+    "xz 5.2*",
+    "zlib 1.2.11*"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/samtools-1.7-1",
+  "features": "",
+  "files": [
+    "bin/ace2sam",
+    "bin/blast2sam.pl",
+    "bin/bowtie2sam.pl",
+    "bin/export2sam.pl",
+    "bin/interpolate_sam.pl",
+    "bin/maq2sam-long",
+    "bin/maq2sam-short",
+    "bin/md5fa",
+    "bin/md5sum-lite",
+    "bin/novo2sam.pl",
+    "bin/plot-bamstats",
+    "bin/psl2sam.pl",
+    "bin/sam2vcf.pl",
+    "bin/samtools",
+    "bin/samtools.pl",
+    "bin/seq_cache_populate.pl",
+    "bin/soap2sam.pl",
+    "bin/wgsim",
+    "bin/wgsim_eval.pl",
+    "bin/zoom2sam.pl",
+    "share/man/man1/samtools.1",
+    "share/man/man1/wgsim.1"
+  ],
+  "fn": "samtools-1.7-1.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/samtools-1.7-1",
+    "type": 1
+  },
+  "md5": "cd574430473ac11f4e4f476825bc6a35",
+  "name": "samtools",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/samtools-1.7-1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/ace2sam",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/samtools_1518569528655/_b_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "52c1fa81195ecc803045dd70c412774630c602d1b42937727fe99334ef8b37c3",
+        "sha256_in_prefix": "11d05155766b82411ca7207b15c12573d1ef16b39ecc1fe69eaca68a1f62dd90",
+        "size_in_bytes": 80783
+      },
+      {
+        "_path": "bin/blast2sam.pl",
+        "path_type": "hardlink",
+        "sha256": "6e29ab76fc12c9cc51e0ae52c134e2c8e49ef8322cbefc9cb441cd7bcaadcd23",
+        "sha256_in_prefix": "6e29ab76fc12c9cc51e0ae52c134e2c8e49ef8322cbefc9cb441cd7bcaadcd23",
+        "size_in_bytes": 5333
+      },
+      {
+        "_path": "bin/bowtie2sam.pl",
+        "path_type": "hardlink",
+        "sha256": "44378bc61de934a6a07cd62c75405636c51f1e96fa1aada3304cd5ec4868d876",
+        "sha256_in_prefix": "44378bc61de934a6a07cd62c75405636c51f1e96fa1aada3304cd5ec4868d876",
+        "size_in_bytes": 3364
+      },
+      {
+        "_path": "bin/export2sam.pl",
+        "path_type": "hardlink",
+        "sha256": "e61cd3f77fc4858bc0610314b7df74d67afb2ce4109ce07694f6f7273177778a",
+        "sha256_in_prefix": "e61cd3f77fc4858bc0610314b7df74d67afb2ce4109ce07694f6f7273177778a",
+        "size_in_bytes": 18032
+      },
+      {
+        "_path": "bin/interpolate_sam.pl",
+        "path_type": "hardlink",
+        "sha256": "3b05d8dac6abd6499a45ff8ddd01fc558815ad863f16b7380da861ea09fc11dd",
+        "sha256_in_prefix": "3b05d8dac6abd6499a45ff8ddd01fc558815ad863f16b7380da861ea09fc11dd",
+        "size_in_bytes": 6125
+      },
+      {
+        "_path": "bin/maq2sam-long",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/samtools_1518569528655/_b_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "a466abaee3c18577a4ac177d47180fd98661a50a100ab2353ec3cee60bf98e45",
+        "sha256_in_prefix": "2fd3b2e41af9f62b3029397416ef27f28e9e39fd155ea6c22581705bad9f0ccd",
+        "size_in_bytes": 24183
+      },
+      {
+        "_path": "bin/maq2sam-short",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/samtools_1518569528655/_b_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "37891b030aef022aff94db4dddb7b07d9f63f329c893041b0bac177c3ff4d8b8",
+        "sha256_in_prefix": "4729395a5e234cc32397e2cce9c1da6a192af7207c625b9d84a3718d60134408",
+        "size_in_bytes": 24079
+      },
+      {
+        "_path": "bin/md5fa",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/samtools_1518569528655/_b_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "ba057f054e233df57abff791d3e8744a27f79a955403322252c8445677b7c70c",
+        "sha256_in_prefix": "82f3c58c4b2c6d4a0608e51c0af232f92a7b6e11bf98ce8087a2c8499943e9de",
+        "size_in_bytes": 31021
+      },
+      {
+        "_path": "bin/md5sum-lite",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/samtools_1518569528655/_b_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "7f54752c6141cc03cef76507be8bd94a6fea8670d4ac0009672670050ad5480f",
+        "sha256_in_prefix": "355df90e3c66d7caab7d95cc4d9dfc9c693dc2aa0954812f250fdafca0b5493b",
+        "size_in_bytes": 20693
+      },
+      {
+        "_path": "bin/novo2sam.pl",
+        "path_type": "hardlink",
+        "sha256": "168b0ddb970b8618b02daf27a84297f84c31b2e87d57a8572baf1afbbf634a29",
+        "sha256_in_prefix": "168b0ddb970b8618b02daf27a84297f84c31b2e87d57a8572baf1afbbf634a29",
+        "size_in_bytes": 6773
+      },
+      {
+        "_path": "bin/plot-bamstats",
+        "path_type": "hardlink",
+        "sha256": "f7f961683935ddb46f676038382649f967e930e4c86f55498db7b946abac6744",
+        "sha256_in_prefix": "f7f961683935ddb46f676038382649f967e930e4c86f55498db7b946abac6744",
+        "size_in_bytes": 48659
+      },
+      {
+        "_path": "bin/psl2sam.pl",
+        "path_type": "hardlink",
+        "sha256": "cb3b63aa7e52d5d382549f14d775bb3d9e3ee16f7c38d3fa7433dfd102e009f9",
+        "sha256_in_prefix": "cb3b63aa7e52d5d382549f14d775bb3d9e3ee16f7c38d3fa7433dfd102e009f9",
+        "size_in_bytes": 3208
+      },
+      {
+        "_path": "bin/sam2vcf.pl",
+        "path_type": "hardlink",
+        "sha256": "9b462294867cacbc49aabc26188ab3066ace629f5ab03a664780b92abb11f8c0",
+        "sha256_in_prefix": "9b462294867cacbc49aabc26188ab3066ace629f5ab03a664780b92abb11f8c0",
+        "size_in_bytes": 8961
+      },
+      {
+        "_path": "bin/samtools",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/samtools_1518569528655/_b_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "8ca393f94b9635cd34d8ee467aae37c68b7ee7b406e1de925966df93c6be4488",
+        "sha256_in_prefix": "adedfe1c7ae79444915ea62f1dddf22dbddb0c879c7035ea471d29e206fd89a0",
+        "size_in_bytes": 2816450
+      },
+      {
+        "_path": "bin/samtools.pl",
+        "path_type": "hardlink",
+        "sha256": "0e59d966a74db4c2da0431e6a73c5737ca10f5bbc42ee0695ecf7cd0b5c11c2e",
+        "sha256_in_prefix": "0e59d966a74db4c2da0431e6a73c5737ca10f5bbc42ee0695ecf7cd0b5c11c2e",
+        "size_in_bytes": 16478
+      },
+      {
+        "_path": "bin/seq_cache_populate.pl",
+        "path_type": "hardlink",
+        "sha256": "92c72f6106cf1c105e22d8b730f990feb3e09d841ef6ccc85c8e8ea2dcf955ad",
+        "sha256_in_prefix": "92c72f6106cf1c105e22d8b730f990feb3e09d841ef6ccc85c8e8ea2dcf955ad",
+        "size_in_bytes": 11105
+      },
+      {
+        "_path": "bin/soap2sam.pl",
+        "path_type": "hardlink",
+        "sha256": "ad4b0819220a711483023235e441e762e9912eb6040aacec65049d781e4357e7",
+        "sha256_in_prefix": "ad4b0819220a711483023235e441e762e9912eb6040aacec65049d781e4357e7",
+        "size_in_bytes": 3909
+      },
+      {
+        "_path": "bin/wgsim",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/samtools_1518569528655/_b_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "226a10a5ab863d676a874ad7656d1ab8b8a55cf628289f79382f9b2da6267cf3",
+        "sha256_in_prefix": "02ff7278631cb87f4102a6858f7e53828313427f37d82def8b28fdad24680f34",
+        "size_in_bytes": 56383
+      },
+      {
+        "_path": "bin/wgsim_eval.pl",
+        "path_type": "hardlink",
+        "sha256": "2596796cab6daa117bdd63edde99594f9659684de0945e619d1c54ee1b80279a",
+        "sha256_in_prefix": "2596796cab6daa117bdd63edde99594f9659684de0945e619d1c54ee1b80279a",
+        "size_in_bytes": 12540
+      },
+      {
+        "_path": "bin/zoom2sam.pl",
+        "path_type": "hardlink",
+        "sha256": "b6ce3d3d3814569b76bfb8df69a458a11f11efdc56183c922eeefe2e17d08900",
+        "sha256_in_prefix": "b6ce3d3d3814569b76bfb8df69a458a11f11efdc56183c922eeefe2e17d08900",
+        "size_in_bytes": 3583
+      },
+      {
+        "_path": "share/man/man1/samtools.1",
+        "path_type": "hardlink",
+        "sha256": "da2c3bd35156c06550f143aea77e20b36ee841f41f485e24c26930a7c6ec2a95",
+        "sha256_in_prefix": "da2c3bd35156c06550f143aea77e20b36ee841f41f485e24c26930a7c6ec2a95",
+        "size_in_bytes": 63528
+      },
+      {
+        "_path": "share/man/man1/wgsim.1",
+        "path_type": "hardlink",
+        "sha256": "046e05791117c2ce87f5846c277be090cddc058a1a640846fded00d3cb710fdd",
+        "sha256_in_prefix": "046e05791117c2ce87f5846c277be090cddc058a1a640846fded00d3cb710fdd",
+        "size_in_bytes": 1193
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "samtools",
+  "sha256": "0aa8b231ed864839282ddd4cab251fbf15774ff80717302473232bb8bd6f8b2b",
+  "size": 1068935,
+  "subdir": "linux-64",
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/linux-64/samtools-1.7-1.tar.bz2",
+  "version": "1.7"
+}

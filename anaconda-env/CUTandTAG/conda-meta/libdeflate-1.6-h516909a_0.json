@@ -1,0 +1,68 @@
+{
+  "build": "h516909a_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/libdeflate-1.6-h516909a_0",
+  "features": "",
+  "files": [
+    "include/libdeflate.h",
+    "lib/libdeflate.a",
+    "lib/libdeflate.so",
+    "lib/libdeflate.so.0"
+  ],
+  "fn": "libdeflate-1.6-h516909a_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/libdeflate-1.6-h516909a_0",
+    "type": 1
+  },
+  "md5": "e53e6f8cfc9deaa4b07e27e25e3371b0",
+  "name": "libdeflate",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/libdeflate-1.6-h516909a_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/libdeflate.h",
+        "path_type": "hardlink",
+        "sha256": "7e7e702f867f5d0ac89321a796a598453bd6eeb91f79b4f76719425906ba92f5",
+        "sha256_in_prefix": "7e7e702f867f5d0ac89321a796a598453bd6eeb91f79b4f76719425906ba92f5",
+        "size_in_bytes": 14906
+      },
+      {
+        "_path": "lib/libdeflate.a",
+        "path_type": "hardlink",
+        "sha256": "dfed508657f429275314afca9d543922f1f8e209e64c61b0c6be9c322cddbe8b",
+        "sha256_in_prefix": "dfed508657f429275314afca9d543922f1f8e209e64c61b0c6be9c322cddbe8b",
+        "size_in_bytes": 84804
+      },
+      {
+        "_path": "lib/libdeflate.so",
+        "path_type": "hardlink",
+        "sha256": "c3280f0beee221066e5fab4c2c4f992ab03b1ab5b3b7b3b1bf741d9b4d7d0517",
+        "sha256_in_prefix": "c3280f0beee221066e5fab4c2c4f992ab03b1ab5b3b7b3b1bf741d9b4d7d0517",
+        "size_in_bytes": 64888
+      },
+      {
+        "_path": "lib/libdeflate.so.0",
+        "path_type": "hardlink",
+        "sha256": "c3280f0beee221066e5fab4c2c4f992ab03b1ab5b3b7b3b1bf741d9b4d7d0517",
+        "sha256_in_prefix": "c3280f0beee221066e5fab4c2c4f992ab03b1ab5b3b7b3b1bf741d9b4d7d0517",
+        "size_in_bytes": 64888
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "dd26998700458decb2b0c48d82dedd178dd03846364ecf2c2b3233402bed5964",
+  "size": 61756,
+  "subdir": "linux-64",
+  "timestamp": 1589387703879,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libdeflate-1.6-h516909a_0.tar.bz2",
+  "version": "1.6"
+}

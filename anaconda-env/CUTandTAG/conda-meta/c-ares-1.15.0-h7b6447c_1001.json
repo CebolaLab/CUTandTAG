@@ -1,0 +1,165 @@
+{
+  "build": "h7b6447c_1001",
+  "build_number": 1001,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/c-ares-1.15.0-h7b6447c_1001",
+  "features": "",
+  "files": [
+    "bin/acountry",
+    "bin/adig",
+    "bin/ahost",
+    "include/ares.h",
+    "include/ares_build.h",
+    "include/ares_dns.h",
+    "include/ares_rules.h",
+    "include/ares_version.h",
+    "lib/cmake/c-ares/c-ares-config.cmake",
+    "lib/cmake/c-ares/c-ares-targets-release.cmake",
+    "lib/cmake/c-ares/c-ares-targets.cmake",
+    "lib/libcares.so",
+    "lib/libcares.so.2",
+    "lib/libcares.so.2.3.0",
+    "lib/libcares_static.a",
+    "lib/pkgconfig/libcares.pc"
+  ],
+  "fn": "c-ares-1.15.0-h7b6447c_1001.conda",
+  "legacy_bz2_md5": "20f7974176e6a8a76b92f5d8c943517d",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/c-ares-1.15.0-h7b6447c_1001",
+    "type": 1
+  },
+  "md5": "969c29c6c1eec8bd18103eb59405e5c7",
+  "name": "c-ares",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/c-ares-1.15.0-h7b6447c_1001.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/acountry",
+        "path_type": "hardlink",
+        "sha256": "4ca39125b45b4eca895ae66afe0b3373c47f52c7c5aa8f110f98cfeed4bb1a22",
+        "sha256_in_prefix": "4ca39125b45b4eca895ae66afe0b3373c47f52c7c5aa8f110f98cfeed4bb1a22",
+        "size_in_bytes": 38168
+      },
+      {
+        "_path": "bin/adig",
+        "path_type": "hardlink",
+        "sha256": "4cfac6b6ba2cac54777959a38de9945e23c1b10dcb24280e67d02f90f8ea8ac6",
+        "sha256_in_prefix": "4cfac6b6ba2cac54777959a38de9945e23c1b10dcb24280e67d02f90f8ea8ac6",
+        "size_in_bytes": 34360
+      },
+      {
+        "_path": "bin/ahost",
+        "path_type": "hardlink",
+        "sha256": "904704d808a33bd81723c9d7329dcf4be596192a9872165b78a2285958ae7693",
+        "sha256_in_prefix": "904704d808a33bd81723c9d7329dcf4be596192a9872165b78a2285958ae7693",
+        "size_in_bytes": 25528
+      },
+      {
+        "_path": "include/ares.h",
+        "path_type": "hardlink",
+        "sha256": "49766fcdc026a7392c86c56585cd0b71467b02e626c88b144f06718fb2f4e6d5",
+        "sha256_in_prefix": "49766fcdc026a7392c86c56585cd0b71467b02e626c88b144f06718fb2f4e6d5",
+        "size_in_bytes": 23628
+      },
+      {
+        "_path": "include/ares_build.h",
+        "path_type": "hardlink",
+        "sha256": "37363ea835be8380f7022e316bf5676de6ce8ebada42a463a957c13fe615b280",
+        "sha256_in_prefix": "37363ea835be8380f7022e316bf5676de6ce8ebada42a463a957c13fe615b280",
+        "size_in_bytes": 959
+      },
+      {
+        "_path": "include/ares_dns.h",
+        "path_type": "hardlink",
+        "sha256": "9cf404a4a546a2b67a319a0be1a8380bcca0c86631a095c14136193c3b844e04",
+        "sha256_in_prefix": "9cf404a4a546a2b67a319a0be1a8380bcca0c86631a095c14136193c3b844e04",
+        "size_in_bytes": 5306
+      },
+      {
+        "_path": "include/ares_rules.h",
+        "path_type": "hardlink",
+        "sha256": "4aa7066caf638c44286eb424e581c895ff0797cdaf006eda3a1b49c8601a6bed",
+        "sha256_in_prefix": "4aa7066caf638c44286eb424e581c895ff0797cdaf006eda3a1b49c8601a6bed",
+        "size_in_bytes": 4274
+      },
+      {
+        "_path": "include/ares_version.h",
+        "path_type": "hardlink",
+        "sha256": "3a907b6f90579c9f3322e3d161a486e15e64adcbb4162af13985756f67c4a007",
+        "sha256_in_prefix": "3a907b6f90579c9f3322e3d161a486e15e64adcbb4162af13985756f67c4a007",
+        "size_in_bytes": 648
+      },
+      {
+        "_path": "lib/cmake/c-ares/c-ares-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "4131abf0c96fd56252d683a18a0feb9e34be59ee40d5a258d1d85825e9e61149",
+        "sha256_in_prefix": "4131abf0c96fd56252d683a18a0feb9e34be59ee40d5a258d1d85825e9e61149",
+        "size_in_bytes": 1238
+      },
+      {
+        "_path": "lib/cmake/c-ares/c-ares-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "4dd41b21e818b9ee1a6358f6db3c78ce9d6ca77207dfc71f1edd59fae661e4c3",
+        "sha256_in_prefix": "4dd41b21e818b9ee1a6358f6db3c78ce9d6ca77207dfc71f1edd59fae661e4c3",
+        "size_in_bytes": 1323
+      },
+      {
+        "_path": "lib/cmake/c-ares/c-ares-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "8ea5788adf493cbb7e8384761547e37467c8cdce5d2942081f02ff9617a9bff6",
+        "sha256_in_prefix": "8ea5788adf493cbb7e8384761547e37467c8cdce5d2942081f02ff9617a9bff6",
+        "size_in_bytes": 3738
+      },
+      {
+        "_path": "lib/libcares.so",
+        "path_type": "softlink",
+        "sha256": "4e1767a92985a506b1ff101b4a02a5a3a8c7bf93b69df02b4f2ff9516e7f4b17",
+        "size_in_bytes": 94400
+      },
+      {
+        "_path": "lib/libcares.so.2",
+        "path_type": "softlink",
+        "sha256": "4e1767a92985a506b1ff101b4a02a5a3a8c7bf93b69df02b4f2ff9516e7f4b17",
+        "size_in_bytes": 94400
+      },
+      {
+        "_path": "lib/libcares.so.2.3.0",
+        "path_type": "hardlink",
+        "sha256": "4e1767a92985a506b1ff101b4a02a5a3a8c7bf93b69df02b4f2ff9516e7f4b17",
+        "sha256_in_prefix": "4e1767a92985a506b1ff101b4a02a5a3a8c7bf93b69df02b4f2ff9516e7f4b17",
+        "size_in_bytes": 94400
+      },
+      {
+        "_path": "lib/libcares_static.a",
+        "path_type": "hardlink",
+        "sha256": "f19207cfeb84073c73ee63d1e679422eed156ab35f94f05acb67cab484916a78",
+        "sha256_in_prefix": "f19207cfeb84073c73ee63d1e679422eed156ab35f94f05acb67cab484916a78",
+        "size_in_bytes": 191910
+      },
+      {
+        "_path": "lib/pkgconfig/libcares.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "5f3cf137e35f49e2d2dec3a7a0b84a974360093751d483a8b70ae1a992d32f2f",
+        "sha256_in_prefix": "8b1ac65f9969adc82ca6ff63324bff95fb149000a5e603a85f4133e40f90722d",
+        "size_in_bytes": 583
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "943f0c651767f71d8e2e7a09d0098f9629ebdde3d6e3f5645edd3f0229c4accb",
+  "size": 90713,
+  "subdir": "linux-64",
+  "timestamp": 1564157440657,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/c-ares-1.15.0-h7b6447c_1001.conda",
+  "version": "1.15.0"
+}
