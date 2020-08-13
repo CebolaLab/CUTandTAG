@@ -4,6 +4,7 @@
 The pipeline covers the following general steps:
 
 - Alignment 
+- Visualisation & Calibration 
 - Peak Calling
 - Motif Finding
 - Cut Matrix Generation
@@ -11,7 +12,7 @@ The pipeline covers the following general steps:
 
 All required programs required have been installed and are available in the CebolaLab [CUTandTAG anaconda environment](https://github.com/CebolaLab/CUTandTAG/tree/master/anaconda-env). If you are using anaconda, you can copy this into your own anaconda environments. On the Imperial College HPC, for example, this is located at `/rdsgpfs/general/user/"$(whoami)"/home/anaconda3/envs/`. The pipeline can be run without installing anaconda by directing the necessary scripts to the `bin` of the downloaded CUTandTAG environment (download the CUTandTAG directory and save it e.g. to your home directory). This will be described in the following steps.
 
-### Alignment
+## Alignment
 
 Two alignments will be run to align the human DNA and carry-over E.coli DNA which will be used later for sample calibration. The alignment parameters are run according to CUT&Tag authors (see the [pipeline](https://www.protocols.io/view/cut-amp-tag-home-bd26i8he?step=50)). The authors recommend to skip adapter trimming and to run the alignments using bowtie2 with the below parameters, which should result in accurate read alignment. Two alignments are carried out:
 
@@ -36,40 +37,55 @@ The alignments are carried out using bowtie2 with the below arguments. An exampl
 
 `--end-to-end --very-sensitive --no-overlap --no-dovetail --no-mixed --no-discordant  --phred33 -I 10 -X 700`
 
+## Visualisation
+
+A bedGraph file will be generated to visualise the data. In order to compare multiple samples, the samples will be calibrated using the carry-over E.coli DNA (the experiment 'spike-in'). In theory, the ratio of primary DNA to E.coli DNA is expected to be the same for each sample. As such, the calibration involves the division of the mapped count divided by the total number of reads aligned to the E.coli genome. The proportion of total DNA reads aligned to the E.coli genome is reported in the "$(base)".Ecoli.bowtie2 output file. 
+
 ##### Sort bam file
 
-The output bam files must be sorted, here by coordinate. `"$base"` again refers to the your filename/sample ID: 
+The output bam files must be sorted by **queryname** in order to generate the BEDPE format in the next step. `"$base"` again refers to the your filename/sample ID: 
 
-`picard SortSam I="$base".bam O="$base"-sorted.bam SO=coordinate CREATE_INDEX=TRUE`
+`picard SortSam I="$base".bam O="$base"-sorted.bam SO=queryorder CREATE_INDEX=TRUE`
 
-### Peak Calling
-
-Peak calling will be carried out using both macs2 and SEACR. First, aligned fragments are extracted from the aligned bam file and are output in bed format using `bedtools bamtobed`. For calibration using the E.coli reads, the bed files require the length of the fragment to be added (as described in the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh)). Assuming the output file is in the format `"$base"_aligned_reads.bam` (where "$base" is your sample identifier), the following code may be used:
+The sorted bam file is converted to bed format using `bedtools bamtobed`. For calibration using the E.coli reads, the bed files require the length of the fragment to be added (as described in the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh)). Assuming the output file is in the format `"$base".bam` (where "$base" is your sample identifier), the following code may be used:
 
 `bedtools bamtobed -bedpe -i "$base"-sorted.bam | awk -v OFS='\t' '{len = $3 - $2; print $0, len }' > "$base".bed`
 
-#### Calibration 
+The E.coli alignment file should also be converted to bed format (no need to sort, since the information used will be the number of reads i.e. the number of lines in the bed file):
 
-If you are working with multiple samples, e.g. a sample and a control, they should be calibrated to be comparable. The calibration is carried out using the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/mast\
-er/spike_in_calibration.csh)). The calibration effectively scales the mapped counts according to the total number of E.coli reads. The ratio of primary genome to E.coli genome is expected to be the same for all samples. The script is included in this repository (see above). 
+`bedtools bamtobed -bedpe -i "$base"-E.coli.bam > "$base"-E.coli.bed`
+
+#### Calibration
+
+If you are working with multiple samples, e.g. a sample and a control, they should be calibrated to be comparable. The calibration is carried out using the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh)). The calibration effectively scales the mapped counts according to the total number of E.coli reads. The ratio of primary genome to E.coli genome is expected to be the same for all samples. The script is included in this repository (see above).
 
 **Step 1:** Filter fragments to be within a minimum and maximum length
 
-
-
 **Steps 2:** Run the calibration on the filtered file
 
-To run it, seven arguments are required:
+To run the calibration, the query-sorted bed file must be sorted by coordinate:
 
-`spike_calibrate.csh genome.bed spike_genome.bed scale output(bg|bga|d) genome_chr_lens_file  min_len max_len`
+`bedtools sort -i "$base".bed > "$base"-sorted.bed`
 
-- **genome.bed** the converted bed file (hg19 alignment), `"$base".bed`
+Seven arguments are required to run the calibration script (here converted to bash shell from the Henikoff lab C-shell [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh)).
+
+`spike_calibrate.sh genome.bed spike_genome.bed scale output(bg|bga|d) genome_chr_lens_file  min_len max_len`
+
+- **genome.bed** the converted bed file (hg19 alignment), `"$base"-sorted.bed`
 - **spike_genome.bed** the converted bed file (E.coli alignment)
-- **scale** 
-- **output(bg|bga|d)** bg = BedGraph, bga = BedGraph including regions with 0 coverage, d = depth at each genome position with 1-based coordinates. 
+- **scale** an arbitrary large number used to scale, e.g. 10000
+- **output(bg|bga|d)** bg = BedGraph, bga = BedGraph including regions with 0 coverage, d = depth at each genome position with 1-based coordinates.
 - **genome_chr_lens_file**
 - **min_len** minumum fragment length, `min=$(cut -f 11 SRR8383480_aligned_reads.bed | sort | uniq | head -1)`
 - **max_len** maximum fragment length, `max=$(cut -f 11 SRR8383480_aligned_reads.bed | sort | uniq | tail -1)'
+
+## Peak Calling
+
+Peak calling will be carried out using both macs2 and SEACR. 
+
+The E.coli alignment file should also be converted to bed format (no need to sort, since the information used will be the number of reads i.e. the number of lines in the bed file):
+
+`bedtools bamtobed -bedpe -i "$base"-E.coli.bam > "$base"-E.coli.bed` 
  
 As described in the original CUT&Tag paper ([Kaya-Okur et al. 2019](https://www.nature.com/articles/s41467-019-09982-5#data-availability)), macs2 will be used with the following parameters:
 
