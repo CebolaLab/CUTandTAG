@@ -97,7 +97,7 @@ You can also generate a heatplot to visualise the distribution of your chromatin
 
 `plotHeatmap -m matrix.mat.gz  -out ExampleHeatmap1.png ` 
 
-![ExampleHeatmap](ExampleHeatmap1.png?raw=TRUE)
+![ExampleHeatmap](ExampleHeatmap1.png&s50)
 
 ### Convert to bigWig
 
