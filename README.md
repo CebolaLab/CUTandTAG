@@ -83,13 +83,13 @@ Seven arguments are required to run the calibration script (here converted to ba
 - **min_len** minumum fragment length, `min=$(cut -f 11 SRR8383480_aligned_reads.bed | sort | uniq | head -1)`
 - **max_len** maximum fragment length, `max=$(cut -f 11 SRR8383480_aligned_reads.bed | sort | uniq | tail -1)'
 
-#### Visualise bedGraph
+### Visualise bedGraph
 
 The normalised bedGraphs can now be visualised, for example on the UCSC browser:
 
 ![bedGraphUCSC](UCSC-bedgraph.PNG?raw=TRUE)
 
-#### Visualise heatplot
+### Visualise heatplot
 
 You can also generate a heatplot to visualise the distribution of your chromatin mark / transcription factor relative to transcription start sites. This will use deeptools (included in the CUTandTAG conda bin). Gene coordinates for the reference genome hg19 were downloaded from UCSC as Gencode V34lift37 (Basic table and bed format). They are saved in this repository as `hg19-gene-coordinates.bed`.
 
@@ -97,8 +97,9 @@ You can also generate a heatplot to visualise the distribution of your chromatin
 
 `plotHeatmap -m matrix.mat.gz  -out ExampleHeatmap1.png ` 
 
+![ExampleHeatmap](ExampleHeatmap1.png?raw=TRUE)
 
-#### Convert to bigWig
+### Convert to bigWig
 
 To convert the bedGraph file to bigWig format, use the following command:
 
