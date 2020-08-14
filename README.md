@@ -97,7 +97,7 @@ You can also generate a heatplot to visualise the distribution of your chromatin
 
 `plotHeatmap -m matrix.mat.gz  -out ExampleHeatmap1.png ` 
 
-<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/ExampleHeatmap1.png" width="100">
+<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/ExampleHeatmap1.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/ExampleHeatmap2.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/ExampleHeatmap3.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/ExampleHeatmap4.png" width="200">
 
 ### Convert to bigWig
 
