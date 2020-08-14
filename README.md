@@ -37,8 +37,7 @@ The alignments are carried out using bowtie2 with the below arguments. An exampl
 
 ## Visualisation
 
-The aligned data (output from the example [script](https://github.com/C\
-ebolaLab/CUTandTAG/blob/master/alignment.sh)) will be in `bam` format. This will be converted to bedGraph format in order to visualise the data. For multiple samples to be compared, the samples will first be calibrated using the carry-over E.coli DNA (the effective 'spike-in'). In theory, the ratio of primary DNA to E.coli DNA is expected to be the same for each sample. As such, the calibration divides the mapped read count by the total number of reads aligned to the E.coli genome. The proportion of total DNA reads aligned to the E.coli genome is reported in the `"$(base)".Ecoli.bowtie2` output file. The general steps cover:
+The aligned data (output from the example [script](https://github.com/CebolaLab/CUTandTAG/blob/master/alignment.sh)) will be in `bam` format. This will be converted to bedGraph format in order to visualise the data. For multiple samples to be compared, the samples will first be calibrated using the carry-over E.coli DNA (the effective 'spike-in'). In theory, the ratio of primary DNA to E.coli DNA is expected to be the same for each sample. As such, the calibration divides the mapped read count by the total number of reads aligned to the E.coli genome. The proportion of total DNA reads aligned to the E.coli genome is reported in the `"$(base)".Ecoli.bowtie2` output file. The general steps cover:
 
 1. Sort aligned bam file by read name (queryname)
 2. Convert bam to bed
@@ -46,7 +45,7 @@ ebolaLab/CUTandTAG/blob/master/alignment.sh)) will be in `bam` format. This will
 4. Visualise output bedGraph files
 5. Convert bedGraph to bigWig
 
-> Sort bam file
+### Sort bam file
 
 The output bam files must be sorted by **queryname** in order to generate the BEDPE format in the next step. `"$base"` again refers to the your filename/sample ID: 
 
@@ -60,7 +59,7 @@ The E.coli alignment file should also be converted to bed format (no need to sor
 
 `bedtools bamtobed -bedpe -i "$base"-E.coli.bam > "$base"-E.coli.bed`
 
-#### Calibration
+### Calibration
 
 If you are working with multiple samples, e.g. a sample and a control, they should be standardized in order to be comparable. The calibration is carried out using the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh). The calibration effectively scales the mapped counts according to the total number of E.coli reads. The ratio of primary genome to E.coli genome is expected to be the same for all samples. The script is included in this repository (see above).
 
