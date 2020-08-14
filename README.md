@@ -89,7 +89,7 @@ The normalised bedGraphs can now be visualised, for example on the UCSC browser:
 
 ![bedGraphUCSC](UCSC-bedgraph.PNG?raw=TRUE)
 
-### Visualise heatplot
+### Visualise heatplots and profiles
 
 You can also generate a heatplot to visualise the distribution of your chromatin mark / transcription factor relative to transcription start sites. This will use deeptools (included in the CUTandTAG conda bin). Gene coordinates for the reference genome hg19 were downloaded from UCSC as Gencode V34lift37 (Basic table and bed format). They are saved in this repository as `hg19-gene-coordinates.bed`.
 
@@ -97,7 +97,13 @@ You can also generate a heatplot to visualise the distribution of your chromatin
 
 `plotHeatmap -m matrix.mat.gz  -out ExampleHeatmap1.png ` 
 
-<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/ExampleHeatmap1.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/ExampleHeatmap2.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/ExampleHeatmap5.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/ExampleHeatmap4.png" width="200">
+The parameters of `plotHeatmap` can be [adjusted](https://deeptools.readthedocs.io/en/develop/content/tools/plotHeatmap.html) to produce various heatplots: 
+
+<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap1.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap2.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap5.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap4.png" width="200">
+
+To plot [profiles](https://deeptools.readthedocs.io/en/develop/content/tools/plotProfile.html):
+
+
 
 ### Convert to bigWig
 
