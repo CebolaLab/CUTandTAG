@@ -10,11 +10,13 @@ The pipeline covers the following general steps:
 - Cut Matrix Generation
 - Motif Footprinting Steps
 
-All required programs required have been installed and are available in the CebolaLab [CUTandTAG anaconda environment](https://github.com/CebolaLab/CUTandTAG/tree/master/anaconda-env). If you are using anaconda, you can copy this into your own anaconda environments. On the Imperial College HPC, for example, this is located at `/rdsgpfs/general/user/"$(whoami)"/home/anaconda3/envs/`. The pipeline can be run without installing anaconda by directing the necessary scripts to the `bin` of the downloaded CUTandTAG environment (download the CUTandTAG directory and save it e.g. to your home directory). This will be described in the following steps.
+All required programs required have been installed and are available in the CebolaLab [CUTandTAG anaconda environment](https://github.com/CebolaLab/CUTandTAG/tree/master/anaconda-env). If you are using anaconda, you can copy this into your own anaconda environments (on the Imperial College HPC, for example, this is located at `/rdsgpfs/general/user/"$(whoami)"/home/anaconda3/envs/`) and then `source activate CUTandTAG`. The pipeline can also be run without installing anaconda by directing the necessary scripts to the `bin` of the downloaded CUTandTAG environment (download the CUTandTAG directory and save it e.g. to your home directory).
+
+For the following analysis, you can save your sample file name as `base` and the example scripts will access this variable using `"$base"`. 
 
 ## Alignment
 
-Two alignments will be run to align the human DNA and carry-over E.coli DNA later to calibrate the samples. The alignment parameters are run according to CUT&Tag authors (see the [pipeline](https://www.protocols.io/view/cut-amp-tag-home-bd26i8he?step=50)). The authors recommend to skip adapter trimming and to run the alignments using bowtie2 with the below parameters, which should result in accurate read alignment. Two alignments are carried out:
+Two alignments will be run to align the human DNA and carry-over E.coli DNA later used to standardise the samples. The alignment parameters are run as recommended by the CUT&Tag authors (see their [pipeline](https://www.protocols.io/view/cut-amp-tag-home-bd26i8he?step=50)). The authors recommend to skip adapter trimming and to run the alignments using bowtie2 with the below parameters, which should result in accurate read alignment. Two alignments are carried out:
 
 1. Align reads to the reference **human** masked genome (hg19) (download [here](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/bigZips/))
 2. Align reads to the reference **E.coli** genome (strain K12, substrain MG1655) (downloaded [here](https://www.ncbi.nlm.nih.gov/nuccore/U00096.3?report=fasta)).
@@ -35,7 +37,8 @@ The alignments are carried out using bowtie2 with the below arguments. An exampl
 
 ## Visualisation
 
-A bedGraph file will be generated to visualise the data. In order to compare multiple samples, the samples will be calibrated using the carry-over E.coli DNA (the experiment 'spike-in'). In theory, the ratio of primary DNA to E.coli DNA is expected to be the same for each sample. As such, the calibration involves the division of the mapped count divided by the total number of reads aligned to the E.coli genome. The proportion of total DNA reads aligned to the E.coli genome is reported in the `"$(base)".Ecoli.bowtie2` output file. The general steps cover:
+The aligned data (output from the example [script](https://github.com/C\
+ebolaLab/CUTandTAG/blob/master/alignment.sh)) will be in `bam` format. This will be converted to bedGraph format in order to visualise the data. For multiple samples to be compared, the samples will first be calibrated using the carry-over E.coli DNA (the effective 'spike-in'). In theory, the ratio of primary DNA to E.coli DNA is expected to be the same for each sample. As such, the calibration divides the mapped read count by the total number of reads aligned to the E.coli genome. The proportion of total DNA reads aligned to the E.coli genome is reported in the `"$(base)".Ecoli.bowtie2` output file. The general steps cover:
 
 1. Sort aligned bam file by read name (queryname)
 2. Convert bam to bed
@@ -43,13 +46,13 @@ A bedGraph file will be generated to visualise the data. In order to compare mul
 4. Visualise output bedGraph files
 5. Convert bedGraph to bigWig
 
-#### Sort bam file
+> Sort bam file
 
 The output bam files must be sorted by **queryname** in order to generate the BEDPE format in the next step. `"$base"` again refers to the your filename/sample ID: 
 
 `picard SortSam I="$base".bam O="$base"-sorted.bam SO=queryorder CREATE_INDEX=TRUE`
 
-The sorted bam file is converted to bed format using `bedtools bamtobed`. For calibration using the E.coli reads, the bed files require the length of the fragment to be added (as described in the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh)). Assuming the output file is in the format `"$base".bam` (where "$base" is your sample identifier), the following code may be used:
+The sorted bam file is converted to bed format using `bedtools bamtobed`. For calibration using the E.coli reads, the bed files require the length of the fragment to be added (as described in the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh)).
 
 `bedtools bamtobed -bedpe -i "$base"-sorted.bam | awk -v OFS='\t' '{len = $3 - $2; print $0, len }' > "$base".bed`
 
@@ -59,7 +62,7 @@ The E.coli alignment file should also be converted to bed format (no need to sor
 
 #### Calibration
 
-If you are working with multiple samples, e.g. a sample and a control, they should be standardized in order to be comparable. The calibration is carried out using the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh)). The calibration effectively scales the mapped counts according to the total number of E.coli reads. The ratio of primary genome to E.coli genome is expected to be the same for all samples. The script is included in this repository (see above).
+If you are working with multiple samples, e.g. a sample and a control, they should be standardized in order to be comparable. The calibration is carried out using the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh). The calibration effectively scales the mapped counts according to the total number of E.coli reads. The ratio of primary genome to E.coli genome is expected to be the same for all samples. The script is included in this repository (see above).
 
 **Step 1:** Filter fragments to be within a minimum and maximum length
 
