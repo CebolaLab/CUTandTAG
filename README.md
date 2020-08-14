@@ -101,9 +101,9 @@ The parameters of `plotHeatmap` can be [adjusted](https://deeptools.readthedocs.
 
 <img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap1.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap2.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap5.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap4.png" width="200">
 
-To plot [profiles](https://deeptools.readthedocs.io/en/develop/content/tools/plotProfile.html):
+`deeptools` can also be used to plot profiles. Different [parameters](https://deeptools.readthedocs.io/en/develop/content/tools/plotProfile.html) can again be used to achieve different aesthetics:
 
-
+<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleProfile1.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleProfile2.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleProfile3.png" width="200">
 
 ### Convert to bigWig
 
