@@ -1,0 +1,12 @@
+#!/home/hm1412/anaconda3/envs/CUTandTAG/bin/python
+#-*- coding: utf-8 -*-
+
+import deeptools.misc
+from deeptools.bamCoverage import main
+import sys
+
+if __name__ == "__main__":
+    args = None
+    if len(sys.argv) == 1:
+        args = ["--help"]
+    main(args)

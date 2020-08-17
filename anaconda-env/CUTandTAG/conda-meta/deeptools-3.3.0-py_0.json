@@ -1,0 +1,844 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "constrains": [],
+  "depends": [
+    "deeptoolsintervals >=0.1.8",
+    "matplotlib >=2.1.1",
+    "numpy >=1.9.0",
+    "plotly >=1.9.0",
+    "py2bit >=0.2.0",
+    "pybigwig >=0.2.3",
+    "pysam >=0.14.0",
+    "python",
+    "scipy >=0.17.0"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/deeptools-3.3.0-py_0",
+  "features": "",
+  "files": [
+    "bin/alignmentSieve",
+    "bin/bamCompare",
+    "bin/bamCoverage",
+    "bin/bamPEFragmentSize",
+    "bin/bigwigCompare",
+    "bin/computeGCBias",
+    "bin/computeMatrix",
+    "bin/computeMatrixOperations",
+    "bin/correctGCBias",
+    "bin/deeptools",
+    "bin/estimateReadFiltering",
+    "bin/estimateScaleFactor",
+    "bin/multiBamSummary",
+    "bin/multiBigwigSummary",
+    "bin/plotCorrelation",
+    "bin/plotCoverage",
+    "bin/plotEnrichment",
+    "bin/plotFingerprint",
+    "bin/plotHeatmap",
+    "bin/plotPCA",
+    "bin/plotProfile",
+    "lib/python2.7/site-packages/deepTools-3.3.0.dist-info/INSTALLER",
+    "lib/python2.7/site-packages/deepTools-3.3.0.dist-info/LICENSE.txt",
+    "lib/python2.7/site-packages/deepTools-3.3.0.dist-info/METADATA",
+    "lib/python2.7/site-packages/deepTools-3.3.0.dist-info/RECORD",
+    "lib/python2.7/site-packages/deepTools-3.3.0.dist-info/WHEEL",
+    "lib/python2.7/site-packages/deepTools-3.3.0.dist-info/top_level.txt",
+    "lib/python2.7/site-packages/deepTools-3.3.0.dist-info/zip-safe",
+    "lib/python2.7/site-packages/deeptools/SES_scaleFactor.py",
+    "lib/python2.7/site-packages/deeptools/__init__.py",
+    "lib/python2.7/site-packages/deeptools/_version.py",
+    "lib/python2.7/site-packages/deeptools/alignmentSieve.py",
+    "lib/python2.7/site-packages/deeptools/bamCompare.py",
+    "lib/python2.7/site-packages/deeptools/bamCoverage.py",
+    "lib/python2.7/site-packages/deeptools/bamHandler.py",
+    "lib/python2.7/site-packages/deeptools/bamPEFragmentSize.py",
+    "lib/python2.7/site-packages/deeptools/bigwigCompare.py",
+    "lib/python2.7/site-packages/deeptools/computeGCBias.py",
+    "lib/python2.7/site-packages/deeptools/computeMatrix.py",
+    "lib/python2.7/site-packages/deeptools/computeMatrixOperations.py",
+    "lib/python2.7/site-packages/deeptools/correctGCBias.py",
+    "lib/python2.7/site-packages/deeptools/correlation.py",
+    "lib/python2.7/site-packages/deeptools/correlation_heatmap.py",
+    "lib/python2.7/site-packages/deeptools/countReadsPerBin.py",
+    "lib/python2.7/site-packages/deeptools/deepBlue.py",
+    "lib/python2.7/site-packages/deeptools/deeptools_list_tools.py",
+    "lib/python2.7/site-packages/deeptools/estimateReadFiltering.py",
+    "lib/python2.7/site-packages/deeptools/getFragmentAndReadSize.py",
+    "lib/python2.7/site-packages/deeptools/getRatio.py",
+    "lib/python2.7/site-packages/deeptools/getScaleFactor.py",
+    "lib/python2.7/site-packages/deeptools/getScorePerBigWigBin.py",
+    "lib/python2.7/site-packages/deeptools/heatmapper.py",
+    "lib/python2.7/site-packages/deeptools/heatmapper_utilities.py",
+    "lib/python2.7/site-packages/deeptools/mapReduce.py",
+    "lib/python2.7/site-packages/deeptools/misc.py",
+    "lib/python2.7/site-packages/deeptools/multiBamSummary.py",
+    "lib/python2.7/site-packages/deeptools/multiBigwigSummary.py",
+    "lib/python2.7/site-packages/deeptools/parserCommon.py",
+    "lib/python2.7/site-packages/deeptools/plotCorrelation.py",
+    "lib/python2.7/site-packages/deeptools/plotCoverage.py",
+    "lib/python2.7/site-packages/deeptools/plotEnrichment.py",
+    "lib/python2.7/site-packages/deeptools/plotFingerprint.py",
+    "lib/python2.7/site-packages/deeptools/plotHeatmap.py",
+    "lib/python2.7/site-packages/deeptools/plotPCA.py",
+    "lib/python2.7/site-packages/deeptools/plotProfile.py",
+    "lib/python2.7/site-packages/deeptools/sumCoveragePerBin.py",
+    "lib/python2.7/site-packages/deeptools/utilities.py",
+    "lib/python2.7/site-packages/deeptools/writeBedGraph.py",
+    "lib/python2.7/site-packages/deeptools/writeBedGraph_bam_and_bw.py",
+    "lib/python2.7/site-packages/deeptools/SES_scaleFactor.pyc",
+    "lib/python2.7/site-packages/deeptools/__init__.pyc",
+    "lib/python2.7/site-packages/deeptools/_version.pyc",
+    "lib/python2.7/site-packages/deeptools/alignmentSieve.pyc",
+    "lib/python2.7/site-packages/deeptools/bamCompare.pyc",
+    "lib/python2.7/site-packages/deeptools/bamCoverage.pyc",
+    "lib/python2.7/site-packages/deeptools/bamHandler.pyc",
+    "lib/python2.7/site-packages/deeptools/bamPEFragmentSize.pyc",
+    "lib/python2.7/site-packages/deeptools/bigwigCompare.pyc",
+    "lib/python2.7/site-packages/deeptools/computeGCBias.pyc",
+    "lib/python2.7/site-packages/deeptools/computeMatrix.pyc",
+    "lib/python2.7/site-packages/deeptools/computeMatrixOperations.pyc",
+    "lib/python2.7/site-packages/deeptools/correctGCBias.pyc",
+    "lib/python2.7/site-packages/deeptools/correlation.pyc",
+    "lib/python2.7/site-packages/deeptools/correlation_heatmap.pyc",
+    "lib/python2.7/site-packages/deeptools/countReadsPerBin.pyc",
+    "lib/python2.7/site-packages/deeptools/deepBlue.pyc",
+    "lib/python2.7/site-packages/deeptools/deeptools_list_tools.pyc",
+    "lib/python2.7/site-packages/deeptools/estimateReadFiltering.pyc",
+    "lib/python2.7/site-packages/deeptools/getFragmentAndReadSize.pyc",
+    "lib/python2.7/site-packages/deeptools/getRatio.pyc",
+    "lib/python2.7/site-packages/deeptools/getScaleFactor.pyc",
+    "lib/python2.7/site-packages/deeptools/getScorePerBigWigBin.pyc",
+    "lib/python2.7/site-packages/deeptools/heatmapper.pyc",
+    "lib/python2.7/site-packages/deeptools/heatmapper_utilities.pyc",
+    "lib/python2.7/site-packages/deeptools/mapReduce.pyc",
+    "lib/python2.7/site-packages/deeptools/misc.pyc",
+    "lib/python2.7/site-packages/deeptools/multiBamSummary.pyc",
+    "lib/python2.7/site-packages/deeptools/multiBigwigSummary.pyc",
+    "lib/python2.7/site-packages/deeptools/parserCommon.pyc",
+    "lib/python2.7/site-packages/deeptools/plotCorrelation.pyc",
+    "lib/python2.7/site-packages/deeptools/plotCoverage.pyc",
+    "lib/python2.7/site-packages/deeptools/plotEnrichment.pyc",
+    "lib/python2.7/site-packages/deeptools/plotFingerprint.pyc",
+    "lib/python2.7/site-packages/deeptools/plotHeatmap.pyc",
+    "lib/python2.7/site-packages/deeptools/plotPCA.pyc",
+    "lib/python2.7/site-packages/deeptools/plotProfile.pyc",
+    "lib/python2.7/site-packages/deeptools/sumCoveragePerBin.pyc",
+    "lib/python2.7/site-packages/deeptools/utilities.pyc",
+    "lib/python2.7/site-packages/deeptools/writeBedGraph.pyc",
+    "lib/python2.7/site-packages/deeptools/writeBedGraph_bam_and_bw.pyc"
+  ],
+  "fn": "deeptools-3.3.0-py_0.tar.bz2",
+  "license": "GPL3",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/deeptools-3.3.0-py_0",
+    "type": 1
+  },
+  "md5": "67f0a26c40123eb23e0649aed0e4674a",
+  "name": "deeptools",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/deeptools-3.3.0-py_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "python-scripts/alignmentSieve",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "36e476f1564ae0db50bda9dfc01b38585d8ee85513f1c9b4eb37b35e36c034e8",
+        "sha256_in_prefix": "9da18b483a57a4ee70db7661eb9d20754ac59ff59e04176a23959bae2f1a9869",
+        "size_in_bytes": 257
+      },
+      {
+        "_path": "python-scripts/bamCompare",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "84c2d7cabec6e78296c84582e06c0afbbf19f044234626421375e7e4fc7fc778",
+        "sha256_in_prefix": "c896492ef64a111b2726e78c8bb19e76cd56675742ad82568ea9e64b079f7c49",
+        "size_in_bytes": 253
+      },
+      {
+        "_path": "python-scripts/bamCoverage",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "e00206118f3f96024999a2bfaface691a660c9ed61f2d2f865546f849990030e",
+        "sha256_in_prefix": "cdc7fb7d65a47f73ac8d77632198cb9419e46834e79be18e5b472a28f6aec870",
+        "size_in_bytes": 254
+      },
+      {
+        "_path": "python-scripts/bamPEFragmentSize",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "293ee0775cc0bd38df5a51891d023211e5c220b90a2228df0fec576daf9c2c5e",
+        "sha256_in_prefix": "326aa267de582ee86d8c60acadf122518f47b6f0a90be06dd39b994c3a8540f9",
+        "size_in_bytes": 260
+      },
+      {
+        "_path": "python-scripts/bigwigCompare",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "7c36c6bff80756ddf7c13f6483e1bc1da9975a3829b74d0be14af702d1acab30",
+        "sha256_in_prefix": "f627c23154f9c151a34593a7b6c5120d2175901cb53610d2dc8f3d6b304b63e5",
+        "size_in_bytes": 256
+      },
+      {
+        "_path": "python-scripts/computeGCBias",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "b7707ef23a6dfb56d9beeb39f8e034c1b636b8717bdbd8d63f83306004f6e6b6",
+        "sha256_in_prefix": "0033eaee28beb6bc3364e1cf05a2b2958fe74e6cd8443a66506a059c09a1b45f",
+        "size_in_bytes": 256
+      },
+      {
+        "_path": "python-scripts/computeMatrix",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "9e20964e6c377acdc2e3fe318304bb7cd0c69ea124ff08ce448362906713fef4",
+        "sha256_in_prefix": "2dab8d4a6d7259a0798939436bf59afaa96d87dfe6a28731bc17893c85b0cdac",
+        "size_in_bytes": 350
+      },
+      {
+        "_path": "python-scripts/computeMatrixOperations",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "4f6478271ededf1c56d5ba3d10a44f842f19e40657649bf4298b15746849281f",
+        "sha256_in_prefix": "e41d277c3bc8f48e429ea920bcd1a107823a20cad8c9e9900bb0c02056ae4154",
+        "size_in_bytes": 266
+      },
+      {
+        "_path": "python-scripts/correctGCBias",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "40bc43025bdb750219bb9ac7a872cd562f1a01efeb7028f204828425ef5f9891",
+        "sha256_in_prefix": "211ac13cdcc0038bcfbe7d28933274d85b3972933410c11be42d2552b7bac0bd",
+        "size_in_bytes": 256
+      },
+      {
+        "_path": "python-scripts/deeptools",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "05331d79c79f4c0211f3688bbd19bbf431110d61941d7a47236dd3e45cd91de8",
+        "sha256_in_prefix": "c8ae7ad004f8b6180c7792ef55674034d90eb8e05a0ee6c56cdf737f6e4cda9d",
+        "size_in_bytes": 263
+      },
+      {
+        "_path": "python-scripts/estimateReadFiltering",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "10969abff00efcf4b6faae93ff7f30b40f881d8fc632e49ff9d9e4827885329d",
+        "sha256_in_prefix": "d0ab4c4182149d500a5f0d907ae9a47ceb848468806ddc0a21bd51eb0b665f6c",
+        "size_in_bytes": 265
+      },
+      {
+        "_path": "python-scripts/estimateScaleFactor",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "54d2ee1d3804babee9b113df3a05a7b19efc0491e66c1e68333e6c898d8d1372",
+        "sha256_in_prefix": "ba15bb24ed862bae6fec83c471ecf98679590f761483ceef56e6d09e9cd45192",
+        "size_in_bytes": 4687
+      },
+      {
+        "_path": "python-scripts/multiBamSummary",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "e2e0f853193f7b5661a05c7aed0c01939679c8c482fd7598168ad44d4ffee551",
+        "sha256_in_prefix": "0c34c1588b7640bb97f71354939bf2b5b1f665900fa1e088a6f30efb916fe30a",
+        "size_in_bytes": 350
+      },
+      {
+        "_path": "python-scripts/multiBigwigSummary",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "830ca94fbf748656e6b655f7a4330a63694ca00e0bc0654d9162518d92f7dbdf",
+        "sha256_in_prefix": "c728160582d3754a969852aa3d428b18e370c9480c779b2cf08529407d5a698d",
+        "size_in_bytes": 353
+      },
+      {
+        "_path": "python-scripts/plotCorrelation",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "82fb55c8a594b27c565c2b4caa425acd1fb510d5a3a6c63b6d6fc022732c3819",
+        "sha256_in_prefix": "eae23110eec245bbe1bc2a084395ef57eeb8052ed4fab05a8d6873734994cc9b",
+        "size_in_bytes": 258
+      },
+      {
+        "_path": "python-scripts/plotCoverage",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "d27ee381d0c02b5ad5de2fabc4ed110b4e1fc2d62f4000ffbf97a5d48fdc55f7",
+        "sha256_in_prefix": "f2e5444fe198c89cac49c1d6c2744874aa5d6a531eee168ea5890d5420e88800",
+        "size_in_bytes": 256
+      },
+      {
+        "_path": "python-scripts/plotEnrichment",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "37244d6728e1015439724d1597fc2e5591ab3bb07818c17430a91d0be6f0a73f",
+        "sha256_in_prefix": "983fd801449ec6e85db6c56627454e6814eb8898f8729d5ba1e26cc6b7da35a1",
+        "size_in_bytes": 258
+      },
+      {
+        "_path": "python-scripts/plotFingerprint",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "5b02bfd39c09ea89b8d402975a7f04c0d4b10663e1b96f92648ea615eb3181e2",
+        "sha256_in_prefix": "a3d5d2051b280384787e649f325f1a214909f88f921fa51347f438a26b912c9f",
+        "size_in_bytes": 258
+      },
+      {
+        "_path": "python-scripts/plotHeatmap",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "87cafb9e757363b07f4eab6429954bbbcf5b7bc46df45a22c3ca9a02a1c8565f",
+        "sha256_in_prefix": "33382518221bf182b76e923921ab56d90bb9031e2c5fe51f0aff1f3e5949fbfc",
+        "size_in_bytes": 254
+      },
+      {
+        "_path": "python-scripts/plotPCA",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "26052e4a50e761cebe9330ee49885a4bfcd5c1bb1e1b394c2e73be4f50e6ac21",
+        "sha256_in_prefix": "a7c35c6f310344036b6964d7267a5aca7af50ecd432e0d32a5e98ded9cfc89c8",
+        "size_in_bytes": 250
+      },
+      {
+        "_path": "python-scripts/plotProfile",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "68ed8a3e968024ceb24f5de63a546a41974172dac8daa1ef6f7479b5970e0b2a",
+        "sha256_in_prefix": "561a21ae20505fdbb9e32a86724d47b410bf54bc6c5e3bf1febd6c0e694554c7",
+        "size_in_bytes": 254
+      },
+      {
+        "_path": "site-packages/deepTools-3.3.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "sha256_in_prefix": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "size_in_bytes": 4
+      },
+      {
+        "_path": "site-packages/deepTools-3.3.0.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+        "sha256_in_prefix": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+        "size_in_bytes": 35147
+      },
+      {
+        "_path": "site-packages/deepTools-3.3.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "9ab87a3885483306d4fcc518df9c8c56de37fa5b87f0b9c6561b35b9304485f2",
+        "sha256_in_prefix": "9ab87a3885483306d4fcc518df9c8c56de37fa5b87f0b9c6561b35b9304485f2",
+        "size_in_bytes": 2185
+      },
+      {
+        "_path": "site-packages/deepTools-3.3.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "7701286c644c307f1f1f41c24a06cf6137338a5e0149d8f3d4e8b705965eb343",
+        "sha256_in_prefix": "7701286c644c307f1f1f41c24a06cf6137338a5e0149d8f3d4e8b705965eb343",
+        "size_in_bytes": 7146
+      },
+      {
+        "_path": "site-packages/deepTools-3.3.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "ae121453793f815da20b2a4e34babecb0f2102f1ae5fe0680e02ffa2f0621d6d",
+        "sha256_in_prefix": "ae121453793f815da20b2a4e34babecb0f2102f1ae5fe0680e02ffa2f0621d6d",
+        "size_in_bytes": 93
+      },
+      {
+        "_path": "site-packages/deepTools-3.3.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "5644500afada1723d68c9aaffc44e59312addbe0a27e7cbb43b002bbc5bbb919",
+        "sha256_in_prefix": "5644500afada1723d68c9aaffc44e59312addbe0a27e7cbb43b002bbc5bbb919",
+        "size_in_bytes": 10
+      },
+      {
+        "_path": "site-packages/deepTools-3.3.0.dist-info/zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/deeptools/SES_scaleFactor.py",
+        "path_type": "hardlink",
+        "sha256": "406e1f7f8ecf71225e7c7d0062badbfef228822c049bc1ab63395a2494d254db",
+        "sha256_in_prefix": "406e1f7f8ecf71225e7c7d0062badbfef228822c049bc1ab63395a2494d254db",
+        "size_in_bytes": 7008
+      },
+      {
+        "_path": "site-packages/deeptools/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/deeptools/_version.py",
+        "path_type": "hardlink",
+        "sha256": "c295d9690284d5a48b8491294597e8120ea34ba2bf761d0a7bd6a777a1129a5e",
+        "sha256_in_prefix": "c295d9690284d5a48b8491294597e8120ea34ba2bf761d0a7bd6a777a1129a5e",
+        "size_in_bytes": 179
+      },
+      {
+        "_path": "site-packages/deeptools/alignmentSieve.py",
+        "path_type": "hardlink",
+        "sha256": "82ba8913b9dc99dd9b41daf3c1e535ddd0cf9e7944862bce6ea4f692fd77df57",
+        "sha256_in_prefix": "82ba8913b9dc99dd9b41daf3c1e535ddd0cf9e7944862bce6ea4f692fd77df57",
+        "size_in_bytes": 17577
+      },
+      {
+        "_path": "site-packages/deeptools/bamCompare.py",
+        "path_type": "hardlink",
+        "sha256": "218981edcd535932211df8074883ffe7a9df61485e735c1465b46b711ac7742b",
+        "sha256_in_prefix": "218981edcd535932211df8074883ffe7a9df61485e735c1465b46b711ac7742b",
+        "size_in_bytes": 14122
+      },
+      {
+        "_path": "site-packages/deeptools/bamCoverage.py",
+        "path_type": "hardlink",
+        "sha256": "a9fbd1db4448c875cf2412f68989e8f6d0524d2f226c40b5ac006f22c4893322",
+        "sha256_in_prefix": "a9fbd1db4448c875cf2412f68989e8f6d0524d2f226c40b5ac006f22c4893322",
+        "size_in_bytes": 18456
+      },
+      {
+        "_path": "site-packages/deeptools/bamHandler.py",
+        "path_type": "hardlink",
+        "sha256": "54018e8cc33a7a1a77b7e0974c6478c0dba2f07fc5dbf1e92a3e07cdbdb30981",
+        "sha256_in_prefix": "54018e8cc33a7a1a77b7e0974c6478c0dba2f07fc5dbf1e92a3e07cdbdb30981",
+        "size_in_bytes": 3346
+      },
+      {
+        "_path": "site-packages/deeptools/bamPEFragmentSize.py",
+        "path_type": "hardlink",
+        "sha256": "19c55ebf6953e7309d4b97ebab485f646d82a382d10d5de64931b876a0343730",
+        "sha256_in_prefix": "19c55ebf6953e7309d4b97ebab485f646d82a382d10d5de64931b876a0343730",
+        "size_in_bytes": 20886
+      },
+      {
+        "_path": "site-packages/deeptools/bigwigCompare.py",
+        "path_type": "hardlink",
+        "sha256": "345d9f93991387def55effb7e4a5ddf19aaccd83f0bd07640a3027c7e2baf0b5",
+        "sha256_in_prefix": "345d9f93991387def55effb7e4a5ddf19aaccd83f0bd07640a3027c7e2baf0b5",
+        "size_in_bytes": 8149
+      },
+      {
+        "_path": "site-packages/deeptools/computeGCBias.py",
+        "path_type": "hardlink",
+        "sha256": "ab3c1875d995649cf6383fe10f7111f69f151cb61f09b802208e1bb25590f6d7",
+        "sha256_in_prefix": "ab3c1875d995649cf6383fe10f7111f69f151cb61f09b802208e1bb25590f6d7",
+        "size_in_bytes": 30908
+      },
+      {
+        "_path": "site-packages/deeptools/computeMatrix.py",
+        "path_type": "hardlink",
+        "sha256": "cf7fb48518fe094bd7ff226fbb54eb9b7c059b0013c92072872d6bff6b0c8c24",
+        "sha256_in_prefix": "cf7fb48518fe094bd7ff226fbb54eb9b7c059b0013c92072872d6bff6b0c8c24",
+        "size_in_bytes": 22850
+      },
+      {
+        "_path": "site-packages/deeptools/computeMatrixOperations.py",
+        "path_type": "hardlink",
+        "sha256": "0cce3d70fa6338fe3ccd21973bbe59b8dcfc47a67332cae64a45182699553c6b",
+        "sha256_in_prefix": "0cce3d70fa6338fe3ccd21973bbe59b8dcfc47a67332cae64a45182699553c6b",
+        "size_in_bytes": 30575
+      },
+      {
+        "_path": "site-packages/deeptools/correctGCBias.py",
+        "path_type": "hardlink",
+        "sha256": "e38754299f0784fb37d12c94077fe349b4bdd249b07a253c0190ea09f14be7a1",
+        "sha256_in_prefix": "e38754299f0784fb37d12c94077fe349b4bdd249b07a253c0190ea09f14be7a1",
+        "size_in_bytes": 26127
+      },
+      {
+        "_path": "site-packages/deeptools/correlation.py",
+        "path_type": "hardlink",
+        "sha256": "4ce892103ef4b89100ffe218e4123de5e3e00067cf52f26148ce01eba37fc4d3",
+        "sha256_in_prefix": "4ce892103ef4b89100ffe218e4123de5e3e00067cf52f26148ce01eba37fc4d3",
+        "size_in_bytes": 27929
+      },
+      {
+        "_path": "site-packages/deeptools/correlation_heatmap.py",
+        "path_type": "hardlink",
+        "sha256": "a0f6f03540a239293bf3528693b6e4ec1bd527bc156c232da1cb7ff4c78ad1c8",
+        "sha256_in_prefix": "a0f6f03540a239293bf3528693b6e4ec1bd527bc156c232da1cb7ff4c78ad1c8",
+        "size_in_bytes": 3638
+      },
+      {
+        "_path": "site-packages/deeptools/countReadsPerBin.py",
+        "path_type": "hardlink",
+        "sha256": "42e8ff98aef1cab8f849c7dcb2fc61722abbc69ca5b95878243262cae41ee033",
+        "sha256_in_prefix": "42e8ff98aef1cab8f849c7dcb2fc61722abbc69ca5b95878243262cae41ee033",
+        "size_in_bytes": 41637
+      },
+      {
+        "_path": "site-packages/deeptools/deepBlue.py",
+        "path_type": "hardlink",
+        "sha256": "21ec2848d56c6ae9b98772665273000ca764d776adf024db554f498b1c1dc9f7",
+        "sha256_in_prefix": "21ec2848d56c6ae9b98772665273000ca764d776adf024db554f498b1c1dc9f7",
+        "size_in_bytes": 10950
+      },
+      {
+        "_path": "site-packages/deeptools/deeptools_list_tools.py",
+        "path_type": "hardlink",
+        "sha256": "370c11cb469ac8bf55f54ec26fe6e75bfe89deb9ce95a3fea89f9d247b94e7ca",
+        "sha256_in_prefix": "370c11cb469ac8bf55f54ec26fe6e75bfe89deb9ce95a3fea89f9d247b94e7ca",
+        "size_in_bytes": 3240
+      },
+      {
+        "_path": "site-packages/deeptools/estimateReadFiltering.py",
+        "path_type": "hardlink",
+        "sha256": "b2f41e669dd120a4bb6e147b0d35967ddaf7afcbfbb70eb345ba34f7a4fd412a",
+        "sha256_in_prefix": "b2f41e669dd120a4bb6e147b0d35967ddaf7afcbfbb70eb345ba34f7a4fd412a",
+        "size_in_bytes": 16446
+      },
+      {
+        "_path": "site-packages/deeptools/getFragmentAndReadSize.py",
+        "path_type": "hardlink",
+        "sha256": "12ffb23bb0c5aa8d17bc77b93edbc42b35ee89ff08820bbbd95e95fa31613513",
+        "sha256_in_prefix": "12ffb23bb0c5aa8d17bc77b93edbc42b35ee89ff08820bbbd95e95fa31613513",
+        "size_in_bytes": 7018
+      },
+      {
+        "_path": "site-packages/deeptools/getRatio.py",
+        "path_type": "hardlink",
+        "sha256": "636cc1f54a15fc6bf47852e6f22c3c452edb86742f0867fbf64b96dcdc761f98",
+        "sha256_in_prefix": "636cc1f54a15fc6bf47852e6f22c3c452edb86742f0867fbf64b96dcdc761f98",
+        "size_in_bytes": 2326
+      },
+      {
+        "_path": "site-packages/deeptools/getScaleFactor.py",
+        "path_type": "hardlink",
+        "sha256": "424f6ed121712e8038c4363d36cdc14472e52c7da4591f1fad8e4d1be67c42e8",
+        "sha256_in_prefix": "424f6ed121712e8038c4363d36cdc14472e52c7da4591f1fad8e4d1be67c42e8",
+        "size_in_bytes": 12772
+      },
+      {
+        "_path": "site-packages/deeptools/getScorePerBigWigBin.py",
+        "path_type": "hardlink",
+        "sha256": "ddfdee2c5966f0847fb845ef96b60b43578a9afff06155e905fe15bae9411c96",
+        "sha256_in_prefix": "ddfdee2c5966f0847fb845ef96b60b43578a9afff06155e905fe15bae9411c96",
+        "size_in_bytes": 11972
+      },
+      {
+        "_path": "site-packages/deeptools/heatmapper.py",
+        "path_type": "hardlink",
+        "sha256": "393f8e65854fd50afaa49a7c69d8da58ae743a50449f365c38074e30a7e0b959",
+        "sha256_in_prefix": "393f8e65854fd50afaa49a7c69d8da58ae743a50449f365c38074e30a7e0b959",
+        "size_in_bytes": 56354
+      },
+      {
+        "_path": "site-packages/deeptools/heatmapper_utilities.py",
+        "path_type": "hardlink",
+        "sha256": "cf35cf0bc6d416794cdb9edd91c9e303aebaba2eb33cbb34bc90b5c5e682c89e",
+        "sha256_in_prefix": "cf35cf0bc6d416794cdb9edd91c9e303aebaba2eb33cbb34bc90b5c5e682c89e",
+        "size_in_bytes": 6717
+      },
+      {
+        "_path": "site-packages/deeptools/mapReduce.py",
+        "path_type": "hardlink",
+        "sha256": "1d5e2674a3e11873d510007fc31a3924eb4e5aea5e1c5ac87ff285e7403185eb",
+        "sha256_in_prefix": "1d5e2674a3e11873d510007fc31a3924eb4e5aea5e1c5ac87ff285e7403185eb",
+        "size_in_bytes": 9786
+      },
+      {
+        "_path": "site-packages/deeptools/misc.py",
+        "path_type": "hardlink",
+        "sha256": "5173393f7405512dd579aa903d99f0b67bd6581d6c1e5847f3f17ca406783b98",
+        "sha256_in_prefix": "5173393f7405512dd579aa903d99f0b67bd6581d6c1e5847f3f17ca406783b98",
+        "size_in_bytes": 597
+      },
+      {
+        "_path": "site-packages/deeptools/multiBamSummary.py",
+        "path_type": "hardlink",
+        "sha256": "5dd0952162234f4a6b14091b0aae5b6fca8d0a6805818692ce8ef92a2512d697",
+        "sha256_in_prefix": "5dd0952162234f4a6b14091b0aae5b6fca8d0a6805818692ce8ef92a2512d697",
+        "size_in_bytes": 11186
+      },
+      {
+        "_path": "site-packages/deeptools/multiBigwigSummary.py",
+        "path_type": "hardlink",
+        "sha256": "6e3d5a6617a39a548798ccb3e6f9f0467827f021c8af25d45d07ea68b53cb0c3",
+        "sha256_in_prefix": "6e3d5a6617a39a548798ccb3e6f9f0467827f021c8af25d45d07ea68b53cb0c3",
+        "size_in_bytes": 12629
+      },
+      {
+        "_path": "site-packages/deeptools/parserCommon.py",
+        "path_type": "hardlink",
+        "sha256": "5d52735548929100f99b0510dde40e7ab5aedf0fd61f5b76359467bc9b192764",
+        "sha256_in_prefix": "5d52735548929100f99b0510dde40e7ab5aedf0fd61f5b76359467bc9b192764",
+        "size_in_bytes": 42977
+      },
+      {
+        "_path": "site-packages/deeptools/plotCorrelation.py",
+        "path_type": "hardlink",
+        "sha256": "9643366e23402b13cbbe62ed9c4bb5755a1525c5bbbc7c305fc6939fe2b83b46",
+        "sha256_in_prefix": "9643366e23402b13cbbe62ed9c4bb5755a1525c5bbbc7c305fc6939fe2b83b46",
+        "size_in_bytes": 10757
+      },
+      {
+        "_path": "site-packages/deeptools/plotCoverage.py",
+        "path_type": "hardlink",
+        "sha256": "e8ca482a89d77bd59bb694676333f75397815c5ade2bfb8d06e876ebd8492fb2",
+        "sha256_in_prefix": "e8ca482a89d77bd59bb694676333f75397815c5ade2bfb8d06e876ebd8492fb2",
+        "size_in_bytes": 16069
+      },
+      {
+        "_path": "site-packages/deeptools/plotEnrichment.py",
+        "path_type": "hardlink",
+        "sha256": "9bc89cf1f0b82ce6758f0153d090c05071b0eaa255ca2c14d5e7bf009f0dc676",
+        "sha256_in_prefix": "9bc89cf1f0b82ce6758f0153d090c05071b0eaa255ca2c14d5e7bf009f0dc676",
+        "size_in_bytes": 24956
+      },
+      {
+        "_path": "site-packages/deeptools/plotFingerprint.py",
+        "path_type": "hardlink",
+        "sha256": "25045fd24b0cba1f81128a3cfeaa2bb934be287312af66f61c2a759e76a274e3",
+        "sha256_in_prefix": "25045fd24b0cba1f81128a3cfeaa2bb934be287312af66f61c2a759e76a274e3",
+        "size_in_bytes": 19624
+      },
+      {
+        "_path": "site-packages/deeptools/plotHeatmap.py",
+        "path_type": "hardlink",
+        "sha256": "06b541c1727d9806bb887ffaff9036526b2e7ec6327a4f678e934b2ef0311bd9",
+        "sha256_in_prefix": "06b541c1727d9806bb887ffaff9036526b2e7ec6327a4f678e934b2ef0311bd9",
+        "size_in_bytes": 35212
+      },
+      {
+        "_path": "site-packages/deeptools/plotPCA.py",
+        "path_type": "hardlink",
+        "sha256": "cd26f2f0dd9dcf00c8fc0ca1807953498b2fe850ac8661907a383a231c4155dc",
+        "sha256_in_prefix": "cd26f2f0dd9dcf00c8fc0ca1807953498b2fe850ac8661907a383a231c4155dc",
+        "size_in_bytes": 9168
+      },
+      {
+        "_path": "site-packages/deeptools/plotProfile.py",
+        "path_type": "hardlink",
+        "sha256": "33d6eb881158d08cafe3cad42bb9b1502d33a75544be9980a12dc4d96c9f6d00",
+        "sha256_in_prefix": "33d6eb881158d08cafe3cad42bb9b1502d33a75544be9980a12dc4d96c9f6d00",
+        "size_in_bytes": 38473
+      },
+      {
+        "_path": "site-packages/deeptools/sumCoveragePerBin.py",
+        "path_type": "hardlink",
+        "sha256": "d5d5a826acb8d10518244ccc63f4d8dcc044190262288e9e5930c801c311ac78",
+        "sha256_in_prefix": "d5d5a826acb8d10518244ccc63f4d8dcc044190262288e9e5930c801c311ac78",
+        "size_in_bytes": 9902
+      },
+      {
+        "_path": "site-packages/deeptools/utilities.py",
+        "path_type": "hardlink",
+        "sha256": "faeca91980fe294c95ac1087f983d95caa12ce1e6f81e0e4953ba72a2ecaf330",
+        "sha256_in_prefix": "faeca91980fe294c95ac1087f983d95caa12ce1e6f81e0e4953ba72a2ecaf330",
+        "size_in_bytes": 14116
+      },
+      {
+        "_path": "site-packages/deeptools/writeBedGraph.py",
+        "path_type": "hardlink",
+        "sha256": "3f55526b90b1cca4abb8a4a11a142b6a802b34bcde317ba22e0f817afaf031af",
+        "sha256_in_prefix": "3f55526b90b1cca4abb8a4a11a142b6a802b34bcde317ba22e0f817afaf031af",
+        "size_in_bytes": 13224
+      },
+      {
+        "_path": "site-packages/deeptools/writeBedGraph_bam_and_bw.py",
+        "path_type": "hardlink",
+        "sha256": "2f62a3bc1ca15d4fa2df06529571524faec2fd5d8f07db0570518fb211db4a0c",
+        "sha256_in_prefix": "2f62a3bc1ca15d4fa2df06529571524faec2fd5d8f07db0570518fb211db4a0c",
+        "size_in_bytes": 9141
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/SES_scaleFactor.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/__init__.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/_version.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/alignmentSieve.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/bamCompare.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/bamCoverage.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/bamHandler.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/bamPEFragmentSize.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/bigwigCompare.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/computeGCBias.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/computeMatrix.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/computeMatrixOperations.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/correctGCBias.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/correlation.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/correlation_heatmap.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/countReadsPerBin.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/deepBlue.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/deeptools_list_tools.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/estimateReadFiltering.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/getFragmentAndReadSize.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/getRatio.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/getScaleFactor.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/getScorePerBigWigBin.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/heatmapper.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/heatmapper_utilities.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/mapReduce.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/misc.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/multiBamSummary.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/multiBigwigSummary.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/parserCommon.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/plotCorrelation.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/plotCoverage.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/plotEnrichment.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/plotFingerprint.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/plotHeatmap.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/plotPCA.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/plotProfile.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/sumCoveragePerBin.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/utilities.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/writeBedGraph.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptools/writeBedGraph_bam_and_bw.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "deeptools",
+  "sha256": "b25a04e43e38675800c6aae6f88283a3380be5483aa686d19bd9ab0874ec840a",
+  "size": 138306,
+  "subdir": "noarch",
+  "timestamp": 1559119920630,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/noarch/deeptools-3.3.0-py_0.tar.bz2",
+  "version": "3.3.0"
+}

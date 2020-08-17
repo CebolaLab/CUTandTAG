@@ -62,7 +62,7 @@ JAVAC = /home/hm1412/anaconda3/envs/CUTandTAG/bin/javac
 JAVAH = /home/hm1412/anaconda3/envs/CUTandTAG/bin/javah
 ## JAVA_HOME might be used in the next three.  
 ## They are for packages 'JavaGD' and 'rJava'
-JAVA_HOME = /rdsgpfs/general/user/hm1412/home/anaconda3/envs/CUTandTAG/jre
+JAVA_HOME = /rds/general/user/hm1412/home/anaconda3/envs/CUTandTAG/jre
 JAVA_CPPFLAGS = -I$(JAVA_HOME)/../include -I$(JAVA_HOME)/../include/linux
 JAVA_LIBS = -L$(JAVA_HOME)/lib/amd64/server -ljvm
 JAVA_LD_LIBRARY_PATH = $(JAVA_HOME)/lib/amd64/server

@@ -1,0 +1,16 @@
+prefix=/home/hm1412/anaconda3/envs/CUTandTAG
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/gstreamer-1.0
+pluginsdir=${exec_prefix}/lib/gstreamer-1.0
+gl_platforms=glx 
+gl_winsys=x11 
+gl_apis=gl 
+
+Name: GStreamer OpenGL Plugins Libraries
+Description: Streaming media framework, OpenGL plugins libraries
+Version: 1.14.0
+Requires: gstreamer-video-1.0 gstreamer-base-1.0 gstreamer-1.0
+
+Libs: -L${libdir} -lgstgl-1.0
+Cflags: -I${includedir} -I${libdir}/gstreamer-1.0/include  -I/home/hm1412/anaconda3/envs/CUTandTAG/include -I/home/hm1412/anaconda3/envs/CUTandTAG/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/include

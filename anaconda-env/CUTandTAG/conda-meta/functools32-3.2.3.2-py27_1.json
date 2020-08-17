@@ -1,0 +1,109 @@
+{
+  "build": "py27_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=2.7,<2.8.0a0"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/functools32-3.2.3.2-py27_1",
+  "features": "",
+  "files": [
+    "lib/python2.7/site-packages/functools32-3.2.3_2-py2.7.egg-info",
+    "lib/python2.7/site-packages/functools32/__init__.py",
+    "lib/python2.7/site-packages/functools32/__init__.pyc",
+    "lib/python2.7/site-packages/functools32/_dummy_thread32.py",
+    "lib/python2.7/site-packages/functools32/_dummy_thread32.pyc",
+    "lib/python2.7/site-packages/functools32/functools32.py",
+    "lib/python2.7/site-packages/functools32/functools32.pyc",
+    "lib/python2.7/site-packages/functools32/reprlib32.py",
+    "lib/python2.7/site-packages/functools32/reprlib32.pyc"
+  ],
+  "fn": "functools32-3.2.3.2-py27_1.conda",
+  "legacy_bz2_md5": "e7d36567e6bd594c060798e468355a5a",
+  "legacy_bz2_size": 23091,
+  "license": "PSF license",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/functools32-3.2.3.2-py27_1",
+    "type": 1
+  },
+  "md5": "847d5b23eda4d551711d946a6628ad46",
+  "name": "functools32",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/functools32-3.2.3.2-py27_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python2.7/site-packages/functools32-3.2.3_2-py2.7.egg-info",
+        "path_type": "hardlink",
+        "sha256": "67820fa67cf8a04e305b7c583027bc3ae5e5355bf0bf7716f9db5f5d2c47daf7",
+        "sha256_in_prefix": "67820fa67cf8a04e305b7c583027bc3ae5e5355bf0bf7716f9db5f5d2c47daf7",
+        "size_in_bytes": 515
+      },
+      {
+        "_path": "lib/python2.7/site-packages/functools32/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "1177784b9b3ba3bcc5193d08353e11c6e57cf3d60a3216c24b8de85fe4664411",
+        "sha256_in_prefix": "1177784b9b3ba3bcc5193d08353e11c6e57cf3d60a3216c24b8de85fe4664411",
+        "size_in_bytes": 27
+      },
+      {
+        "_path": "lib/python2.7/site-packages/functools32/__init__.pyc",
+        "path_type": "hardlink",
+        "sha256": "616b5fd1df34d1188496181531a40bd06786d28086851b0b0b8b386e07523033",
+        "sha256_in_prefix": "616b5fd1df34d1188496181531a40bd06786d28086851b0b0b8b386e07523033",
+        "size_in_bytes": 180
+      },
+      {
+        "_path": "lib/python2.7/site-packages/functools32/_dummy_thread32.py",
+        "path_type": "hardlink",
+        "sha256": "02704fb0fdee74acd645b7a6db133e408e267452e46899ca7b64a355a72e05bd",
+        "sha256_in_prefix": "02704fb0fdee74acd645b7a6db133e408e267452e46899ca7b64a355a72e05bd",
+        "size_in_bytes": 4977
+      },
+      {
+        "_path": "lib/python2.7/site-packages/functools32/_dummy_thread32.pyc",
+        "path_type": "hardlink",
+        "sha256": "f36d789c587b134e87534a53bbd2708e12a5a56c8714e0111d0dd7a1aeffe85b",
+        "sha256_in_prefix": "f36d789c587b134e87534a53bbd2708e12a5a56c8714e0111d0dd7a1aeffe85b",
+        "size_in_bytes": 5964
+      },
+      {
+        "_path": "lib/python2.7/site-packages/functools32/functools32.py",
+        "path_type": "hardlink",
+        "sha256": "f9992d909008f6a753f664343a1a805effc841e1ef55f517de1f09d384016050",
+        "sha256_in_prefix": "f9992d909008f6a753f664343a1a805effc841e1ef55f517de1f09d384016050",
+        "size_in_bytes": 16101
+      },
+      {
+        "_path": "lib/python2.7/site-packages/functools32/functools32.pyc",
+        "path_type": "hardlink",
+        "sha256": "879e7f6dd84874a5ad1c8d635dd4aebe61543117c1eefee27910207671cf3bb4",
+        "sha256_in_prefix": "879e7f6dd84874a5ad1c8d635dd4aebe61543117c1eefee27910207671cf3bb4",
+        "size_in_bytes": 17178
+      },
+      {
+        "_path": "lib/python2.7/site-packages/functools32/reprlib32.py",
+        "path_type": "hardlink",
+        "sha256": "4e6ec93e3ced7e02ae3a509df216d53d4262df36587d84b7e7ce2cee09aae103",
+        "sha256_in_prefix": "4e6ec93e3ced7e02ae3a509df216d53d4262df36587d84b7e7ce2cee09aae103",
+        "size_in_bytes": 5126
+      },
+      {
+        "_path": "lib/python2.7/site-packages/functools32/reprlib32.pyc",
+        "path_type": "hardlink",
+        "sha256": "633232a41c28b067c07d5cb7ace66320615b98f68b174ae7378f71cdee72cc6e",
+        "sha256_in_prefix": "633232a41c28b067c07d5cb7ace66320615b98f68b174ae7378f71cdee72cc6e",
+        "size_in_bytes": 6720
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "08919eed1b7a44bca5cf3ceda8405614931ed54eab2c91d87af1650b88b37bca",
+  "size": 23653,
+  "subdir": "linux-64",
+  "timestamp": 1530735188460,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/functools32-3.2.3.2-py27_1.conda",
+  "version": "3.2.3.2"
+}

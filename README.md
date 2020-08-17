@@ -1,7 +1,9 @@
-# CUT&Tag analysis pipeline
+# CUT&Tag step-by-step analysis pipeline
 #### [Cebola Lab](https://www.imperial.ac.uk/metabolism-digestion-reproduction/research/systems-medicine/genetics--genomics/regulatory-genomics-and-metabolic-disease/)
 
-The pipeline covers the following general steps:
+The original CUT&Tag paper can be viewed [here](https://www.nature.com/articles/s41467-019-09982-5#data-availability). The CUT&Tag protocol is available as the [CUT&Tag@home](https://www.protocols.io/view/cut-amp-tag-home-bd26i8he?step=50) and [Bench top CUT&Tag V.3](https://www.protocols.io/view/bench-top-cut-amp-tag-bcuhiwt6). The following pipeline was adapted using similar pipelines including [CUTRunTools](https://bitbucket.org/qzhudfci/cutruntools/src) (paper [here](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1802-4#Sec8)) and the Methods reported in the CUT&Tag [paper](https://www.nature.com/articles/s41467-019-09982-5#data-availability).
+
+The following pipeline describes each analysis step:
 
 - Alignment 
 - Visualisation & Calibration 
@@ -98,6 +100,8 @@ You can also generate a heatplot to visualise the distribution of your chromatin
 `plotHeatmap -m matrix.mat.gz  -out ExampleHeatmap1.png ` 
 
 The parameters of `plotHeatmap` can be [adjusted](https://deeptools.readthedocs.io/en/develop/content/tools/plotHeatmap.html) to produce various heatplots: 
+
+`plotProfile -m matrix.mat.gz -out ExampleProfile1.png `
 
 <img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap1.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap2.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap5.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap4.png" width="200">
 

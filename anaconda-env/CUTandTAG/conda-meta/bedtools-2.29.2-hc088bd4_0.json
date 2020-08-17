@@ -1,0 +1,345 @@
+{
+  "build": "hc088bd4_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/linux-64",
+  "constrains": [],
+  "depends": [
+    "bzip2 >=1.0.8,<2.0a0",
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "xz >=5.2.4,<5.3.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/bedtools-2.29.2-hc088bd4_0",
+  "features": "",
+  "files": [
+    "bin/annotateBed",
+    "bin/bamToBed",
+    "bin/bamToFastq",
+    "bin/bed12ToBed6",
+    "bin/bedToBam",
+    "bin/bedToIgv",
+    "bin/bedpeToBam",
+    "bin/bedtools",
+    "bin/closestBed",
+    "bin/clusterBed",
+    "bin/complementBed",
+    "bin/coverageBed",
+    "bin/expandCols",
+    "bin/fastaFromBed",
+    "bin/flankBed",
+    "bin/genomeCoverageBed",
+    "bin/getOverlap",
+    "bin/groupBy",
+    "bin/intersectBed",
+    "bin/linksBed",
+    "bin/mapBed",
+    "bin/maskFastaFromBed",
+    "bin/mergeBed",
+    "bin/multiBamCov",
+    "bin/multiIntersectBed",
+    "bin/nucBed",
+    "bin/pairToBed",
+    "bin/pairToPair",
+    "bin/randomBed",
+    "bin/shiftBed",
+    "bin/shuffleBed",
+    "bin/slopBed",
+    "bin/sortBed",
+    "bin/subtractBed",
+    "bin/tagBam",
+    "bin/unionBedGraphs",
+    "bin/windowBed",
+    "bin/windowMaker"
+  ],
+  "fn": "bedtools-2.29.2-hc088bd4_0.tar.bz2",
+  "license": "GPL v2",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/bedtools-2.29.2-hc088bd4_0",
+    "type": 1
+  },
+  "md5": "eb78eac3093e3559bebd89b2b7f6b260",
+  "name": "bedtools",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/bedtools-2.29.2-hc088bd4_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/annotateBed",
+        "path_type": "hardlink",
+        "sha256": "79f725d2bedd384964f1904122febb5ee074531f9eda67ed3a6d0de6fe8d47f2",
+        "sha256_in_prefix": "79f725d2bedd384964f1904122febb5ee074531f9eda67ed3a6d0de6fe8d47f2",
+        "size_in_bytes": 41
+      },
+      {
+        "_path": "bin/bamToBed",
+        "path_type": "hardlink",
+        "sha256": "578fbc2240d5d1cfac5b2006b8bdba2b94e45a0e3b80e16be8dd1cc4ca459df6",
+        "sha256_in_prefix": "578fbc2240d5d1cfac5b2006b8bdba2b94e45a0e3b80e16be8dd1cc4ca459df6",
+        "size_in_bytes": 41
+      },
+      {
+        "_path": "bin/bamToFastq",
+        "path_type": "hardlink",
+        "sha256": "a95248ce19b9355c484ccdeb200405d1dbbc212a8e631d3ba89153596a2ede7b",
+        "sha256_in_prefix": "a95248ce19b9355c484ccdeb200405d1dbbc212a8e631d3ba89153596a2ede7b",
+        "size_in_bytes": 43
+      },
+      {
+        "_path": "bin/bed12ToBed6",
+        "path_type": "hardlink",
+        "sha256": "ba1b0b083ecbb299dbcb76a86ceb53d89c2efafb8987c7de6c3fd2d23fb0596f",
+        "sha256_in_prefix": "ba1b0b083ecbb299dbcb76a86ceb53d89c2efafb8987c7de6c3fd2d23fb0596f",
+        "size_in_bytes": 44
+      },
+      {
+        "_path": "bin/bedToBam",
+        "path_type": "hardlink",
+        "sha256": "ea7b71ce206c01a804a805197d00479f15d2d9707536d3d20170642c1f122c61",
+        "sha256_in_prefix": "ea7b71ce206c01a804a805197d00479f15d2d9707536d3d20170642c1f122c61",
+        "size_in_bytes": 41
+      },
+      {
+        "_path": "bin/bedToIgv",
+        "path_type": "hardlink",
+        "sha256": "d418ea36505b5c1a9e2e4674a586e3ba37888443a1bf7e5cb69f30cdafc60a61",
+        "sha256_in_prefix": "d418ea36505b5c1a9e2e4674a586e3ba37888443a1bf7e5cb69f30cdafc60a61",
+        "size_in_bytes": 36
+      },
+      {
+        "_path": "bin/bedpeToBam",
+        "path_type": "hardlink",
+        "sha256": "410d6d09d7fc21ca7a26bf0604dd14cad3116ffa9c58fca84dcd8d77f74a3f19",
+        "sha256_in_prefix": "410d6d09d7fc21ca7a26bf0604dd14cad3116ffa9c58fca84dcd8d77f74a3f19",
+        "size_in_bytes": 43
+      },
+      {
+        "_path": "bin/bedtools",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/bedtools_1576617140992/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "eced72bd8864d3103ab359cbe8367406d067707ba19867da4bb46f991a4e79b5",
+        "sha256_in_prefix": "36ea2513c81cb664bae67169dc40ff3159a452f0f5152348d9eb91e4a4cc2e90",
+        "size_in_bytes": 43638344
+      },
+      {
+        "_path": "bin/closestBed",
+        "path_type": "hardlink",
+        "sha256": "52daae911ee2a00bc6143de8669a933babfbed28c84332a75d46afaecbb79ec4",
+        "sha256_in_prefix": "52daae911ee2a00bc6143de8669a933babfbed28c84332a75d46afaecbb79ec4",
+        "size_in_bytes": 40
+      },
+      {
+        "_path": "bin/clusterBed",
+        "path_type": "hardlink",
+        "sha256": "39529851419ac3f09fd1a9f79bbf4023a2797a09c0bbcd9d6f1176db16c9dbf3",
+        "sha256_in_prefix": "39529851419ac3f09fd1a9f79bbf4023a2797a09c0bbcd9d6f1176db16c9dbf3",
+        "size_in_bytes": 40
+      },
+      {
+        "_path": "bin/complementBed",
+        "path_type": "hardlink",
+        "sha256": "93bf258afa3e35483f61e07c86694a5539a1e74c85a18d95cadb45c76f8ca22e",
+        "sha256_in_prefix": "93bf258afa3e35483f61e07c86694a5539a1e74c85a18d95cadb45c76f8ca22e",
+        "size_in_bytes": 43
+      },
+      {
+        "_path": "bin/coverageBed",
+        "path_type": "hardlink",
+        "sha256": "ad71dc6b49765db16e2bd59644880eb81819e9fb4223bb22ff78883c659b39bd",
+        "sha256_in_prefix": "ad71dc6b49765db16e2bd59644880eb81819e9fb4223bb22ff78883c659b39bd",
+        "size_in_bytes": 41
+      },
+      {
+        "_path": "bin/expandCols",
+        "path_type": "hardlink",
+        "sha256": "dd834264dafe3831f9356391005b131e61c02e496378d910b4c72b0f442060b1",
+        "sha256_in_prefix": "dd834264dafe3831f9356391005b131e61c02e496378d910b4c72b0f442060b1",
+        "size_in_bytes": 39
+      },
+      {
+        "_path": "bin/fastaFromBed",
+        "path_type": "hardlink",
+        "sha256": "9d787125ae92be493a94383a93cf0e9e8b1c65fb7731c681ecd7e8c928ffb436",
+        "sha256_in_prefix": "9d787125ae92be493a94383a93cf0e9e8b1c65fb7731c681ecd7e8c928ffb436",
+        "size_in_bytes": 41
+      },
+      {
+        "_path": "bin/flankBed",
+        "path_type": "hardlink",
+        "sha256": "0392eaccc2e8cf35b8bb9aab2c063bc10a13de50be11a04187378561e1f5ebde",
+        "sha256_in_prefix": "0392eaccc2e8cf35b8bb9aab2c063bc10a13de50be11a04187378561e1f5ebde",
+        "size_in_bytes": 38
+      },
+      {
+        "_path": "bin/genomeCoverageBed",
+        "path_type": "hardlink",
+        "sha256": "65558361fc0b92815033287ad01428481e8e20c87742d8034470f035bc92a822",
+        "sha256_in_prefix": "65558361fc0b92815033287ad01428481e8e20c87742d8034470f035bc92a822",
+        "size_in_bytes": 42
+      },
+      {
+        "_path": "bin/getOverlap",
+        "path_type": "hardlink",
+        "sha256": "e1983244c06e6d78310b1110335c82268146dbe6dd5b28133dd85c9dac10dfbd",
+        "sha256_in_prefix": "e1983244c06e6d78310b1110335c82268146dbe6dd5b28133dd85c9dac10dfbd",
+        "size_in_bytes": 40
+      },
+      {
+        "_path": "bin/groupBy",
+        "path_type": "hardlink",
+        "sha256": "123f7b89f47c4ab1a53ec6150c436b81944ce381e5bea70b315c8f452ecfcb9b",
+        "sha256_in_prefix": "123f7b89f47c4ab1a53ec6150c436b81944ce381e5bea70b315c8f452ecfcb9b",
+        "size_in_bytes": 40
+      },
+      {
+        "_path": "bin/intersectBed",
+        "path_type": "hardlink",
+        "sha256": "b7b59e812e02194a0988c0ab5395e20c473702cbca95fb8ccf6b76e262e3aaf2",
+        "sha256_in_prefix": "b7b59e812e02194a0988c0ab5395e20c473702cbca95fb8ccf6b76e262e3aaf2",
+        "size_in_bytes": 42
+      },
+      {
+        "_path": "bin/linksBed",
+        "path_type": "hardlink",
+        "sha256": "d2f304d75ada758087e4ac596a31c0efefd5120cec6a118c4efa926dd02df152",
+        "sha256_in_prefix": "d2f304d75ada758087e4ac596a31c0efefd5120cec6a118c4efa926dd02df152",
+        "size_in_bytes": 38
+      },
+      {
+        "_path": "bin/mapBed",
+        "path_type": "hardlink",
+        "sha256": "1f7cc878cc9ffa8e847bf7dc7cb96a515147b4056c34163ddab16c71a3fd85e1",
+        "sha256_in_prefix": "1f7cc878cc9ffa8e847bf7dc7cb96a515147b4056c34163ddab16c71a3fd85e1",
+        "size_in_bytes": 36
+      },
+      {
+        "_path": "bin/maskFastaFromBed",
+        "path_type": "hardlink",
+        "sha256": "3a26bc7242869a8c0dac5c556b887df572260a24180853887b3cdf3f1453e389",
+        "sha256_in_prefix": "3a26bc7242869a8c0dac5c556b887df572260a24180853887b3cdf3f1453e389",
+        "size_in_bytes": 42
+      },
+      {
+        "_path": "bin/mergeBed",
+        "path_type": "hardlink",
+        "sha256": "a175615526760420577f366906d5a8330714fc716d5de359074a3612a9e825c4",
+        "sha256_in_prefix": "a175615526760420577f366906d5a8330714fc716d5de359074a3612a9e825c4",
+        "size_in_bytes": 38
+      },
+      {
+        "_path": "bin/multiBamCov",
+        "path_type": "hardlink",
+        "sha256": "14b6485e9bad24c6e1427023ec051c6d64c7270088cbf92ffc64ceae438fda66",
+        "sha256_in_prefix": "14b6485e9bad24c6e1427023ec051c6d64c7270088cbf92ffc64ceae438fda66",
+        "size_in_bytes": 41
+      },
+      {
+        "_path": "bin/multiIntersectBed",
+        "path_type": "hardlink",
+        "sha256": "4cc7504256dfeb839f55fbc9642ebd9e6273e50ffb598bb699acaec777c68f32",
+        "sha256_in_prefix": "4cc7504256dfeb839f55fbc9642ebd9e6273e50ffb598bb699acaec777c68f32",
+        "size_in_bytes": 43
+      },
+      {
+        "_path": "bin/nucBed",
+        "path_type": "hardlink",
+        "sha256": "f93b6c3b5c0a1df195614d417059a19f1a71033411a19d9b8731062428b93aab",
+        "sha256_in_prefix": "f93b6c3b5c0a1df195614d417059a19f1a71033411a19d9b8731062428b93aab",
+        "size_in_bytes": 36
+      },
+      {
+        "_path": "bin/pairToBed",
+        "path_type": "hardlink",
+        "sha256": "8b51a388ba994b4d4704e4de1e5f9d53f468ee00b7872b0697b332ddacf928ef",
+        "sha256_in_prefix": "8b51a388ba994b4d4704e4de1e5f9d53f468ee00b7872b0697b332ddacf928ef",
+        "size_in_bytes": 42
+      },
+      {
+        "_path": "bin/pairToPair",
+        "path_type": "hardlink",
+        "sha256": "5ef9b49e0b340f8fe9061b4895c6aecc692e329e7ceb8f3cfac2ce009f84cdac",
+        "sha256_in_prefix": "5ef9b49e0b340f8fe9061b4895c6aecc692e329e7ceb8f3cfac2ce009f84cdac",
+        "size_in_bytes": 43
+      },
+      {
+        "_path": "bin/randomBed",
+        "path_type": "hardlink",
+        "sha256": "18dbf0893bbea0d923ee589d357c8fb89b246ebfb4cb1b301b28ceb8dccdbb8d",
+        "sha256_in_prefix": "18dbf0893bbea0d923ee589d357c8fb89b246ebfb4cb1b301b28ceb8dccdbb8d",
+        "size_in_bytes": 39
+      },
+      {
+        "_path": "bin/shiftBed",
+        "path_type": "hardlink",
+        "sha256": "031b9ff9c6df26f6699c07c59a3a0801c1faf6e848e4ec61790c20bca9e497f3",
+        "sha256_in_prefix": "031b9ff9c6df26f6699c07c59a3a0801c1faf6e848e4ec61790c20bca9e497f3",
+        "size_in_bytes": 38
+      },
+      {
+        "_path": "bin/shuffleBed",
+        "path_type": "hardlink",
+        "sha256": "d4e34018bebd5c83c70ea3b5918a63bb3e55f80c429f1b45dc05560cd5239a5d",
+        "sha256_in_prefix": "d4e34018bebd5c83c70ea3b5918a63bb3e55f80c429f1b45dc05560cd5239a5d",
+        "size_in_bytes": 40
+      },
+      {
+        "_path": "bin/slopBed",
+        "path_type": "hardlink",
+        "sha256": "03427fcdf9ff6b3fd38ba47cc1fd0ba2862e6e730ede37b55d6463a50f45b807",
+        "sha256_in_prefix": "03427fcdf9ff6b3fd38ba47cc1fd0ba2862e6e730ede37b55d6463a50f45b807",
+        "size_in_bytes": 37
+      },
+      {
+        "_path": "bin/sortBed",
+        "path_type": "hardlink",
+        "sha256": "a97becb7c92847a3681a95e262fefd18809f779d756ccf3a1e8ec63f233392cb",
+        "sha256_in_prefix": "a97becb7c92847a3681a95e262fefd18809f779d756ccf3a1e8ec63f233392cb",
+        "size_in_bytes": 37
+      },
+      {
+        "_path": "bin/subtractBed",
+        "path_type": "hardlink",
+        "sha256": "96ba6a708dc760b21cf2bdffe8c2d23b5481ae2b305a14b787ebb273fe79841d",
+        "sha256_in_prefix": "96ba6a708dc760b21cf2bdffe8c2d23b5481ae2b305a14b787ebb273fe79841d",
+        "size_in_bytes": 41
+      },
+      {
+        "_path": "bin/tagBam",
+        "path_type": "hardlink",
+        "sha256": "adfe6ecb285161c32f5eab183286957e31d95d76c6ef84812f9cb17f44964a6b",
+        "sha256_in_prefix": "adfe6ecb285161c32f5eab183286957e31d95d76c6ef84812f9cb17f44964a6b",
+        "size_in_bytes": 36
+      },
+      {
+        "_path": "bin/unionBedGraphs",
+        "path_type": "hardlink",
+        "sha256": "6c9df160f26d6d7ad3c53c8b556cdf9dd7280f47985cf5ce125cfd416f27e92a",
+        "sha256_in_prefix": "6c9df160f26d6d7ad3c53c8b556cdf9dd7280f47985cf5ce125cfd416f27e92a",
+        "size_in_bytes": 42
+      },
+      {
+        "_path": "bin/windowBed",
+        "path_type": "hardlink",
+        "sha256": "bb9a990ea5ba1040a703dbd37eecd8c00333035936d3e25dc1713c565596bdd8",
+        "sha256_in_prefix": "bb9a990ea5ba1040a703dbd37eecd8c00333035936d3e25dc1713c565596bdd8",
+        "size_in_bytes": 39
+      },
+      {
+        "_path": "bin/windowMaker",
+        "path_type": "hardlink",
+        "sha256": "ccf388ccce17e48fba8a9df6c077e04d26401cfb0389d408c8d1b39f2fea5ad2",
+        "sha256_in_prefix": "ccf388ccce17e48fba8a9df6c077e04d26401cfb0389d408c8d1b39f2fea5ad2",
+        "size_in_bytes": 44
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "bedtools",
+  "sha256": "6109f64843f1dc5c4fa0ba170e581cf42a69be9e08ddffb7ed7c4bcfe24583f7",
+  "size": 14445971,
+  "subdir": "linux-64",
+  "timestamp": 1576617497910,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/linux-64/bedtools-2.29.2-hc088bd4_0.tar.bz2",
+  "version": "2.29.2"
+}

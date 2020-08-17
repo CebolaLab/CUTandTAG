@@ -1,0 +1,118 @@
+{
+  "build": "py27_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=2.7,<2.8.0a0",
+    "six"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/singledispatch-3.4.0.3-py27_0",
+  "features": "",
+  "files": [
+    "lib/python2.7/site-packages/singledispatch-3.4.0.3-py2.7.egg-info/PKG-INFO",
+    "lib/python2.7/site-packages/singledispatch-3.4.0.3-py2.7.egg-info/SOURCES.txt",
+    "lib/python2.7/site-packages/singledispatch-3.4.0.3-py2.7.egg-info/dependency_links.txt",
+    "lib/python2.7/site-packages/singledispatch-3.4.0.3-py2.7.egg-info/requires.txt",
+    "lib/python2.7/site-packages/singledispatch-3.4.0.3-py2.7.egg-info/top_level.txt",
+    "lib/python2.7/site-packages/singledispatch-3.4.0.3-py2.7.egg-info/zip-safe",
+    "lib/python2.7/site-packages/singledispatch.py",
+    "lib/python2.7/site-packages/singledispatch.pyc",
+    "lib/python2.7/site-packages/singledispatch_helpers.py",
+    "lib/python2.7/site-packages/singledispatch_helpers.pyc"
+  ],
+  "fn": "singledispatch-3.4.0.3-py27_0.conda",
+  "legacy_bz2_md5": "74ea3d0f558d51b39ab0c48ee9a6c5b4",
+  "legacy_bz2_size": 15331,
+  "license": "MIT",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/singledispatch-3.4.0.3-py27_0",
+    "type": 1
+  },
+  "md5": "ded707de50536d378860530d501b2074",
+  "name": "singledispatch",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/singledispatch-3.4.0.3-py27_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python2.7/site-packages/singledispatch-3.4.0.3-py2.7.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "8585d099158db12f7b47258b63cfbed8c1de9b97ac15edf42681366a513f64de",
+        "sha256_in_prefix": "8585d099158db12f7b47258b63cfbed8c1de9b97ac15edf42681366a513f64de",
+        "size_in_bytes": 9701
+      },
+      {
+        "_path": "lib/python2.7/site-packages/singledispatch-3.4.0.3-py2.7.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "bc28775e019edde861ebd64fe4812e6efc58c8810fed33192b40ed7f8f4f0251",
+        "sha256_in_prefix": "bc28775e019edde861ebd64fe4812e6efc58c8810fed33192b40ed7f8f4f0251",
+        "size_in_bytes": 307
+      },
+      {
+        "_path": "lib/python2.7/site-packages/singledispatch-3.4.0.3-py2.7.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python2.7/site-packages/singledispatch-3.4.0.3-py2.7.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "fe2547fe2604b445e70fc9d819062960552f9145bdb043b51986e478a4806a2b",
+        "sha256_in_prefix": "fe2547fe2604b445e70fc9d819062960552f9145bdb043b51986e478a4806a2b",
+        "size_in_bytes": 4
+      },
+      {
+        "_path": "lib/python2.7/site-packages/singledispatch-3.4.0.3-py2.7.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "96c4122ad3867b16e7377b8b91ff5dd3906ccb3b820e93753602565bbe0e5e06",
+        "sha256_in_prefix": "96c4122ad3867b16e7377b8b91ff5dd3906ccb3b820e93753602565bbe0e5e06",
+        "size_in_bytes": 38
+      },
+      {
+        "_path": "lib/python2.7/site-packages/singledispatch-3.4.0.3-py2.7.egg-info/zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python2.7/site-packages/singledispatch.py",
+        "path_type": "hardlink",
+        "sha256": "c9dcb92c59d53979326a9661c79587eca0eebadc2d30bf2adcf8c257c4cfc141",
+        "sha256_in_prefix": "c9dcb92c59d53979326a9661c79587eca0eebadc2d30bf2adcf8c257c4cfc141",
+        "size_in_bytes": 8292
+      },
+      {
+        "_path": "lib/python2.7/site-packages/singledispatch.pyc",
+        "path_type": "hardlink",
+        "sha256": "6cbc819e5ff6e5707246d93d7f72a01e00dbd9c88e9ec4c61db8fd1a64f013fa",
+        "sha256_in_prefix": "6cbc819e5ff6e5707246d93d7f72a01e00dbd9c88e9ec4c61db8fd1a64f013fa",
+        "size_in_bytes": 7897
+      },
+      {
+        "_path": "lib/python2.7/site-packages/singledispatch_helpers.py",
+        "path_type": "hardlink",
+        "sha256": "41e2354829b2da515f65df599c93acd6e46ed1ff1db2aa6061c812e417b09e73",
+        "sha256_in_prefix": "41e2354829b2da515f65df599c93acd6e46ed1ff1db2aa6061c812e417b09e73",
+        "size_in_bytes": 5228
+      },
+      {
+        "_path": "lib/python2.7/site-packages/singledispatch_helpers.pyc",
+        "path_type": "hardlink",
+        "sha256": "81215e9bd36d03ffdbf1758846b7745aa33601622b979e76bc4a605fbf9047a1",
+        "sha256_in_prefix": "81215e9bd36d03ffdbf1758846b7745aa33601622b979e76bc4a605fbf9047a1",
+        "size_in_bytes": 8313
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "5cb5632b7fd206d649919bff5bfe8029f789e9547ceed114800543ddd9592f25",
+  "size": 15832,
+  "subdir": "linux-64",
+  "timestamp": 1530735230353,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/singledispatch-3.4.0.3-py27_0.conda",
+  "version": "3.4.0.3"
+}

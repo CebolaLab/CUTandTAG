@@ -1,0 +1,13 @@
+prefix=/home/hm1412/anaconda3/envs/CUTandTAG
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qt
+
+
+Name: Qt5 ScriptTools
+Description: Qt ScriptTools module
+Version: 5.9.7
+Libs: -L${libdir} -lQt5ScriptTools 
+Cflags: -I${includedir}/QtScriptTools -I${includedir}
+Requires: Qt5Core
+

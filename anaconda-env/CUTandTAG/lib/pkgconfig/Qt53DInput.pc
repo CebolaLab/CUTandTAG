@@ -1,0 +1,13 @@
+prefix=/home/hm1412/anaconda3/envs/CUTandTAG
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qt
+
+
+Name: Qt5 3DInput
+Description: Qt 3DInput module
+Version: 5.9.7
+Libs: -L${libdir} -lQt53DInput 
+Cflags: -I${includedir}/Qt3DInput -I${includedir}
+Requires: Qt5Core Qt5Gui Qt53DCore Qt5Gamepad
+

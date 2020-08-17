@@ -1,0 +1,94 @@
+{
+  "build": "py27_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=2.7,<2.8.0a0",
+    "six"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/cycler-0.10.0-py27_0",
+  "features": "",
+  "files": [
+    "lib/python2.7/site-packages/cycler-0.10.0-py2.7.egg-info/PKG-INFO",
+    "lib/python2.7/site-packages/cycler-0.10.0-py2.7.egg-info/SOURCES.txt",
+    "lib/python2.7/site-packages/cycler-0.10.0-py2.7.egg-info/dependency_links.txt",
+    "lib/python2.7/site-packages/cycler-0.10.0-py2.7.egg-info/requires.txt",
+    "lib/python2.7/site-packages/cycler-0.10.0-py2.7.egg-info/top_level.txt",
+    "lib/python2.7/site-packages/cycler.py",
+    "lib/python2.7/site-packages/cycler.pyc"
+  ],
+  "fn": "cycler-0.10.0-py27_0.conda",
+  "legacy_bz2_md5": "61307258f7e423a66bb3d3acea899e4e",
+  "legacy_bz2_size": 13448,
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/cycler-0.10.0-py27_0",
+    "type": 1
+  },
+  "md5": "8f5ddaff1d567aa535bc1ec683ca80a4",
+  "name": "cycler",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/cycler-0.10.0-py27_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python2.7/site-packages/cycler-0.10.0-py2.7.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "ce10e11635687c0d15e1439c333b47b7cb4b4e4b2e94e3ba47367ae1a8a2b1b2",
+        "sha256_in_prefix": "ce10e11635687c0d15e1439c333b47b7cb4b4e4b2e94e3ba47367ae1a8a2b1b2",
+        "size_in_bytes": 713
+      },
+      {
+        "_path": "lib/python2.7/site-packages/cycler-0.10.0-py2.7.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "216f686325475774af8fa0d444763eaf9b802ace963f037b5268b21b57d3d9f4",
+        "sha256_in_prefix": "216f686325475774af8fa0d444763eaf9b802ace963f037b5268b21b57d3d9f4",
+        "size_in_bytes": 380
+      },
+      {
+        "_path": "lib/python2.7/site-packages/cycler-0.10.0-py2.7.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python2.7/site-packages/cycler-0.10.0-py2.7.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "fe2547fe2604b445e70fc9d819062960552f9145bdb043b51986e478a4806a2b",
+        "sha256_in_prefix": "fe2547fe2604b445e70fc9d819062960552f9145bdb043b51986e478a4806a2b",
+        "size_in_bytes": 4
+      },
+      {
+        "_path": "lib/python2.7/site-packages/cycler-0.10.0-py2.7.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "0fc05554374001e94b6f614e133ee50e973af802f6d7294a3eb321b46eb2cf21",
+        "sha256_in_prefix": "0fc05554374001e94b6f614e133ee50e973af802f6d7294a3eb321b46eb2cf21",
+        "size_in_bytes": 7
+      },
+      {
+        "_path": "lib/python2.7/site-packages/cycler.py",
+        "path_type": "hardlink",
+        "sha256": "79ddc6dfdba7bd5101ac16550f09c4d0516ba1136c38b91b27f4f0213e428c25",
+        "sha256_in_prefix": "79ddc6dfdba7bd5101ac16550f09c4d0516ba1136c38b91b27f4f0213e428c25",
+        "size_in_bytes": 15959
+      },
+      {
+        "_path": "lib/python2.7/site-packages/cycler.pyc",
+        "path_type": "hardlink",
+        "sha256": "bf187fffe3b43ed5081339f0a8eb7387672ab7c9838eb970550eef3fd8756016",
+        "sha256_in_prefix": "bf187fffe3b43ed5081339f0a8eb7387672ab7c9838eb970550eef3fd8756016",
+        "size_in_bytes": 17945
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "556f0124b9413ffdc4c533db5bca0442194a2a3fe96a61aa8b6bb11f6245eb34",
+  "size": 13535,
+  "subdir": "linux-64",
+  "timestamp": 1530793306166,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/cycler-0.10.0-py27_0.conda",
+  "version": "0.10.0"
+}

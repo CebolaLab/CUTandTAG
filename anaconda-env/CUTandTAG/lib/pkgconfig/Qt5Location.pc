@@ -1,0 +1,13 @@
+prefix=/home/hm1412/anaconda3/envs/CUTandTAG
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qt
+
+
+Name: Qt5 Location
+Description: Qt Location module
+Version: 5.9.7
+Libs: -L${libdir} -lQt5Location 
+Cflags: -I${includedir}/QtLocation -I${includedir}
+Requires: Qt5Core Qt5Positioning Qt5Gui Qt5Quick Qt5Network Qt5Qml
+

@@ -1,0 +1,117 @@
+{
+  "build": "py27h3dcb392_4",
+  "build_number": 4,
+  "channel": "https://conda.anaconda.org/bioconda/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.5.0",
+    "python >=2.7,<2.8.0a0",
+    "python_abi 2.7.* *_cp27mu"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/py2bit-0.3.0-py27h3dcb392_4",
+  "features": "",
+  "files": [
+    "lib/python2.7/site-packages/py2bit-0.3.0-py2.7.egg-info/PKG-INFO",
+    "lib/python2.7/site-packages/py2bit-0.3.0-py2.7.egg-info/SOURCES.txt",
+    "lib/python2.7/site-packages/py2bit-0.3.0-py2.7.egg-info/dependency_links.txt",
+    "lib/python2.7/site-packages/py2bit-0.3.0-py2.7.egg-info/top_level.txt",
+    "lib/python2.7/site-packages/py2bit.so",
+    "lib/python2.7/site-packages/py2bitTest/__init__.py",
+    "lib/python2.7/site-packages/py2bitTest/__init__.pyc",
+    "lib/python2.7/site-packages/py2bitTest/foo.2bit",
+    "lib/python2.7/site-packages/py2bitTest/test.py",
+    "lib/python2.7/site-packages/py2bitTest/test.pyc"
+  ],
+  "fn": "py2bit-0.3.0-py27h3dcb392_4.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/py2bit-0.3.0-py27h3dcb392_4",
+    "type": 1
+  },
+  "md5": "be5bc6024c21419003be150d45bf8a2d",
+  "name": "py2bit",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/py2bit-0.3.0-py27h3dcb392_4.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python2.7/site-packages/py2bit-0.3.0-py2.7.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "65e4434700b1df0cfd7e75c963a59e2b6ae1fbbe4f60e092c05cb705dd409ce5",
+        "sha256_in_prefix": "65e4434700b1df0cfd7e75c963a59e2b6ae1fbbe4f60e092c05cb705dd409ce5",
+        "size_in_bytes": 361
+      },
+      {
+        "_path": "lib/python2.7/site-packages/py2bit-0.3.0-py2.7.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "db89f819151bd14dcb72eb52b29d919529057c99f889d02b6d4e28a4b08ee6e9",
+        "sha256_in_prefix": "db89f819151bd14dcb72eb52b29d919529057c99f889d02b6d4e28a4b08ee6e9",
+        "size_in_bytes": 162
+      },
+      {
+        "_path": "lib/python2.7/site-packages/py2bit-0.3.0-py2.7.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python2.7/site-packages/py2bit-0.3.0-py2.7.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "8a817b10d87904038d9ebc394af403986327ac6b84b9bfbe405df7b04ee18390",
+        "sha256_in_prefix": "8a817b10d87904038d9ebc394af403986327ac6b84b9bfbe405df7b04ee18390",
+        "size_in_bytes": 18
+      },
+      {
+        "_path": "lib/python2.7/site-packages/py2bit.so",
+        "path_type": "hardlink",
+        "sha256": "5f259ae5aded2842e6d71e7db1afe0679c1fbc6081fe6666205950ea509a6a28",
+        "sha256_in_prefix": "5f259ae5aded2842e6d71e7db1afe0679c1fbc6081fe6666205950ea509a6a28",
+        "size_in_bytes": 44992
+      },
+      {
+        "_path": "lib/python2.7/site-packages/py2bitTest/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python2.7/site-packages/py2bitTest/__init__.pyc",
+        "path_type": "hardlink",
+        "sha256": "819ebbc767180a76059db927411d99be9de4616ab57a5f7b614c520ebfa66076",
+        "sha256_in_prefix": "819ebbc767180a76059db927411d99be9de4616ab57a5f7b614c520ebfa66076",
+        "size_in_bytes": 137
+      },
+      {
+        "_path": "lib/python2.7/site-packages/py2bitTest/foo.2bit",
+        "path_type": "hardlink",
+        "sha256": "aef19e5483f86ee7adb6bf9bc7b5ae09b23812f2f1435d49bdbc818c8938222e",
+        "sha256_in_prefix": "aef19e5483f86ee7adb6bf9bc7b5ae09b23812f2f1435d49bdbc818c8938222e",
+        "size_in_bytes": 161
+      },
+      {
+        "_path": "lib/python2.7/site-packages/py2bitTest/test.py",
+        "path_type": "hardlink",
+        "sha256": "fd525901634088536a6a594421ef7a876f61bdf6493d0bf214a66a66d7c9b47f",
+        "sha256_in_prefix": "fd525901634088536a6a594421ef7a876f61bdf6493d0bf214a66a66d7c9b47f",
+        "size_in_bytes": 2693
+      },
+      {
+        "_path": "lib/python2.7/site-packages/py2bitTest/test.pyc",
+        "path_type": "hardlink",
+        "sha256": "562a4399ee346a969ad8a15044fb8283fb43beb381ff8e4f9c7f5b50804021a8",
+        "sha256_in_prefix": "562a4399ee346a969ad8a15044fb8283fb43beb381ff8e4f9c7f5b50804021a8",
+        "size_in_bytes": 4033
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "fe1e8a1287b0ed8a1b56c2a429fd47d4930727faefd3389cd6c3d43fa6d3ad67",
+  "size": 23392,
+  "subdir": "linux-64",
+  "timestamp": 1594325424684,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/linux-64/py2bit-0.3.0-py27h3dcb392_4.tar.bz2",
+  "version": "0.3.0"
+}

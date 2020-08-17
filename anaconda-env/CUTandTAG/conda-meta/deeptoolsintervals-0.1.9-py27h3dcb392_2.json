@@ -1,0 +1,295 @@
+{
+  "build": "py27h3dcb392_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/bioconda/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.5.0",
+    "python >=2.7,<2.8.0a0",
+    "python_abi 2.7.* *_cp27mu"
+  ],
+  "extracted_package_dir": "/home/hm1412/anaconda3/pkgs/deeptoolsintervals-0.1.9-py27h3dcb392_2",
+  "features": "",
+  "files": [
+    "lib/python2.7/site-packages/deeptoolsintervals-0.1.9-py2.7.egg-info/PKG-INFO",
+    "lib/python2.7/site-packages/deeptoolsintervals-0.1.9-py2.7.egg-info/SOURCES.txt",
+    "lib/python2.7/site-packages/deeptoolsintervals-0.1.9-py2.7.egg-info/dependency_links.txt",
+    "lib/python2.7/site-packages/deeptoolsintervals-0.1.9-py2.7.egg-info/not-zip-safe",
+    "lib/python2.7/site-packages/deeptoolsintervals-0.1.9-py2.7.egg-info/top_level.txt",
+    "lib/python2.7/site-packages/deeptoolsintervals/__init__.py",
+    "lib/python2.7/site-packages/deeptoolsintervals/__init__.pyc",
+    "lib/python2.7/site-packages/deeptoolsintervals/enrichment.py",
+    "lib/python2.7/site-packages/deeptoolsintervals/enrichment.pyc",
+    "lib/python2.7/site-packages/deeptoolsintervals/parse.py",
+    "lib/python2.7/site-packages/deeptoolsintervals/parse.pyc",
+    "lib/python2.7/site-packages/deeptoolsintervals/test/GRCh38.84.2.gtf.gz",
+    "lib/python2.7/site-packages/deeptoolsintervals/test/GRCh38.84.bed",
+    "lib/python2.7/site-packages/deeptoolsintervals/test/GRCh38.84.bed12.bz2",
+    "lib/python2.7/site-packages/deeptoolsintervals/test/GRCh38.84.bed2",
+    "lib/python2.7/site-packages/deeptoolsintervals/test/GRCh38.84.bed6",
+    "lib/python2.7/site-packages/deeptoolsintervals/test/GRCh38.84.gtf.gz",
+    "lib/python2.7/site-packages/deeptoolsintervals/test/GRCh38.84.labels.bed",
+    "lib/python2.7/site-packages/deeptoolsintervals/test/noOverlaps.bed",
+    "lib/python2.7/site-packages/deeptoolsintervals/test/strands.bed",
+    "lib/python2.7/site-packages/deeptoolsintervals/tree.so",
+    "lib/python2.7/site-packages/deeptoolsintervals/tree/findOverlaps.c",
+    "lib/python2.7/site-packages/deeptoolsintervals/tree/gtf.c",
+    "lib/python2.7/site-packages/deeptoolsintervals/tree/gtf.h",
+    "lib/python2.7/site-packages/deeptoolsintervals/tree/hashTable.c",
+    "lib/python2.7/site-packages/deeptoolsintervals/tree/kseq.h",
+    "lib/python2.7/site-packages/deeptoolsintervals/tree/kstring.h",
+    "lib/python2.7/site-packages/deeptoolsintervals/tree/murmur3.c",
+    "lib/python2.7/site-packages/deeptoolsintervals/tree/murmur3.h",
+    "lib/python2.7/site-packages/deeptoolsintervals/tree/secret.h",
+    "lib/python2.7/site-packages/deeptoolsintervals/tree/tree.c",
+    "lib/python2.7/site-packages/deeptoolsintervals/tree/tree.h"
+  ],
+  "fn": "deeptoolsintervals-0.1.9-py27h3dcb392_2.tar.bz2",
+  "license": "GPL3",
+  "link": {
+    "source": "/home/hm1412/anaconda3/pkgs/deeptoolsintervals-0.1.9-py27h3dcb392_2",
+    "type": 1
+  },
+  "md5": "0c313df3b39198d9929b73f0a4a6d720",
+  "name": "deeptoolsintervals",
+  "package_tarball_full_path": "/home/hm1412/anaconda3/pkgs/deeptoolsintervals-0.1.9-py27h3dcb392_2.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals-0.1.9-py2.7.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "1fba7f08214d7841573c306dec6b19d931f580b10e097e5781e82f97d1cd109a",
+        "sha256_in_prefix": "1fba7f08214d7841573c306dec6b19d931f580b10e097e5781e82f97d1cd109a",
+        "size_in_bytes": 362
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals-0.1.9-py2.7.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "48b423fbcd72b734105805b955d6f9efce7ffdc3fc4a31a415a1292edb6b57e8",
+        "sha256_in_prefix": "48b423fbcd72b734105805b955d6f9efce7ffdc3fc4a31a415a1292edb6b57e8",
+        "size_in_bytes": 1076
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals-0.1.9-py2.7.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals-0.1.9-py2.7.egg-info/not-zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals-0.1.9-py2.7.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "d64fc1257f14348bff9a594cb0f792a36ebac1d7ece3fd2369911411e514e2a4",
+        "sha256_in_prefix": "d64fc1257f14348bff9a594cb0f792a36ebac1d7ece3fd2369911411e514e2a4",
+        "size_in_bytes": 19
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e626b44497e5fcd45305178034e13f4d6beb2a9023ed59f1ca44bb90bb1e6311",
+        "sha256_in_prefix": "e626b44497e5fcd45305178034e13f4d6beb2a9023ed59f1ca44bb90bb1e6311",
+        "size_in_bytes": 94
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/__init__.pyc",
+        "path_type": "hardlink",
+        "sha256": "61561a6c903ef253a7fce9b7279b7d540ad8d619c64412f5aec0c69054d949eb",
+        "sha256_in_prefix": "61561a6c903ef253a7fce9b7279b7d540ad8d619c64412f5aec0c69054d949eb",
+        "size_in_bytes": 290
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/enrichment.py",
+        "path_type": "hardlink",
+        "sha256": "85614dcbe5cba4b485d6a2315908d3df78a7a8379ae9297b31e7bae01b427640",
+        "sha256_in_prefix": "85614dcbe5cba4b485d6a2315908d3df78a7a8379ae9297b31e7bae01b427640",
+        "size_in_bytes": 11573
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/enrichment.pyc",
+        "path_type": "hardlink",
+        "sha256": "be87eaa369d1152dfc0d23c4dda74d19bd5e2f0511af2ee6f0028c269ba7c37f",
+        "sha256_in_prefix": "be87eaa369d1152dfc0d23c4dda74d19bd5e2f0511af2ee6f0028c269ba7c37f",
+        "size_in_bytes": 10026
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/parse.py",
+        "path_type": "hardlink",
+        "sha256": "c6425a5fa72fc2a37a3441a33dd1fbc830d92a418d77752b3d16caf0c60a94e5",
+        "sha256_in_prefix": "c6425a5fa72fc2a37a3441a33dd1fbc830d92a418d77752b3d16caf0c60a94e5",
+        "size_in_bytes": 33795
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/parse.pyc",
+        "path_type": "hardlink",
+        "sha256": "1b35e6c6b02d4c1824f4f1407dd54ff25b6c47619f7073ffc4e994f8995b1eff",
+        "sha256_in_prefix": "1b35e6c6b02d4c1824f4f1407dd54ff25b6c47619f7073ffc4e994f8995b1eff",
+        "size_in_bytes": 30675
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/test/GRCh38.84.2.gtf.gz",
+        "path_type": "hardlink",
+        "sha256": "59e5723017edca927ffc2fa73036694c741630969a4eda502f7267d9154426eb",
+        "sha256_in_prefix": "59e5723017edca927ffc2fa73036694c741630969a4eda502f7267d9154426eb",
+        "size_in_bytes": 2009
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/test/GRCh38.84.bed",
+        "path_type": "hardlink",
+        "sha256": "b6af99339c05139b81dc3e50138f190da43a66928f9d2d5565b4eb3bb36d92cc",
+        "sha256_in_prefix": "b6af99339c05139b81dc3e50138f190da43a66928f9d2d5565b4eb3bb36d92cc",
+        "size_in_bytes": 335
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/test/GRCh38.84.bed12.bz2",
+        "path_type": "hardlink",
+        "sha256": "dc3b9b4afb458c06b07d9a176477cef58422efab706631f8dc5ed8d46677149d",
+        "sha256_in_prefix": "dc3b9b4afb458c06b07d9a176477cef58422efab706631f8dc5ed8d46677149d",
+        "size_in_bytes": 645
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/test/GRCh38.84.bed2",
+        "path_type": "hardlink",
+        "sha256": "11a105d9277c6f0f258e33b198f95f7f71678f84374dc02d5bc0d96d6fab4dcd",
+        "sha256_in_prefix": "11a105d9277c6f0f258e33b198f95f7f71678f84374dc02d5bc0d96d6fab4dcd",
+        "size_in_bytes": 377
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/test/GRCh38.84.bed6",
+        "path_type": "hardlink",
+        "sha256": "f1ac30fd450dc6ffaf9c7baf945f0a3581cfaff3ef5277987a5ad475cdc88dfd",
+        "sha256_in_prefix": "f1ac30fd450dc6ffaf9c7baf945f0a3581cfaff3ef5277987a5ad475cdc88dfd",
+        "size_in_bytes": 779
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/test/GRCh38.84.gtf.gz",
+        "path_type": "hardlink",
+        "sha256": "dcb08fa7d431a3019cb160cc2dc3d679ad7333b35c5063ca1bb452ee1020c656",
+        "sha256_in_prefix": "dcb08fa7d431a3019cb160cc2dc3d679ad7333b35c5063ca1bb452ee1020c656",
+        "size_in_bytes": 2870
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/test/GRCh38.84.labels.bed",
+        "path_type": "hardlink",
+        "sha256": "dbc2c7e134e093eb7d7d9fe49657f4b67d5c15fb89932f884e7eef7a51976efa",
+        "sha256_in_prefix": "dbc2c7e134e093eb7d7d9fe49657f4b67d5c15fb89932f884e7eef7a51976efa",
+        "size_in_bytes": 533
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/test/noOverlaps.bed",
+        "path_type": "hardlink",
+        "sha256": "e6bbdb7c4cb4fd758e676a6a944b7a2e49e0c4445336a4abdbf0cdd6c073997f",
+        "sha256_in_prefix": "e6bbdb7c4cb4fd758e676a6a944b7a2e49e0c4445336a4abdbf0cdd6c073997f",
+        "size_in_bytes": 247
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/test/strands.bed",
+        "path_type": "hardlink",
+        "sha256": "0e55aff7f4fe0112424cc90b01099c394a60c18b90405e481f2b97ac8c63f4bc",
+        "sha256_in_prefix": "0e55aff7f4fe0112424cc90b01099c394a60c18b90405e481f2b97ac8c63f4bc",
+        "size_in_bytes": 64
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/tree.so",
+        "path_type": "hardlink",
+        "sha256": "361652b6ee56b6ba64db871471b3f08f606c3bb3a2bcde1803c45e3fd84137cd",
+        "sha256_in_prefix": "361652b6ee56b6ba64db871471b3f08f606c3bb3a2bcde1803c45e3fd84137cd",
+        "size_in_bytes": 54664
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/tree/findOverlaps.c",
+        "path_type": "hardlink",
+        "sha256": "5e94999e7374e6c34a273c9d28cf6a48ea3a817b2a17786713fcfee76f633a52",
+        "sha256_in_prefix": "5e94999e7374e6c34a273c9d28cf6a48ea3a817b2a17786713fcfee76f633a52",
+        "size_in_bytes": 18139
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/tree/gtf.c",
+        "path_type": "hardlink",
+        "sha256": "c31b2c7f438dfaa9ff747e06cf4ee171c32520d08777ad7adac8e47a9a47ff3e",
+        "sha256_in_prefix": "c31b2c7f438dfaa9ff747e06cf4ee171c32520d08777ad7adac8e47a9a47ff3e",
+        "size_in_bytes": 17525
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/tree/gtf.h",
+        "path_type": "hardlink",
+        "sha256": "24406951a3aa8135476ebcd54d670d6987c188da6d114d3a630f220d95bb4e8e",
+        "sha256_in_prefix": "24406951a3aa8135476ebcd54d670d6987c188da6d114d3a630f220d95bb4e8e",
+        "size_in_bytes": 5448
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/tree/hashTable.c",
+        "path_type": "hardlink",
+        "sha256": "a57ac6de9c321d136813b247f6fcf399c0289f0addad667e029e8ffbdb23d9f0",
+        "sha256_in_prefix": "a57ac6de9c321d136813b247f6fcf399c0289f0addad667e029e8ffbdb23d9f0",
+        "size_in_bytes": 3942
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/tree/kseq.h",
+        "path_type": "hardlink",
+        "sha256": "a6cd918d88b4c56e95851a11d89c2458ba534c275c94669f3c0eaeaf415b893f",
+        "sha256_in_prefix": "a6cd918d88b4c56e95851a11d89c2458ba534c275c94669f3c0eaeaf415b893f",
+        "size_in_bytes": 8900
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/tree/kstring.h",
+        "path_type": "hardlink",
+        "sha256": "8e61cfd4a007bb2390a656ad528958300ec897ffabfd800a83d5935190270823",
+        "sha256_in_prefix": "8e61cfd4a007bb2390a656ad528958300ec897ffabfd800a83d5935190270823",
+        "size_in_bytes": 7071
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/tree/murmur3.c",
+        "path_type": "hardlink",
+        "sha256": "96eb201db5986ebde206753848f9f714a13d69e67fbe09cea3de472ce7b3946f",
+        "sha256_in_prefix": "96eb201db5986ebde206753848f9f714a13d69e67fbe09cea3de472ce7b3946f",
+        "size_in_bytes": 7532
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/tree/murmur3.h",
+        "path_type": "hardlink",
+        "sha256": "6134465f21db3d4db7e6e8ea2bdd8d3f354b0266a1eb65a10a2625b8baee7617",
+        "sha256_in_prefix": "6134465f21db3d4db7e6e8ea2bdd8d3f354b0266a1eb65a10a2625b8baee7617",
+        "size_in_bytes": 792
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/tree/secret.h",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/deeptoolsintervals_1594327589531/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "2ca2ff84164491b9d15b9dc69d8046a063954e0a0fbc9ce0053b6123445d1ef3",
+        "sha256_in_prefix": "bc42c9fe2f8841ae453a1834a09ab5f1fb5c5efb0c629ef7a3dd920462ce40d7",
+        "size_in_bytes": 16595
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/tree/tree.c",
+        "path_type": "hardlink",
+        "sha256": "15981112db42e11821d4c499757513003bc98904bd659e0f07020ada1e3710f4",
+        "sha256_in_prefix": "15981112db42e11821d4c499757513003bc98904bd659e0f07020ada1e3710f4",
+        "size_in_bytes": 11712
+      },
+      {
+        "_path": "lib/python2.7/site-packages/deeptoolsintervals/tree/tree.h",
+        "path_type": "hardlink",
+        "sha256": "c8430f580edaf6e1abcb812bca73e87f26a3ece5d23943375a3508b807280815",
+        "sha256_in_prefix": "c8430f580edaf6e1abcb812bca73e87f26a3ece5d23943375a3508b807280815",
+        "size_in_bytes": 4752
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "601e5c4e27f85155a57da162dd90a36511f0f2852cf8be6b3dea5265002c2ba9",
+  "size": 74198,
+  "subdir": "linux-64",
+  "timestamp": 1594327952983,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/linux-64/deeptoolsintervals-0.1.9-py27h3dcb392_2.tar.bz2",
+  "version": "0.1.9"
+}

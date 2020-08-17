@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: deeptoolsintervals
+Version: 0.1.9
+Summary: A python module creating/accessing GTF-based interval trees with associated meta-data
+Home-page: https://github.com/deeptools/deeptools_intervals
+Author: Devon P. Ryan
+Author-email: ryan@ie-freiburg.mpg.de
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: bioinformatics,GTF
+Platform: UNKNOWN
