@@ -7,7 +7,7 @@ The CUT&Tag protocol is available as the [CUT&Tag@home](https://www.protocols.io
 The following pipeline describes each analysis step:
 
 - Pre-alignment quality scontrol (QC) 
-- Alignment
+- [Alignment](alignment)
 - Post-alignment QC
 - Visualisation & Calibration 
 - Peak Calling
@@ -48,7 +48,7 @@ The alignments are carried out using bowtie2 with the below arguments. An exampl
 
 ### Remove mitochondrial reads
 
-To assess the total % of mitochondrial reads, run `samtools idxstats` and `samtools flagstats` on your indexed `bam` file. For example:
+To assess the total % of mitochondrial reads, run `samtools idxstats` and `samtools flagstats` on your indexed bam file. For example:
 
 `samtools index <sample>.bam`
 
@@ -56,16 +56,28 @@ To assess the total % of mitochondrial reads, run `samtools idxstats` and `samto
 
 `samtools idxstats <sample>.bam > <sample>.idxstats`
 
-The total number of reads can be seen the the first line of the flagstat file, `head -n1 <sample>.flagstat`, while the total number of mitochondrial reads can be seen using `grep chrM <sample>.idxstats` (the length of the chromosome is the 2nd column and the total number of aligned reads is the third column). Flagstat and idxstats files can be generated after each QC step to assess the total number of reads removed.  
+The total number of reads can be seen the the first line of the flagstat file, `head -n1 <sample>.flagstat`, while the total number of mitochondrial reads can be seen using `grep chrM <sample>.idxstats` (the 2nd column is the length of the chromosome and the 3rd column is the total number of aligned reads). Flagstat and idxstats files can be generated after each QC step to assess the total number of reads removed.  Mitochondrial reads should be removed as follows:
+
+`samtools view -h <sample>.bam | grep -v chrM | samtools sort -O bam -o <sample>.rmChrM.bam -T .`
+
+### Mark and remove duplicate reads
+
+`picard MarkDuplicates QUIET=true INPUT=<sample>.rmChrM.bam OUTPUT=<sample>.marked.bam METRICS_FILE=<sample>.sorted.metrics REMOVE_DUPLICATES=false CREATE_INDEX=true VALIDATION_STRINGENCY=LENIENT TMP_DIR=.`
+
+`samtools view -h -b -F 1024 <sample>.markerd.bam > <sample>.rmDup.bam`
 
 ### Remove mapping quality <30
 
 Reads which are uniquely mapped are assigned a high alignment quality score and one genomic position. If reads can map to more than one location, Bowtie2 reports one position and assigns a low quality score. The proportion of uniquely mapped reads can be assessed. In general, >70% uniquely mapped reads is expected, while <50% may be a cause for concern 
 [(Bailey et al. 2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf). A low % of uniquely mapped reads may, however, be observed when carrying out a CUT&Tag experiment for a protein which is expected to bind repetitive DNA. Alternatively, this may result from short reads, excessive PCR amplification or problems with the PCR [(Bailey et al. 2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf).
 
-`samtools view -q 10 -b ${sample}.bam > ${sample}-aln.uniq.bam`
+`samtools view -q 10 -b <sample>.rmDup.bam > <sample>.filtered.bam`
 
-A samtools flagstat report can be generated for the new `${sample}-aln.uniq.bam` file to assess the total number of reads removed.
+### QC report
+
+A hmtl QC report can be output using [qualimap](http://qualimap.bioinfo.cipf.es/). 
+
+`qualimap bamqc -bam <sample>.filtered.bam -gd hg19 -outdir . -outfile <sample>.qualimap.report -outformat html`
 
 ## Visualisation
 
@@ -81,7 +93,7 @@ The aligned data (output from the example [script](https://github.com/CebolaLab/
 
 The output bam files must be sorted by **queryname** in order to generate the BEDPE format in the next step. `<sample>` again refers to the your filename/sample ID: 
 
-`picard SortSam I=<sample>.bam O=<sample>-sorted.bam SO=queryorder CREATE_INDEX=TRUE`
+`picard SortSam I=<sample>.bam O=<sample>-sorted.bam SO=queryname CREATE_INDEX=TRUE`
 
 The sorted bam file is converted to bed format using `bedtools bamtobed`. For calibration using the E.coli reads, the bed files require the length of the fragment to be added (as described in the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh)).
 
