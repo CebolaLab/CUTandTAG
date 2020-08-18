@@ -6,7 +6,9 @@ The CUT&Tag protocol is available as the [CUT&Tag@home](https://www.protocols.io
 
 The following pipeline describes each analysis step:
 
-- Alignment 
+- Pre-alignment quality scontrol (QC) 
+- Alignment
+- Post-alignment QC
 - Visualisation & Calibration 
 - Peak Calling
 - Motif Finding
@@ -41,15 +43,29 @@ The alignments are carried out using bowtie2 with the below arguments. An exampl
 ## Post-alignment QC
 
 - Remove mitochondrial reads
-- Remove reads which are not properly paired
-- Remove reads which do not map uniquely (?)
-- Remove duplicates (?)
+- Remove duplicate reads
+- Remove reads with a mapping quality <30 (includes non-uniquely mapped reads)
 
-### Remove non-uniquely mapped reads
+### Remove mitochondrial reads
+
+To assess the total % of mitochondrial reads, run `samtools idxstats` and `samtools flagstats` on your indexed `bam` file. For example:
+
+`samtools index <sample>.bam`
+
+`samtools flagstat <sample>.bam > <sample>.flagstat`
+
+`samtools idxstats <sample>.bam > <sample>.idxstats`
+
+The total number of reads can be seen the the first line of the flagstat file, `head -n1 <sample>.flagstat`, while the total number of mitochondrial reads can be seen using `grep chrM <sample>.idxstats` (the length of the chromosome is the 2nd column and the total number of aligned reads is the third column). Flagstat and idxstats files can be generated after each QC step to assess the total number of reads removed.  
+
+### Remove mapping quality <30
 
 Reads which are uniquely mapped are assigned a high alignment quality score and one genomic position. If reads can map to more than one location, Bowtie2 reports one position and assigns a low quality score. The proportion of uniquely mapped reads can be assessed. In general, >70% uniquely mapped reads is expected, while <50% may be a cause for concern 
-[Bailey et al. 2013] (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf). A low % of uniquely mapped reads may, however, be observed when carrying out a CUT&Tag experiment for a protein which is expected to bind repetitive DNA. Alternatively, this may result from short reads, excessive PCR amplification or problems with the PCR [Bailey et al. 2013] (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf).
+[(Bailey et al. 2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf). A low % of uniquely mapped reads may, however, be observed when carrying out a CUT&Tag experiment for a protein which is expected to bind repetitive DNA. Alternatively, this may result from short reads, excessive PCR amplification or problems with the PCR [(Bailey et al. 2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf).
 
+`samtools view -q 10 -b ${sample}.bam > ${sample}-aln.uniq.bam`
+
+A samtools flagstat report can be generated for the new `${sample}-aln.uniq.bam` file to assess the total number of reads removed.
 
 ## Visualisation
 
