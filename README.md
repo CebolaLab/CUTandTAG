@@ -7,7 +7,7 @@ The CUT&Tag protocol is available as the [CUT&Tag@home](https://www.protocols.io
 The following pipeline describes each analysis step:
 
 - Pre-alignment quality scontrol (QC) 
-- [Alignment](alignment)
+- [Alignment](#alignment)
 - Post-alignment QC
 - Visualisation & Calibration 
 - Peak Calling
