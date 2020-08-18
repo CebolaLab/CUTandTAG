@@ -2,11 +2,11 @@
 Step-by-step analysis pipeline for CUT&Tag data
 #### [Cebola Lab](https://www.imperial.ac.uk/metabolism-digestion-reproduction/research/systems-medicine/genetics--genomics/regulatory-genomics-and-metabolic-disease/)
 
-The CUT&Tag protocol is available as the [CUT&Tag@home](https://www.protocols.io/view/cut-amp-tag-home-bd26i8he?step=50) and [Bench top CUT&Tag V.3](https://www.protocols.io/view/bench-top-cut-amp-tag-bcuhiwt6). The following pipeline is adapted from similar pipelines including [CUTRunTools](https://bitbucket.org/qzhudfci/cutruntools/src) (paper [here](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1802-4#Sec8)) and the Methods reported in the CUT&Tag [paper](https://www.nature.com/articles/s41467-019-09982-5#data-availability).
+The CUT&Tag protocol is available as the [CUT&Tag@home](https://www.protocols.io/view/cut-amp-tag-home-bd26i8he?step=50) and [Bench top CUT&Tag V.3](https://www.protocols.io/view/bench-top-cut-amp-tag-bcuhiwt6). The following pipeline is adapted from the authors recommended analysis protocol, available [here](https://www.protocols.io/view/cut-amp-tag-data-processing-and-analysis-tutorial-bjk2kkye). 
 
 The following pipeline describes each analysis step:
 
-- Pre-alignment quality scontrol (QC) 
+- [Pre-alignment quality scontrol (QC)](pre-alignment-qc) 
 - [Alignment](#alignment)
 - [Post-alignment QC](#post-alignment-qc)
 - [Visualisation & Calibration](#visualisation) 
@@ -18,6 +18,14 @@ The following pipeline describes each analysis step:
 All required programs required have been installed and are available in the CebolaLab [CUTandTAG anaconda environment](https://github.com/CebolaLab/CUTandTAG/tree/master/anaconda-env). If you are using anaconda, you can copy this into your own anaconda environments (on the Imperial College HPC, for example, this is located at `/rdsgpfs/general/user/"$(whoami)"/home/anaconda3/envs/`) and then `source activate CUTandTAG`. The pipeline can also be run without installing anaconda by directing the necessary scripts to the `bin` of the downloaded CUTandTAG environment (download the CUTandTAG directory and save it e.g. to your home directory).
 
 For the following analysis, you can save your sample file name as `base` and the example scripts will access this variable using `<sample>`. 
+
+## Pre-alignment QC
+
+A common tool used to assess the quality of raw sequence reads is [fastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). The report, which comes in html format, can be used as guidance to the general quality of the data. Some failed or 'warning' results are usually not too concerning and can be improved using various processing tools. One metric which may be observed to fail is the Per base sequence content. As [described by the authors](https://www.protocols.io/view/cut-amp-tag-data-processing-and-analysis-tutorial-bjk2kkye?step=6) this can result from a sequence preference of the Tn5 transposase or the 10bp periodicity in the length distribution:
+
+![FastQC](Figures/fastQC-per-base-quality.png)
+
+If using the [Benchop CUT&Tag protocol](https://www.protocols.io/view/bench-top-cut-amp-tag-bcuhiwt6/abstract), sequence length should be 25bp and therefore there is not expected to be any contamination of adapters (which results when the sequence lenght is longer than the DNA fragment and so the sequencing extends into the adapter sequence). Therefore, adapter trimming, which is a common step in NGS pipelines, is not recommended unless the user has opted to sequence longer reads (>25bp).
 
 ## Alignment
 
