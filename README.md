@@ -8,10 +8,10 @@ The following pipeline describes each analysis step:
 
 - Pre-alignment quality scontrol (QC) 
 - [Alignment](#alignment)
-- Post-alignment QC
-- Visualisation & Calibration 
-- Peak Calling
-- Motif Finding
+- [Post-alignment QC](#post-alignment-qc)
+- [Visualisation & Calibration](#visualisation) 
+- [Peak Calling](#peak-calling)
+- [Motif Finding](#motif-finding)
 - Cut Matrix Generation
 - Motif Footprinting Steps
 
@@ -170,6 +170,8 @@ The `<sample>-sorted.bed` file is currently in the bedtools BEDPE format, which 
 As described in the original CUT&Tag paper ([Kaya-Okur et al. 2019](https://www.nature.com/articles/s41467-019-09982-5#data-availability)), macs2 will be used with the following parameters:
 
 `macs2 callpeak -t <sample>-sorted-macs.bed -f BEDPE -p 1e-5 --keep-dup all -n output_prefix` 
+
+## Motif Finding
 
 
 
