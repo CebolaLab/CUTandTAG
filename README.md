@@ -64,27 +64,41 @@ Fastq files should also be aligned to the E.coli U00096.3 genome (strain K12, su
 
 `--end-to-end --very-sensitive --no-overlap --no-dovetail --no-mixed --no-discordant  --phred33 -I 10 -X 700`
 
-Summaries of the alignment are reported in a `.bowtie2` file
+Summaries of the alignment are reported in a `.bowtie2` file, for example:
 
-![bowtie2-report](Figures/bowtie2-report.png)
+<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/bowtie2-report.png" width="200">
+
+Where 2702260 is the total number of DNA fragments. For CUT&Tag experiments, the total number of mapped fragments (i.e 96.26% of 2702260 in this example) may be as low as 1 million for experiments probing histone marks. When investigating transcription factors, for example, this may need to be as high as 10 million mapped fragments. 
 
 ## Post-alignment QC
+
+### Assess quality
+
+A `bash/R` script adapted from the [CUT&Tag processing and analysis tutorial](https://www.protocols.io/view/cut-amp-tag-data-processing-and-analysis-tutorial-bjk2kkye?step=12&comment_id=90048) is included in this repository to generate a  **quality report**.The information presented includes the % of mapped reads, the % of mitochondrial reads, the % of E.coli reads and the % of duplicate reads. In general, the % of duplicates is expected to be low in a CUT&Tag experiment.
+
+Firstly, the aligned `bam` file should be sorted and indexed, here using [picard](https://broadinstitute.github.io/picard/) tools.
+
+`picard SortSam I=<input>.bam O=<input>-sorted.bam SO=coordinate CREATE_INDEX=TRUE`
+
+To assess the total % of mitochondrial reads, run `samtools idxstats` and `samtools flagstats` on your indexed and sorted bam file. For example:
+
+`samtools flagstat <sample>-sorted.bam > <sample>.flagstat`
+
+`samtools idxstats <sample>-sorted.bam > <sample>.idxstats`
+
+
+
+### Carry out QC filtering
+
+The aligned data will be filtered to: 
 
 - Remove mitochondrial reads
 - Remove duplicate reads
 - Remove reads with a mapping quality <30 (includes non-uniquely mapped reads)
 
-A report can be generated to present the results of the mapping, including the % of mapped reads, the % of mitochondrial reads, the % of E.coli reads and the % of duplicate reads. In general, the % of duplicates is expected to be low in a CUT&Tag experiment and therefore the authors recommend to *not* remove duplicate reads. If the % of duplicates is high, picard 
-
 ### Remove mitochondrial reads
 
 To assess the total % of mitochondrial reads, run `samtools idxstats` and `samtools flagstats` on your indexed bam file. For example:
-
-`samtools index <sample>.bam`
-
-`samtools flagstat <sample>.bam > <sample>.flagstat`
-
-`samtools idxstats <sample>.bam > <sample>.idxstats`
 
 The total number of reads can be seen the the first line of the flagstat file, `head -n1 <sample>.flagstat`, while the total number of mitochondrial reads can be seen using `grep chrM <sample>.idxstats` (the 2nd column is the length of the chromosome and the 3rd column is the total number of aligned reads). Flagstat and idxstats files can be generated after each QC step to assess the total number of reads removed.  Mitochondrial reads should be removed as follows:
 
