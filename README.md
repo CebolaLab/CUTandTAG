@@ -167,6 +167,7 @@ The output bam files must be sorted by **queryname** in order to generate the BE
 
 ```
 picard SortSam I=<sample>.bam O=<sample>-sorted.bam SO=queryname CREATE_INDEX=TRUE
+
 bedtools bamtobed -i <sample>.filtered.bam -bedpe > <sample>.bed
 ```
 
@@ -184,7 +185,9 @@ The scaling factor, S, should be calculated as C / the number of E.coli reads, w
 
 ```
 seqdepth=$(head -n1 <sample>.Ecoli.bowtie2 | cut -d ' ' -f1)
+
 scale_factor=$(echo "10000 / $seqdepth" | bc -l)
+
 bedtools genomecov -bg -scale $scale_factor -i <sample>-converted.bed -g hg19.chrom.sizes > <sample>.bedGraph
 ```
 
