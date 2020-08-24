@@ -31,9 +31,9 @@ If using the [Benchop CUT&Tag protocol](https://www.protocols.io/view/bench-top-
 
 If any samples have been sequenced across multiple lanes, these should now be concatanated. For example:
 
-`cat <sample>_lane*_R1.fastq.gz`
+`cat <sample>_lane*_R1.fastq.gz > <sample>_R1.fastq.gz`
 
-`cat <sample>_lane*_R2.fastq.gz`
+`cat <sample>_lane*_R2.fastq.gz > <sample>_R2.fastq.gz`
 
 ## Alignment
 
@@ -48,7 +48,7 @@ Both reference genomes should be [indexed](http://bowtie-bio.sourceforge.net/bow
 
 The alignments are carried out using bowtie2 with the below arguments. An example script is available [here](https://github.com/CebolaLab/CUTandTAG/blob/master/alignment.sh).
 
-> Parameters to align human reads:
+#### Parameters to align human reads:
 
 For mapping of inserts greater than 700bp, increase the -X parameter. 
 
@@ -108,7 +108,7 @@ To mark	 duplicate reads:
 
 The % of duplicates can be viewed using:
 
-`head -n 8 SRR11074240-markDup.metrics | cut -f 7,9 | grep -v ^# | tail -n 2`
+`head -n 8 <sample>-markDup.metrics | cut -f 7,9 | grep -v ^# | tail -n 2`
 
 ### Carry out QC filtering
 
@@ -122,7 +122,7 @@ The aligned data will be filtered to:
 
 `samtools view -h <sample>-sorted.bam | grep -v chrM | samtools sort -O bam -o <sample>.rmChrM.bam -T .`
 
-#### Mark and remove duplicate reads [optional]
+#### Remove duplicate reads [optional]
 
 It may be recommended to remove duplicate reads if the % of duplicates is particularly high. To remove duplicate reads, run the following code:
 
@@ -132,15 +132,17 @@ If IgG controls are used, the duplicate level is expected to be high and duplica
 
 The **estimated library size** and **unique fragment number** can be calculated excluding the observed duplicates.  
 
-### Assess mapping quality 
+#### Assess mapping quality 
 
-The output `sam/bam` files contain several measures of quality. First, the alignment quality score. Reads which are uniquely mapped are assigned a high alignment quality score and one genomic position. If reads can map to more than one location, Bowtie2 reports one position and assigns a low quality score. The proportion of uniquely mapped reads can be assessed. In general, >70% uniquely mapped reads is expected, while <50% may be a cause for concern [(Bailey et al. 2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf). Secondly, the 'flag' reports information such as whether the read is mapped as a pair or is a PCR duplicate. The individual flags are reported [here](https://hbctraining.github.io/Intro-to-rnaseq-hpc-O2/lessons/04_alignment_quality.html) and may be combined in a `sam` file to one score, which can be deconstructed back to the original flags using [online interpretation tools](https://broadinstitute.github.io/picard/explain-flags.html). In this pipeline, the bowtie2 parameters `--no-mixed` and `--no-discordant` prevent the mapping of only one read in a pair, so these flags will not be present. All flags reported in a `sam` file can be viewed using  `grep -v ^@ <sample>-markDup.sam | cut -f 2 | sort | uniq`.
+The output `sam/bam` files contain several measures of quality. First, the alignment quality score. Reads which are uniquely mapped are assigned a high alignment quality score and one genomic position. If reads can map to more than one location, Bowtie2 reports one position and assigns a low quality score. The proportion of uniquely mapped reads can be assessed. In general, >70% uniquely mapped reads is expected, while <50% may be a cause for concern [(Bailey et al. 2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf). Secondly, the 'flag' reports information such as whether the read is mapped as a pair or is a PCR duplicate. The individual flags are reported [here](https://hbctraining.github.io/Intro-to-rnaseq-hpc-O2/lessons/04_alignment_quality.html) and are combined in a `sam` file to one score, which can be deconstructed back to the original flags using [online interpretation tools](https://broadinstitute.github.io/picard/explain-flags.html). In this pipeline, the bowtie2 parameters `--no-mixed` and `--no-discordant` prevent the mapping of only one read in a pair, so these flags will not be present. All flags reported in a `sam` file can optionally be viewed using  `grep -v ^@ <sample>.sam | cut -f 2 | sort | uniq`.
+
+#### Remove low quality reads
 
 To view how many fragments align with a quality score >30, run:
 
 `samtools view -q 30 -c <sample>.marked.bam`
 
-This reports the number of **DNA reads** which align with a quality score >30 (to calculate the number of DNA **fragments**, divide the output by 2). A low % of uniquely mapped reads may potentially be observed when carrying out a CUT&Tag experiment for a protein which is expected to bind repetitive DNA. Alternatively, this may result from short reads, excessive PCR amplification or problems with the PCR [(Bailey et al. 2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf). Run the following code to remove reads with a score <30:
+This reports the number of DNA **reads** which align with a quality score >30 (to calculate the number of DNA **fragments**, divide the output by 2). A low % of uniquely mapped reads may potentially be observed when carrying out a CUT&Tag experiment for a protein which is expected to bind repetitive DNA. Alternatively, this may result from short reads, excessive PCR amplification or problems with the PCR [(Bailey et al. 2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf). Run the following code to remove reads with a score <30:
 
 `samtools view -q 30 -b <sample>.rmDup.bam > <sample>.filtered.bam`
 
@@ -152,7 +154,7 @@ A hmtl QC report can be output using [qualimap](http://qualimap.bioinfo.cipf.es/
 
 The qualimap report contains a plot of the DNA insert size, which may be expected to show fragments consistent with multiples of nucleosomal lengths (~180 bp), since CUT&Tag typically inserts adapted on either side of a nucleosome. Shorted particles may result from tagmentation within a chromatin particle, in linker DNA regions, or from a section of DNA bound by a transcription factor, for example. The qualimap plot appears as:
 
-<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/qualimap-insert.png" width="800".
+<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/qualimap-insert.png" width="800">
 
 
 ## Visualisation
