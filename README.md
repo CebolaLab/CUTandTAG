@@ -48,7 +48,7 @@ Both reference genomes should be [indexed](http://bowtie-bio.sourceforge.net/bow
 
 The alignments are carried out using bowtie2 with the below arguments. An example script is available [here](https://github.com/CebolaLab/CUTandTAG/blob/master/alignment.sh).
 
-##### Parameters to align human reads:
+> Parameters to align human reads:
 
 For mapping of inserts greater than 700bp, increase the -X parameter. 
 
@@ -58,7 +58,7 @@ If the user is sequencing >25bp, adapters will need to be trimmed using a tool s
 
 `--local --very-sensitive --no-mixed --no-discordant --phred33 -I 10 -X 700`
 
-##### Parameters to align E.coli reads:
+#### Parameters to align E.coli reads:
 
 Fastq files should also be aligned to the E.coli U00096.3 genome (strain K12, substrain MG1655) if downstream normalisation between samples is to be carried out [recommended].
 
