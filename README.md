@@ -74,13 +74,13 @@ Where 2702260 is the total number of DNA fragments. For CUT&Tag experiments, the
 
 ### Assess quality
 
-A `bash/R` script adapted from the [CUT&Tag processing and analysis tutorial](https://www.protocols.io/view/cut-amp-tag-data-processing-and-analysis-tutorial-bjk2kkye?step=12&comment_id=90048) is included in this repository to generate a  **quality report**.The information presented includes the % of mapped reads, the % of mitochondrial reads, the % of E.coli reads and the % of duplicate reads. In general, the % of duplicates is expected to be low in a CUT&Tag experiment.
+A `bash/R` script adapted from the [CUT&Tag processing and analysis tutorial](https://www.protocols.io/view/cut-amp-tag-data-processing-and-analysis-tutorial-bjk2kkye?step=12&comment_id=90048) is included in this repository to generate a  **quality report**. The information presented includes the % of mapped reads, the % of mitochondrial reads, the % of E.coli reads and the % of duplicate reads. In general, the % of duplicates is expected to be low in a CUT&Tag experiment.
 
 Firstly, the aligned `bam` file should be sorted and indexed, here using [picard](https://broadinstitute.github.io/picard/) tools:
 
 `picard SortSam I=<input>.bam O=<input>-sorted.bam SO=coordinate CREATE_INDEX=TRUE`
 
-> The % of mitochondrial reads 
+#### The % of mitochondrial reads 
 
 To assess the total % of mitochondrial reads, run `samtools idxstats` on your indexed and sorted bam file:
 
@@ -92,9 +92,15 @@ The following command will show you how many reads align to the mitochondrial ch
 
 Where 16571 is the length of the chromosome and 2464 is the total number of reads which have aligned there.
 
-<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/idxstatsgrep.png" width="500">
+<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/idxstatsgrep.png" width="300">
 
-> The duplication rate
+#### The % of E.coli reads 
+
+The `<sample>.Ecoli.bowtie2` file shows the % of E.coli reads in the last line, here 0.02%:
+
+<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/bowtie2-ecoli.png" width="500">
+
+#### The duplication rate
 
 ### Carry out QC filtering
 
