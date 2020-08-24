@@ -90,7 +90,7 @@ The following command will show you how many reads align to the mitochondrial ch
 
 `grep "chrM" <sample>.idxstats` 
 
-Where 16571 is the length of the chromosome and 2464 is the total number of reads which have aligned there.
+Where 16571 is the length of the chromosome and 2464 is the total number of aligned reads.
 
 <img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/idxstatsgrep.png" width="300">
 
@@ -102,6 +102,14 @@ The `<sample>.Ecoli.bowtie2` file shows the % of E.coli reads in the last line, 
 
 #### The duplication rate
 
+To mark	 duplicate reads:
+
+`picard MarkDuplicates QUIET=true INPUT=<sample>.rmChrM.bam OUTPUT=<sample>.marked.bam METRICS_FILE=<sample>.sorted.metrics REMOVE_DUPLICATES=false CREATE_INDEX=true VALIDATION_STRINGENCY=LENIENT TMP_DIR=.`
+
+The % of duplicates can be viewed using:
+
+`head -n 8 SRR11074240-markDup.metrics | cut -f 7,9 | grep -v ^# | tail -n 2`
+
 ### Carry out QC filtering
 
 The aligned data will be filtered to: 
@@ -110,32 +118,42 @@ The aligned data will be filtered to:
 - Remove duplicate reads
 - Remove reads with a mapping quality <30 (includes non-uniquely mapped reads)
 
-### Remove mitochondrial reads
+#### Remove mitochondrial reads
 
-To assess the total % of mitochondrial reads, run `samtools idxstats` and `samtools flagstats` on your indexed bam file. For example:
+`samtools view -h <sample>-sorted.bam | grep -v chrM | samtools sort -O bam -o <sample>.rmChrM.bam -T .`
 
-The total number of reads can be seen the the first line of the flagstat file, `head -n1 <sample>.flagstat`, while the total number of mitochondrial reads can be seen using `grep chrM <sample>.idxstats` (the 2nd column is the length of the chromosome and the 3rd column is the total number of aligned reads). Flagstat and idxstats files can be generated after each QC step to assess the total number of reads removed.  Mitochondrial reads should be removed as follows:
+#### Mark and remove duplicate reads [optional]
 
-`samtools view -h <sample>.bam | grep -v chrM | samtools sort -O bam -o <sample>.rmChrM.bam -T .`
+It may be recommended to remove duplicate reads if the % of duplicates is particularly high. To remove duplicate reads, run the following code:
 
-### Mark and remove duplicate reads
+`samtools view -h -b -F 1024 <sample>.marked.bam > <sample>.rmDup.bam`
 
-`picard MarkDuplicates QUIET=true INPUT=<sample>.rmChrM.bam OUTPUT=<sample>.marked.bam METRICS_FILE=<sample>.sorted.metrics REMOVE_DUPLICATES=false CREATE_INDEX=true VALIDATION_STRINGENCY=LENIENT TMP_DIR=.`
+If IgG controls are used, the duplicate level is expected to be high and duplicates should be removed.
 
-`samtools view -h -b -F 1024 <sample>.markerd.bam > <sample>.rmDup.bam`
+The **estimated library size** and **unique fragment number** can be calculated excluding the observed duplicates.  
 
-### Remove mapping quality <30
+### Assess mapping quality 
 
-Reads which are uniquely mapped are assigned a high alignment quality score and one genomic position. If reads can map to more than one location, Bowtie2 reports one position and assigns a low quality score. The proportion of uniquely mapped reads can be assessed. In general, >70% uniquely mapped reads is expected, while <50% may be a cause for concern 
-[(Bailey et al. 2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf). A low % of uniquely mapped reads may, however, be observed when carrying out a CUT&Tag experiment for a protein which is expected to bind repetitive DNA. Alternatively, this may result from short reads, excessive PCR amplification or problems with the PCR [(Bailey et al. 2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf).
+The output `sam/bam` files contain several measures of quality. First, the alignment quality score. Reads which are uniquely mapped are assigned a high alignment quality score and one genomic position. If reads can map to more than one location, Bowtie2 reports one position and assigns a low quality score. The proportion of uniquely mapped reads can be assessed. In general, >70% uniquely mapped reads is expected, while <50% may be a cause for concern [(Bailey et al. 2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf). Secondly, the 'flag' reports information such as whether the read is mapped as a pair or is a PCR duplicate. The individual flags are reported [here](https://hbctraining.github.io/Intro-to-rnaseq-hpc-O2/lessons/04_alignment_quality.html) and may be combined in a `sam` file to one score, which can be deconstructed back to the original flags using [online interpretation tools](https://broadinstitute.github.io/picard/explain-flags.html). In this pipeline, the bowtie2 parameters `--no-mixed` and `--no-discordant` prevent the mapping of only one read in a pair, so these flags will not be present. All flags reported in a `sam` file can be viewed using  `grep -v ^@ <sample>-markDup.sam | cut -f 2 | sort | uniq`.
 
-`samtools view -q 10 -b <sample>.rmDup.bam > <sample>.filtered.bam`
+To view how many fragments align with a quality score >30, run:
 
-### QC report
+`samtools view -q 30 -c <sample>.marked.bam`
+
+This reports the number of **DNA reads** which align with a quality score >30 (to calculate the number of DNA **fragments**, divide the output by 2). A low % of uniquely mapped reads may potentially be observed when carrying out a CUT&Tag experiment for a protein which is expected to bind repetitive DNA. Alternatively, this may result from short reads, excessive PCR amplification or problems with the PCR [(Bailey et al. 2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf). Run the following code to remove reads with a score <30:
+
+`samtools view -q 30 -b <sample>.rmDup.bam > <sample>.filtered.bam`
+
+#### QC report
 
 A hmtl QC report can be output using [qualimap](http://qualimap.bioinfo.cipf.es/). 
 
 `qualimap bamqc -bam <sample>.filtered.bam -gd hg19 -outdir . -outfile <sample>.qualimap.report -outformat html`
+
+The qualimap report contains a plot of the DNA insert size, which may be expected to show fragments consistent with multiples of nucleosomal lengths (~180 bp), since CUT&Tag typically inserts adapted on either side of a nucleosome. Shorted particles may result from tagmentation within a chromatin particle, in linker DNA regions, or from a section of DNA bound by a transcription factor, for example. The qualimap plot appears as:
+
+<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/qualimap-insert.png" width="800".
+
 
 ## Visualisation
 
