@@ -21,17 +21,25 @@ For the following analysis, you can save your sample file name as `base` and the
 
 ## Pre-alignment QC
 
-A common tool used to assess the quality of raw sequence reads is [fastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). The report, which comes in html format, can be used as guidance to the general quality of the data. Some failed or 'warning' results are usually not too concerning and can be improved using various processing tools. One metric which may be observed to fail is the Per base sequence content. As [described by the authors](https://www.protocols.io/view/cut-amp-tag-data-processing-and-analysis-tutorial-bjk2kkye?step=6) this can result from a sequence preference of the Tn5 transposase or the 10bp periodicity in the length distribution:
+A common tool used to assess the quality of raw sequence reads is [fastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). The report, which comes in html format, can be used as guidance to the general quality of the data. Some failed or 'warning' results are usually not too concerning and can be improved using various processing tools. One metric which may be observed to fail is the Per base sequence content. As [described by the CUT&Tag authors](https://www.protocols.io/view/cut-amp-tag-data-processing-and-analysis-tutorial-bjk2kkye?step=6), this can result from a sequence preference of the Tn5 transposase or the 10bp periodicity in the length distribution and is not a cause for concern:
 
 ![FastQC](Figures/fastQC-per-base-quality.png)
 
-If using the [Benchop CUT&Tag protocol](https://www.protocols.io/view/bench-top-cut-amp-tag-bcuhiwt6/abstract), sequence length should be 25bp and therefore there is not expected to be any contamination of adapters (which results when the sequence lenght is longer than the DNA fragment and so the sequencing extends into the adapter sequence). Therefore, adapter trimming, which is a common step in NGS pipelines, is not recommended unless the user has opted to sequence longer reads (>25bp).
+If using the [Benchop CUT&Tag protocol](https://www.protocols.io/view/bench-top-cut-amp-tag-bcuhiwt6/abstract), sequence length should be 25bp. With this length, there is not expected to be any contamination of adapters (which results when the sequence lenght is longer than the DNA fragment and so the sequencing extends into the adapter sequence). Adapter trimming, which is a common step in NGS pipelines, is not recommended unless the user has opted to sequence longer reads (>25bp).
+
+### Combine samples sequenced across multiple lanes
+
+If any samples have been sequenced across multiple lanes, these should now be concatanated. For example:
+
+`cat <sample>_lane*_R1.fastq.gz`
+
+`cat <sample>_lane*_R2.fastq.gz`
 
 ## Alignment
 
-Two alignments will be run to align the human DNA and carry-over E.coli DNA later used to standardise the samples. The alignment parameters are run as recommended by the CUT&Tag authors (see their [pipeline](https://www.protocols.io/view/cut-amp-tag-home-bd26i8he?step=50)). The authors recommend to skip adapter trimming and to run the alignments using bowtie2 with the below parameters, which should result in accurate read alignment. Two alignments are carried out:
+Two alignments will be run to align the human DNA and carry-over E.coli DNA later used to standardise the samples. The alignment parameters are run as recommended by the CUT&Tag authors (see their [pipeline](https://www.protocols.io/view/cut-amp-tag-home-bd26i8he?step=50)). The authors recommend to skip adapter trimming and to run the alignments using bowtie2 with the below parameters, which should result in accurate read alignment. This pipeline aligns to the hg19 reference genome. If the user is aligning to the more recent GRCh38 release, it is recommended to remove alternative contigs, otherwise reads may not map uniquely and will consequently be assigned a low quality score. Suggested guidelines for preparing the GRCh38 genome are discussed in [this tutorial](https://www.biostars.org/p/342482/). Two alignments are carried out:
 
-1. Align reads to the reference **human** masked genome (hg19) (download [here](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/bigZips/))
+1. Align reads to the reference **human** genome (hg19) (download [here](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/bigZips/))
 2. Align reads to the reference **E.coli** genome (strain K12, substrain MG1655) (downloaded [here](https://www.ncbi.nlm.nih.gov/nuccore/U00096.3?report=fasta)).
 
 Both reference genomes should be [indexed](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#indexing-a-reference-genome) using bowtie2. For those with access to the Imperial College HPC and the Cebola Lab project space, the reference genomes and index files are available at this path:
@@ -42,17 +50,31 @@ The alignments are carried out using bowtie2 with the below arguments. An exampl
 
 ##### Parameters to align human reads:
 
-`--end-to-end --very-sensitive --no-unal --no-mixed --no-discordant --phred33 -l 10 -X 700`
+For mapping of inserts greater than 700bp, increase the -X parameter. 
+
+`--end-to-end --very-sensitive --no-mixed --no-discordant --phred33 -I 10 -X 700`
+
+If the user is sequencing >25bp, adapters will need to be trimmed using a tool such as fastp, cutadapt or trimmomatic, and the alignment parameters should be adjusted to read:
+
+`--local --very-sensitive --no-mixed --no-discordant --phred33 -I 10 -X 700`
 
 ##### Parameters to align E.coli reads:
 
+Fastq files should also be aligned to the E.coli U00096.3 genome (strain K12, substrain MG1655) if downstream normalisation between samples is to be carried out [recommended].
+
 `--end-to-end --very-sensitive --no-overlap --no-dovetail --no-mixed --no-discordant  --phred33 -I 10 -X 700`
+
+Summaries of the alignment are reported in a `.bowtie2` file
+
+![bowtie2-report](Figures/bowtie2-report.png)
 
 ## Post-alignment QC
 
 - Remove mitochondrial reads
 - Remove duplicate reads
 - Remove reads with a mapping quality <30 (includes non-uniquely mapped reads)
+
+A report can be generated to present the results of the mapping, including the % of mapped reads, the % of mitochondrial reads, the % of E.coli reads and the % of duplicate reads. In general, the % of duplicates is expected to be low in a CUT&Tag experiment and therefore the authors recommend to *not* remove duplicate reads. If the % of duplicates is high, picard 
 
 ### Remove mitochondrial reads
 
