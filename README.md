@@ -2,14 +2,14 @@
 Step-by-step analysis pipeline for CUT&Tag data
 #### [Cebola Lab](https://www.imperial.ac.uk/metabolism-digestion-reproduction/research/systems-medicine/genetics--genomics/regulatory-genomics-and-metabolic-disease/)
 
-The CUT&Tag protocol is available as the [CUT&Tag@home](https://www.protocols.io/view/cut-amp-tag-home-bd26i8he?step=50) and [Bench top CUT&Tag V.3](https://www.protocols.io/view/bench-top-cut-amp-tag-bcuhiwt6). The following pipeline is adapted from the authors recommended analysis protocol, available [here](https://www.protocols.io/view/cut-amp-tag-data-processing-and-analysis-tutorial-bjk2kkye). 
+The CUT&Tag protocol is available as the [CUT&Tag@home](https://www.protocols.io/view/cut-amp-tag-home-bd26i8he?step=50) and [Bench top CUT&Tag V.3](https://www.protocols.io/view/bench-top-cut-amp-tag-bcuhiwt6). The following pipeline is adapted from the authors processing and analysis tutorial by Zheng Y et al (2020). Protocol.io. available [here](https://www.protocols.io/view/cut-amp-tag-data-processing-and-analysis-tutorial-bjk2kkye). 
 
 The following pipeline describes each analysis step:
 
-- [Pre-alignment quality scontrol (QC)](pre-alignment-qc) 
+- [Pre-alignment quality control (QC)](#pre-alignment-qc) 
 - [Alignment](#alignment)
 - [Post-alignment QC](#post-alignment-qc)
-- [Visualisation & Calibration](#visualisation) 
+- [Convert, calibrate and visualise](#convert,-calibrate-and-visualise) 
 - [Peak Calling](#peak-calling)
 - [Motif Finding](#motif-finding)
 - Cut Matrix Generation
@@ -31,9 +31,13 @@ If using the [Benchop CUT&Tag protocol](https://www.protocols.io/view/bench-top-
 
 If any samples have been sequenced across multiple lanes, these should now be concatanated. For example:
 
-`cat <sample>_lane*_R1.fastq.gz > <sample>_R1.fastq.gz`
+```
+cat <sample>_lane*_R1.fastq.gz > <sample>_R1.fastq.gz
+```
 
-`cat <sample>_lane*_R2.fastq.gz > <sample>_R2.fastq.gz`
+```
+cat <sample>_lane*_R2.fastq.gz > <sample>_R2.fastq.gz
+```
 
 ## Alignment
 
@@ -52,17 +56,23 @@ The alignments are carried out using bowtie2 with the below arguments. An exampl
 
 For mapping of inserts greater than 700bp, increase the -X parameter. 
 
-`--end-to-end --very-sensitive --no-mixed --no-discordant --phred33 -I 10 -X 700`
+```
+--end-to-end --very-sensitive --no-mixed --no-discordant --phred33 -I 10 -X 700
+```
 
 If the user is sequencing >25bp, adapters will need to be trimmed using a tool such as fastp, cutadapt or trimmomatic, and the alignment parameters should be adjusted to read:
 
-`--local --very-sensitive --no-mixed --no-discordant --phred33 -I 10 -X 700`
+```
+--local --very-sensitive --no-mixed --no-discordant --phred33 -I 10 -X 700
+```
 
 #### Parameters to align E.coli reads:
 
 Fastq files should also be aligned to the E.coli U00096.3 genome (strain K12, substrain MG1655) if downstream normalisation between samples is to be carried out [recommended].
 
-`--end-to-end --very-sensitive --no-overlap --no-dovetail --no-mixed --no-discordant  --phred33 -I 10 -X 700`
+```
+--end-to-end --very-sensitive --no-overlap --no-dovetail --no-mixed --no-discordant  --phred33 -I 10 -X 700
+```
 
 Summaries of the alignment are reported in a `.bowtie2` file, for example:
 
@@ -78,17 +88,23 @@ A `bash/R` script adapted from the [CUT&Tag processing and analysis tutorial](ht
 
 Firstly, the aligned `bam` file should be sorted and indexed, here using [picard](https://broadinstitute.github.io/picard/) tools:
 
-`picard SortSam I=<input>.bam O=<input>-sorted.bam SO=coordinate CREATE_INDEX=TRUE`
+```
+picard SortSam I=<input>.bam O=<input>-sorted.bam SO=coordinate CREATE_INDEX=TRUE
+```
 
 #### The % of mitochondrial reads 
 
 To assess the total % of mitochondrial reads, run `samtools idxstats` on your indexed and sorted bam file:
 
-`samtools idxstats <sample>-sorted.bam > <sample>.idxstats`
+```
+samtools idxstats <sample>-sorted.bam > <sample>.idxstats
+```
 
 The following command will show you how many reads align to the mitochondrial chromosome (chrM):
 
-`grep "chrM" <sample>.idxstats` 
+```
+grep "chrM" <sample>.idxstats
+``` 
 
 Where 16571 is the length of the chromosome and 2464 is the total number of aligned reads.
 
@@ -108,13 +124,17 @@ To mark	 duplicate reads:
 
 The % of duplicates can be viewed using:
 
-`head -n 8 <sample>-markDup.metrics | cut -f 7,9 | grep -v ^# | tail -n 2`
+```
+head -n 8 <sample>-markDup.metrics | cut -f 7,9 | grep -v ^# | tail -n 2
+```
 
 #### QC report
 
 A hmtl QC report can be output using [qualimap](http://qualimap.bioinfo.cipf.es/).
 
-`qualimap bamqc -bam <sample>.filtered.bam -gd hg19 -outdir . -outfile <sample>.qualimap.report -outformat html`
+```
+qualimap bamqc -bam <sample>.filtered.bam -gd hg19 -outdir . -outfile <sample>.qualimap.report -outformat html
+```
 
 The qualimap report contains a plot of the DNA insert size, which may be expected to show fragments consistent with multiples of nucleosomal lengths (~180 bp), since CUT&Tag typically inserts adapted on either side of a nucleosome. Shorted particles may result from tagmentation within a chromatin particle, in linker DNA regions, or from a section of DNA bound by a transcription factor, for example. The qualimap plot appears as:
 
@@ -130,13 +150,17 @@ The aligned data will be filtered to:
 
 #### Remove mitochondrial reads
 
-`samtools view -h <sample>-sorted.bam | grep -v chrM | samtools sort -O bam -o <sample>.rmChrM.bam -T .`
+```
+samtools view -h <sample>-sorted.bam | grep -v chrM | samtools sort -O bam -o <sample>.rmChrM.bam -T .
+```
 
 #### Remove duplicate reads [optional]
 
 It may be recommended to remove duplicate reads if the % of duplicates is particularly high. To remove duplicate reads, run the following code:
 
-`samtools view -h -b -F 1024 <sample>.marked.bam > <sample>.rmDup.bam`
+```
+samtools view -h -b -F 1024 <sample>.marked.bam > <sample>.rmDup.bam
+```
 
 If IgG controls are used, the duplicate level is expected to be high and duplicates should be removed.
 
@@ -150,11 +174,15 @@ The output `sam/bam` files contain several measures of quality. First, the align
 
 To view how many fragments align with a quality score >30, run:
 
-`samtools view -q 30 -c <sample>.marked.bam`
+```
+samtools view -q 30 -c <sample>.marked.bam
+```
 
 This reports the number of DNA **reads** which align with a quality score >30 (to calculate the number of DNA **fragments**, divide the output by 2). A low % of uniquely mapped reads may potentially be observed when carrying out a CUT&Tag experiment for a protein which is expected to bind repetitive DNA. Alternatively, this may result from short reads, excessive PCR amplification or problems with the PCR [(Bailey et al. 2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3828144/pdf/pcbi.1003326.pdf). Run the following code to remove reads with a score <30:
 
-`samtools view -q 30 -b <sample>.rmDup.bam > <sample>.filtered.bam`
+```
+samtools view -q 30 -b <sample>.rmDup.bam > <sample>.filtered.bam
+```
 
 ## Convert, calibrate and visualise
 
@@ -173,13 +201,19 @@ bedtools bamtobed -i <sample>.filtered.bam -bedpe > <sample>.bed
 
 Importantly, the bedtools BEDPE format is slightly different from that required by the downstream tools. The file can be converted using this following code:
 
-`cut -f 1,2,6 <sample>.bed | sort -k1,1 -k2,2n -k3,3n > <sample>-converted.bed` 
+```
+bedtools sort <sample>.bed > <sample>-sorted.bed
+
+cut -f 1,2,6 <sample>.bed | sort -k1,1 -k2,2n -k3,3n > <sample>-converted.bed
+```
 
 ### Calibration 
 
 The samples will first be calibrated using the carry-over E.coli DNA (the effective 'spike-in'). In theory, the ratio of primary DNA to E.coli DNA is expected to be the same for each sample. As such, the calibration divides the mapped read count by the total number of reads aligned to the E.coli genome. The proportion of total DNA reads aligned to the E.coli genome is reported in the `<sample>.Ecoli.bowtie2` output file and can be obtained using: 
 
-`head -n1 <sample>.Ecoli.bowtie2 | cut -d ' ' -f1`
+```
+head -n1 <sample>.Ecoli.bowtie2 | cut -d ' ' -f1
+```
 
 The scaling factor, S, should be calculated as C / the number of E.coli reads, where C is an arbritary multiplier, typically 10,000:
 
@@ -190,42 +224,6 @@ scale_factor=$(echo "10000 / $seqdepth" | bc -l)
 
 bedtools genomecov -bg -scale $scale_factor -i <sample>-converted.bed -g hg19.chrom.sizes > <sample>.bedGraph
 ```
-
-### Visualisation
-
-Also convert to bigwig...
-
-The sorted bam file is converted to bed format using `bedtools bamtobed`. For calibration using the E.coli reads, the bed files require the length of the fragment to be added (as described in the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh)).
-
-`bedtools bamtobed -bedpe -i <sample>-sorted.bam | awk -v OFS='\t' '{len = $3 - $2; print $0, len }' > <sample>.bed`
-
-The E.coli alignment file should also be converted to bed format (no need to sort, since the information used will be the number of reads i.e. the number of lines in the bed file):
-
-`bedtools bamtobed -bedpe -i <sample>-E.coli.bam > <sample>-E.coli.bed`
-
-### Calibration
-
-If you are working with multiple samples, e.g. a sample and a control, they should be standardized in order to be comparable. The calibration is carried out using the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh). The calibration effectively scales the mapped counts according to the total number of E.coli reads. The ratio of primary genome to E.coli genome is expected to be the same for all samples. The script is included in this repository (see above).
-
-**Step 1:** Filter fragments to be within a minimum and maximum length
-
-**Steps 2:** Run the calibration on the filtered file
-
-To run the calibration, the query-sorted bed file must be sorted by coordinate:
-
-`bedtools sort -i <sample>.bed > <sample>-sorted.bed`
-
-Seven arguments are required to run the calibration script (here converted to bash shell from the Henikoff lab C-shell [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh)).
-
-`spike_calibrate.sh genome.bed spike_genome.bed scale output(bg|bga|d) genome_chr_lens_file  min_len max_len`
-
-- **genome.bed** the converted bed file (hg19 alignment), `<sample>-sorted.bed`
-- **spike_genome.bed** the converted bed file (E.coli alignment)
-- **scale** an arbitrary large number used to scale, e.g. 10000
-- **output(bg|bga|d)** bg = BedGraph, bga = BedGraph including regions with 0 coverage, d = depth at each genome position with 1-based coordinates.
-- **genome_chr_lens_file**
-- **min_len** minumum fragment length, `min=$(cut -f 11 SRR8383480_aligned_reads.bed | sort | uniq | head -1)`
-- **max_len** maximum fragment length, `max=$(cut -f 11 SRR8383480_aligned_reads.bed | sort | uniq | tail -1)'
 
 ### Visualise bedGraph
 
@@ -261,17 +259,20 @@ The bedGraphToBigWig binary, as downloaded from UCSC tools, is available in this
 
 ## Peak Calling
 
-Peak calling will be carried out using both [macs2](https://github.com/macs3-project/MACS) and SEACR. First, for macs2:
+Peak calling will be carried out using [SEACR](https://github.com/FredHutch/SEACR/), **S**parse **E**nrichment **A**nalysis for **C**UT&**R**UN, which is a peak caller specifically designed to handle data with very low background present in CUT&RUN and CUT&Tag experiments. SEACR was described by [Meers et al. (2019)](https://epigeneticsandchromatin.biomedcentral.com/articles/10.1186/s13072-019-0287-4). SEACR is downloaded as part of this repository, or alternatively can be installed directly from [GitHub](https://github.com/FredHutch/SEACR/) or used via a [web interface](https://seacr.fredhutch.org/).
 
-The `<sample>-sorted.bed` file is currently in the bedtools BEDPE format, which is not compatible with macs2. To convert to the macs2 BEDPE format, run the following:
+```
+seacr <sample>.bedgraph <IgG-control>.bedGraph non stringent <sample>_seacr_control.peaks
 
-`cut -f 1,2,6 <sample>-sorted.bed | sort -k1,1n -k2,2n -k3,3n > <sample>-sorted-macs.bed` 
- 
-As described in the original CUT&Tag paper ([Kaya-Okur et al. 2019](https://www.nature.com/articles/s41467-019-09982-5#data-availability)), macs2 will be used with the following parameters:
+seacr <sample>.bedgraph 0.01 non stringent <sample>_seacr_top0.01.peaks
+```
 
-`macs2 callpeak -t <sample>-sorted-macs.bed -f BEDPE -p 1e-5 --keep-dup all -n output_prefix` 
+Number of peaks
+Peak reproducibility
+Fragment proportion in peak region ( fraction of reads in peaks (FRiPs)) .. measure of signal to noise
 
 ## Motif Finding
 
+## Differential analysis
 
 
