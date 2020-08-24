@@ -66,9 +66,9 @@ Fastq files should also be aligned to the E.coli U00096.3 genome (strain K12, su
 
 Summaries of the alignment are reported in a `.bowtie2` file, for example:
 
-<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/bowtie2-report.png" width="200">
+<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/bowtie2-report.png" width="500">
 
-Where 2702260 is the total number of DNA fragments. For CUT&Tag experiments, the total number of mapped fragments (i.e 96.26% of 2702260 in this example) may be as low as 1 million for experiments probing histone marks. When investigating transcription factors, for example, this may need to be as high as 10 million mapped fragments. 
+Where 2702260 is the total number of DNA fragments. For CUT&Tag experiments, the total number of mapped fragments (i.e. 96.26% of 2702260 in this example) may be as low as 1 million for experiments probing histone marks. When investigating less abundant transcription factors, for example, this may need to be as high as 10 million mapped fragments. 
 
 ## Post-alignment QC
 
