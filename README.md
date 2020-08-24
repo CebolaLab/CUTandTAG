@@ -165,9 +165,10 @@ The processed `bam` file should be converted to `BEDPE` format. This can be done
 
 The output bam files must be sorted by **queryname** in order to generate the BEDPE format in the next step. `<sample>` again refers to the your filename/sample ID:
 
-`picard SortSam I=<sample>.bam O=<sample>-sorted.bam SO=queryname CREATE_INDEX=TRUE`
-
-`bedtools bamtobed -i <sample>.filtered.bam -bedpe > <sample>.bed`
+```
+picard SortSam I=<sample>.bam O=<sample>-sorted.bam SO=queryname CREATE_INDEX=TRUE
+bedtools bamtobed -i <sample>.filtered.bam -bedpe > <sample>.bed
+```
 
 Importantly, the bedtools BEDPE format is slightly different from that required by the downstream tools. The file can be converted using this following code:
 
@@ -181,11 +182,11 @@ The samples will first be calibrated using the carry-over E.coli DNA (the effect
 
 The scaling factor, S, should be calculated as C / the number of E.coli reads, where C is an arbritary multiplier, typically 10,000:
 
-`seqdepth=$(head -n1 <sample>.Ecoli.bowtie2 | cut -d ' ' -f1)
-
-scale_factor=`echo "10000 / $seqdepth" | bc -l`
-
-bedtools genomecov -bg -scale $scale_factor -i <sample>-converted.bed -g hg19.chrom.sizes > <sample>.bedGraph`  
+```
+seqdepth=$(head -n1 <sample>.Ecoli.bowtie2 | cut -d ' ' -f1)
+scale_factor=$(echo "10000 / $seqdepth" | bc -l)
+bedtools genomecov -bg -scale $scale_factor -i <sample>-converted.bed -g hg19.chrom.sizes > <sample>.bedGraph
+```
 
 ### Visualisation
 
