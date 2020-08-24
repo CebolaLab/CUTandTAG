@@ -110,6 +110,16 @@ The % of duplicates can be viewed using:
 
 `head -n 8 <sample>-markDup.metrics | cut -f 7,9 | grep -v ^# | tail -n 2`
 
+#### QC report
+
+A hmtl QC report can be output using [qualimap](http://qualimap.bioinfo.cipf.es/).
+
+`qualimap bamqc -bam <sample>.filtered.bam -gd hg19 -outdir . -outfile <sample>.qualimap.report -outformat html`
+
+The qualimap report contains a plot of the DNA insert size, which may be expected to show fragments consistent with multiples of nucleosomal lengths (~180 bp), since CUT&Tag typically inserts adapted on either side of a nucleosome. Shorted particles may result from tagmentation within a chromatin particle, in linker DNA regions, or from a section of DNA bound by a transcription factor, for example. The qualimap plot appears as:
+
+<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/qualimap-insert.png" width="800">
+
 ### Carry out QC filtering
 
 The aligned data will be filtered to: 
@@ -146,32 +156,40 @@ This reports the number of DNA **reads** which align with a quality score >30 (t
 
 `samtools view -q 30 -b <sample>.rmDup.bam > <sample>.filtered.bam`
 
-#### QC report
+## Convert, calibrate and visualise
 
-A hmtl QC report can be output using [qualimap](http://qualimap.bioinfo.cipf.es/). 
+In this section, the aligned bam file will be converted to a bed format compatible with downstream analysis tools. If analysing multiple samples, calibration using the carry-over E.coli DNA should be carried out. The output `bedGraph` can then be visualised.  
+### File conversion
 
-`qualimap bamqc -bam <sample>.filtered.bam -gd hg19 -outdir . -outfile <sample>.qualimap.report -outformat html`
+The processed `bam` file should be converted to `BEDPE` format. This can be done using [bedtools](https://bedtools.readthedocs.io/en/latest/). The [BEDPE format](https://bedtools.readthedocs.io/en/latest/content/general-usage.html) is a specialised version of a [bed file](https://m.ensembl.org/info/website/upload/bed.html) 
 
-The qualimap report contains a plot of the DNA insert size, which may be expected to show fragments consistent with multiples of nucleosomal lengths (~180 bp), since CUT&Tag typically inserts adapted on either side of a nucleosome. Shorted particles may result from tagmentation within a chromatin particle, in linker DNA regions, or from a section of DNA bound by a transcription factor, for example. The qualimap plot appears as:
-
-<img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/qualimap-insert.png" width="800">
-
-
-## Visualisation
-
-The aligned data (output from the example [script](https://github.com/CebolaLab/CUTandTAG/blob/master/alignment.sh)) will be in `bam` format. This will be converted to bedGraph format in order to visualise the data. For multiple samples to be compared, the samples will first be calibrated using the carry-over E.coli DNA (the effective 'spike-in'). In theory, the ratio of primary DNA to E.coli DNA is expected to be the same for each sample. As such, the calibration divides the mapped read count by the total number of reads aligned to the E.coli genome. The proportion of total DNA reads aligned to the E.coli genome is reported in the `<sample>.Ecoli.bowtie2` output file. The general steps cover:
-
-1. Sort aligned bam file by read name (queryname)
-2. Convert bam to bed
-3. Normalise samples using E.coli carry-over DNA
-4. Visualise output bedGraph files
-5. Convert bedGraph to bigWig
-
-### Sort bam file
-
-The output bam files must be sorted by **queryname** in order to generate the BEDPE format in the next step. `<sample>` again refers to the your filename/sample ID: 
+The output bam files must be sorted by **queryname** in order to generate the BEDPE format in the next step. `<sample>` again refers to the your filename/sample ID:
 
 `picard SortSam I=<sample>.bam O=<sample>-sorted.bam SO=queryname CREATE_INDEX=TRUE`
+
+`bedtools bamtobed -i <sample>.filtered.bam -bedpe > <sample>.bed`
+
+Importantly, the bedtools BEDPE format is slightly different from that required by the downstream tools. The file can be converted using this following code:
+
+`cut -f 1,2,6 <sample>.bed | sort -k1,1 -k2,2n -k3,3n > <sample>-converted.bed` 
+
+### Calibration 
+
+The samples will first be calibrated using the carry-over E.coli DNA (the effective 'spike-in'). In theory, the ratio of primary DNA to E.coli DNA is expected to be the same for each sample. As such, the calibration divides the mapped read count by the total number of reads aligned to the E.coli genome. The proportion of total DNA reads aligned to the E.coli genome is reported in the `<sample>.Ecoli.bowtie2` output file and can be obtained using: 
+
+`head -n1 <sample>.Ecoli.bowtie2 | cut -d ' ' -f1`
+
+The scaling factor, S, should be calculated as C / the number of E.coli reads, where C is an arbritary multiplier, typically 10,000:
+
+`seqdepth=$(head -n1 <sample>.Ecoli.bowtie2 | cut -d ' ' -f1)
+
+scale_factor=`echo "10000 / $seqdepth" | bc -l`
+
+bedtools genomecov -bg -scale $scale_factor -i <sample>-converted.bed -g hg19.chrom.sizes > <sample>.bedGraph`  
+
+### Visualisation
+
+Also convert to bigwig...
 
 The sorted bam file is converted to bed format using `bedtools bamtobed`. For calibration using the E.coli reads, the bed files require the length of the fragment to be added (as described in the Henikoff lab calibration [script](https://github.com/Henikoff/Cut-and-Run/blob/master/spike_in_calibration.csh)).
 
