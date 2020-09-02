@@ -1,4 +1,6 @@
 # CUT&Tag
+## **UNDER CONSTRUCTION**
+
 Step-by-step analysis pipeline for CUT&Tag data
 #### [Cebola Lab](https://www.imperial.ac.uk/metabolism-digestion-reproduction/research/systems-medicine/genetics--genomics/regulatory-genomics-and-metabolic-disease/)
 
@@ -120,7 +122,9 @@ The `<sample>.Ecoli.bowtie2` file shows the % of E.coli reads in the last line, 
 
 To mark	 duplicate reads:
 
-`picard MarkDuplicates QUIET=true INPUT=<sample>.rmChrM.bam OUTPUT=<sample>.marked.bam METRICS_FILE=<sample>.sorted.metrics REMOVE_DUPLICATES=false CREATE_INDEX=true VALIDATION_STRINGENCY=LENIENT TMP_DIR=.`
+```
+picard MarkDuplicates QUIET=true INPUT=<sample>.rmChrM.bam OUTPUT=<sample>.marked.bam METRICS_FILE=<sample>.sorted.metrics REMOVE_DUPLICATES=false CREATE_INDEX=true VALIDATION_STRINGENCY=LENIENT TMP_DIR=.
+```
 
 The % of duplicates can be viewed using:
 
@@ -235,13 +239,19 @@ The normalised bedGraphs can now be visualised, for example on the UCSC browser:
 
 You can also generate a heatplot to visualise the distribution of your chromatin mark / transcription factor relative to transcription start sites. This will use deeptools (included in the CUTandTAG conda bin). Gene coordinates for the reference genome hg19 were downloaded from UCSC as Gencode V34lift37 (Basic table and bed format). They are saved in this repository as `hg19-gene-coordinates.bed`.
 
-`computeMatrix scale-regions -S <sample>.bigWig -R hg19-gene-coordinates.bed --beforeRegionStartLength 3000 --regionBodyLength 5000 --afterRegionStartLength 3000 --missingDataAsZero --skipZeros -o matrix.mat.gz`
+```
+computeMatrix scale-regions -S <sample>.bigWig -R hg19-gene-coordinates.bed --beforeRegionStartLength 3000 --regionBodyLength 5000 --afterRegionStartLength 3000 --missingDataAsZero --skipZeros -o matrix.mat.gz
+```
 
-`plotHeatmap -m matrix.mat.gz  -out ExampleHeatmap1.png ` 
+```
+plotHeatmap -m matrix.mat.gz  -out ExampleHeatmap1.png 
+``` 
 
 The parameters of `plotHeatmap` can be [adjusted](https://deeptools.readthedocs.io/en/develop/content/tools/plotHeatmap.html) to produce various heatplots: 
 
-`plotProfile -m matrix.mat.gz -out ExampleProfile1.png `
+```
+plotProfile -m matrix.mat.gz -out ExampleProfile1.png 
+```
 
 <img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap1.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap2.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap5.png" width="200"><img src="https://github.com/CebolaLab/CUTandTAG/blob/master/Figures/ExampleHeatmap4.png" width="200">
 
@@ -253,7 +263,9 @@ The parameters of `plotHeatmap` can be [adjusted](https://deeptools.readthedocs.
 
 To convert the bedGraph file to bigWig format, use the following command:
 
-`source bedGraphToBigWig <sample>.bedgraph hg19.chrom.sizes <sample>.bigWig`
+```
+source bedGraphToBigWig <sample>.bedgraph hg19.chrom.sizes <sample>.bigWig
+```
 
 The bedGraphToBigWig binary, as downloaded from UCSC tools, is available in this repository.
 
